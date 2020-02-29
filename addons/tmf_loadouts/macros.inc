@@ -13,9 +13,9 @@ LIST_5("ACE_tourniquet"), \
 LIST_10("ACE_splint")
 
 #define MEDICAL_M \
-LIST_50("ACE_fieldDressing"), \
-LIST_30("ACE_morphine"), \
-LIST_20("ACE_epinephrine"), \
+LIST_40("ACE_fieldDressing"), \
+LIST_20("ACE_morphine"), \
+LIST_15("ACE_epinephrine"), \
 LIST_12("ACE_salineIV_500"), \
 LIST_5("ACE_salineIV_250"), \
 LIST_3("ACE_tourniquet"), \
