@@ -109,7 +109,7 @@ class cls : car
 		MEDICAL_CLS
 	};
 };
-class m : car
+class m : cls
 {
     displayName = "Medic";
 	backpack[] = {"usm_pack_alice"};
