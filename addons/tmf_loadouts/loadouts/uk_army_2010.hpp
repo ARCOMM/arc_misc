@@ -1,5 +1,9 @@
-// If you want to base a loadout on an existing one, this repository contains them all:
-// https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
+/*
+	Dependencies:
+	* CUP Units
+	* CUP Weapons
+	* ACE3
+*/
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
