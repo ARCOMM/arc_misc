@@ -5,4 +5,10 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_1985.hpp"
 	};
+	class uk_army_2010 {
+		displayName = "UK Army (2010, MTP)";
+		category = "Western Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\uk_army_2010.hpp"
+	};
 };
