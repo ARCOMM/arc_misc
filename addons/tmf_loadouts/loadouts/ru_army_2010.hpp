@@ -132,6 +132,7 @@ class ftl : g
 	{
 		LIST_2("CUP_1Rnd_SmokeRed_GP25_M")
 	};
+	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular","ItemGPS"};
 };
 class sl : r
@@ -142,6 +143,7 @@ class sl : r
 	{
 		LIST_2("16Rnd_9x21_Mag")
 	};
+	items[] += {"ACE_MapTools"};
 	linkedItems[] =
 	{
 		"ItemMap",
@@ -420,14 +422,14 @@ class sn : car
 	silencer[] = {"cup_muzzle_pbs4"};
 
 	backpackItems[] = {LIST_4("CUP_5Rnd_127x108_KSVK_M")};
-	code = "\
+	code = QUOTE(\
 		backpackContainer _this setVariable ['ace_gunbag_gunbagWeapon', \
 		[ \
 			'CUP_srifle_ksvk', \
 			['','','cup_optic_pso_3',''], \
 			[['CUP_5Rnd_127x108_KSVK_M', 5]] \
 		], true]; \
-	";
+	);
 };
 class sp : car
 {
@@ -532,35 +534,30 @@ class jp : baseMan
 class eng : car
 {
 	displayName = "Combat Engineer (Explosives)";
+	sidearmWeapon[] = {"ACE_VMM3"};
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"B_Kitbag_rgr"};
-	vest[] = {"V_PlateCarrier3_rgr"};
-	magazines[] +=
-	{
-		LIST_4("ClaymoreDirectionalMine_Remote_Mag")
-	};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
-		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag")
+		"ACE_wirecutter",
+		"SatchelCharge_Remote_Mag",
+		LIST_4("SLAMDirectionalMine_Wire_Mag")
 	};
 };
 class engm : car
 {
 	displayName = "Combat Engineer (Mines)";
+	sidearmWeapon[] = {"ACE_VMM3"};
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"B_Kitbag_rgr"};
-	vest[] = {"V_PlateCarrier3_rgr"};
 	items[] +=
 	{
-		LIST_2("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag")
+		"ACE_DefusalKit",
+		"ACE_Clacker"
 	};
 	backpackItems[] = {
-		"MineDetector",
-		"ToolKit",
-		"ATMine_Range_Mag"
+		LIST_2("CUP_Mine_M"),
+		LIST_8("APERSMine_Range_Mag")
 	};
 };
 class UAV : car
