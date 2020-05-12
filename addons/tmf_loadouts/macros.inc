@@ -20,7 +20,7 @@ LIST_10("ACE_salineIV_500"), \
 LIST_5("ACE_salineIV_250"), \
 LIST_3("ACE_tourniquet"), \
 LIST_2("ACE_bodyBag"), \
-LIST_30("ACE_splint"), \
+LIST_20("ACE_splint"), \
 LIST_8("ACE_salineIV")
 
 #define LIST_1(var1) var1
