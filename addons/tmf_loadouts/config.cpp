@@ -1,4 +1,4 @@
-#include "\x\arc_misc\addons\main\script_macros.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {
@@ -17,6 +17,8 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "tmf_adminMenu_authorized_players.hpp"
 
 #include "macros.inc"
 #include "Cfgloadouts.hpp"
