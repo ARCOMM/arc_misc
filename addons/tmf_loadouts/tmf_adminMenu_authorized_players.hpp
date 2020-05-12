@@ -8,4 +8,7 @@ class TMF_adminMenu_authorized_players {
 	class WirelessPillow {
 		uid = "76561197985318459";
 	};
+	class Draco194 {
+		uid = "76561198018898971";
+	};
 };
