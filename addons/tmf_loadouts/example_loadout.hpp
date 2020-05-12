@@ -206,8 +206,8 @@ class mmgac : r {
 	};
 };
 
-class mmgag : aar {
-	displayName = "MMG Assistant Gunner";
+class mmgtl : aar {
+	displayName = "MMG Team Leader";
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"ItemMap",
@@ -232,8 +232,8 @@ class hmgac : r {
 	backPack[] = {"B_HMG_01_weapon_F"};
 };
 
-class hmgag : car {
-	displayName = "HMG Assistant Gunner";
+class hmgtl : car {
+	displayName = "HMG Team Leader";
 	backPack[] = {"B_HMG_01_support_F"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
@@ -265,8 +265,8 @@ class matac : r {
 	};
 };
 
-class matag : car {
-	displayName = "MAT Assistant Gunner";
+class mattl : car {
+	displayName = "MAT Team Leader";
 	backpack[] = {"B_FieldPack_khk"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
@@ -293,8 +293,8 @@ class hatac : r {
 	backPack[] = {"B_AT_01_weapon_F"};
 };
 
-class hatag : car {
-	displayName = "HAT Assistant Gunner";
+class hattl : car {
+	displayName = "HAT Team Leader";
 	backPack[] = {"B_HMG_01_support_F"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
@@ -328,8 +328,8 @@ class mtrac : r {
 	};
 };
 
-class mtrag : car {
-	displayName = "Mortar Assistant Gunner";
+class mtrtl : car {
+	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
 	items[] = { "MTR_GEAR" };
 	backPack[] = {"B_Carryall_mcamo"};
@@ -414,7 +414,7 @@ class sp : g {
 };
 
 class vg : smg {
-	displayName = "Vehicle Crew";
+	displayName = "Vehicle Gunner";
 	uniform[] = {"U_B_CombatUniform_mcam_vest"};
 	vest[] = {"V_TacVest_blk"};
 	backpack[] = {};
@@ -438,7 +438,7 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class pc : smg {
+class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"U_B_HeliPilotCoveralls"};
 	vest[] = {"V_TacVest_blk"};
@@ -451,12 +451,12 @@ class pc : smg {
 	};
 };
 
-class pp : pc {
+class hp : hc {
 	displayName = "Helicopter Pilot";
 	linkedItems[] += {"ItemGPS"};
 };
 
-class pcc : pc {
+class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
 	backpack[] = {"B_AssaultPack_mcamo"};

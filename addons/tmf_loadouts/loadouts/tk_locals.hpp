@@ -274,8 +274,8 @@ class mmgac : r {
 	};
 };
 
-class mmgag : aar {
-	displayName = "MMG Assistant Gunner";
+class mmgtl : aar {
+	displayName = "MMG Team Leader";
 	items[] += {"ACE_MapTools"};
 	backpackItems[] = {
 		LIST_2("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M")
@@ -292,8 +292,8 @@ class hmgac : r {
 	backPack[] = {"CUP_B_DShkM_TripodHigh_Bag"};
 };
 
-class hmgag : car {
-	displayName = "HMG Assistant Gunner";
+class hmgtl : car {
+	displayName = "HMG Team Leader";
 	backPack[] = {"CUP_B_DShkM_TripodLow_Bag"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
@@ -319,8 +319,8 @@ class matac : r {
 	};
 };
 
-class matag : car {
-	displayName = "MAT Assistant Gunner";
+class mattl : car {
+	displayName = "MAT Team Leader";
 	backpack[] = {"CUP_B_RPGPack_Khaki"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
@@ -340,8 +340,8 @@ class hatac : r {
 	backPack[] = {"CUP_B_SPG9_Tripod_Bag"};
 };
 
-class hatag : car {
-	displayName = "HAT Assistant Gunner";
+class hattl : car {
+	displayName = "HAT Team Leader";
 	backPack[] = {"CUP_B_SPG9_Tripod_Bag"};
 	linkedItems[] += {"Binocular"};
 	items[] += {"ACE_MapTools"};
@@ -374,8 +374,8 @@ class mtrac : r {
 	};
 };
 
-class mtrag : car {
-	displayName = "Mortar Assistant Gunner";
+class mtrtl : car {
+	displayName = "Mortar Team Leader";
 	items[] += {"ACE_MapTools"};
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
@@ -413,7 +413,7 @@ class sp : r {
 };
 
 class vg : smg {
-	displayName = "Vehicle Crew";
+	displayName = "Vehicle Gunner";
 	vest[] = {"CUP_V_O_SLA_Flak_Vest03"};
 	headgear[] = {
 		"CUP_H_CZ_Pakol_headset_f_brown",
@@ -439,18 +439,18 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class pc : vg {
+class hc : vg {
 	displayName = "Helicopter Crew";
 };
 
-class pp : pc {
+class hp : hc {
 	displayName = "Helicopter Pilot";
 	vest[] = {"CUP_V_O_SLA_Flak_Vest02"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
 };
 
-class pcc : pc {
+class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
 	backpack[] = {"CUP_B_SLA_Medicbag"};

@@ -223,8 +223,8 @@ class mmgac : r {
 	};
 };
 
-class mmgag : aar {
-	displayName = "MMG Assistant Gunner";
+class mmgtl : aar {
+	displayName = "MMG Team Leader";
 	backpack[] = {"usm_pack_alice_prc77"};
 	backpackItems[] =
 	{
@@ -242,8 +242,8 @@ class hmgac : r {
 	backPack[] = {"CUP_B_M2_Tripod_Bag"};
 };
 
-class hmgag : car {
-	displayName = "HMG Assistant Gunner";
+class hmgtl : car {
+	displayName = "HMG Team Leader";
 	backPack[] = {"CUP_B_M2_MiniTripod_Bag"};
 	linkedItems[] += {"Binocular"};
 };
@@ -259,8 +259,8 @@ class matac : r {
 	secondaryWeapon[] = {"ace_dragon_super"};
 };
 
-class matag : car {
-	displayName = "MAT Assistant Gunner";
+class mattl : car {
+	displayName = "MAT Team Leader";
 	secondaryWeapon[] = {"ace_dragon_super"};
 	linkedItems[] += {"Binocular"};
 };
@@ -275,8 +275,8 @@ class hatac : r {
 	backPack[] = {"CUP_B_TOW_Tripod_Bag"};
 };
 
-class hatag : car {
-	displayName = "HAT Assistant Gunner";
+class hattl : car {
+	displayName = "HAT Team Leader";
 	backPack[] = {"CUP_B_TOW_Tripod_Bag"};
 	linkedItems[] += {"Binocular"};
 };
@@ -299,8 +299,8 @@ class mtrac : r {
 	backPack[] = {"I_Mortar_01_weapon_F"};
 };
 
-class mtrag : car {
-	displayName = "Mortar Assistant Gunner";
+class mtrtl : car {
+	displayName = "Mortar Team Leader";
 	backPack[] = {"B_HMG_01_support_F"};
 	linkedItems[] =
 	{
@@ -369,7 +369,7 @@ class sp : car {
 };
 
 class vg : smg {
-	displayName = "Vehicle Crew";
+	displayName = "Vehicle Gunner";
 	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
 	vest[] = {"V_TacVest_oli"};
 	headgear[] = {"H_HelmetCrew_I"};
@@ -397,7 +397,7 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class pc : smg {
+class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
 	vest[] = {"V_TacVest_oli"};
@@ -410,11 +410,11 @@ class pc : smg {
 	};
 };
 
-class pp : pc {
+class hp : hc {
 	displayName = "Helicopter Pilot";
 };
 
-class pcc : pc {
+class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
 	backpack[] = {"usm_pack_abag_m60"};

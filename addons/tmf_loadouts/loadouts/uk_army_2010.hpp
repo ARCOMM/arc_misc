@@ -241,8 +241,8 @@ class mmgac : r {
 	};
 };
 
-class mmgag : aar {
-	displayName = "MMG Assistant Gunner";
+class mmgtl : aar {
+	displayName = "MMG Team Leader";
 	backpack[] = {"CUP_B_Predator_MTP"};
 	linkedItems[] = {
 		"ItemMap",
@@ -267,8 +267,8 @@ class hmgac : r {
 	backPack[] = {"CUP_B_M2_Tripod_Bag"};
 };
 
-class hmgag : car {
-	displayName = "HMG Assistant Gunner";
+class hmgtl : car {
+	displayName = "HMG Team Leader";
 	backPack[] = {"CUP_B_M2_MiniTripod_Bag"};
 	linkedItems[] = {
 		"ItemMap",
@@ -300,9 +300,9 @@ class matac : r {
 		LIST_2("CUP_MAAWS_HEDP_M")
 	};
 };
-class matag : car
+class mattl : car
 {
-	displayName = "MAT Assistant Gunner";
+	displayName = "MAT Team Leader";
 	backpack[] = {"CUP_B_Predator_MTP"};
 	linkedItems[] = {
 		"ItemMap",
@@ -334,8 +334,8 @@ class hatac : r {
 	backpackItems[] = {"CUP_Javelin_M"};
 };
 
-class hatag : car {
-	displayName = "HAT Assistant Gunner";
+class hattl : car {
+	displayName = "HAT Team Leader";
 	backpack[] = {"B_TacticalPack_mcamo"};
 	backpackItems[] = {"CUP_Javelin_M"};
 	linkedItems[] = {
@@ -376,9 +376,9 @@ class mtrac : r
 	};
 };
 
-class mtrag : car
+class mtrtl : car
 {
-	displayName = "Mortar Assistant Gunner";
+	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
 	items[] += {
 		"ACE_MapTools",
@@ -455,7 +455,7 @@ class sp : g {
 };
 
 class vg : smg {
-	displayName = "Vehicle Crew";
+	displayName = "Vehicle Gunner";
 	vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Crewman"};
 	headgear[] = {"CUP_H_BAF_MTP_Mk6_CREW_PRR"};
 	magazines[] = {
@@ -477,7 +477,7 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class pc : smg {
+class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"U_BG_Guerrilla_6_1"};
 	vest[] = {"CUP_V_B_BAF_DPM_Osprey_Mk3_Pilot"};
@@ -489,12 +489,12 @@ class pc : smg {
 	};
 };
 
-class pp : pc {
+class hp : hc {
 	displayName = "Helicopter Pilot";
 	headgear[] = {"H_PilotHelmetHeli_O"};
 };
 
-class pcc : pc {
+class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
 	backpack[] = {"B_AssaultPack_rgr"};

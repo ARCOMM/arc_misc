@@ -217,8 +217,8 @@ class mmgac : r {
 	};
 };
 
-class mmgag : aar {
-	displayName = "MMG Assistant Gunner";
+class mmgtl : aar {
+	displayName = "MMG Team Leader";
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -242,8 +242,8 @@ class hmgac : r {
 	displayName = "HMG Ammo Carrier";
 	backPack[] = {"CUP_B_Kord_Tripod_Bag"};
 };
-class hmgag : car {
-	displayName = "HMG Assistant Gunner";
+class hmgtl : car {
+	displayName = "HMG Team Leader";
 	backPack[] = {"CUP_B_Kord_Tripod_Bag"};
 	linkedItems[] = {
 		"ItemMap",
@@ -275,8 +275,8 @@ class matac : r {
 	};
 };
 
-class matag : car {
-	displayName = "MAT Assistant Gunner";
+class mattl : car {
+	displayName = "MAT Team Leader";
 	backpack[] = {"B_FieldPack_khk"};
 	linkedItems[] = {
 		"ItemMap",
@@ -302,8 +302,8 @@ class hatac : r {
 	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
 };
 
-class hatag : car {
-	displayName = "HAT Assistant Gunner";
+class hattl : car {
+	displayName = "HAT Team Leader";
 	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
 	linkedItems[] = {
 		"ItemMap",
@@ -336,8 +336,8 @@ class mtrac : r {
 	};
 };
 
-class mtrag : car {
-	displayName = "Mortar Assistant Gunner";
+class mtrtl : car {
+	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
 	backPack[] = {"B_Carryall_green_F"};
 	items[] += { MTR_GEAR };
@@ -422,7 +422,7 @@ class sp : car {
 };
 
 class vg : smg {
-	displayName = "Vehicle Crew";
+	displayName = "Vehicle Gunner";
 	vest[] = {"CUP_V_RUS_6B3_Flora_4"};
 	headgear[] = {"CUP_H_TK_TankerHelmet"};
 	magazines[] = {
@@ -444,7 +444,7 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class pc : baseMan {
+class hc : baseMan {
 	displayName = "Helicopter Crew";
 	uniform[] = {"CUP_U_O_SLA_Overalls_Pilot"};
 	vest[] = {};
@@ -460,12 +460,12 @@ class pc : baseMan {
 	};
 };
 
-class pp : pc {
+class hp : hc {
 	displayName = "Helicopter Pilot";
 	linkedItems[] += {"ItemGPS"};
 };
 
-class pcc : pc {
+class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
 	linkedItems[] += {"ItemGPS"};

@@ -230,8 +230,8 @@ class mmgac : r {
 	};
 };
 
-class mmgag : aar {
-	displayName = "MMG Assistant Gunner";
+class mmgtl : aar {
+	displayName = "MMG Team Leader";
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -255,8 +255,8 @@ class hmgac : r {
 	backPack[] = {"CUP_B_M2_Tripod_Bag"};
 };
 
-class hmgag : car {
-	displayName = "HMG Assistant Gunner";
+class hmgtl : car {
+	displayName = "HMG Team Leader";
 	backPack[] = {"CUP_B_M2_MiniTripod_Bag"};
 	linkedItems[] = {
 		"ItemMap",
@@ -288,8 +288,8 @@ class matac : r {
 	};
 };
 
-class matag : car {
-	displayName = "MAT Assistant Gunner";
+class mattl : car {
+	displayName = "MAT Team Leader";
 	backpack[] = {"CUP_B_AssaultPack_ACU"};
 	linkedItems[] = {
 		"ItemMap",
@@ -317,8 +317,8 @@ class hatac : r {
 	backpackItems[] = {"CUP_Javelin_M"};
 };
 
-class hatag : car {
-	displayName = "HAT Assistant Gunner";
+class hattl : car {
+	displayName = "HAT Team Leader";
 	backpack[] = {"B_FieldPack_oucamo"};
 	backpackItems[] = {"CUP_Javelin_M"};
 	linkedItems[] = {
@@ -352,8 +352,8 @@ class mtrac : r {
 	};
 };
 
-class mtrag : car {
-	displayName = "Mortar Assistant Gunner";
+class mtrtl : car {
+	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
 	backPack[] = {"B_Carryall_oucamo"};
 	items[] += { MTR_GEAR };
@@ -436,7 +436,7 @@ class sp : r {
 };
 
 class vg : smg {
-	displayName = "Vehicle Crew";
+	displayName = "Vehicle Gunner";
 	uniform[] = {"CUP_U_B_USArmy_Soft"};
 	vest[] = {"V_TacVest_blk"};
 	backpack[] = {};
@@ -460,7 +460,7 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class pc : smg {
+class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	vest[] = {"CUP_V_B_USArmy_PilotVest"};
@@ -471,13 +471,13 @@ class pc : smg {
 	};
 };
 
-class pp : pc {
+class hp : hc {
 	displayName = "Helicopter Pilot";
 	headgear[] = {"H_PilotHelmetHeli_B"};
 	linkedItems[] += {"ItemGPS"};
 };
 
-class pcc : pc {
+class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	headgear[] = {"H_CrewHelmetHeli_B"};
 	traits[] = {"engineer"};
