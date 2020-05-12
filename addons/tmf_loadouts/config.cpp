@@ -1,4 +1,4 @@
-#include "\x\arc_misc\addons\main\script_macros.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {
