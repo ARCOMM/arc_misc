@@ -18,5 +18,7 @@ class CfgPatches
     };
 };
 
+#include "tmf_adminMenu_authorized_players.hpp"
+
 #include "macros.inc"
 #include "Cfgloadouts.hpp"
