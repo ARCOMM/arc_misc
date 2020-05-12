@@ -23,6 +23,15 @@ LIST_2("ACE_bodyBag"), \
 LIST_20("ACE_splint"), \
 LIST_8("ACE_salineIV")
 
+#define MTR_GEAR \
+"ACE_RangeTable_82mm", \
+"ACE_MapTools"
+
+#define FAC_GEAR \
+LIST_4("SmokeShellRed"), \
+LIST_4("SmokeShellGreen"), \
+LIST_4("SmokeShellPurple")
+
 #define LIST_1(var1) var1
 #define LIST_2(var1) var1,var1
 #define LIST_3(var1) var1,var1,var1
