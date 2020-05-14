@@ -12,14 +12,14 @@ class x { \
 		groupIndicators = 0;	/* Group indicators		(0 = never, 1 = limited distance, 2 = always)*/		\
 		friendlyTags = 0;		/* Friendly name tags	(0 = never, 1 = limited distance, 2 = always)*/		\
 		enemyTags = 0;			/* Enemy name tags		(0 = never, 1 = limited distance, 2 = always)*/		\
-		detectedMines = 1;		/* Detected mines		(0 = never, 1 = limited distance, 2 = always)*/		\
+		detectedMines = 0;		/* Detected mines		(0 = never, 1 = limited distance, 2 = always)*/		\
 		commands = 0;			/* Commands				(0 = never, 1 = fade out, 2 = always)*/				\
 		waypoints = 0;			/* Waypoints			(0 = never, 1 = fade out, 2 = always)*/				\
 		tacticalPing = 0;		/* Tactical Ping		(0 = disabled, 1 = enabled)*/						\
 																											\
 		/* Personal awareness */																			\
-		weaponInfo = 2;			/* Weapon info			(0 = never, 1 = fade out, 2 = always)*/				\
-		stanceIndicator = 2;	/* Stance indicator		(0 = never, 1 = fade out, 2 = always)*/				\
+		weaponInfo = 1;			/* Weapon info			(0 = never, 1 = fade out, 2 = always)*/				\
+		stanceIndicator = 1;	/* Stance indicator		(0 = never, 1 = fade out, 2 = always)*/				\
 		staminaBar = 1;			/* Stamina bar			(0 = disabled, 1 = enabled)*/						\
 		weaponCrosshair = 0;	/* Weapon crosshair		(0 = disabled, 1 = enabled)*/						\
 		visionAid = 0;			/* Vision aid			(0 = disabled, 1 = enabled)*/						\
