@@ -1,8 +1,9 @@
+#include "script_component.hpp"
 cba_settings_hasSettingsFile = 1;
 class Extended_PostInit_EventHandlers {
     class arc_postInit {
-		serverInit = "call compile preprocessFileLineNumbers 'XEH_serverPostInit.sqf'";
-        clientInit = "call compile preprocessFileLineNumbers 'XEH_clientPostInit.sqf'";
+		serverInit = QUOTE(call COMPILE_FILE(XEH_serverPostInit));
+        clientInit = QUOTE(call COMPILE_FILE(XEH_clientPostInit.sqf));
     };
 };
 
@@ -14,3 +15,5 @@ respawnTemplatesVirtual[] = {};
 
 disabledAI = 1;
 joinUnassigned = 1;
+
+saving = 0;
