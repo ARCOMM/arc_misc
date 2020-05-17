@@ -3,9 +3,11 @@ cba_settings_hasSettingsFile = 1;
 class Extended_PostInit_EventHandlers {
     class arc_postInit {
 		serverInit = QUOTE(call COMPILE_FILE(XEH_serverPostInit));
-        clientInit = QUOTE(call COMPILE_FILE(XEH_clientPostInit.sqf));
+        clientInit = QUOTE(call COMPILE_FILE(XEH_clientPostInit));
     };
 };
+
+author = "ARCOMM";
 
 respawn = 3;
 respawnDelay = 20;
