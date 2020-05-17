@@ -1,10 +1,10 @@
 
-// Edit preset values below
+// precision and skillAI are maxes as they're handled via CBA settings
 #define AILEVELPRESET(x)\
 class x { \
 	displayName = "ARCOMM"; \
-	precisionAI = 0.2; \
-	skillAI = 0.7; \
+	precisionAI = 1.0; \
+	skillAI = 1.0; \
 }
 class CfgAILevelPresets {
 	// Overwriting the default presets using above macro

@@ -21,3 +21,4 @@ class CfgPatches
 #include "CfgAILevelPresets.hpp"
 #include "CFgAISkill.hpp"
 #include "CfgBrains.hpp"
+#include "CfgEventhandlers.hpp"

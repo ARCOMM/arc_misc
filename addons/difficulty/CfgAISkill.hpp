@@ -2,7 +2,7 @@
 class CfgAISkill {
 	aimingAccuracy[] = {0,0,1,1};
 	aimingShake[] 	= {0,0,1,1};
-	aimingSpeed[] 	= {0,0.5,1,1};
+	aimingSpeed[] 	= {0,0,1,1}; // Default: {0,0.5,1,1}
 	commanding[] 	= {0,0,1,1};
 	courage[] 		= {0,0,1,1};
 	endurance[] 	= {0,0,1,1};
