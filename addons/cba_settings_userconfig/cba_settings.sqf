@@ -366,3 +366,7 @@ force TMF_chat_rpUsage = 3;
 force TMF_chat_specUsage = 3;
 force TMF_chat_tpUsage = 3;
 force TMF_chat_whisperUsage = 3;
+
+//STUI
+force STHud_Settings_SquadBar = true;
+force STHud_Settings_RemoveDeadViaProximity = true;
