@@ -31,6 +31,7 @@ if ( GVAR(enabled) && {_unit getVariable [QGVAR(enabled), true]}) then {
 		["aimingAccuracy", GVAR(aimingAccuracy)],
 		["aimingSpeed", GVAR(aimingSpeed)],
 		["commanding", GVAR(commanding)],
+		["courage", GVAR(courage)],
 		["endurance", GVAR(endurance)],
 		["general", GVAR(general)],
 		["reloadSpeed", GVAR(reloadSpeed)],
