@@ -325,6 +325,19 @@ force acre_sys_signal_signalModel = 2;
 // AI
 force cfp_autoEquipNVG = false;
 
+// ARC Misc
+force arc_misc_difficulty_aimingAccuracy = 0.11;
+force arc_misc_difficulty_aimingShake = 0.11;
+force arc_misc_difficulty_aimingSpeed = 0.45;
+force arc_misc_difficulty_allowCrewInImmobile = 2;
+force arc_misc_difficulty_commanding = 0.18;
+force arc_misc_difficulty_courage = 0.18;
+force arc_misc_difficulty_endurance = 1;
+force arc_misc_difficulty_general = 0.2;
+force arc_misc_difficulty_reloadSpeed = 1;
+force arc_misc_difficulty_spotDistance = 1;
+force arc_misc_difficulty_spotTime = 0.18;
+
 // CBA Weapons
 force cba_disposable_replaceDisposableLauncher = true;
 
