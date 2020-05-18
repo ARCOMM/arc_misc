@@ -45,6 +45,18 @@
 ] call CBA_fnc_addSetting;
 
 [
+	QGVAR(courage),
+	"Slider",
+	["Courage", "Affects unit's subordinates' morale"],
+	["ARC Misc", "AI Settings"],
+	[0, 1, 0.5, 2],
+	true,
+	{},
+	true
+] call CBA_fnc_addSetting;
+
+
+[
 	QGVAR(endurance),
 	"Slider",
 	["Endurance", "Disabled in Arma3"],
