@@ -14,6 +14,13 @@ if (
 ) then {
 	TRACE_1("Disabling attack on group", _group);
 	_group enableAttack false;
+
+	if !(GVAR(allowFleeing) isEqualTo 0.5) then { // 0.5 is default
+		TRACE_1("Disabling attack on group", _group);
+		_group allowFleeing GVAR(allowFleeing);
+	};
+
+	_group enableAttack false;
 	_group setVariable [QGVAR(initialized), true];
 };
 

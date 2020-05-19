@@ -192,6 +192,18 @@
 	true
 ] call CBA_fnc_addSetting;
 
+// https://community.bistudio.com/wiki/allowFleeing
+[
+	QGVAR(allowFleeing),
+	"SLIDER",
+	["Allow Fleeing", "Sets the cowardice level of groups. 0 is least, 1 is most, set at 0.5 for default values."],
+	["ARC Misc", "AI Settings"],
+	[0, 1, 0.5, 1],
+	true,
+	{},
+	true
+] call CBA_fnc_addSetting;
+
 // https://community.bistudio.com/wiki/disableRemoteSensors
 [
 	QGVAR(disableRemoteSensors),
