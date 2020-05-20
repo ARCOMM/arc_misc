@@ -1,39 +1,34 @@
 #include "script_component.hpp"
 [{!isNil "BIS_fnc_init" && time > 0.1},{
-	private _iteration = 0;
+
 	private _startPoses = [];
 
-	scopeName "start";
-	// https://community.bistudio.com/wiki/selectBestPlaces
 	// Find suitable respawn positions
-	private _potentialStartPlaces = selectBestPlaces [
-		[worldSize / 2, worldSize / 2],		// Position
-		worldSize / 2, 						// Radius
-		"meadow + 2*houses - sea", 			// Expression
-		75, 								// Precision
-		10									// sourcesCount
-	];
+	for "_i" from 1 to 5 do {
+		// https://community.bistudio.com/wiki/selectBestPlaces
+		private _potentialStartPlaces = selectBestPlaces [
+			[worldSize / 2, worldSize / 2],		// Position
+			worldSize / 2, 						// Radius
+			"meadow + 2*houses - sea", 			// Expression
+			75, 								// Precision
+			10									// sourcesCount
+		];
 
-	MAP(_potentialStartPlaces,_x # 0);
+		MAP(_potentialStartPlaces,_x # 0);
 
-	// Find 4 empty spaces near mentioned places
-	{
-		private _pos = _x;
-		if (count _startPoses < 4 && {_startPoses findIf {_x distance _pos < 150} == -1}) then {
-			private _emptyPos = _x findEmptyPosition [0, 25];
-			if !(_emptyPos isEqualTo []) then {
-				_startPoses pushBack _emptyPos;
+		// Find 4 empty spaces near mentioned places
+		{
+			private _pos = _x;
+			if (count _startPoses < 4 && {_startPoses findIf {_x distance _pos < 150} == -1}) then {
+				private _emptyPos = _x findEmptyPosition [0, 25];
+				if !(_emptyPos isEqualTo []) then {
+					PUSH(_startPoses,_emptyPos);
+				};
 			};
-		};
-	} forEach _potentialStartPlaces;
-
-	// Couldn't find enough suitable places, retry.
-	if (count _startPoses < 4 && _iteration < 5) then {
-		INC(_iteration);
-		breakTo "start";
+		} forEach _potentialStartPlaces;
 	};
 
-	if (_iteration >= 5) exitWith {
+	if (count _startPoses < 4) exitWith {
 		"SANDBOX: Unable to find safe places to spawn" remoteExec ["systemChat"];
 		ERROR("Unable to find safe places to spawn");
 	};
@@ -51,12 +46,12 @@
 	{
 		LOG_1("Creating initial respawn at position", _x);
 		private _box = createVehicle ["Land_PaperBox_open_full_F", _x, [], 0, "NONE"];
-		_boxes pushBack _box;
+		PUSH(_boxes,_box);
 
 		private _respawnPosition = _logicGroup createUnit [(_respawnTypes # _forEachIndex), _box, [], 0, "NONE"];
 		_respawnPosition setVariable ['BIS_fnc_initModules_disableAutoActivation', false, true];
 
-		_respawnLogics pushBack _respawnPosition;
+		PUSH(_respawnLogics,_respawnPosition);
 	} forEach _startPoses;
 
 	// Add Arsenals
@@ -78,7 +73,7 @@
 			{0 = ["Open", true] spawn BIS_fnc_arsenal;},
 			0, 102, true, false
 		];
-	}forEach _this}] remoteExecCall ["BIS_fnc_call", 0, true];
+	} forEach _this}] remoteExecCall ["BIS_fnc_call", 0, true];
 
 	// Add boxes and respawn logics to Curator
 	{

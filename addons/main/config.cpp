@@ -9,7 +9,8 @@ class CfgPatches {
         requiredAddons[] = {
             "cba_main",
 			"A3_Data_F_Enoch_Loadorder",
-			"A3_Data_F_Mod_Loadorder"
+			"A3_Data_F_Mod_Loadorder",
+			"A3_Data_F_Warlords_Loadorder"
         };
         author = "ARCOMM";
         authors[] = {};
@@ -17,3 +18,6 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+
+#include "disableStockMissions.hpp"
+#include "CfgUnitInsignia.hpp"
