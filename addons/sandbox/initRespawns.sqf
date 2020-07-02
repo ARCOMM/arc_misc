@@ -74,9 +74,25 @@ private _boxes = [];
 	];
 } forEach _this}] remoteExecCall ["BIS_fnc_call", 0, true];
 
+GVAR(boxes) = _boxes;
+GVAR(respawnLogics) = _respawnLogics;
+publicVariable QGVAR(boxes);
+publicVariable QGVAR(respawnLogics);
+
 // Add boxes and respawn logics to Curator
-{
-	_x addcuratoreditableobjects [_respawnLogics + _boxes];
-} forEach allCurators;
+[
+	"ModuleCurator_F",
+	"init",
+	{
+		params ['_logic'];
+
+		_logic addCuratorEditableObjects [GVAR(boxes) + GVAR(respawnLogics)];
+		[_logic,[west,east,resistance]] call BIS_fnc_drawCuratorRespawnMarkers;
+		[_logic] call BIS_fnc_drawCuratorLocations;
+	},
+	true,
+	[],
+	true
+] call CBA_fnc_addClassEventHandler;
 
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
