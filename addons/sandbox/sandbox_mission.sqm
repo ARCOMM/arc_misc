@@ -173,7 +173,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -271,7 +271,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=3;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -369,7 +369,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=5;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -467,7 +467,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=7;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -561,11 +561,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Alpha";
+						description="Player (Engineer)@Alpha";
 						isPlayable=1;
 					};
 					id=24;
-					type="B_Soldier_universal_F";
+					type="B_engineer_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -659,11 +659,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Alpha";
+						description="Player (Medic)@Alpha";
 						isPlayable=1;
 					};
 					id=25;
-					type="B_Soldier_universal_F";
+					type="B_medic_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -817,7 +817,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -915,7 +915,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=28;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1013,7 +1013,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=29;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1111,7 +1111,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=30;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1205,11 +1205,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Bravo";
+						description="Player (Engineer)@Bravo";
 						isPlayable=1;
 					};
 					id=31;
-					type="B_Soldier_universal_F";
+					type="B_engineer_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1303,11 +1303,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Bravo";
+						description="Player (Medic)@Bravo";
 						isPlayable=1;
 					};
 					id=32;
-					type="B_Soldier_universal_F";
+					type="B_medic_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1461,7 +1461,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=34;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1559,7 +1559,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=35;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1657,7 +1657,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=36;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1755,7 +1755,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=37;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1849,11 +1849,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Charlie";
+						description="Player (Engineer)@Charlie";
 						isPlayable=1;
 					};
 					id=38;
-					type="B_Soldier_universal_F";
+					type="B_engineer_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -1947,11 +1947,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Charlie";
+						description="Player (Medic)@Charlie";
 						isPlayable=1;
 					};
 					id=39;
-					type="B_Soldier_universal_F";
+					type="B_medic_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2105,7 +2105,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=41;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2203,7 +2203,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=42;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2301,7 +2301,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=43;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2399,7 +2399,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=44;
-					type="B_Soldier_universal_F";
+					type="B_Soldier_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2493,11 +2493,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Delta";
+						description="Player (Engineer)@Delta";
 						isPlayable=1;
 					};
 					id=45;
-					type="B_Soldier_universal_F";
+					type="B_engineer_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2591,11 +2591,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Delta";
+						description="Player (Medic)@Delta";
 						isPlayable=1;
 					};
 					id=46;
-					type="B_Soldier_universal_F";
+					type="B_medic_F";
 					atlOffset=190.97;
 					class CustomAttributes
 					{
@@ -2960,7 +2960,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=54;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -3058,7 +3058,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=58;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97598;
 					class CustomAttributes
 					{
@@ -3156,7 +3156,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=60;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=186.01698;
 					class CustomAttributes
 					{
@@ -3254,7 +3254,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=62;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.98302;
 					class CustomAttributes
 					{
@@ -3348,11 +3348,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Alpha";
+						description="Player (Engineer)@Alpha";
 						isPlayable=1;
 					};
 					id=64;
-					type="O_Soldier_universal_F";
+					type="O_engineer_F";
 					atlOffset=186.0679;
 					class CustomAttributes
 					{
@@ -3446,11 +3446,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Alpha";
+						description="Player (Medic)@Alpha";
 						isPlayable=1;
 					};
 					id=66;
-					type="O_Soldier_universal_F";
+					type="O_medic_F";
 					atlOffset=185.99095;
 					class CustomAttributes
 					{
@@ -3604,7 +3604,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=56;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -3702,7 +3702,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=89;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96893;
 					class CustomAttributes
 					{
@@ -3800,7 +3800,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=91;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.92253;
 					class CustomAttributes
 					{
@@ -3898,7 +3898,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=93;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96837;
 					class CustomAttributes
 					{
@@ -3992,11 +3992,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Alpha";
+						description="Player (Engineer)@Alpha";
 						isPlayable=1;
 					};
 					id=95;
-					type="I_Soldier_universal_F";
+					type="I_engineer_F";
 					atlOffset=185.99213;
 					class CustomAttributes
 					{
@@ -4090,11 +4090,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Alpha";
+						description="Player (Medic)@Alpha";
 						isPlayable=1;
 					};
 					id=97;
-					type="I_Soldier_universal_F";
+					type="I_medic_F";
 					atlOffset=185.96887;
 					class CustomAttributes
 					{
@@ -4248,7 +4248,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=68;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -4346,7 +4346,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=69;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97598;
 					class CustomAttributes
 					{
@@ -4444,7 +4444,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=70;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=186.01698;
 					class CustomAttributes
 					{
@@ -4542,7 +4542,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=71;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.98302;
 					class CustomAttributes
 					{
@@ -4636,11 +4636,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Bravo";
+						description="Player (Engineer)@Bravo";
 						isPlayable=1;
 					};
 					id=72;
-					type="O_Soldier_universal_F";
+					type="O_engineer_F";
 					atlOffset=186.0679;
 					class CustomAttributes
 					{
@@ -4734,11 +4734,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Bravo";
+						description="Player (Medic)@Bravo";
 						isPlayable=1;
 					};
 					id=73;
-					type="O_Soldier_universal_F";
+					type="O_medic_F";
 					atlOffset=185.99095;
 					class CustomAttributes
 					{
@@ -4892,7 +4892,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=75;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -4990,7 +4990,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=76;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97598;
 					class CustomAttributes
 					{
@@ -5088,7 +5088,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=77;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=186.01698;
 					class CustomAttributes
 					{
@@ -5186,7 +5186,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=78;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.98302;
 					class CustomAttributes
 					{
@@ -5280,11 +5280,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Charlie";
+						description="Player (Engineer)@Charlie";
 						isPlayable=1;
 					};
 					id=79;
-					type="O_Soldier_universal_F";
+					type="O_engineer_F";
 					atlOffset=186.0679;
 					class CustomAttributes
 					{
@@ -5378,11 +5378,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Charlie";
+						description="Player (Medic)@Charlie";
 						isPlayable=1;
 					};
 					id=80;
-					type="O_Soldier_universal_F";
+					type="O_medic_F";
 					atlOffset=185.99095;
 					class CustomAttributes
 					{
@@ -5536,7 +5536,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=82;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -5634,7 +5634,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=83;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.97598;
 					class CustomAttributes
 					{
@@ -5732,7 +5732,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=84;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=186.01698;
 					class CustomAttributes
 					{
@@ -5830,7 +5830,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=85;
-					type="O_Soldier_universal_F";
+					type="O_Soldier_F";
 					atlOffset=185.98302;
 					class CustomAttributes
 					{
@@ -5924,11 +5924,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Delta";
+						description="Player (Engineer)@Delta";
 						isPlayable=1;
 					};
 					id=86;
-					type="O_Soldier_universal_F";
+					type="O_engineer_F";
 					atlOffset=186.0679;
 					class CustomAttributes
 					{
@@ -6022,11 +6022,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Delta";
+						description="Player (Medic)@Delta";
 						isPlayable=1;
 					};
 					id=87;
-					type="O_Soldier_universal_F";
+					type="O_medic_F";
 					atlOffset=185.99095;
 					class CustomAttributes
 					{
@@ -6180,7 +6180,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=101;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -6278,7 +6278,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=102;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96893;
 					class CustomAttributes
 					{
@@ -6376,7 +6376,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=103;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.92253;
 					class CustomAttributes
 					{
@@ -6474,7 +6474,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=104;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96837;
 					class CustomAttributes
 					{
@@ -6568,11 +6568,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Bravo";
+						description="Player (Engineer)@Bravo";
 						isPlayable=1;
 					};
 					id=105;
-					type="I_Soldier_universal_F";
+					type="I_engineer_F";
 					atlOffset=185.99213;
 					class CustomAttributes
 					{
@@ -6666,11 +6666,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Bravo";
+						description="Player (Medic)@Bravo";
 						isPlayable=1;
 					};
 					id=106;
-					type="I_Soldier_universal_F";
+					type="I_medic_F";
 					atlOffset=185.96887;
 					class CustomAttributes
 					{
@@ -6824,7 +6824,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=108;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -6922,7 +6922,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=109;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96893;
 					class CustomAttributes
 					{
@@ -7020,7 +7020,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=110;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.92253;
 					class CustomAttributes
 					{
@@ -7118,7 +7118,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=111;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96837;
 					class CustomAttributes
 					{
@@ -7212,11 +7212,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Charlie";
+						description="Player (Engineer)@Charlie";
 						isPlayable=1;
 					};
 					id=112;
-					type="I_Soldier_universal_F";
+					type="I_engineer_F";
 					atlOffset=185.99213;
 					class CustomAttributes
 					{
@@ -7310,11 +7310,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Charlie";
+						description="Player (Medic)@Charlie";
 						isPlayable=1;
 					};
 					id=113;
-					type="I_Soldier_universal_F";
+					type="I_medic_F";
 					atlOffset=185.96887;
 					class CustomAttributes
 					{
@@ -7468,7 +7468,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=115;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.97;
 					class CustomAttributes
 					{
@@ -7566,7 +7566,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=116;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96893;
 					class CustomAttributes
 					{
@@ -7664,7 +7664,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=117;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.92253;
 					class CustomAttributes
 					{
@@ -7762,7 +7762,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=118;
-					type="I_Soldier_universal_F";
+					type="I_Soldier_F";
 					atlOffset=185.96837;
 					class CustomAttributes
 					{
@@ -7856,11 +7856,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Delta";
+						description="Player (Engineer)@Delta";
 						isPlayable=1;
 					};
 					id=119;
-					type="I_Soldier_universal_F";
+					type="I_engineer_F";
 					atlOffset=185.99213;
 					class CustomAttributes
 					{
@@ -7954,11 +7954,11 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Player@Delta";
+						description="Player (Medic)@Delta";
 						isPlayable=1;
 					};
 					id=120;
-					type="I_Soldier_universal_F";
+					type="I_medic_F";
 					atlOffset=185.96887;
 					class CustomAttributes
 					{
