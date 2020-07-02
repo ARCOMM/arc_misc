@@ -25,7 +25,7 @@ for "_i" from 1 to 5 do {
 	// Find 4 empty spaces near mentioned places
 	{
 		private _pos = _x;
-		if (count _startPoses < 4 && {_startPoses findIf {_x distance _pos < 150} == -1}) then {
+		if (count _startPoses < count _respawnTypes && {_startPoses findIf {_x distance _pos < 150} == -1}) then {
 			private _emptyPos = _x findEmptyPosition [0, 25];
 			if !(_emptyPos isEqualTo []) then {
 				PUSH(_startPoses,_emptyPos);
@@ -42,10 +42,15 @@ if (count _startPoses < count _respawnTypes) exitWith {
 private _respawnLogics = [];
 private _logicGroup = createGroup sideLogic;
 private _boxes = [];
+private _lanterns = [];
 {
 	LOG_1("Creating initial respawn at position", _x);
 	private _box = createVehicle ["Land_PaperBox_open_full_F", _x, [], 0, "NONE"];
+	private _lantern = createVehicle ["Land_Camping_Light_F", _x, [], 0, "NONE"];
+	_lantern attachTo [_box, [-0.422119,0.346191,0.685676]];
+	_lantern setVectorDirAndUp [vectorDir _box, vectorUp _box];
 	PUSH(_boxes,_box);
+	PUSH(_lanterns,_lantern);
 
 	private _respawnPosition = _logicGroup createUnit [(_respawnTypes # _forEachIndex), _box, [], 0, "NONE"];
 	_respawnPosition setVariable ['BIS_fnc_initModules_disableAutoActivation', false, true];
@@ -75,24 +80,8 @@ private _boxes = [];
 } forEach _this}] remoteExecCall ["BIS_fnc_call", 0, true];
 
 GVAR(boxes) = _boxes;
+GVAR(lanterns) = _lanterns;
 GVAR(respawnLogics) = _respawnLogics;
 publicVariable QGVAR(boxes);
 publicVariable QGVAR(respawnLogics);
-
-// Add boxes and respawn logics to Curator
-[
-	"ModuleCurator_F",
-	"init",
-	{
-		params ['_logic'];
-
-		_logic addCuratorEditableObjects [GVAR(boxes) + GVAR(respawnLogics)];
-		[_logic,[west,east,resistance]] call BIS_fnc_drawCuratorRespawnMarkers;
-		[_logic] call BIS_fnc_drawCuratorLocations;
-	},
-	true,
-	[],
-	true
-] call CBA_fnc_addClassEventHandler;
-
-["Initialize", [true]] call BIS_fnc_dynamicGroups;
+publicVariable QGVAR(lanterns);
