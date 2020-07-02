@@ -16,3 +16,6 @@ force TMF_chat_rpUsage = 3;
 force TMF_chat_specUsage = 3;
 force TMF_chat_tpUsage = 3;
 force TMF_chat_whisperUsage = 3;
+
+// ACE Weather
+force ace_weather_enabled = false;
