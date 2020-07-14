@@ -54,4 +54,10 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo\n\nNote: Low ammo count. Make sure resupply is available.";
 		#include "loadouts\tk_locals.hpp"
 	};
+	class au_army_2018 {
+		displayName = "Australian Army (2018, AMCU/AUSCAM)";
+		category = "Western Factions";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\au_army_2018.hpp"
+	};
 };
