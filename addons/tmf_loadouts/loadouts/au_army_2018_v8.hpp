@@ -1,13 +1,17 @@
 // If you want to base a loadout on an existing one, this repository contains them all:
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
-//Dependencies:
-//		* CUP Units
-//		* CUP Weapons
-//		* NIArms AUG Pack
-//		* Community Factions Project
-//		* MNP Uniforms
-//		* FIR AWS(AirWeaponSystem)
+/*
+	Dependencies:
+		* CUP Units
+		* CUP Weapons
+		* NIArms AUG Pack
+		* Community Factions Project
+		* MNP Uniforms
+		* FIR AWS(AirWeaponSystem)
+*/
+
+// Created by: AChesheireCat
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
@@ -73,15 +77,28 @@ class baseMan {// Weaponless baseclass
 
 class r : baseMan {
 	displayName = "Rifleman";
-	headgear[] = {LIST_10("CUP_H_OpsCore_Covered_MTP_NoHS"),LIST_2("CUP_H_OpsCore_Covered_MTP"),"CUP_H_OpsCore_Covered_MTP_SF"};
-	primaryWeapon[] = {"hlc_rifle_auga3",LIST_3("hlc_rifle_auga3_b")};
-	scope[] = {LIST_3("cup_optic_eotech553_black"),"cup_optic_compm2_low","cup_optic_vortexrazor_uh1_black"};
-	attachment[] = {"cup_acc_anpeq_15_black"};
+	headgear[] = {
+		LIST_10("CUP_H_OpsCore_Covered_Fleck_NoHS"),
+		LIST_2("CUP_H_OpsCore_Covered_Fleck"),
+		"CUP_H_OpsCore_Covered_Fleck_SF"
+	};
+	primaryWeapon[] = {
+		LIST_3("hlc_rifle_auga3_b"),
+		"hlc_rifle_auga3"
+	};
+	scope[] = {
+		LIST_3("cup_optic_eotech553_black"),
+		"cup_optic_compm2_low",
+		"cup_optic_vortexrazor_uh1_black"
+	};
+	attachment[] = {
+		"cup_acc_anpeq_15_black",
+		"ace_acc_pointer_green"
+	};
 	magazines[] = {
-		LIST_7("CUP_30Rnd_556x45_AUG"),
-		LIST_2("CUP_30Rnd_TE1_Red_Tracer_556x45_AUG"),
+		LIST_9("hlc_30Rnd_556x45_M_AUG")
 		LIST_2("HandGrenade"),
-		LIST_2("SmokeShell")
+		"SmokeShell"
 	};
 };
 
@@ -89,27 +106,26 @@ class g : r {
 	displayName = "Grenadier";
 	primaryWeapon[] = {"hlc_rifle_auga3_GL_B"};
 	magazines[] += {
-		LIST_7("CUP_1Rnd_HE_M203"),
-		LIST_2("CUP_1Rnd_HEDP_M203"),
+		LIST_11("CUP_1Rnd_HE_M203"),
+		LIST_5("CUP_1Rnd_HEDP_M203"),
 		LIST_2("1Rnd_Smoke_Grenade_shell")
 	};
 };
 
 class car : r {
 	displayName = "Carabinier";
-	primaryWeapon[] = {"hlc_rifle_auga3"};
 };
 
 class cls : car {
 	displayName = "Combat Life Saver";
 	traits[] = {"medic"};
-	backpack[] = {"B_Kitbag_mcamo"};
+	backpack[] = {"B_TacticalPack_mcamo"};
 	backpackItems[] = { MEDICAL_CLS };
 };
 
 class m : cls {
 	displayName = "Medic";
-	backpack[] = {"SP_Carryall_ATacsFG"};
+	backpack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = { MEDICAL_M };
 };
 
@@ -118,7 +134,7 @@ class smg : r {
 	primaryWeapon[] = {"CUP_smg_MP5A5"};
 	scope[] = {};
 	magazines[] = {
-		LIST_7("CUP_30Rnd_9x19_MP5"),
+		LIST_5("CUP_30Rnd_9x19_MP5"),
 		LIST_2("MiniGrenade"),
 		"SmokeShell"
 	};
@@ -132,7 +148,10 @@ class ftl : g {
 		LIST_2("CUP_1Rnd_SmokeRed_M203")
 	};
 	backPack[] = {"CFP_Camelbak_Mule_Khki"};
-	linkedItems[] += {"Binocular","ItemGPS"};
+	linkedItems[] += {
+		"Binocular",
+		"ItemGPS"
+	};
 };
 
 class sl : ftl {
@@ -174,7 +193,7 @@ class ar : r {
 	displayName = "Automatic Rifleman";
 	primaryWeapon[] = {"CUP_lmg_m249_pip3"};
 	sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
-	backpack[] = {"B_Kitbag_rgr"};
+	backpack[] = {"B_AssaultPack_rgr"};
 	magazines[] = {
 		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch"),
 		"HandGrenade",
@@ -207,7 +226,7 @@ class dm : r {
 	magazines[] = {
 		LIST_9("CUP_20Rnd_762x51_B_M110"),
 		LIST_2("HandGrenade"),
-		LIST_2("SmokeShell")
+		"SmokeShell"
 	};
 };
 
@@ -409,11 +428,11 @@ class sn : r {
 	};
 };
 
-class sp : g {
+class sp : r {
 	displayName = "Spotter";
 	uniform[] = {"U_B_FullGhillie_sard"};
 	vest[] = {"V_Chestrig_rgr"};
-	attachment[] += {"cup_muzzle_snds_m16"};
+	silencer[] = {"cup_muzzle_snds_m16"};
 	items[] += {
 		"ACE_MapTools",
 		"ACE_RangeCard",
@@ -447,7 +466,10 @@ class vg : smg {
 
 class vc : vg {
 	displayName = "Vehicle Commander";
-	linkedItems[] += {"Binocular","ItemGPS"};
+	linkedItems[] += {
+		"Binocular",
+		"ItemGPS"
+	};
 };
 
 class vd : vg {
@@ -482,7 +504,7 @@ class hc : smg {
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
-	uniform[] = {"CUP_U_B_BDUv2_roll_gloves_OD"};
+	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
 	linkedItems[] += {"ItemGPS"};
 };
 
@@ -511,7 +533,10 @@ class jp : smg {
 
 class eng : car {
 	displayName = "Combat Engineer (Explosives)";
-	traits[] = {"engineer", "explosiveSpecialist"};
+	traits[] = {
+		"engineer",
+		"explosiveSpecialist"
+	};
 	backpack[] = {"B_Kitbag_rgr"};
 	magazines[] += {
 		LIST_4("ClaymoreDirectionalMine_Remote_Mag")
