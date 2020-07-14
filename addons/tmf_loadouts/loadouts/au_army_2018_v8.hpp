@@ -96,7 +96,7 @@ class r : baseMan {
 		"ace_acc_pointer_green"
 	};
 	magazines[] = {
-		LIST_9("hlc_30Rnd_556x45_M_AUG")
+		LIST_9("hlc_30Rnd_556x45_M_AUG"),
 		LIST_2("HandGrenade"),
 		"SmokeShell"
 	};
@@ -375,7 +375,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { "MTR_GEAR" ,"ACE_RangeTable_82mm","ACE_MapTools"};
+	items[] = { MTR_GEAR ,"ACE_RangeTable_82mm","ACE_MapTools"};
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -537,30 +537,39 @@ class eng : car {
 		"engineer",
 		"explosiveSpecialist"
 	};
-	backpack[] = {"B_Kitbag_rgr"};
+	secondaryWeapon[] = {"ACE_VMM3"};
+	backpack[] = {"B_Carryall_mcamo"};
 	magazines[] += {
 		LIST_4("ClaymoreDirectionalMine_Remote_Mag")
 	};
+	items[] += {"ACE_Clacker"};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
 		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag")
+		LIST_2("SLAMDirectionalMine_Wire_Mag"),
+		"ACE_DefusalKit",
+		"ACE_EntrenchingTool",
+		"ACE_wirecutter"
 	};
 };
 
 class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"B_Kitbag_rgr"};
+	secondaryWeapon[] = {"ACE_VMM3"};
+	backpack[] = {"B_Carryall_mcamo"};
 	items[] += {
 		LIST_2("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag")
+		LIST_2("APERSTripMine_Wire_Mag"),
+		"ACE_Clacker"
 	};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
-		"ATMine_Range_Mag"
+		"ATMine_Range_Mag",
+		LIST_4("ACE_FlareTripMine_Mag"),
+		"ACE_DefusalKit",
+		"ACE_EntrenchingTool",
+		"ACE_wirecutter"		
 	};
 };
 
