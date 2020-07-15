@@ -12,6 +12,7 @@
 */
 
 // Created by: AChesheireCat
+// Based off of pictures from 2018 joint training with the US
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
