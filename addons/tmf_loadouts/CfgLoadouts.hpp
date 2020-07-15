@@ -44,7 +44,7 @@ class CfgLoadouts {
 		displayName = "Australian Army (2018, AMCU/AUSCAM)";
 		category = "Western Factions";
 		tooltip = "Author: Chesheire";
-		#include "loadouts\au_army_2018_v8.hpp"
+		#include "loadouts\au_army_2018.hpp"
 	};
 	// Russian/Soviet Factions
 	class ru_army_2010 {
