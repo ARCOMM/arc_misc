@@ -53,6 +53,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\ru_army_2010.hpp"
 	};
+	class ussr_vdv_1980 {
+		displayName = "Russian Army (1980, M-88)";
+		category = "USSR";
+		tooltip = "Author: Chesheire\n\nNote: No body armor.";
+		#include "loadouts\ussr_vdv_1980.hpp"
+	};
 	// Armaverse factions
 	class tk_locals {
 		displayName = "Takistani Locals";
