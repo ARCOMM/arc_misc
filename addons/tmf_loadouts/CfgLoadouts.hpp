@@ -40,12 +40,24 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\uk_army_2010.hpp"
 	};
+	class au_army_2018 {
+		displayName = "Australian Army (2018, AMCU/AUSCAM)";
+		category = "Western Factions";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\au_army_2018.hpp"
+	};
 	// Russian/Soviet Factions
 	class ru_army_2010 {
 		displayName = "Russian Army (2010, VSR-98)";
 		category = "Russia";
 		tooltip = "Author: Freddo";
 		#include "loadouts\ru_army_2010.hpp"
+	};
+	class ussr_vdv_1980 {
+		displayName = "Soviet VDV (1980, M-88)";
+		category = "USSR";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\ussr_vdv_1980.hpp"
 	};
 	// Armaverse factions
 	class tk_locals {
