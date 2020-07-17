@@ -221,7 +221,7 @@ class rat : car {
 class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_srifle_m110_kac"};
-	scope[] = {"cup_optic_leupoldm31r"};
+	scope[] = {"cup_optic_leupoldm3lr"};
 	attachment[] = {"cup_acc_anpeq_2_grey"};
 	bipod[] = {"bipod_01_F_snd"};
 	magazines[] = {
@@ -274,12 +274,12 @@ class hmgg : car {
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"I_C_HMG_02_support_F"};
+	backPack[] = {"I_G_HMG_02_support_F"};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	backPack[] = {"I_C_HMG_02_support_high_F"};
+	backPack[] = {"I_G_HMG_02_support_high_F"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"ItemMap",
@@ -567,7 +567,7 @@ class engm : car {
 	backpackItems[] = {
 		"ToolKit",
 		"ATMine_Range_Mag",
-		LIST_4("ACE_FlareTripMine_Mag"),
+		LIST_3("ACE_FlareTripMine_Mag"),
 		"ACE_DefusalKit",
 		"ACE_EntrenchingTool",
 		"ACE_wirecutter"		
