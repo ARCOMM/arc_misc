@@ -56,12 +56,11 @@ class baseMan {// Weaponless baseclass
 
 	// These are added to the uniform or vest
 	magazines[] = {};
-	items[] = { MEDICAL_R ,"ACE_Flashlight_KSF1","ACE_tourniquet"};
+	items[] = { MEDICAL_R ,"ACE_Flashlight_KSF1",};
 	// These are added directly into their respective slots
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch"
 	};
 
@@ -94,21 +93,20 @@ class g : r {
 	secondaryWeapon[] = {"CUP_launch_RPG7V"};
 	secondaryAttachments[] = {"cup_optic_pgo7v2"};
 	backPack[] = {"CUP_B_CivPack_WDL"};
-	magazines[] += {LIST_3("CUP_OG7_M")};
+	magazines[] += {LIST_3("CUP_PG7VM_M")};
 };
 
 class arg : r {
 	displayName = "Assistant RPG7V2 Grenadier";
 	backPack[] = {"CUP_B_CivPack_WDL"};
 	backpackItems[] = {
-		LIST_3("CUP_OG7_M")
+		LIST_3("CUP_PG7VM_M")
 	};
 	linkedItems[] += {"Binocular"};
 };
 
 class car : r {
 	displayName = "Carabinier";
-	secondaryWeapon[] = {};
 };
 
 class cls : car {
@@ -165,7 +163,6 @@ class sl : ftl {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -183,7 +180,6 @@ class fac : co {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -246,7 +242,6 @@ class mmgtl : mmgac {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -273,7 +268,6 @@ class hmgtl : car {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -299,7 +293,6 @@ class mattl : car {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -323,7 +316,6 @@ class hattl : car {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -364,7 +356,6 @@ class mtrtl : car {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
@@ -374,7 +365,6 @@ class samg : car {
 	displayName = "AA Missile Specialist";
 	backpack[] = {"CUP_B_HikingPack_Civ"};
 	secondaryWeapon[] = {"CUP_launch_9K32Strela"};
-	magazines[] += {"CUP_Strela_2_M"};
 };
 
 class samag : car {
@@ -384,14 +374,12 @@ class samag : car {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Binocular"
 	};
-	magazines[] += {"CUP_Strela_2_M"};
 };
 
-/*
+
 class sn : r {
 	displayName = "Sniper";
 	uniform[] = {"U_B_GhillieSuit"};
@@ -424,13 +412,12 @@ class sp : g {
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch",
 		"Laserdesignator",
 		"ItemGPS"
 	};
 };
-*/
+
 
 class vg : smg {
 	displayName = "Vehicle Gunner";
@@ -530,11 +517,9 @@ class engm : car {
 	};
 };
 
-/*
+
 class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
-	backpack[] = {"B_UAV_01_backpack_F"};
 	linkedItems[] += {"B_UavTerminal"};
 };
-*/
