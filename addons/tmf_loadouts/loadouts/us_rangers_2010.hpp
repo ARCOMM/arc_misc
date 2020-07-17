@@ -574,7 +574,7 @@ class eng : car {
 	};
 	backpackItems[] = {
 		"ToolKit",
-		LIST_4("DemoCharge_Remote_Mag"),
+		LIST_3("DemoCharge_Remote_Mag"),
 		LIST_2("SLAMDirectionalMine_Wire_Mag"),
 		"SatchelCharge_Remote_Mag",
 		"ACE_DefusalKit",
