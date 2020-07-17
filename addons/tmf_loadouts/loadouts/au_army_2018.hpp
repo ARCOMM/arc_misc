@@ -274,12 +274,12 @@ class hmgg : car {
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"I_G_HMG_02_support_F"};
+	backPack[] = {"I_C_HMG_02_support_F"};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	backPack[] = {"I_G_HMG_02_support_high_F"};
+	backPack[] = {"I_C_HMG_02_support_F"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"ItemMap",
