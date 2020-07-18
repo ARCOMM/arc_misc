@@ -4,6 +4,7 @@
 //Dependencies:
 //		* CUP Units
 //		* CUP Weapons
+//		* HLC Mk46 + Mk48
 //		* Community Factions Project
 //		* FIR AWS(AirWeaponSystem)
 //		* ACE
@@ -49,7 +50,14 @@ class baseMan {// Weaponless baseclass
 
 	// These are added to the uniform or vest
 	magazines[] = {};
-	items[] = { MEDICAL_R ,"ACE_IR_Strobe_Item","ACE_Flashlight_XL50","ACE_SpraypaintGreen",LIST_2("ACE_CableTie"),LIST_2("ACE_Chemlight_HiGreen")};
+	items[] = {
+		 MEDICAL_R ,
+		"ACE_IR_Strobe_Item",
+		"ACE_Flashlight_XL50",
+		"ACE_SpraypaintGreen",
+		LIST_2("ACE_CableTie"),
+		LIST_2("ACE_Chemlight_HiGreen")
+	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
 		"ItemMap",
@@ -97,7 +105,7 @@ class r : baseMan {
 		LIST_7("CUP_30Rnd_556x45_PMAG_QP"),
 		LIST_2("CUP_30Rnd_556x45_Emag_Tracer_Red"),
 		LIST_3("HandGrenade"),
-		LIST_1("SmokeShell"),
+		"SmokeShell",
 		"ACE_HandFlare_Red"
 	};
 };
@@ -168,7 +176,8 @@ class sl : ftl {
 		"ItemCompass",
 		"ItemWatch",
 		"ACE_VectorDay",
-		"ItemGPS"
+		"ItemGPS",
+		"ItemRadio"
 	};
 };
 
@@ -179,14 +188,15 @@ class co : sl {
 
 class fac : co {
 	displayName = "Forward Air Controller";
-	backpack[] = {"B_RadioBag_01_mtp_F"};
+	backpack[] = {"CUP_B_AssaultPack_ACU"};
 	backpackItems[] = { FAC_GEAR };
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
 		"CUP_SOFLAM",
-		"ItemGPS"
+		"ItemGPS",
+		"ItemRadio"
 	};
 };
 
@@ -288,10 +298,7 @@ class hmgtl : car {
 	displayName = "HMG Team Leader";
 	backPack[] = {"I_C_HMG_02_support_high_F"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
+	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -303,8 +310,8 @@ class matg : car {
 	secondaryWeapon[] = {"CUP_launch_MAAWS"};
 	secondaryAttachments[] = {"cup_optic_maaws_scope"};
 	magazines[] += {
-		LIST_2("MRAWS_HEAT_F"),
-		"MRAWS_HE_F"
+		LIST_2("CUP_MAAWS_HEAT_M"),
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
@@ -312,8 +319,8 @@ class matac : r {
 	displayName = "MAT Ammo Carrier";
 	backpack[] = {"B_Kitbag_sgg"};
 	backpackItems[] = {
-		LIST_3("MRAWS_HEAT_F"),
-		LIST_2("MRAWS_HE_F")
+		LIST_3("CUP_MAAWS_HEAT_M"),
+		LIST_2("CUP_MAAWS_HEDP_M")
 	};
 };
 
@@ -329,29 +336,30 @@ class mattl : car {
 		"ItemGPS"
 	};
 	backpackItems[] = {
-		LIST_2("MRAWS_HEAT_F"),
-		"MRAWS_HE_F"
+		LIST_2("CUP_MAAWS_HEAT_M"),
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
 class hatg : car {
 	displayName = "HAT Gunner";
-	backPack[] = {"CUP_B_Tow_Gun_Bag"};
+	backPack[] = {"B_Kitbag_sgg"};
+	secondaryWeapon[] = {"CUP_launch_Javelin"};
+	magazines[] += {"CUP_Javelin_M"};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	backPack[] = {"CUP_B_TOW2_Tripod_Bag"};
+	backPack[] = {"B_Kitbag_sgg"};
+	backpackItems[] += {"CUP_Javelin_M"};
 };
 
 class hattl : car {
 	displayName = "HAT Team Leader";
-	backPack[] = {"CUP_B_TOW2_Tripod_Bag"};
+	backPack[] = {"B_Kitbag_sgg"};
+	backpackItems[] += {"CUP_Javelin_M"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
+	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -381,18 +389,18 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR ,"ACE_RangeTable_82mm","ACE_MapTools"};
+	items[] = {
+		 MTR_GEAR ,
+		"ACE_RangeTable_82mm",
+		"ACE_MapTools"
+	};
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
-
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
+	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -406,10 +414,7 @@ class samg : car {
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
+	linkedItems[] += {
 		"Rangefinder",
 		"ItemGPS"
 	};
@@ -433,16 +438,11 @@ class sn : r {
 		LIST_3("CUP_15Rnd_9x19_M9")
 	};
 	backpackItems[] = {
-		"CUP_optic_LeupoldMk4_10x40_LRT_Desert",
-		"CUP_bipod_Harris_1A2_L_BLK",
 		LIST_8("CUP_5Rnd_762x51_M24"),
 		"CFP_75th_Beanie_Grn",
-		"CUP_srifle_M24_des"
+		"CUP_srifle_M24_des_LeupoldMk4LRT"
 	};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
+	linkedItems[] += {
 		"ItemGPS"
 	};
 };
@@ -471,14 +471,15 @@ class sp : r {
 		"ACE_SpottingScope",
 		"ACE_Tripod",
 		"ACE_wirecutter",
-		LIST_4("APERSTripMine_Wire_Mag")
+		LIST_3("APERSTripMine_Wire_Mag")
 	};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
 		"CUP_SOFLAM",
-		"B_UavTerminal"
+		"B_UavTerminal",
+		"ItemRadio"
 	};
 };
 
