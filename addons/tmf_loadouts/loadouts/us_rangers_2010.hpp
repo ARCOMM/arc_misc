@@ -54,7 +54,8 @@ class baseMan {// Weaponless baseclass
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemWatch"
+		"ItemWatch",
+		"ItemRadio"
 	};
 
 	// These are put into the backpack
