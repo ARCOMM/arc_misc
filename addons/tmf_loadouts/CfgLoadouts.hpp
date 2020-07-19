@@ -40,6 +40,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\uk_army_2010.hpp"
 	};
+	class uk_rm_1982 {
+		displayName = "UK Royal Marines (1982, DPM)";
+		category = "Western Factions";
+		tooltip = "Author: Chesheire\n\nNote: Lightly armored. Only has helmets. Addtl, moderate ammo count. Recommend resupply but not required.";
+		#include "loadouts\uk_rm_1982.hpp"
+	};
 	class au_army_2018 {
 		displayName = "Australian Army (2018, AMCU/AUSCAM)";
 		category = "Western Factions";
