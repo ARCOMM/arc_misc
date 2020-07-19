@@ -10,7 +10,7 @@
 //		* HLC FAL Pack
 //		* HLC MP5 Pack
 //		* USM
-// 	* REDD Milan
+//		* REDD Milan
 //		* ACE
 
 //		Note: Just swap the berets and you have a para regiment instead.
@@ -332,11 +332,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = {
-		 MTR_GEAR ,
-		"ACE_RangeTable_82mm",
-		"ACE_MapTools"
-	};
+	items[] = { MTR_GEAR };
 	backPack[] = {"CFP_Carryall_DPMWoodland"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -514,4 +510,5 @@ class engm : car {
 class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
+	linkedItems[] += {"B_UavTerminal"};
 };
