@@ -9,6 +9,8 @@
 //		* MNP Uniforms
 //		* HLC FAL Pack
 //		* HLC MP5 Pack
+//		* USM
+// 	* REDD Milan
 //		* ACE
 
 //		Note: Just swap the berets and you have a para regiment instead.
@@ -201,7 +203,6 @@ class rat : smg {
 
 class dm : r {
 	displayName = "Designated Marksman";
-	primaryWeapon[] = {"hlc_rifle_L1A1SLR"};
 	scope[] = {"hlc_optic_suit"};
 };
 
@@ -211,7 +212,7 @@ class mmgg : ar {
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
 	magazines[] = {
 		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
-		"HandGrenade",
+		"CUP_HandGrenade_L109A1_HE",
 		"SmokeShell",
 		LIST_4("CUP_7Rnd_45ACP_1911")
 	};
@@ -261,16 +262,16 @@ class matg : car {
 	secondaryWeapon[] = {"CUP_launch_MAAWS"};
 	secondaryAttachments[] = {"cup_optic_maaws_scope"};
 	magazines[] += {
-		LIST_2("MRAWS_HEAT_F"),
-		"MRAWS_HE_F"
+		LIST_2("CUP_MAAWS_HEAT_M"),
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
 class matac : r {
 	displayName = "MAT Ammo Carrier";
 	backpackItems[] = {
-		LIST_2("MRAWS_HEAT_F"),
-		"MRAWS_HE_F"
+		LIST_2("CUP_MAAWS_HEAT_M"),
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
@@ -282,8 +283,8 @@ class mattl : car {
 		"ItemRadio"
 	};
 	backpackItems[] = {
-		LIST_2("MRAWS_HEAT_F"),
-		"MRAWS_HE_F"
+		LIST_2("CUP_MAAWS_HEAT_M"),
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
@@ -331,7 +332,11 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR ,"ACE_RangeTable_82mm","ACE_MapTools"};
+	items[] = {
+		 MTR_GEAR ,
+		"ACE_RangeTable_82mm",
+		"ACE_MapTools"
+	};
 	backPack[] = {"CFP_Carryall_DPMWoodland"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
