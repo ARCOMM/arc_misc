@@ -240,16 +240,19 @@ class mmgtl : aar {
 class hmgg : car {
 	displayName = "HMG Gunner";
 	backPack[] = {"I_G_HMG_02_weapon_F"};
+	backpackItems[] = {};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
 	backPack[] = {"I_C_HMG_02_support_F"};
+	backpackItems[] = {};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
 	backPack[] = {"I_C_HMG_02_support_F"};
+	backpackItems[] = {};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
 		"Binocular",
@@ -291,16 +294,19 @@ class mattl : car {
 class hatg : car {
 	displayName = "HAT Gunner";
 	backPack[] = {"Redd_Milan_Static_Barrel"};
+	backpackItems[] = {};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
 	backPack[] = {"Redd_Milan_Static_Tripod"};
+	backpackItems[] = {};
 };
 
 class hattl : car {
 	displayName = "HAT Team Leader";
 	backPack[] = {"Redd_Milan_Static_Tripod"};
+	backpackItems[] = {};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
 		"Binocular",
@@ -406,6 +412,7 @@ class sp : r {
 class vg : smg {
 	displayName = "Vehicle Gunner";
 	backpack[] = {};
+	backpackItems[] = {};
 	headgear[] = {
 		"SP_CVCHelmet_Green",
 		"CUP_H_PMC_PRR_Headset"
@@ -418,6 +425,7 @@ class vg : smg {
 
 class vc : vg {
 	displayName = "Vehicle Commander";
+	backpackItems[] = {};
 	linkedItems[] += {
 		"Binocular",
 		"ItemRadio"
@@ -435,6 +443,7 @@ class hc : smg {
 	displayName = "Helicopter Crew";
 	vest[] = {"CUP_V_B_BAF_DPM_Osprey_Mk3_Pilot"};
 	backpack[] = {};
+	backpackItems[] = {};
 	headgear[] = {"CUP_H_BAF_PILOT"};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
@@ -445,6 +454,7 @@ class hc : smg {
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
+	backpackItems[] = {};
 	linkedItems[] += {"ItemRadio"};
 };
 
@@ -462,6 +472,7 @@ class jp : smg {
 	traits[] = {"engineer"};
 	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
 	backpack[] = {};
+	backpackItems[] = {};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
@@ -501,7 +512,6 @@ class engm : car {
 	backpackItems[] = {
 		"ToolKit",
 		LIST_4("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag"),
 		LIST_2("ACE_FlareTripMine_Mag"),
 		LIST_2("ClaymoreDirectionalMine_Remote_Mag")
 	};
