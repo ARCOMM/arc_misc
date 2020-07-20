@@ -1,6 +1,16 @@
 #include "script_component.hpp"
+/* ----------------------------------------------------------------------------
+Internal Function: ARC_MISC_difficulty_fnc_unitInit
 
-// See initSettings.sqf
+Description:
+	Initializes AI settings for a unit and/or group
+
+Parameters:
+	_unit - Initialized unit [Object]
+
+Author:
+	Freddo
+---------------------------------------------------------------------------- */
 
 params ["_unit"];
 if (!local _unit) exitWith {};
@@ -48,3 +58,5 @@ if ( GVAR(enabled) && {_unit getVariable [QGVAR(enabled), true]}) then {
 	];
 };
 _unit setVariable [QGVAR(initialized), true];
+
+nil
