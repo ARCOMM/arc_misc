@@ -236,7 +236,7 @@ class rat : car {
 class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_srifle_m110_kac"};
-	scope[] = {"cup_optic_leupoldm31r"};
+	scope[] = {"cup_optic_leupoldm31lr"};
 	attachment[] = {"cup_acc_anpeq_2_grey"};
 	bipod[] = {"bipod_01_F_snd"};
 	magazines[] = {
@@ -287,16 +287,19 @@ class mmgtl : aar {
 class hmgg : car {
 	displayName = "HMG Gunner";
 	backPack[] = {"I_G_HMG_02_weapon_F"};
+	backpackItems[] = {};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
 	backPack[] = {"I_C_HMG_02_support_F"};
+	backpackItems[] = {};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
 	backPack[] = {"I_C_HMG_02_support_high_F"};
+	backpackItems[] = {};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
 		"ACE_Vector",
@@ -319,8 +322,8 @@ class matac : r {
 	displayName = "MAT Ammo Carrier";
 	backpack[] = {"B_Kitbag_sgg"};
 	backpackItems[] = {
-		LIST_3("CUP_MAAWS_HEAT_M"),
-		LIST_2("CUP_MAAWS_HEDP_M")
+		LIST_2("CUP_MAAWS_HEAT_M"),
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
@@ -389,11 +392,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = {
-		 MTR_GEAR ,
-		"ACE_RangeTable_82mm",
-		"ACE_MapTools"
-	};
+	items[] = { MTR_GEAR };
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -491,6 +490,7 @@ class vg : smg {
 	};
 	vest[] = {"CUP_V_B_IOTV_Rifleman"};
 	backpack[] = {};
+	backpackItems[] = {};
 	headgear[] = {"CUP_H_USMC_ACVC_DES"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
@@ -500,6 +500,7 @@ class vg : smg {
 
 class vc : vg {
 	displayName = "Vehicle Commander";
+	backpackItems[] = {};
 	linkedItems[] += {
 		"Binocular",
 		"ItemGPS"
@@ -519,6 +520,7 @@ class hc : smg {
 	uniform[] = {"CUP_U_B_USArmy_Soft"};
 	vest[] = {"fir_usarmy_pilot_vest"};
 	backpack[] = {};
+	backpackItems[] = {};
 	headgear[] = {
 		"CFP_SOARCREW_BLUE",
 		"CFP_SOARCREW_STACHE",
@@ -539,6 +541,7 @@ class hp : hc {
 	displayName = "Helicopter Pilot";
 	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	vest[] = {"fir_usarmy_pilot_vest"};
+	backpackItems[] = {};
 	linkedItems[] += {"ItemGPS"};
 };
 
@@ -558,6 +561,7 @@ class jp : smg {
 	traits[] = {"engineer"};
 	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
 	backpack[] = {};
+	backpackItems[] = {};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
