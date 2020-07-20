@@ -93,16 +93,9 @@ class g : r {
 	secondaryWeapon[] = {"CUP_launch_RPG7V"};
 	secondaryAttachments[] = {"cup_optic_pgo7v2"};
 	backPack[] = {"CUP_B_CivPack_WDL"};
-	magazines[] += {LIST_3("CUP_PG7VM_M")};
-};
-
-class arg : r {
-	displayName = "Assistant RPG7V2 Grenadier";
-	backPack[] = {"CUP_B_CivPack_WDL"};
-	backpackItems[] = {
-		LIST_3("CUP_PG7VM_M")
+	magazines[] += {
+		LIST_2("CUP_PG7VM_M")
 	};
-	linkedItems[] += {"Binocular"};
 };
 
 class car : r {
@@ -150,21 +143,11 @@ class ftl : r {
 
 class sl : ftl {
 	displayName = "Squad Leader";
-	primaryWeapon[] = {
-		"CUP_arifle_AKS74_GL",
-		"CUP_arifle_AKS74_GL_Early"
-	};
 	sidearmWeapon[] = {"CUP_hgun_PMM"};
 	magazines[] += {
 		LIST_2("CUP_IlumFlareRed_GP25_M"),
 		LIST_2("CUP_1Rnd_SmokeRed_GP25_M"),
 		LIST_3("CUP_12Rnd_9x18_PMM_M")
-	};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"Binocular"
 	};
 };
 
@@ -195,6 +178,15 @@ class ar : r {
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
+};
+
+class aar : r {
+	displayName = "Assistant RPG7V2 Grenadier";
+	backPack[] = {"CUP_B_CivPack_WDL"};
+	backpackItems[] = {
+		LIST_3("CUP_PG7VM_M")
+	};
+	linkedItems[] += {"Binocular"};
 };
 
 class rat : car {
@@ -229,7 +221,6 @@ class mmgg : ar {
 
 class mmgac : r {
 	displayName = "MMG Ammo Carrier";
-	secondaryWeapon[] = {};
 	backpack[] = {"CUP_B_HikingPack_Civ"};
 	backpackItems[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M")
@@ -239,64 +230,55 @@ class mmgac : r {
 class mmgtl : mmgac {
 	displayName = "MMG Team Leader";
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"Binocular"
-	};
+	linkedItems[] += {"Binocular"};
 	backpackItems[] = {
 		LIST_3("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M")
 	};
 };
 
 class hmgg : car {
-	displayName = "HMG Gunner";
+	displayName = "GMG Gunner";
 	backPack[] = {"CUP_B_AGS30_Gun_Bag"};
 };
 
 class hmgac : car {
-	displayName = "HMG Ammo Carrier";
-	secondaryWeapon[] = {};
+	displayName = "GMG Ammo Carrier";
 	backPack[] = {"CUP_B_AGS30_Tripod_Bag"};
 };
 
 class hmgtl : car {
-	displayName = "HMG Team Leader";
+	displayName = "GMG Team Leader";
 	backPack[] = {"CUP_B_AGS30_Tripod_Bag"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"Binocular"
-	};
+	linkedItems[] += {"Binocular"};
 };
 
 class matg : car {
 	displayName = "MAT Gunner";
 	backpack[] = {"CUP_B_HikingPack_Civ"};
-	secondaryWeapon[] = {"CUP_launch_Metis"};
-	magazines[] += {"CUP_AT13_M"};
+	secondaryWeapon[] = {"CUP_launch_RPG7V"};
+	secondaryAttachments[] = {"cup_optic_pgo7v2"};
+	magazines[] += {
+		LIST_2("CUP_PG7VL_M")
+	};
 };
 
 class matac : car {
 	displayName = "MAT Ammo Carrier";
 	backpack[] = {"CUP_B_HikingPack_Civ"};
-	backpackItems[] = {"CUP_AT13_M"};
+	backpackItems[] = {
+		LIST_2("CUP_PG7VL_M")
+	};
 };
 
 class mattl : car {
 	displayName = "MAT Team Leader";
 	backpack[] = {"CUP_B_HikingPack_Civ"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"Binocular"
+	linkedItems[] += {"Binocular"};
+	backpackItems[] = {
+		LIST_2("CUP_PG7VL_M")
 	};
-	backpackItems[] = {"CUP_AT13_M"};
 };
 
 class hatg : car {
