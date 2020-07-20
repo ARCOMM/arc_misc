@@ -207,6 +207,7 @@ class ar : r {
 		"cup_acc_anpeq_15_flashlight_tan_l",
 		"cup_acc_anpeq_15"
 	};
+	silencer[] = {};
 	sidearmWeapon[] = {"CUP_hgun_M9"};
 	backpack[] = {"B_AssaultPack_sgg"};
 	magazines[] = {
@@ -236,7 +237,7 @@ class rat : car {
 class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_srifle_m110_kac"};
-	scope[] = {"cup_optic_leupoldm31lr"};
+	scope[] = {"cup_optic_leupoldm3lr"};
 	attachment[] = {"cup_acc_anpeq_2_grey"};
 	bipod[] = {"bipod_01_F_snd"};
 	magazines[] = {
@@ -611,5 +612,6 @@ class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
 	backpack[] = {"B_UAV_01_backpack_F"};
+	backpackItems[] = {};
 	linkedItems[] += {"B_UavTerminal"};
 };
