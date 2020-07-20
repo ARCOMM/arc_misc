@@ -12,6 +12,7 @@
 //Created by AChesheireCat
 
 //Note: No body armor at ALL. Relatively light loadout because of that.
+//Adtl. Note: MAT Teams are anachronistic and are not advised to be used. Same with the UAV Operator. AAR is actually the Assistant to the Grenadier.
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
