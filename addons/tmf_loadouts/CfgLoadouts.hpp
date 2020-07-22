@@ -16,7 +16,7 @@ class CfgLoadouts {
 		#include "loadouts\us_army_1985.hpp"
 	};
 	class us_usmc_2003 {
-		displayName = "US Marine Corp (2003, DCU/M81)";
+		displayName = "US Marine Corps (2003, DCU/M81)";
 		category = "USA";
 		tooltip = "Author: Chesheire";
 		#include "loadouts\us_usmc_2003.hpp"

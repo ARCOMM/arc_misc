@@ -1,6 +1,16 @@
 // If you want to base a loadout on an existing one, this repository contains them all:
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
+/* Dependencies:
+
+		* CUP
+		* Community Factions Project
+		* USM
+		* HLC M21
+		* FIR AWS
+
+*/
+
 //		Created by: AChesheireCat
 
 class baseMan {// Weaponless baseclass
@@ -95,9 +105,7 @@ class r : baseMan {
 
 class g : r {
 	displayName = "Grenadier";
-	vest[] = {
-		LIST_3("CUP_V_B_Interceptor_Grenadier_M81")
-	};
+	vest[] = {"CUP_V_B_Interceptor_Grenadier_M81"};
 	primaryWeapon[] = {
 		"CUP_arifle_M16A4_GL",
 		"CUP_arifle_M16A2_GL"
@@ -144,7 +152,6 @@ class smg : r {
 
 class ftl : g {
 	displayName = "Fireteam Leader";
-	backPack[] = {"CUP_B_SLA_Medicbag"};
 	backpackItems[] += {"ACE_MapTools"};
 	magazines[] += {
 		LIST_2("1Rnd_SmokeRed_Grenade_shell")
@@ -154,29 +161,28 @@ class ftl : g {
 
 class sl : ftl {
 	displayName = "Squad Leader";
-	backPack[] = {"CUP_B_SLA_Medicbag"};
 	sidearmWeapon[] = {"CUP_hgun_M9"};
 	magazines[] += {
 		LIST_3("CUP_15Rnd_9x19_M9")
 	};
-	linkedItems[] += {
-		"ACE_Yardage450",
-		"ItemGPS"
-	};
+	linkedItems[] += {"ItemGPS"};
 };
 
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"usm_bdu_8point_dcu"};
 	vest[] = {"CUP_V_B_Interceptor_Base_M81"};
-	backPack[] = {"CUP_B_SLA_Medicbag"};
 };
 
 class fac : co {
 	displayName = "Forward Air Controller";
 	backpack[] = {"usm_pack_alice_prc119"};
 	backpackItems[] = { FAC_GEAR };
-	linkedItems[] += {
+	linkedItems[] = {
+		"ItemMap",
+		"ItemCompass",
+		"ItemRadio",
+		"ItemWatch",
 		"CUP_SOFLAM",
 		"ItemGPS"
 	};
@@ -205,8 +211,7 @@ class aar : r {
 class rat : car {
 	displayName = "Rifleman (AT)";
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
-	secondaryWeapon[] = {"CUP_launch_Mk153Mod0"};
-	magazines[] += {"CUP_SMAW_HEAA_M"};
+	secondaryWeapon[] = {"CUP_launch_M136"};
 };
 
 class dm : r {
@@ -350,7 +355,7 @@ class mtrac : car {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { "MTR_GEAR" };
+	items[] = { MTR_GEAR };
 	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -384,7 +389,9 @@ class sn : r {
 	uniform[] = {"CUP_U_B_USMC_FROG1_DMARPAT"};
 	goggles[] = {"default"};
 	vest[] = {"CFP_Alice_Vest2"};
-	primaryWeapon[] = {"CUP_srifle_M40A3_bipod"};
+	primaryWeapon[] = {"CUP_srifle_M40A3"};
+	scope[] = {"CUP_optic_LeupoldMk4"};
+	bipod[] = {"cup_bipod_harris_1a2_l_blk"};
 	sidearmWeapon[] = {"CUP_hgun_M9"};
 	magazines[] = {
 		LIST_7("CUP_5Rnd_762x51_M24"),
@@ -395,6 +402,9 @@ class sn : r {
 
 class sp : r {
 	displayName = "Spotter";
+	headgear[] = {"CUP_H_USMC_BOONIE_PRR_DES"};
+	uniform[] = {"CUP_U_B_USMC_FROG1_DMARPAT"};
+	vest[] = {"CFP_Alice_Vest2"};
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
 			LIST_10("CUP_5Rnd_762x51_M24")
@@ -510,6 +520,7 @@ class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"usm_pack_alice"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
 		"ACE_wirecutter",
 		"ACE_DefusalKit",
