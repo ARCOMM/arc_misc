@@ -21,12 +21,6 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_2010.hpp"
 	};
-	class us_usmc_2010_wdl {
-		displayName = "US Marine Corps (2010, MARPAT-WDL)";
-		category = "USA";
-		tooltip = "Author: AChesheireCat";
-		#include "loadouts\us_usmc_2010_wdl.hpp"
-	};
 	class us_usmc_2010_des {
 		displayName = "US Marine Corps (2010, MARPAT-DES)";
 		category = "USA";
