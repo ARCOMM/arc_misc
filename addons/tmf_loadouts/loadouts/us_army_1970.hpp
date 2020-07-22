@@ -2,10 +2,11 @@
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
 /* Dependencies:
-		HLC
+		HLC M60 Pack
+		HLC M1903 Pack
 		USM
 		CUP
-		CFP
+		Community Factions Project
 		ACE
 		FIR
 */
@@ -75,10 +76,10 @@ class r : baseMan {
 		"CUP_H_USArmy_Helmet_M1_plain_Vine",
 		"CUP_H_USArmy_Helmet_M1_btp"
 	};
-	primaryWeapon[] = {"CUP_arifle_M16A1"};
+	primaryWeapon[] = {"CUP_srifle_M14"};
 	magazines[] = {
-		LIST_9("CUP_20Rnd_556x45_Stanag"),
-		LIST_2("CUP_20Rnd_556x45_Stanag_Tracer_Red"),
+		LIST_6("CUP_20Rnd_762x51_DMR"),
+		LIST_2("CUP_20Rnd_TE1_Red_Tracer_762x51_DMR"),
 		LIST_2("HandGrenade"),
 		"SmokeShell"
 	};
@@ -100,6 +101,13 @@ class g : r {
 
 class car : r {
 	displayName = "Carabinier";
+	primaryWeapon[] = {"CUP_arifle_M16A1"};
+	magazines[] = {
+		LIST_9("CUP_20Rnd_556x45_Stanag"),
+		LIST_2("CUP_20Rnd_556x45_Stanag_Tracer_Red"),
+		LIST_2("HandGrenade"),
+		"SmokeShell"
+	};
 };
 
 class cls : car {
@@ -139,7 +147,7 @@ class ftl : g {
 	};
 };
 
-class sl : r {
+class sl : car {
 	displayName = "Squad Leader";
 	vest[] = {"usm_vest_LBE_rmp"};
 	backPack[] = {"CUP_B_SLA_Medicbag"};
@@ -163,7 +171,6 @@ class sl : r {
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"usm_bdu_8point_odg"};
-	backPack[] = {"CUP_B_SLA_Medicbag"};
 };
 
 class fac : co {
@@ -202,7 +209,7 @@ class rat : car {
 class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_srifle_M14"};
-	scope[] = {"cup_optic_an_pvs_4_m14"};
+	scope[] = {"hlc_optic_zf95base"};
 	bipod[] = {"cup_bipod_harris_1a2_l_blk"};
 	magazines[] = {
 		LIST_9("ACE_10Rnd_762x51_M118LR_Mag"),
@@ -215,6 +222,10 @@ class mmgg : ar {
 	displayName = "MMG Gunner";
 	vest[] = {"usm_vest_LBE_mg_m"};
 	primaryWeapon[] = {"CUP_lmg_M60"};
+	backPack[] = {
+		"usm_pack_762x51_bandoliers",
+		"usm_pack_762x51_ammobelts"
+	};
 };
 
 class mmgac : r {
@@ -265,7 +276,9 @@ class matg : car {
 	vest[] = {"usm_vest_LBE_mg_m"};
 	backpack[] = {"usm_pack_alice"};
 	secondaryWeapon[] = {"CUP_launch_MAAWS"};
-	magazines[] += {"CUP_MAAWS_HEAT_M"};
+	magazines[] += {
+		LIST_2("CUP_MAAWS_HEAT_M")
+	};
 };
 
 class matac : r {
@@ -273,7 +286,8 @@ class matac : r {
 	vest[] = {"usm_vest_LBE_mg_m"};
 	backpack[] = {"usm_pack_alice"};
 	backpackItems[] = {
-		LIST_2("CUP_MAAWS_HEAT_M")
+		"CUP_MAAWS_HEAT_M",
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
@@ -287,7 +301,8 @@ class mattl : car {
 		"Binocular"
 	};
 	backpackItems[] = {
-		LIST_2("CUP_MAAWS_HEAT_M")
+		"CUP_MAAWS_HEAT_M",
+		"CUP_MAAWS_HEDP_M"
 	};
 };
 
@@ -341,7 +356,7 @@ class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	vest[] = {"usm_vest_LBE_mg_m"};
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { "MTR_GEAR" };
+	items[] = { MTR_GEAR };
 	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -510,6 +525,7 @@ class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"usm_pack_alice"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
 		"ACE_wirecutter",
 		"ACE_DefusalKit",
@@ -528,6 +544,6 @@ class engm : car {
 class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
-	backpack[] = {"B_UAV_01_backpack_F"};
+	backpack[] = {};
 	linkedItems[] += {"B_UavTerminal"};
 };
