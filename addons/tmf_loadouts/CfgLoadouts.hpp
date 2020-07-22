@@ -15,6 +15,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_1985.hpp"
 	};
+	class us_usmc_1985 {
+		displayName = "US Marine Corp (1985, DBDU 'Chocolate Chip')";
+		category = "USA";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\us_usmc_1985.hpp"
+	};
 	class us_army_2010 {
 		displayName = "US Army (2010, UCP)";
 		category = "USA";
