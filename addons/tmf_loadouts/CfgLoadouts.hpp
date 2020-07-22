@@ -15,6 +15,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_1985.hpp"
 	};
+	class us_army_2003 {
+		displayName = "US Army (2003, DCU/M81)";
+		category = "USA";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\us_army_2003.hpp"
+	};
 	class us_army_2010 {
 		displayName = "US Army (2010, UCP)";
 		category = "USA";
