@@ -1,6 +1,15 @@
 // If you want to base a loadout on an existing one, this repository contains them all:
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
+/*	Dependencies:
+
+		* CUP
+		* Community Factions Project
+		* USM
+		* FIR
+
+*/
+
 //		Created by: AChesheireCat
 
 class baseMan {// Weaponless baseclass
@@ -172,7 +181,11 @@ class sl : ftl {
 	magazines[] += {
 		LIST_3("CUP_15Rnd_9x19_M9")
 	};
-	linkedItems[] += {
+	linkedItems[] = {
+		"ItemMap",
+		"ItemCompass",
+		"ItemRadio",
+		"ItemWatch",
 		"ACE_Yardage450",
 		"ItemGPS"
 	};
@@ -192,7 +205,11 @@ class fac : co {
 	displayName = "Forward Air Controller";
 	backpack[] = {"usm_pack_alice_prc119"};
 	backpackItems[] = { FAC_GEAR };
-	linkedItems[] += {
+	linkedItems[] = {
+		"ItemMap",
+		"ItemCompass",
+		"ItemRadio",
+		"ItemWatch",
 		"CUP_SOFLAM",
 		"ItemGPS"
 	};
@@ -312,10 +329,8 @@ class mattl : car {
 		"ACE_Vector",
 		"ItemGPS"
 	};
-	backpackItems[] = {
-		"CUP_Javelin_M",
-		"ACE_MapTools"
-	};
+	backpackItems[] = {"CUP_Javelin_M"};
+	items[] += {"ACE_MapTools"};
 };
 
 class hatg : car {
@@ -361,7 +376,7 @@ class mtrac : car {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { "MTR_GEAR" };
+	items[] = { MTR_GEAR };
 	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -521,6 +536,7 @@ class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"usm_pack_alice"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
 		"ACE_wirecutter",
 		"ACE_DefusalKit",
@@ -539,6 +555,6 @@ class engm : car {
 class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
-	backpack[] = {"B_UAV_01_backpack_F"};
+	backpack[] = {};
 	linkedItems[] += {"B_UavTerminal"};
 };
