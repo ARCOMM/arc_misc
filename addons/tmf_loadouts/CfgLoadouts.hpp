@@ -22,16 +22,23 @@ class CfgLoadouts {
 		#include "loadouts\us_army_2010.hpp"
 	};
 	class us_usmc_2010_wdl {
-		displayName = "US Marine Corp (2010, MARPAT-WDL)";
+		displayName = "US Marine Corps (2010, MARPAT-WDL)";
 		category = "USA";
-		tooltip = "Author: Chesheire";
+		tooltip = "Author: AChesheireCat";
 		#include "loadouts\us_usmc_2010_wdl.hpp"
 	};
 	class us_usmc_2010_des {
-		displayName = "US Marine Corp (2010, MARPAT-DES)";
+		displayName = "US Marine Corps (2010, MARPAT-DES)";
 		category = "USA";
-		tooltip = "Author: Chesheire";
-		#include "loadouts\us_usmc_2010_des.hpp"
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_usmc_2010_de
+		s.hpp"
+	};
+	class us_rangers_2010 {
+		displayName = "US 75th Rangers (2010, Crye Multicam)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_rangers_2010.hpp"
 	};
 	// Western Factions
 	class ger_army_2010 {
