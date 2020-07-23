@@ -196,6 +196,9 @@ class ar : r {
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] = {
+		LIST_4("hlc_100Rnd_762x51_M_M60E4")
+	};
 	linkedItems[] += {"Binocular"};
 };
 
@@ -222,27 +225,27 @@ class mmgg : ar {
 	displayName = "MMG Gunner";
 	vest[] = {"usm_vest_LBE_mg_m"};
 	primaryWeapon[] = {"CUP_lmg_M60"};
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] = {
+		LIST_4("hlc_100Rnd_762x51_M_M60E4")
 	};
 };
 
 class mmgac : r {
 	displayName = "MMG Ammo Carrier";
-	vest[] = {"usm_vest_LBE_mg_m"};
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	vest[] = {"usm_vest_LBE_rm"};
+	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] = {
+		LIST_4("hlc_100Rnd_762x51_M_M60E4")
 	};
 };
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
 	vest[] = {"usm_vest_LBE_mg_m"};
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	backPack[] = {"usm_pack_alice"};
+	backpackItems[] = {
+		LIST_4("hlc_100Rnd_762x51_M_M60E4")
 	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"ItemRadio"};
@@ -250,13 +253,13 @@ class mmgtl : aar {
 
 class hmgg : car {
 	displayName = "HMG Gunner";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_M2_Gun_Bag"};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_M2_MiniTripod_Bag"};
 };
 
@@ -273,7 +276,7 @@ class hmgtl : car {
 
 class matg : car {
 	displayName = "MAT Gunner";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backpack[] = {"usm_pack_alice"};
 	secondaryWeapon[] = {"CUP_launch_MAAWS"};
 	magazines[] += {
@@ -283,7 +286,7 @@ class matg : car {
 
 class matac : r {
 	displayName = "MAT Ammo Carrier";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backpack[] = {"usm_pack_alice"};
 	backpackItems[] = {
 		"CUP_MAAWS_HEAT_M",
@@ -308,13 +311,13 @@ class mattl : car {
 
 class hatg : car {
 	displayName = "HAT Gunner";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_Tow_Gun_Bag"};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_TOW_Tripod_Bag"};
 };
 
@@ -331,7 +334,7 @@ class hattl : car {
 
 class mtrg : car {
 	displayName = "Mortar Gunner";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
 	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
@@ -343,7 +346,7 @@ class mtrg : car {
 
 class mtrac : r {
 	displayName = "Mortar Ammo Carrier";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -371,7 +374,7 @@ class mtrtl : car {
 
 class samg : car {
 	displayName = "AA Missile Specialist";
-	vest[] = {"usm_vest_LBE_mg_m"};
+	vest[] = {"usm_vest_LBE_rm"};
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 };
 
@@ -493,8 +496,7 @@ class jp : smg {
 	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
 	vest[] = {"CUP_V_B_PilotVest"};
 	backpack[] = {};
-	headgear[] = {"FIR_USHelmetType1"};
-	goggles[] = {"FIR_Visor_Black_down"};
+	headgear[] = {"FIR_hgu26p"};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
