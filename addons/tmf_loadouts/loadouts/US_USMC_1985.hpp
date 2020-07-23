@@ -6,15 +6,13 @@
 //		* CUP Weapons
 //		* FIR AWS(AirWeaponSystem)
 //		* USM Uniforms
-//		* NIArms M21
+//		* NIArms M14 Pack
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
 	// All randomized.
 	uniform[] = {"usm_bdu_d_m"};
-	vest[] = {
-		"usm_vest_pasgtdes_lbe_rm_m"
-	};
+	vest[] = {"usm_vest_pasgtdes_lbe_rm_m"};
 	backpack[] = {};
 	headgear[] = {};
 	goggles[] = {"default"};
@@ -47,7 +45,6 @@ class baseMan {// Weaponless baseclass
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
-		"ItemRadio",
 		"ItemWatch"
 	};
 
@@ -126,7 +123,10 @@ class ftl : g {
 		LIST_2("CUP_1Rnd_StarFlare_Red_M203"),
 		LIST_2("CUP_1Rnd_SmokeRed_M203")
 	};
-	linkedItems[] += {"Binocular"};
+	linkedItems[] += {
+		"Binocular",
+		"ItemRadio"
+	};
 };
 
 class sl : ftl {
@@ -142,7 +142,7 @@ class sl : ftl {
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"usm_bdu_8point_des_m"};
-	linkedItems[] = {"ItemGPS"};
+	linkedItems[] += {"ItemGPS"};
 };
 
 class fac : co {
@@ -224,6 +224,7 @@ class mmgtl : aar {
 		"usm_pack_762x51_bandoliers",
 		"usm_pack_762x51_ammobelts"
 	};
+	linkedItems[] += {"ItemRadio"};
 };
 
 class hmgg : car {
@@ -239,7 +240,10 @@ class hmgac : car {
 class hmgtl : car {
 	displayName = "HMG Team Leader";
 	backPack[] = {"CUP_B_M2_Tripod_Bag"};
-	linkedItems[] += {"Binocular"};
+	linkedItems[] += {
+		"Binocular",
+		"ItemRadio"
+	};
 };
 
 class matg : car {
@@ -264,7 +268,8 @@ class mattl : car {
 	backpack[] = {"usm_pack_alice"};
 	linkedItems[] += {
 		"ACE_Vector",
-		"ItemGPS"
+		"ItemGPS",
+		"ItemRadio"
 	};
 	backpackItems[] = {
 		LIST_2("CUP_Dragon_EP1_M"),
@@ -286,7 +291,10 @@ class hattl : car {
 	displayName = "HAT Team Leader";
 	backPack[] = {"CUP_B_TOW2_Tripod_Bag"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] += {"Binocular"};
+	linkedItems[] += {
+		"Binocular",
+		"ItemRadio"
+	};
 };
 
 class mtrg : car {
@@ -323,7 +331,8 @@ class mtrtl : car {
 
 	linkedItems[] += {
 		"Binocular",
-		"ItemGPS"
+		"ItemGPS",
+		"ItemRadio"
 	};
 };
 
@@ -356,6 +365,7 @@ class sn : r {
 
 class sp : r {
 	displayName = "Spotter";
+	headgear[] = {"usm_bdu_boonie_des"};
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
 			LIST_10("CUP_5Rnd_762x51_M24")
