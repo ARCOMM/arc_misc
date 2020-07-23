@@ -6,6 +6,7 @@
 //		* CUP Weapons
 //		* FIR AWS(AirWeaponSystem)
 //		* USM Uniforms
+//		* HLC M249 Pack
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
@@ -111,7 +112,7 @@ class g : r {
 	vest[] = {"CUP_V_B_Eagle_SPC_GL"};
 	backPack[] = {"CUP_B_AssaultPack_Coyote"};
 	magazines[] += {
-		LIST_16("CUP_1Rnd_HEDP_M203"),
+		LIST_11("CUP_1Rnd_HEDP_M203"),
 		LIST_2("1Rnd_Smoke_Grenade_shell")
 	};
 };
@@ -129,7 +130,7 @@ class car : r {
 class cls : car {
 	displayName = "Combat Life Saver";
 	traits[] = {"medic"};
-	vest[] = {"CUP_V_B_Eagle_SPC_Corpsman"};
+	vest[] = {"CUP_V_B_Eagle_SP-C_Corpsman"};
 	backpack[] = {"CUP_B_USMC_MOLLE_WDL"};
 	backpackItems[] = { MEDICAL_CLS };
 };
@@ -178,10 +179,6 @@ class sl : ftl {
 	magazines[] += {
 		LIST_3("CUP_15Rnd_9x19_M9")
 	};
-	linkedItems[] += {
-		"ACE_Vector",
-		"ItemGPS"
-	};
 };
 
 class co : sl {
@@ -193,9 +190,13 @@ class co : sl {
 class fac : co {
 	displayName = "Forward Air Controller";
 	vest[] = {"CUP_V_B_Eagle_SPC_RTO"};
-	backpack[] = {"usm_pack_alice_prc77"};
+	backpack[] = {"CUP_B_Kombat_Radio_Olive"};
 	backpackItems[] = { FAC_GEAR };
-	linkedItems[] += {
+	linkedItems[] = {
+		"ItemMap",
+		"ItemCompass",
+		"ItemRadio",
+		"ItemWatch",
 		"CUP_SOFLAM",
 		"ItemGPS"
 	};
@@ -231,12 +232,9 @@ class aar : r {
 class rat : car {
 	displayName = "Rifleman (AT)";
 	vest[] = {"CUP_V_B_Eagle_SPC_AT"};
-	secondaryWeapon[] = {"CUP_launch_Mk153Mod0"};
-	secondaryAttachments[] = {"cup_optic_eotech553_black"};
+	secondaryWeapon[] = {"CUP_launch_M136"};
 	backPack[] = {"B_Kitbag_cbr"};
-	magazines[] += {
-		LIST_2("CUP_SMAW_HEAA_M")
-	};
+	magazines[] += {"CUP_launch_M136"};
 };
 
 class dm : r {
@@ -245,15 +243,14 @@ class dm : r {
 		"CUP_V_B_Eagle_SPC_DMR",
 		"CUP_V_B_MTV_Marksman"
 	};
-	primaryWeapon[] = {"CUP_srifle_m110_kac"};
-	scope[] = {"cup_optic_leupoldm31r"};
-	attachment[] = {"cup_acc_anpeq_2_grey"};
-	bipod[] = {"bipod_01_F_snd"};
-	silencer[] = {"cup_muzzle_snds_m110"};
+	primaryWeapon[] = {"CUP_srifle_Mk12SPR"};
+	scope[] = {"cup_optic_leupoldmk4_mrt_tan"};
+	attachment[] = {"cup_acc_anpeq_2_desert"};
+	bipod[] = {"cup_bipod_harris_1a2_l_blk"};
 	magazines[] = {
-		LIST_7("CUP_20Rnd_762x51_B_M110"),
+		LIST_7("ACE_30Rnd_556x45_Stanag_Mk262_mag"),
 		LIST_2("HandGrenade"),
-		LIST_2("SmokeShell")
+		"SmokeShell"
 	};
 };
 
@@ -261,12 +258,11 @@ class mmgg : ar {
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"CUP_lmg_M240"};
 	scope[] = {"cup_optic_elcanm145"};
-	sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
 	magazines[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		"HandGrenade",
 		"SmokeShell",
-		LIST_3("CUP_17Rnd_9x19_glock17")
+		LIST_3("CUP_15Rnd_9x19_M9")
 	};
 };
 
@@ -310,7 +306,7 @@ class hmgtl : car {
 
 class matg : car {
 	displayName = "MAT Gunner";
-	backpack[] = {"CFP_Kitbag_MarpatDesert"};
+	backpack[] = {"B_Kitbag_cbr"};
 	secondaryWeapon[] = {"CUP_launch_Mk153Mod0"};
 	secondaryAttachments[] = {"cup_optic_smaw_scope"};
 	magazines[] += {
@@ -320,7 +316,7 @@ class matg : car {
 
 class matac : car {
 	displayName = "MAT Ammo Carrier";
-	backpack[] = {"CFP_Kitbag_MarpatDesert"};
+	backpack[] = {"B_Kitbag_cbr"};
 	backpackItems[] = {
 		LIST_2("CUP_SMAW_HEAA_M")
 	};
@@ -328,8 +324,12 @@ class matac : car {
 
 class mattl : car {
 	displayName = "MAT Team Leader";
-	backpack[] = {"CFP_Kitbag_MarpatDesert"};
-	linkedItems[] += {
+	backpack[] = {"B_Kitbag_cbr"};
+	linkedItems[] = {
+		"ItemMap",
+		"ItemCompass",
+		"ItemRadio",
+		"ItemWatch",
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -383,7 +383,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { "MTR_GEAR" };
+	items[] = { MTR_GEAR };
 	backPack[] = {"B_Carryall_cbr"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -405,7 +405,7 @@ class samag : car {
 	displayName = "AA Assistant Missile Specialist";
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	linkedItems[] += {
-		"Rangefinder",
+		"ACE_Vector",
 		"ItemGPS"
 	};
 };
@@ -415,7 +415,7 @@ class sn : r {
 	headgear[] = {"CUP_H_USMC_BOONIE_PRR_DES"};
 	uniform[] = {"CUP_U_B_USMC_FROG1_DMARPAT"};
 	goggles[] = {"default"};
-	vest[] = {"CFP_Alice_Vest2"};
+	vest[] = {"CUP_V_O_SLA_M23_1_BRN"};
 	primaryWeapon[] = {"CUP_srifle_M40A3_bipod"};
 	sidearmWeapon[] = {"CUP_hgun_M9"};
 	magazines[] = {
@@ -427,9 +427,12 @@ class sn : r {
 
 class sp : r {
 	displayName = "Spotter";
+	headgear[] = {"CUP_H_USMC_BOONIE_PRR_DES"};
+	uniform[] = {"CUP_U_B_USMC_FROG1_DMARPAT"};
+	vest[] = {"CUP_V_O_SLA_M23_1_BRN"};
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
-			LIST_10("CUP_5Rnd_762x51_M24")
+		LIST_10("CUP_5Rnd_762x51_M24")
 	};
 	items[] += {
 		"ACE_MapTools",
@@ -445,10 +448,10 @@ class sp : r {
 
 class vg : smg {
 	displayName = "Vehicle Gunner";
-	uniform[] = {"SP_0000_Standard_Coverall_Tan"};
+	uniform[] = {"FIR_USMC_Mechanic_Coverall"};
 	vest[] = {"CUP_V_B_Eagle_SPC_Crew"};
 	backpack[] = {};
-	headgear[] = {"SP_CVCHelmet_Tan"};
+	headgear[] = {"usm_helmet_cvc"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
 		"SmokeShellPurple"
@@ -473,7 +476,7 @@ class vd : vg {
 
 class hc : smg {
 	displayName = "Helicopter Crew";
-	uniform[] = {"FIR_Fighter_Pilot_USN_Nomex4"};
+	uniform[] = {"FIR_USMC_Mechanic_Coverall"};
 	vest[] = {"FIR_pilot_vest"};
 	backpack[] = {};
 	headgear[] = {
@@ -490,14 +493,14 @@ class hc : smg {
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
-	uniform[] = {"FIR_Fighter_Pilot_USN_Nomex4"};
+	uniform[] = {"FIR_Fighter_Pilot_USN_Nomex5"};
 	linkedItems[] += {"ItemGPS"};
 };
 
 class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
-	backpack[] = {"B_AssaultPack_mcamo"};
+	backpack[] = {"B_AssaultPack_cbr"};
 	linkedItems[] += {"ItemGPS"};
 	backpackItems[] = {"ToolKit"};
 };
@@ -540,6 +543,7 @@ class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"usm_pack_alice"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
 		"ACE_wirecutter",
 		"ACE_DefusalKit",
