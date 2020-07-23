@@ -235,6 +235,9 @@ class ar : r {
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backPack[] = {"usm_pack_200rnd_556_bandoliers"};
+	backpackItems[] = {
+		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
+	};
 	linkedItems[] += {"Binocular"};
 };
 
@@ -271,19 +274,19 @@ class mmgg : ar {
 
 class mmgac : r {
 	displayName = "MMG Ammo Carrier";
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] = {
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] += {
+		"ACE_MapTools",
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
-	backpackItems[] += {"ACE_MapTools"};
 	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
@@ -423,7 +426,7 @@ class sp : r {
 	displayName = "Spotter";
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
-			LIST_10("CUP_5Rnd_762x51_M24")
+		LIST_10("CUP_5Rnd_762x51_M24")
 	};
 	items[] += {
 		"ACE_MapTools",
