@@ -9,6 +9,12 @@ class CfgLoadouts {
 	delete OPF_G_F;
 
 	// US Factions
+	class us_army_1970 {
+		displayName = "US Army (1970, OG-107)";
+		category = "USA";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\us_army_1970.hpp"
+	};
 	class us_army_1985 {
 		displayName = "US Army (1985, M81)";
 		category = "USA";
