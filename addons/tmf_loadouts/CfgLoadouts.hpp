@@ -27,6 +27,18 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_2010.hpp"
 	};
+	class us_usmc_2010_wdl {
+		displayName = "US Marine Corps (2010, MARPAT-WDL)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_usmc_2010_wdl.hpp"
+	};
+	class us_rangers_2010 {
+		displayName = "US 75th Rangers (2010, Crye Multicam)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_rangers_2010.hpp"
+	};
 	// Western Factions
 	class ger_army_2010 {
 		displayName = "Bundeswehr (2010, Flecktarn)";
