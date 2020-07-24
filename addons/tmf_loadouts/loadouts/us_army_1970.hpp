@@ -2,13 +2,12 @@
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
 /* Dependencies:
-		HLC M60 Pack
-		HLC M1903 Pack
-		USM
+		NIArms M60 Pack
+		NIArms M1903 Pack
+		USM Uniforms
 		CUP
 		Community Factions Project
-		ACE
-		FIR
+		FIR AWS
 */
 
 //		Created by: AChesheireCat
@@ -90,7 +89,7 @@ class g : r {
 	vest[] = {"usm_vest_LBE_gr"};
 	primaryWeapon[] = {"CUP_glaunch_M79"};
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
-	magazines[] += {
+	magazines[] = {
 		LIST_20("CUP_1Rnd_HE_M203"),
 		LIST_11("CUP_1Rnd_HE_M203"),
 		LIST_2("CUP_1Rnd_Smoke_M203"),
@@ -227,7 +226,7 @@ class mmgg : ar {
 	primaryWeapon[] = {"CUP_lmg_M60"};
 	backPack[] = {"usm_pack_762x51_bandoliers"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_M_M60E4")
+		LIST_3("hlc_100Rnd_762x51_M_M60E4")
 	};
 };
 
