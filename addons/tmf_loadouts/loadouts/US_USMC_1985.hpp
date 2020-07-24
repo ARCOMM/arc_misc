@@ -176,6 +176,9 @@ class ar : r {
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpack[] = {"usm_pack_200rnd_556_bandoliers"};
+	backpackItems[] = {
+		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
+	};
 	Items[] += {"ACE_EntrenchingTool"};
 	linkedItems[] += {"Binocular"};
 };
@@ -211,18 +214,18 @@ class mmgg : ar {
 
 class mmgac : aar {
 	displayName = "MMG Ammo Carrier";
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] = {
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
 	items[] += {"ACE_MapTools"};
-	backPack[] = {
-		"usm_pack_762x51_bandoliers",
-		"usm_pack_762x51_ammobelts"
+	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backpackItems[] = {
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 	linkedItems[] += {"ItemRadio"};
 };
@@ -249,32 +252,26 @@ class hmgtl : car {
 class matg : car {
 	displayName = "MAT Gunner";
 	backpack[] = {"usm_pack_alice"};
-	secondaryWeapon[] = {"CUP_launch_M47"};
-	magazines[] += {
-		LIST_2("CUP_Dragon_EP1_M")
-	};
+	secondaryWeapon[] = {"ace_dragon_super"};
+	linkedItems[] += {"ace_dragon_sight"};
 };
 
 class matac : car {
 	displayName = "MAT Ammo Carrier";
-	backpack[] = {"usm_pack_alice"};
-	backpackItems[] = {
-		LIST_2("CUP_Dragon_EP1_M")
+	secondaryWeapon[] = {"ace_dragon_super"};
 	};
 };
 
 class mattl : car {
 	displayName = "MAT Team Leader";
 	backpack[] = {"usm_pack_alice"};
+	secondaryWeapon[] = {"ace_dragon_super"};
 	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS",
 		"ItemRadio"
 	};
-	backpackItems[] = {
-		LIST_2("CUP_Dragon_EP1_M"),
-		"ACE_MapTools"
-	};
+	Items[] += {"ACE_MapTools"};
 };
 
 class hatg : car {
