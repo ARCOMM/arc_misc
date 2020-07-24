@@ -91,7 +91,7 @@ class g : r {
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
 	magazines[] = {
 		LIST_20("CUP_1Rnd_HE_M203"),
-		LIST_11("CUP_1Rnd_HE_M203"),
+		LIST_5("CUP_1Rnd_HE_M203"),
 		LIST_2("CUP_1Rnd_Smoke_M203"),
 		LIST_2("CUP_1Rnd_StarFlare_Red_M203"),
 		LIST_7("CUP_7Rnd_45ACP_1911")
