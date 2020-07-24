@@ -21,11 +21,35 @@ class CfgLoadouts {
 		tooltip = "Author: Chesheire";
 		#include "loadouts\us_army_2003.hpp"
 	};
+	class us_usmc_1985 {
+		displayName = "US Marine Corps (1985, DBDU 'Chocolate Chip')";
+		category = "USA";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\us_usmc_1985.hpp"
+	};
+	class us_usmc_2003 {
+		displayName = "US Marine Corps (2003, DCU/M81)";
+		category = "USA";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\us_usmc_2003.hpp"
+	};
 	class us_army_2010 {
 		displayName = "US Army (2010, UCP)";
 		category = "USA";
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_2010.hpp"
+	};
+	class us_usmc_2010_wdl {
+		displayName = "US Marine Corps (2010, MARPAT-WDL)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_usmc_2010_wdl.hpp"
+	};
+	class us_rangers_2010 {
+		displayName = "US 75th Rangers (2010, Crye Multicam)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_rangers_2010.hpp"
 	};
 	// Western Factions
 	class ger_army_2010 {
