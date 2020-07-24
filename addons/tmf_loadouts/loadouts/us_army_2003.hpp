@@ -6,7 +6,7 @@
 		* CUP
 		* Community Factions Project
 		* USM
-		* FIR
+		* FIR AWS
 
 */
 
@@ -93,7 +93,7 @@ class r : baseMan {
 		"cup_acc_anpeq_2_black_top"
 	};
 	magazines[] = {
-		LIST_7("CUP_30Rnd_556x45_Stanag"),
+		LIST_6("CUP_30Rnd_556x45_Stanag"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
 		LIST_2("HandGrenade"),
 		"SmokeShell"
@@ -115,7 +115,7 @@ class g : r {
 		"cup_acc_anpeq_2_black_top"
 	};
 	magazines[] += {
-		LIST_11("CUP_1Rnd_HEDP_M203"),
+		LIST_10("CUP_1Rnd_HEDP_M203"),
 		LIST_2("CUP_1Rnd_Smoke_M203")
 	};
 };
@@ -190,7 +190,7 @@ class sl : ftl {
 		"ItemGPS"
 	};
 };
-
+ 
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"usm_bdu_8point_dcu"};
@@ -236,7 +236,7 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backPack[] = {"usm_pack_200rnd_556_bandoliers"};
 	backpackItems[] = {
-		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
+		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -263,7 +263,7 @@ class dm : r {
 class mmgg : ar {
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"CUP_lmg_M60"};
-	backPack[] = {"CUP_B_AlicePack_Khaki"};
+	backPack[] = {"usm_pack_alice"};
 	magazines[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		"HandGrenade",
@@ -274,18 +274,18 @@ class mmgg : ar {
 
 class mmgac : r {
 	displayName = "MMG Ammo Carrier";
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
-		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"usm_pack_alice"};
 	backpackItems[] += {
 		"ACE_MapTools",
-		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 	linkedItems[] += {
 		"ACE_Vector",
