@@ -539,7 +539,7 @@ class eng : car {
 		LIST_2("SLAMDirectionalMine_Wire_Mag"),
 		"SatchelCharge_Remote_Mag",
 		"ACE_DefusalKit",
-		"ACE_EntrenchingTool",
+		"ACE_EntrenchingTool"
 	};
 };
 
