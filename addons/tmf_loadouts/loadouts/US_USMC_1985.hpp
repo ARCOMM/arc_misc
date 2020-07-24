@@ -118,6 +118,7 @@ class smg : r {
 
 class ftl : g {
 	displayName = "Fireteam Leader";
+	backPack[] = {"CUP_B_SLA_Medicbag"};
 	items[] += {"ACE_MapTools"};
 	magazines[] += {
 		LIST_2("CUP_1Rnd_StarFlare_Red_M203"),
@@ -259,7 +260,6 @@ class matg : car {
 class matac : car {
 	displayName = "MAT Ammo Carrier";
 	secondaryWeapon[] = {"ace_dragon_super"};
-	};
 };
 
 class mattl : car {
