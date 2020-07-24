@@ -134,7 +134,7 @@ class car : r {
 class cls : car {
 	displayName = "Combat Life Saver";
 	traits[] = {"medic"};
-	vest[] = {"CUP_V_B_Eagle_SP-C_Corpsman"};
+	vest[] = {"CUP_V_B_Eagle_SP_C_Corpsman"};
 	backpack[] = {"CUP_B_USMC_MOLLE_WDL"};
 	backpackItems[] = { MEDICAL_CLS };
 };
