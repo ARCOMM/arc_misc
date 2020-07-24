@@ -6,7 +6,7 @@
 //		* CUP Weapons
 //		* FIR AWS(AirWeaponSystem)
 //		* USM Uniforms
-//		* HLC M249 Pack
+//		* NIArms M249 Pack
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
@@ -48,7 +48,11 @@ class baseMan {// Weaponless baseclass
 
 	// These are added to the uniform or vest
 	magazines[] = {};
-	items[] = { MEDICAL_R ,"ACE_Flashlight_XL50","ACE_SpraypaintGreen"};
+	items[] = {
+		 MEDICAL_R ,
+		"ACE_Flashlight_XL50",
+		"ACE_SpraypaintGreen"
+	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
 		"ItemMap",
