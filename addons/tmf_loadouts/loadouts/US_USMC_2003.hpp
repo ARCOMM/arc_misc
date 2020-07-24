@@ -6,7 +6,7 @@
 		* CUP
 		* Community Factions Project
 		* USM
-		* HLC M14 Pack
+		* NIArms M14 Pack
 		* FIR AWS
 
 */
@@ -206,7 +206,7 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backPack[] = {"usm_pack_200rnd_556_bandoliers"};
 	backpackItems[] = {
-		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
+		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -244,15 +244,15 @@ class mmgac : r {
 	displayName = "MMG Ammo Carrier";
 	backPack[] = {"usm_pack_762x51_bandoliers"};
 	backpackItems[] = {
-		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
 	backPack[] = {"usm_pack_762x51_bandoliers"};
-	backpackItems[] += {
-		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+	backpackItems[] = {
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 	linkedItems[] = {"ItemGPS"};
 	items[] += {"ACE_MapTools"};
