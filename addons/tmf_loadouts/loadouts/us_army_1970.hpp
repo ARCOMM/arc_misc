@@ -498,7 +498,7 @@ class jp : smg {
 	headgear[] = {"FIR_hgu26p"};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_9x19_MP5"),
+		LIST_3("CUP_30Rnd_45ACP_MAC10_M"),
 		"SmokeShellPurple"
 	};
 };
