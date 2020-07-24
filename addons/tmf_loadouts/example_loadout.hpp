@@ -164,7 +164,8 @@ class ar : r {
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpackItems[] = {
-		LIST_4("100Rnd_65x39_caseless_mag")
+		LIST_4("100Rnd_65x39_caseless_mag"),
+		"ACE_EntrenchingTool"
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -218,7 +219,8 @@ class mmgtl : aar {
 		"ItemGPS"
 	};
 	backpackItems[] = {
-		LIST_2("130Rnd_338_Mag")
+		LIST_2("130Rnd_338_Mag"),
+		"ACE_EntrenchingTool"
 	};
 };
 
@@ -331,7 +333,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { "MTR_GEAR" };
+	items[] = { MTR_GEAR };
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -484,14 +486,18 @@ class eng : car {
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"B_Kitbag_rgr"};
 	vest[] = {"V_PlateCarrier3_rgr"};
-	magazines[] += {
-		LIST_4("ClaymoreDirectionalMine_Remote_Mag")
+	sidearmWeapon[] = {"ACE_VMM3"};
+	items[] += {
+		"ACE_wirecutter",
+		"ACE_Clacker",
+		"ACE_DefusalKit",
+		"ACE_EntrenchingTool"
 	};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
 		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag")
+		LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
+		"SatchelCharge_Remote_Mag"
 	};
 };
 
@@ -500,13 +506,15 @@ class engm : car {
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"B_Kitbag_rgr"};
 	vest[] = {"V_PlateCarrier3_rgr"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		LIST_2("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag")
+		"ACE_wirecutter",
+		"ACE_DefusalKit",
+		"ACE_EntrenchingTool"
 	};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
+		LIST_8("APERSMine_Range_Mag"),
 		"ATMine_Range_Mag"
 	};
 };
