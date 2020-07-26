@@ -44,11 +44,8 @@ force ace_common_checkPBOsWhitelist = "['ares','mars_server']";
 force ace_noradio_enabled = true;
 
 // ACE Cook off
-force ace_cookoff_ammoCookoffDuration = 0.3;
-force ace_cookoff_enable = 2;
-force ace_cookoff_enableAmmobox = true;
-force ace_cookoff_enableAmmoCookoff = true;
-force ace_cookoff_probabilityCoef = 1;
+force ace_cookoff_enable = 0;
+force ace_cookoff_enableAmmoCookoff = false;
 
 // ACE Crew Served Weapons
 force ace_csw_ammoHandling = 2;
