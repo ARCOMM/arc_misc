@@ -206,9 +206,6 @@ force ace_ui_allowSelectiveUI = true;
 // ACE Vehicle Lock
 force ace_vehiclelock_lockVehicleInventory = true;
 
-// ACE Vehicles
-force ace_vehicles_keepEngineRunning = true;
-
 // ACE View Distance Limiter
 force ace_viewdistance_limitViewDistance = 12000;
 
