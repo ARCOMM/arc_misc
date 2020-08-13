@@ -93,7 +93,7 @@ class car : r {
 class cls : car {
 	displayName = "Combat Life Saver";
 	traits[] = {"medic"};
-	backpack[] = {"B_FieldPack_cbr"};
+	backpack[] = {"B_FieldPack_khk"};
 	backpackItems[] = { MEDICAL_CLS };
 };
 
