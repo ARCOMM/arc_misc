@@ -87,6 +87,7 @@ class g : r {
 	displayName = "Grenadier";
 	vest[] = {"CUP_V_B_IOTV_gl"};
 	primaryWeapon[] = {"CUP_arifle_M4A1_BUIS_GL"};
+	backpack[] = {"CUP_B_AssaultPack_ACU"};
 	magazines[] += {
 		LIST_4("CUP_1Rnd_HEDP_M203"),
 		LIST_2("CUP_1Rnd_Smoke_M203"),
@@ -117,7 +118,7 @@ class smg : r {
 	scope[] = {"cup_optic_microt1"};
 	primaryWeapon[] = {"CUP_smg_MP5A5"};
 	magazines[] = {
-		LIST_10("CUP_30Rnd_9x19_MP5"),
+		LIST_8("CUP_30Rnd_9x19_MP5"),
 		LIST_2("HandGrenade"),
 		LIST_2("SmokeShell")
 	};
@@ -125,7 +126,6 @@ class smg : r {
 
 class ftl : g {
 	displayName = "Fireteam Leader";
-	backpack[] = {"CUP_B_AssaultPack_ACU"};
 	vest[] = {"CUP_V_B_IOTV_tl"};
 	items[] += {"ACE_MapTools"};
 	magazines[] += {
@@ -247,17 +247,30 @@ class mmgtl : aar {
 
 class hmgg : car {
 	displayName = "HMG Gunner";
-	backPack[] = {"CUP_B_M2_Gun_Bag"};
+	backpack[] = {"B_FieldPack_oucamo"};
+	secondaryWeapon[] = {"ace_csw_staticM2ShieldCarry"};
+	backpackItems[] = {
+		LIST_2("ace_csw_100Rnd_127x99_mag")
+	};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"CUP_B_M2_Tripod_Bag"};
+	secondaryWeapon[] = {"ace_csw_m3CarryTripod"};
+	backpack[] = {"B_Carryall_oucamo"};
+	backpackItems[] = {
+		LIST_3("ace_csw_100Rnd_127x99_mag"),
+		"ACE_EntrenchingTool"
+	};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	backPack[] = {"CUP_B_M2_MiniTripod_Bag"};
+	backpack[] = {"B_FieldPack_oucamo"};
+	secondaryWeapon[] = {"ace_csw_m3CarryTripodLow"};
+	backpackItems[] = {
+		LIST_2("ace_csw_100Rnd_127x99_mag")
+	};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -308,6 +321,7 @@ class mattl : car {
 class hatg : car {
 	displayName = "HAT Gunner";
 	backpack[] = {"B_FieldPack_oucamo"};
+	secondaryWeapon[] = {"CUP_launch_Javelin"};
 	magazines[] += {"CUP_Javelin_M"};
 };
 
@@ -319,7 +333,7 @@ class hatac : r {
 
 class hattl : car {
 	displayName = "HAT Team Leader";
-	backpack[] = {"B_FieldPack_oucamo"};
+	backpack[] = {"B_Carryall_oucamo"};
 	backpackItems[] = {"CUP_Javelin_M"};
 	linkedItems[] = {
 		"ItemMap",
@@ -379,6 +393,7 @@ class samg : car {
 
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
+	backpack[] = {"CUP_B_AssaultPack_ACU"};
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	linkedItems[] = {
 		"ItemMap",
@@ -400,14 +415,14 @@ class sn : r {
 
 	backpackItems[] = {LIST_5("CUP_10Rnd_127x99_M107")};
 
-	code = QUOTE(\
+	code = "\
 		backpackContainer _this setVariable ['ace_gunbag_gunbagWeapon', \
 		[ \
 			'CUP_srifle_M107_Base', \
 			['','','optic_lrps',''], \
 			[['CUP_10Rnd_127x99_M107', 10]] \
 		], true]; \
-	);
+	";
 };
 
 class sp : r {
@@ -491,6 +506,7 @@ class jp : smg {
 	traits[] = {"engineer"};
 	uniform[] = {"U_B_PilotCoveralls"};
 	vest[] = {};
+	backpack[] = {"CUP_B_AssaultPack_ACU"};
 	headgear[] = {"H_PilotHelmetFighter_B"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
@@ -511,7 +527,7 @@ class eng : car {
 		"ToolKit",
 		"ACE_wirecutter",
 		"SatchelCharge_Remote_Mag",
-		LIST_4("SLAMDirectionalMine_Wire_Mag")
+		LIST_3("SLAMDirectionalMine_Wire_Mag")
 	};
 };
 
