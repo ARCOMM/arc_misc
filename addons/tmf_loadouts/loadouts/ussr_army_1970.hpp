@@ -41,7 +41,7 @@ class baseMan {// Weaponless baseclass
 
 	// These are added to the uniform or vest
 	magazines[] = {};
-	items[] = { MEDICAL_R };
+	items[] = { MEDICAL_R, "ACE_Flashlight_KSF1" };
 	// These are added directly into their respective slots
 	linkedItems[] = {
 		"ItemMap",
