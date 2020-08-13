@@ -143,9 +143,19 @@ class sl : ftl {
 	};
 };
 
+class slr : sl {
+	displayName = "Squad Leader (Radio)";
+	backpack[] = {"CUP_B_Kombat_Radio_Olive"};
+};
+
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"CUP_H_RUS_Beret_Spetsnaz"};
+};
+
+class cor : co {
+	displayName = "Platoon Leader (Radio)";
+	radio[] = {"CUP_B_Kombat_Radio_Olive"};
 };
 
 class fac : sl {
