@@ -89,6 +89,12 @@ class CfgLoadouts {
 		#include "loadouts\au_army_2018.hpp"
 	};
 	// Russian/Soviet Factions
+	class ussr_army_1970 {
+		displayName = "Soviet Army (1970, M88)";
+		category = "Russia";
+		tooltip = "Author: Freddo\n\nNote: Low ammo, bring resupply.";
+		#include "loadouts\ussr_army_1970.hpp"
+	};
 	class ru_army_2010 {
 		displayName = "Russian Army (2010, VSR-98)";
 		category = "Russia";
