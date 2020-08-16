@@ -8,6 +8,8 @@ LIST_1("ACE_tourniquet")
 LIST_2("ACE_bodyBag"), \
 LIST_20("ACE_fieldDressing"), \
 LIST_10("ACE_morphine"), \
+LIST_3("ACE_salineIV_250"), \
+LIST_1("ACE_salineIV_500"), \
 LIST_5("ACE_epinephrine"), \
 LIST_5("ACE_tourniquet"), \
 LIST_10("ACE_splint")
