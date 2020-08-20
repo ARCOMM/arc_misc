@@ -114,4 +114,10 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo\n\nNote: Low ammo count. Make sure resupply is available.";
 		#include "loadouts\tk_locals.hpp"
 	};
+	class chdkz {
+		displayName = "Chernarussian Movement of the Red Star";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\chdkz.hpp"
+	};
 };
