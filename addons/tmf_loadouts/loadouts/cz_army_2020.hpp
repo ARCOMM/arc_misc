@@ -6,7 +6,6 @@
 //		* CUP Weapons
 //		* Community Factions Project
 //		* FIR AWS(AirWeaponSystem)
-//		* ACE Crew Served Weaponry
 
 //	Reference: https://en.wikipedia.org/wiki/Military_equipment_of_the_Czech_Republic
 
@@ -86,7 +85,8 @@ class r : baseMan {
 	scope[] = {"cup_optic_zddot"};
 	attachment[] = {"cup_acc_flashlight"};
 	magazines[] = {
-		LIST_12("CUP_30Rnd_556x45_CZ805"),
+		LIST_8("CUP_30Rnd_556x45_CZ805"),
+		LIST_4("CUP_30Rnd_TE1_Red_Tracer_556x45_CZ805"),
 		LIST_2("HandGrenade"),
 		LIST_2("SmokeShell")
 	};
@@ -424,7 +424,7 @@ class mtrtl : car {
 
 class samg : car {
 	displayName = "AA Missile Specialist";
-	secondaryWeapon[] = {"CUP_launch_9K32Strela"};
+	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	magazines[] = {
 		LIST_9("CUP_30Rnd_556x45_CZ805"),
 		"HandGrenade",
@@ -434,7 +434,7 @@ class samg : car {
 
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
-	secondaryWeapon[] = {"CUP_launch_9K32Strela"};
+	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	magazines[] = {
 		LIST_9("CUP_30Rnd_556x45_CZ805"),
 		"HandGrenade",
@@ -467,7 +467,6 @@ class sn : r {
 	backpackItems[] = {
 		LIST_6("CUP_5Rnd_762x51_M24"),
 		"CUP_srifle_M24_des_LeupoldMk4LRT",
-		"ACRE_VHF30108SPIKE"
 	};
 	linkedItems[] += {"ItemGPS"};
 };
@@ -481,7 +480,8 @@ class sp : sn {
 	backpackItems[] = {
 		MEDICAL_CLS ,
 		LIST_4("CUP_5Rnd_762x51_M24"),
-		"ACE_SpottingScope"
+		"ACE_SpottingScope",
+		"ACRE_VHF30108SPIKE"
 	};
 	linkedItems[] = {
 		"ItemMap",
