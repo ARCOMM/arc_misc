@@ -88,6 +88,12 @@ class CfgLoadouts {
 		tooltip = "Author: Chesheire";
 		#include "loadouts\au_army_2018.hpp"
 	};
+	class cz_army_2020 {
+		displayName = "Czech Army (2020, Vz. 95)";
+		category = "Western Factions";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\cz_army_2020.hpp"
+	};
 	// Russian/Soviet Factions
 	class ussr_army_1970 {
 		displayName = "Soviet Army (1970, M88)";
