@@ -91,7 +91,7 @@ class CfgLoadouts {
 	class cz_army_2020 {
 		displayName = "Czech Army (2020, Vz. 95)";
 		category = "Western Factions";
-		tooltip = "Author: AChesheireCat";
+		tooltip = "Author: AChesheireCat\n\nNote: SAW has 4x optic.";
 		#include "loadouts\cz_army_2020.hpp"
 	};
 	// Russian/Soviet Factions
