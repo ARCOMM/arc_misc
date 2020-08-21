@@ -103,7 +103,7 @@ class g : r {
 		LIST_10("CUP_30Rnd_556x45_CZ805"),
 		"HandGrenade",
 		"SmokeShell",
-		LIST_10("CUP_1Rnd_HEDP_M203"),
+		LIST_8("CUP_1Rnd_HEDP_M203"),
 		LIST_2("1Rnd_Smoke_Grenade_shell")
 	};
 };
