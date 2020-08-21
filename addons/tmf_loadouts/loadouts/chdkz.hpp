@@ -311,7 +311,7 @@ class hatg : car {
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	backPack[] = {"CUP_B_Metis_Gun_Bag"};
+	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
 };
 
 class hattl : car {
@@ -354,7 +354,7 @@ class mtrtl : car {
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
-	linkedItems[] += {"ItemRadio"};
+	linkedItems[] += {"ItemRadio","Binocular"};
 };
 
 class samg : car {
