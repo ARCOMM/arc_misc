@@ -476,9 +476,7 @@ class sp : sn {
 	vest[] = {"CFP_LBT6094_MG_Multicam"};
 	backpack[] = {"CUP_B_ACRPara_m95"};
 	items[] += {"ACE_MapTools"};
-	traits[] = {"medic"};
 	backpackItems[] = {
-		MEDICAL_CLS ,
 		LIST_4("CUP_5Rnd_762x51_M24"),
 		"ACE_SpottingScope",
 		"ACRE_VHF30108SPIKE"
@@ -604,7 +602,9 @@ class eng : car {
 class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
+	vest[] = {"CUP_V_CZ_vest18"};
 	backpack[] = {"CUP_B_ACRPara_m95"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
 		"ACE_DefusalKit",
 		"ACE_EntrenchingTool",
