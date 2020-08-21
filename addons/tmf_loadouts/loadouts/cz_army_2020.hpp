@@ -196,7 +196,10 @@ class fac : co {
 	displayName = "Forward Air Controller";
 	attachment[] = {"ace_acc_pointer_green"};
 	backpack[] = {"CUP_B_Kombat_Radio_Olive"};
-	backpackItems[] = { FAC_GEAR };
+	backpackItems[] = {
+		FAC_GEAR ,
+		"ACRE_VHF30108"
+	};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -446,7 +449,7 @@ class samag : car {
 class sn : r {
 	displayName = "Sniper";
 	uniform[] = {"CUP_U_B_CZ_WDL_Kneepads"};
-	vest[] = {"CFP_CarrierRig_Operator_OGA_OD"};
+	vest[] = {"CFP_LBT6094_operator_Multicam"};
 	backpack[] = {"CUP_B_ACRPara_m95"};
 	headgear[] = {"CUP_H_OpsCore_Spray_SF"};
 	hmd[] = {"CUP_NVG_GPNVG_black"};
@@ -463,19 +466,22 @@ class sn : r {
 	};
 	backpackItems[] = {
 		LIST_6("CUP_5Rnd_762x51_M24"),
-		"CUP_srifle_M24_des_LeupoldMk4LRT"
+		"CUP_srifle_M24_des_LeupoldMk4LRT",
+		"ACRE_VHF30108SPIKE"
 	};
 	linkedItems[] += {"ItemGPS"};
 };
 
 class sp : sn {
 	displayName = "Spotter";
+	vest[] = {"CFP_LBT6094_MG_Multicam"};
+	backpack[] = {"CUP_B_ACRPara_m95"};
 	items[] += {"ACE_MapTools"};
 	traits[] = {"medic"};
-	backpack[] = {"CUP_B_ACRPara_m95"};
 	backpackItems[] = {
 		MEDICAL_CLS ,
 		LIST_4("CUP_5Rnd_762x51_M24"),
+		"ACE_SpottingScope"
 	};
 	linkedItems[] = {
 		"ItemMap",
