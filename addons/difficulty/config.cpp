@@ -22,3 +22,5 @@ class CfgPatches
 #include "CFgAISkill.hpp"
 #include "CfgBrains.hpp"
 #include "CfgEventhandlers.hpp"
+#include "Cfg3DEN.hpp"
+#include "RscDisplayAttributesMan.hpp"
