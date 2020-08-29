@@ -94,6 +94,12 @@ class CfgLoadouts {
 		tooltip = "Author: AChesheireCat\n\nNote: SAW has 4x optic.";
 		#include "loadouts\cz_army_2020.hpp"
 	};
+	class idf_army_2010 {
+		displayName = "Israeli Defence Forces (2010)";
+		category = "Western Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\idf_army_2010.hpp"
+	};
 	// Russian/Soviet Factions
 	class ussr_army_1970 {
 		displayName = "Soviet Army (1970, M88)";
