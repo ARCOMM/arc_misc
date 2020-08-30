@@ -237,7 +237,9 @@ class aar : r {
 
 class rat : r {
 	displayName = "Rifleman (AT)";
+	backPack[] = {"CUP_B_ACRScout_m95"};
 	secondaryWeapon[] = {"launch_RPG32_green_F"};
+	magazines[] = {"RPG32_F"};
 };
 
 class dm : r {
