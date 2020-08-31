@@ -72,7 +72,7 @@ class baseMan {// Weaponless baseclass
 
 class r : baseMan {
 	displayName = "Rifleman";
-	hmg[] = {
+	hmd[] = {
 		"CUP_NVG_PVS7" //TODO: Switch out with CUP_NVG_PVS7_Hide
 	};
 	headgear[] = {
@@ -83,7 +83,16 @@ class r : baseMan {
 		"CFP_IDF_M76_BD_GG",
 		"CFP_IDF_M76_CB_GG",
 		"CFP_IDF_M76_CF_GG",
-		"CFP_IDF_M76_GG"
+		"CFP_IDF_M76_GG",
+		"CFP_Mitznefet_Tropical",
+		"CFP_MitzHelm1_Wdl",
+		"CFP_MitzHelm1_Wdl2",
+		"CFP_MitzHelm2_Wdl",
+		"CFP_MitzHelm2_Wdl2",
+		"CFP_MitzHelm3_Wdl",
+		"CFP_MitzHelm3_Wdl2",
+		"CFP_MitzHelm4_Wdl",
+		"CFP_MitzHelm4_Wdl2"
 	};
 	primaryWeapon[] = {"arifle_TRG21_F"};
 	scope[] = {
@@ -141,7 +150,8 @@ class ftl : g {
 	displayName = "Fireteam Leader";
 	items[] += {"ACE_MapTools"};
 	magazines[] += {
-		LIST_2("1Rnd_SmokeGreen_Grenade_shell")
+		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
+		LIST_2("ACE_40mm_Flare_white")
 	};
 	linkedItems[] += {"Binocular","ItemGPS"};
 };
@@ -149,9 +159,9 @@ class ftl : g {
 class sl : r {
 	displayName = "Squad Leader";
 	items[] += {"ACE_MapTools"};
-	sidearmWeapon[] = {"CUP_hgun_Glock17"};
+	sidearmWeapon[] = {"CUP_hgun_Phantom"};
 	magazines[] += {
-		LIST_2("CUP_17Rnd_9x19_glock17")
+		LIST_2("CUP_18Rnd_9x19_Phantom")
 	};
 	linkedItems[] += {
 		"ACE_VectorDay",
@@ -270,6 +280,7 @@ class hmgg : car {
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
+	secondaryWeapon[] = {"ace_csw_m3CarryTripod"};
 	backPack[] = {"B_Carryall_oli"};
 	backpackItems[] = {
 		LIST_2("ace_csw_100Rnd_127x99_mag"),
