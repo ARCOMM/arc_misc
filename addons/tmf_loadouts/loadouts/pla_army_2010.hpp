@@ -41,7 +41,11 @@ class baseMan {// Weaponless baseclass
 
 	// These are added to the uniform or vest
 	magazines[] = {};
-	items[] = { MEDICAL_R, "Chemlight_red" };
+	items[] = {
+		MEDICAL_R,
+		"Chemlight_red",
+		"ACE_Flashlight_KSF1"
+	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
 		"ItemMap",
@@ -235,7 +239,7 @@ class hmgg : car {
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"CUP_B_Kord_Gun_Bag"};
+	backPack[] = {"CUP_B_Kord_Tripod_Bag"};
 };
 
 class hmgtl : car {
@@ -295,7 +299,7 @@ class hatg : car {
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	backPack[] = {"CUP_B_Metis_Gun_Bag"};
+	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
 };
 
 class hattl : car {
