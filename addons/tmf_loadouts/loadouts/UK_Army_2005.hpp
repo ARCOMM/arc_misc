@@ -1,6 +1,13 @@
 // If you want to base a loadout on an existing one, this repository contains them all:
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
+//Dependencies:
+//		* CUP Uniforms
+//		* CUP Weapons
+//		* Community Factions Project
+//		* FIR AWS(AirWeaponSystem)
+// 		* NIArms P226
+
 // Created by: AChesheireCat
 
 class baseMan {// Weaponless baseclass
@@ -205,18 +212,18 @@ class aar : r {
 
 class rat : car {
 	displayName = "Rifleman (AT)";
-	secondaryWeapon[] = {"CUP_launch_NLAW"};
+	secondaryWeapon[] = {"CUP_launch_M136"};
 };
 
 class dm : r {
 	displayName = "Designated Marksman";
-	primaryWeapon[] = {"CUP_srifle_AWM_wdl"};
-	scope[] = {"hlc_optic_zf95base"};
-	bipod[] = {"cup_bipod_harris_1a2_l_blk"};
+	primaryWeapon[] = {"CUP_arifle_L86A2"};
+	scope[] = {"cup_optic_susat"};
 	secondaryWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
-		LIST_9("CUP_5Rnd_86x70_L115A1"),
-		LIST_5("hlc_15Rnd_9x19_B_P226"),
+		LIST_7("CUP_30Rnd_556x45_Stanag_L85"),
+		LIST_2("CUP_30Rnd_556x45_Stanag_L85_Tracer_Red"),
+		LIST_3("hlc_15Rnd_9x19_B_P226"),
 		LIST_2("CUP_HandGrenade_L109A1_HE"),
 		LIST_2("SmokeShell")
 	};
@@ -224,7 +231,7 @@ class dm : r {
 
 class mmgg : ar {
 	displayName = "MMG Gunner";
-	primaryWeapon[] = {"CUP_lmg_FNMAG"};
+	primaryWeapon[] = {"CUP_lmg_L7A2_Flat"};
 	backPack[] = {"usm_pack_762x51_bandoliers"};
 	magazines[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
@@ -293,17 +300,17 @@ class hmgtl : car {
 
 class matg : car {
 	displayName = "MAT Gunner";
-	secondaryWeapon[] = {"CUP_launch_NLAW"};
+	backPack[] = {"Redd_Milan_Static_Tripod"};
 };
 
 class matac : r {
 	displayName = "MAT Ammo Carrier";
-	secondaryWeapon[] = {"CUP_launch_NLAW"};
+	backPack[] = {"Redd_Milan_Static_Barrel"};
 };
 
 class mattl : car {
 	displayName = "MAT Team Leader";
-	secondaryWeapon[] = {"CUP_launch_NLAW"};
+	backPack[] = {"Redd_Milan_Static_Barrel"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"ACE_Vector",
@@ -397,13 +404,13 @@ class sn : r {
 	vest[] = {"usm_vest_lbv_rm"};
 	headgear[] = {};
 	goggles[] = {"default"};
-	primaryWeapon[] = {"CUP_srifle_M24_wdl"};
-	scope[] = {"cup_optic_leupoldmk4"};
-	sidearmWeapon[] = {"CUP_hgun_M9"};
+	primaryWeapon[] = {"CUP_srifle_AWM_wdl"};
+	scope[] = {"hlc_optic_leupoldm3a"};
+	sidearmWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
-		LIST_7("CUP_5Rnd_762x51_M24"),
+		LIST_7("CUP_5Rnd_86x70_L115A1"),
 		LIST_2("HandGrenade"),
-		LIST_4("CUP_15Rnd_9x19_M9")
+		LIST_4("hlc_15Rnd_9x19_B_P226")
 	};
 };
 
@@ -507,15 +514,16 @@ class eng : car {
 	displayName = "Combat Engineer (Explosives)";
 	traits[] = {"engineer", "explosiveSpecialist"};
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer"};
-	backpack[] = {"CUP_B_AlicePack_Khaki"};
-	magazines[] += {
-		LIST_4("ClaymoreDirectionalMine_Remote_Mag")
-	};
+	backpack[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer"};
+	sidearmWeapon[] = {"ACE_VMH3"};
+	items[] += {"ACE_Clacker"};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
-		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag")
+		LIST_3("DemoCharge_Remote_Mag"),
+		LIST_2("SLAMDirectionalMine_Wire_Mag"),
+		"SatchelCharge_Remote_Mag",
+		"ACE_DefusalKit",
+		"ACE_EntrenchingTool",
 	};
 };
 
@@ -523,22 +531,26 @@ class engm : car {
 	displayName = "Combat Engineer (Mines)";
 	traits[] = {"engineer", "explosiveSpecialist"};
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer"};
-	backpack[] = {"CUP_B_AlicePack_Khaki"};
+	backpack[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		LIST_2("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag")
+		"ACE_DefusalKit",
+		"ACE_EntrenchingTool",
+		"ACE_Clacker"
 	};
 	backpackItems[] = {
-		"MineDetector",
 		"ToolKit",
-		"ATMine_Range_Mag"
+		LIST_4("APERSBoundingMine_Range_Mag"),
+		LIST_2("APERSTripMine_Wire_Mag"),
+		LIST_2("ACE_FlareTripMine_Mag"),
+		LIST_2("ClaymoreDirectionalMine_Remote_Mag")
 	};
 };
 
 class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
-	backpack[] = {"B_UAV_01_backpack_F"};
+	backpack[] = {};
 	backpackItems[] = {};
 	linkedItems[] += {"B_UavTerminal"};
 };
