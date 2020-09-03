@@ -206,7 +206,7 @@ class fac : ftl {
 	};
 	magazines[] += {
 		LIST_3("CUP_18Rnd_9x19_Phantom"),
-		LIST_4("ACE_Chemlight_HiGreen")
+		LIST_4("ACE_Chemlight_HiGreen"),
 		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
 		LIST_2("CUP_1Rnd_SmokeRed_M203"),
 	};
