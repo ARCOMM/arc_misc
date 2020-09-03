@@ -94,11 +94,11 @@ class CfgLoadouts {
 		tooltip = "Author: Chesheire";
 		#include "loadouts\au_army_2018.hpp"
 	};
-	class idf_army_2010 {
-		displayName = "Israeli Defence Forces (2010)";
+	class cz_army_2020 {
+		displayName = "Czech Army (2020, Vz. 95)";
 		category = "Western Factions";
-		tooltip = "Author: Freddo";
-		#include "loadouts\idf_army_2010.hpp"
+		tooltip = "Author: AChesheireCat\n\nNote: SAW has 4x optic.";
+		#include "loadouts\cz_army_2020.hpp"
 	};
 	// Russian/Soviet Factions
 	class ussr_army_1970 {
