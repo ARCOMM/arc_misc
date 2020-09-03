@@ -171,7 +171,7 @@ class ftl : g {
 class sl : r {
 	displayName = "Squad Leader";
 	vest[] = {"CUP_V_CZ_vest08"};
-	backPack[] = {"CUP_B_ACRScout_m95"};
+	backPack[] = {"CUP_B_ACRPara_m95"};
 	sidearmWeapon[] = {"CUP_hgun_Phantom"};
 	magazines[] = {
 		LIST_11("CUP_30Rnd_556x45_CZ805"),
@@ -192,6 +192,7 @@ class sl : r {
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"CUP_H_CZ_Patrol_Cap"};
+	backPack[] = {"CUP_B_ACRPara_m95"};
 };
 
 class fac : ftl {
@@ -206,7 +207,6 @@ class fac : ftl {
 	};
 	magazines[] += {
 		LIST_3("CUP_18Rnd_9x19_Phantom"),
-		LIST_4("ACE_Chemlight_HiGreen"),
 		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
 		LIST_2("CUP_1Rnd_SmokeRed_M203"),
 	};
