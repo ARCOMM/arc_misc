@@ -6,7 +6,6 @@
 //		* CUP Weapons
 //		* Community Factions Project
 //		* FIR AWS(AirWeaponSystem)
-//		* ACE Crew Served Weaponry
 
 //	Reference: https://en.wikipedia.org/wiki/Military_equipment_of_the_Czech_Republic
 
@@ -435,7 +434,7 @@ class mtrtl : car {
 
 class samg : car {
 	displayName = "AA Missile Specialist";
-	secondaryWeapon[] = {"CUP_launch_9K32Strela"};
+	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	magazines[] = {
 		LIST_9("CUP_30Rnd_556x45_CZ805"),
 		"HandGrenade",
@@ -445,7 +444,7 @@ class samg : car {
 
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
-	secondaryWeapon[] = {"CUP_launch_9K32Strela"};
+	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	magazines[] = {
 		LIST_9("CUP_30Rnd_556x45_CZ805"),
 		"HandGrenade",
