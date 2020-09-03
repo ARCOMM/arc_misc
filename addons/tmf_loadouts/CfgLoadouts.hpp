@@ -119,7 +119,14 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\ru_army_2010.hpp"
 	};
-	// Armaverse factions
+	// Eastern Factions
+	class pla_army_2010 {
+		displayName = "Peoples Liberation Army (2010, Type 07 Universal)";
+		category = "Eastern Factions";
+		tooltip = "Author: Freddo\n\nUses APEX weapons.";
+		#include "loadouts\pla_army_2010.hpp"
+	};
+	// Armaverse Factions
 	class tk_locals {
 		displayName = "Takistani Locals";
 		category = "Armaverse Factions";
