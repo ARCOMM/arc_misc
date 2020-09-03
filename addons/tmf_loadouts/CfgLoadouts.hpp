@@ -70,6 +70,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo\n\nNote: All units have LPOs (1.5x)";
 		#include "loadouts\ger_army_trop_2010.hpp"
 	};
+	class uk_army_2005 {
+		displayName = "UK Army (2005, DDPM)";
+		category = "Western Factions";
+		tooltip = "Author: AChesheireCat\n\nNote: All fireteam units besides the Fireteam Leader have SUSAT scopes (4x)";
+		#include "loadouts\uk_army_2005.hpp"
+	};
 	class uk_army_2010 {
 		displayName = "UK Army (2010, MTP)";
 		category = "Western Factions";
