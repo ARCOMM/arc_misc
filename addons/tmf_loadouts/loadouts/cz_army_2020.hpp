@@ -95,15 +95,17 @@ class r : baseMan {
 class g : r {
 	displayName = "Grenadier";
 	vest[] = {"CUP_V_CZ_vest06"};
+	backPack[] = {"CUP_B_ACRScout_m95"};
 	primaryWeapon[] = {
 		"CUP_arifle_CZ805_GL_coyote",
 		"CUP_arifle_CZ805_GL"
 	};
 	magazines[] = {
-		LIST_10("CUP_30Rnd_556x45_CZ805"),
+		LIST_8("CUP_30Rnd_556x45_CZ805"),
+		LIST_2("CUP_30Rnd_TE1_Red_Tracer_556x45_CZ805"),
 		"HandGrenade",
 		"SmokeShell",
-		LIST_8("CUP_1Rnd_HEDP_M203"),
+		LIST_10("CUP_1Rnd_HEDP_M203"),
 		LIST_2("1Rnd_Smoke_Grenade_shell")
 	};
 };
@@ -169,7 +171,7 @@ class ftl : g {
 class sl : r {
 	displayName = "Squad Leader";
 	vest[] = {"CUP_V_CZ_vest08"};
-	backPack[] = {"CUP_B_ACRScout_m95"};
+	backPack[] = {"CUP_B_ACRPara_m95"};
 	sidearmWeapon[] = {"CUP_hgun_Phantom"};
 	magazines[] = {
 		LIST_11("CUP_30Rnd_556x45_CZ805"),
@@ -190,15 +192,23 @@ class sl : r {
 class co : sl {
 	displayName = "Platoon Leader";
 	headgear[] = {"CUP_H_CZ_Patrol_Cap"};
+	backPack[] = {"CUP_B_ACRPara_m95"};
 };
 
-class fac : co {
+class fac : ftl {
 	displayName = "Forward Air Controller";
+	headgear[] = {"CUP_H_CZ_Patrol_Cap"};
 	attachment[] = {"ace_acc_pointer_green"};
+	sidearmWeapon[] = {"CUP_hgun_Phantom"};
 	backpack[] = {"CUP_B_Kombat_Radio_Olive"};
 	backpackItems[] = {
 		FAC_GEAR ,
 		"ACRE_VHF30108"
+	};
+	magazines[] += {
+		LIST_3("CUP_18Rnd_9x19_Phantom"),
+		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
+		LIST_2("CUP_1Rnd_SmokeRed_M203"),
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -587,7 +597,7 @@ class eng : car {
 	traits[] = {"engineer", "explosiveSpecialist"};
 	vest[] = {"CUP_V_CZ_vest18"};
 	backpack[] = {"CUP_B_ACRPara_m95"};
-	sidearmWeapon[] = {"ACE_VMM3"};
+	sidearmWeapon[] = {"ACE_VMH3"};
 	items[] += {"ACE_Clacker"};
 	backpackItems[] = {
 		"ToolKit",
