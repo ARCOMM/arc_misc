@@ -61,6 +61,10 @@ force ace_frag_maxTrackPerFrame = 10;
 force ace_frag_reflectionsEnabled = true;
 force ace_frag_spallEnabled = true;
 
+// ACE G-Forces
+force ace_gforces_coef = 0.5;
+force ace_gforces_enabledFor = 1;
+
 // ACE Goggles
 force ace_goggles_effects = 0;
 
@@ -193,7 +197,6 @@ force ace_switchunits_switchToWest = false;
 
 // ACE Uncategorized
 force ace_fastroping_requireRopeItems = false;
-force ace_gforces_enabledFor = 0;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 force ace_laser_dispersionCount = 1;
 force ace_microdagr_mapDataAvailable = 2;
