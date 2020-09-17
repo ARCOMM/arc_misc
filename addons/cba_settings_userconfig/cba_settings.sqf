@@ -37,7 +37,7 @@ force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "['ares','mars_server']";
 force ace_noradio_enabled = true;
-force ace_parachute_hideAltimeter = true;
+force ace_parachute_hideAltimeter = false;
 
 // ACE Cook off
 force ace_cookoff_enable = 0;
@@ -241,8 +241,8 @@ force acre_sys_core_fullDuplex = true;
 force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
 force acre_sys_core_revealToAI = 0.5;
-force acre_sys_core_terrainLoss = 0.5;
-force acre_sys_signal_signalModel = 1;
+force acre_sys_core_terrainLoss = 0.8;
+force acre_sys_signal_signalModel = 2;
 
 // AI
 force cfp_autoEquipNVG = false;
