@@ -290,7 +290,7 @@ force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
 force L_Suppress_buildup = 1.3;
 force L_Suppress_enabled = true;
 force L_Suppress_halting = false;
-force L_Suppress_intensity = 0.3;
+force L_Suppress_intensity = 0.4;
 force L_Suppress_playerSwabEnabled = true;
 force L_Suppress_recovery = 2.2;
 
