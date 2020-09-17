@@ -65,11 +65,15 @@ force ace_frag_maxTrackPerFrame = 10;
 force ace_frag_reflectionsEnabled = true;
 force ace_frag_spallEnabled = true;
 
+// ACE Goggles
+force ace_goggles_effects = 0;
+
 // ACE Hearing
 force ace_hearing_disableEarRinging = true;
 force ace_hearing_enableCombatDeafness = false;
 force ace_hearing_enabledForZeusUnits = false;
 force ace_hearing_unconsciousnessVolume = 0.4;
+force ace_hearing_autoAddEarplugsToUnits = false;
 
 // ACE Interaction
 force ace_interaction_disableNegativeRating = false;
