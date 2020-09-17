@@ -42,6 +42,7 @@ force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "['ares','mars_server']";
 force ace_noradio_enabled = true;
+force ace_parachute_hideAltimeter = true;
 
 // ACE Cook off
 force ace_cookoff_enable = 0;
