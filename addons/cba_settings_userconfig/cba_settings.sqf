@@ -311,7 +311,6 @@ force TMF_chat_tpUsage = 3;
 force TMF_chat_whisperUsage = 3;
 force TMF_spectator_isJIPAllowed = 1;
 
-
 //STUI
 force STHud_Settings_SquadBar = true;
 force STHud_Settings_RemoveDeadViaProximity = true;
