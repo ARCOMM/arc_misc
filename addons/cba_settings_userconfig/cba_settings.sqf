@@ -48,7 +48,7 @@ force ace_cookoff_enable = 0;
 force ace_cookoff_enableAmmoCookoff = false;
 
 // ACE Crew Served Weapons
-force ace_csw_ammoHandling = 2;
+force ace_csw_ammoHandling = 1;
 force ace_csw_defaultAssemblyMode = true;
 force ace_csw_handleExtraMagazines = true;
 force ace_csw_progressBarTimeCoefficent = 1;
@@ -306,6 +306,8 @@ force TMF_chat_rpUsage = 3;
 force TMF_chat_specUsage = 3;
 force TMF_chat_tpUsage = 3;
 force TMF_chat_whisperUsage = 3;
+force TMF_spectator_isJIPAllowed = 1;
+
 
 //STUI
 force STHud_Settings_SquadBar = true;
