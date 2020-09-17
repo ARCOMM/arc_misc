@@ -20,11 +20,6 @@ force ace_advanced_throwing_enabled = true;
 force ace_advanced_throwing_enablePickUp = true;
 force ace_advanced_throwing_enablePickUpAttached = true;
 
-// ACE Arsenal
-force ace_arsenal_allowDefaultLoadouts = true;
-force ace_arsenal_allowSharedLoadouts = true;
-force ace_arsenal_enableIdentityTabs = false;
-
 // ACE Artillery
 force ace_artillerytables_advancedCorrections = true;
 force ace_artillerytables_disableArtilleryComputer = true;
