@@ -237,9 +237,9 @@ force acre_sys_core_automaticAntennaDirection = true;
 force acre_sys_core_fullDuplex = true;
 force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
-force acre_sys_core_revealToAI = 1;
-force acre_sys_core_terrainLoss = 0.8;
-force acre_sys_signal_signalModel = 2;
+force acre_sys_core_revealToAI = 0.5;
+force acre_sys_core_terrainLoss = 0.5;
+force acre_sys_signal_signalModel = 1;
 
 // AI
 force cfp_autoEquipNVG = false;
