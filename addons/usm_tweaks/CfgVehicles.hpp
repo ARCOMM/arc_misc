@@ -15,6 +15,7 @@ class CfgVehicles {
 	};
 	class usm_pack_m5_medic: Bag_Base {
 		delete TransportMagazines;
+		delete TransportItems;
 	};
 	class usm_pack_st138_prc77: Bag_Base {
 		maximumLoad = 120;

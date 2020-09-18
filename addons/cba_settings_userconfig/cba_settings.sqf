@@ -20,11 +20,6 @@ force ace_advanced_throwing_enabled = true;
 force ace_advanced_throwing_enablePickUp = true;
 force ace_advanced_throwing_enablePickUpAttached = true;
 
-// ACE Arsenal
-force ace_arsenal_allowDefaultLoadouts = true;
-force ace_arsenal_allowSharedLoadouts = true;
-force ace_arsenal_enableIdentityTabs = false;
-
 // ACE Artillery
 force ace_artillerytables_advancedCorrections = true;
 force ace_artillerytables_disableArtilleryComputer = true;
@@ -42,13 +37,14 @@ force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "['ares','mars_server']";
 force ace_noradio_enabled = true;
+force ace_parachute_hideAltimeter = false;
 
 // ACE Cook off
 force ace_cookoff_enable = 0;
 force ace_cookoff_enableAmmoCookoff = false;
 
 // ACE Crew Served Weapons
-force ace_csw_ammoHandling = 2;
+force ace_csw_ammoHandling = 1;
 force ace_csw_defaultAssemblyMode = true;
 force ace_csw_handleExtraMagazines = true;
 force ace_csw_progressBarTimeCoefficent = 1;
@@ -65,11 +61,19 @@ force ace_frag_maxTrackPerFrame = 10;
 force ace_frag_reflectionsEnabled = true;
 force ace_frag_spallEnabled = true;
 
+// ACE G-Forces
+force ace_gforces_coef = 0.5;
+force ace_gforces_enabledFor = 1;
+
+// ACE Goggles
+force ace_goggles_effects = 0;
+
 // ACE Hearing
 force ace_hearing_disableEarRinging = true;
 force ace_hearing_enableCombatDeafness = false;
 force ace_hearing_enabledForZeusUnits = false;
 force ace_hearing_unconsciousnessVolume = 0.4;
+force ace_hearing_autoAddEarplugsToUnits = false;
 
 // ACE Interaction
 force ace_interaction_disableNegativeRating = false;
@@ -193,7 +197,6 @@ force ace_switchunits_switchToWest = false;
 
 // ACE Uncategorized
 force ace_fastroping_requireRopeItems = false;
-force ace_gforces_enabledFor = 0;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 force ace_laser_dispersionCount = 1;
 force ace_microdagr_mapDataAvailable = 2;
@@ -237,7 +240,7 @@ force acre_sys_core_automaticAntennaDirection = true;
 force acre_sys_core_fullDuplex = true;
 force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = false;
-force acre_sys_core_revealToAI = 1;
+force acre_sys_core_revealToAI = 0.5;
 force acre_sys_core_terrainLoss = 0.8;
 force acre_sys_signal_signalModel = 2;
 
@@ -306,6 +309,7 @@ force TMF_chat_rpUsage = 3;
 force TMF_chat_specUsage = 3;
 force TMF_chat_tpUsage = 3;
 force TMF_chat_whisperUsage = 3;
+force TMF_spectator_isJIPAllowed = 1;
 
 //STUI
 force STHud_Settings_SquadBar = true;
