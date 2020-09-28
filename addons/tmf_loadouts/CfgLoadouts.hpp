@@ -139,4 +139,32 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\chdkz.hpp"
 	};
+	class cdf_army_fst {
+		displayName = "Chernarussian Defence Forces (Forest)";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#define __CAMO FST
+		#include "loadouts\cdf_army_template.hpp"
+	};
+	class cdf_army_mnt {
+		displayName = "Chernarussian Defence Forces (Mountain)";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#define __CAMO MNT
+		#include "loadouts\cdf_army_template.hpp"
+	};
+	class cdf_army_dst {
+		displayName = "Chernarussian Defence Forces (Desert)";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#define __CAMO DST
+		#include "loadouts\cdf_army_template.hpp"
+	};
+	class cdf_army_snw {
+		displayName = "Chernarussian Defence Forces (Snow)";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#define __CAMO SNW
+		#include "loadouts\cdf_army_template.hpp"
+	};
 };
