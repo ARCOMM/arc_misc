@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 #define COMPONENT aan
 #include "\x\arc_misc\addons\main\script_macros.hpp"
 
