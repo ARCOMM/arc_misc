@@ -59,12 +59,7 @@ class baseMan {// Weaponless baseclass
 	traits[] = {};
 
 	// This is executed after unit init is complete. argument: _this = _unit.
-	#ifdef ADDON
-		code = QUOTE([] remoteExecCall [ARR_3(QQFUNC(init),0,'ADDON')]);
-	#else
-		code = "[] remoteExecCall ['arc_misc_aan_fnc_init',0,'arc_misc_aan']";
-	#endif
-
+	code = "";
 };
 
 class j : baseMan {
@@ -100,6 +95,12 @@ class c : baseMan {
 	backpack[] = {"B_RadioBag_01_black_F"};
 	secondaryWeapon[] = {"XZ_CamRecorder_1"};
 	magazines[] += {LIST_2("XZ_CamRecorder_Mag")};
+
+	#ifdef ADDON
+		code = QUOTE([] remoteExecCall [ARR_3(QQFUNC(init),0,'ADDON')]);
+	#else
+		code = "[] remoteExecCall ['arc_misc_aan_fnc_init',0,'arc_misc_aan']";
+	#endif
 };
 
 class cc : c {
