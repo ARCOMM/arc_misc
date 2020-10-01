@@ -1,5 +1,7 @@
 class CfgMagazines {
-	class 150Rnd_762x51_Box;
+	class CA_Magazine;
+	HIDE(150Rnd_762x51_Box,CA_Magazine);
+	HIDE(150Rnd_762x51_Box_Tracer,150Rnd_762x51_Box);
 	HIDE(150Rnd_762x54_Box,150Rnd_762x51_Box);
 	HIDE(150Rnd_762x54_Box_Tracer,150Rnd_762x54_Box);
 	HIDE(ACE_150Rnd_762x54_Box_red,150Rnd_762x54_Box);
@@ -7,7 +9,6 @@ class CfgMagazines {
 	HIDE(ACE_150Rnd_762x54_Box_tracer_red,150Rnd_762x54_Box);
 	HIDE(ACE_150Rnd_762x54_Box_tracer_yellow,150Rnd_762x54_Box);
 
-	class CA_Magazine;
 	HIDE(200Rnd_556x45_Box_F,CA_Magazine);
 	HIDE(200Rnd_556x45_Box_Red_F,200Rnd_556x45_Box_F);
 	HIDE(200Rnd_556x45_Box_Tracer_F,200Rnd_556x45_Box_F);
