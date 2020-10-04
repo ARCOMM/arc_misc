@@ -230,8 +230,8 @@ class aar : r {
 
 class rat : car {
 	displayName = "Rifleman (AT)";
-	secondaryWeapon[] = {"CUP_launch_M72A6_Loaded"};
-	backpackItems[] = {"CUP_launch_M72A6_Loaded"};
+	secondaryWeapon[] = {"CUP_launch_M72A6"};
+	backpackItems[] = {"CUP_launch_M72A6"};
 };
 
 class dm : r {
