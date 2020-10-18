@@ -2,7 +2,8 @@
 #define MEDICAL_R \
 LIST_5("ACE_fieldDressing"), \
 LIST_1("ACE_morphine"), \
-LIST_2("ACE_tourniquet")
+LIST_2("ACE_tourniquet"),\
+LIST_1("ACE_CableTie")
 
 #define MEDICAL_CLS \
 LIST_2("ACE_bodyBag"), \
