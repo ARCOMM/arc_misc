@@ -57,6 +57,12 @@ class CfgLoadouts {
 		tooltip = "Author: AChesheireCat";
 		#include "loadouts\us_rangers_2010.hpp"
 	};
+	class us_rangers_2020 {
+		displayName = "US 75th Rangers (2020, Crye Multicam)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_rangers_2020.hpp"
+	};
 	// Western Factions
 	class ger_army_2010 {
 		displayName = "Bundeswehr (2010, Flecktarn)";
