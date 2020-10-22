@@ -6,6 +6,7 @@
 //		* CUP Weapons
 //		* Community Factions Project
 //		* FIR AWS(AirWeaponSystem)
+//		* NIArms Core
 //		* NIArms M249 Pack
 
 // Weight:
@@ -215,10 +216,10 @@ class fac : ftl {
 	backpack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
 		FAC_GEAR ,
-		"ACRE_VHF30108"
+		"ACRE_VHF30108",
+		"Laserbatteries"
 	};
 	magazines[] += {
-		"Laserbatteries",
 		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
 		LIST_2("CUP_1Rnd_SmokeRed_M203")
 	};
@@ -307,8 +308,7 @@ class mmgg : ar {
 	scope[] = {"cup_optic_elcan_specterdr_black"};
 	backPack[] = {"CFP_Kitbag_MCam_Grn"};
 	magazines[] = {
-		"hlc_200Rnd_762x51_M_M60E4",
-		LIST_3("hlc_100Rnd_762x51_Barrier_M60E4"),
+		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		LIST_3("CUP_21Rnd_9x19_M17_Coyote")
 	};
 };
@@ -317,7 +317,7 @@ class mmgac : aar {
 	displayName = "MMG Ammo Carrier";
 	backPack[] = {"CFP_Kitbag_MCam_Grn"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_Barrier_M60E4")
+		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 	};
 };
 
@@ -326,7 +326,7 @@ class mmgtl : aar {
 	items[] += {"ACE_MapTools"};
 	backPack[] = {"CFP_Kitbag_MCam_Grn"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_Barrier_M60E4")
+		LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -371,8 +371,8 @@ class hmgtl : car {
 class matg : car {
 	displayName = "MAT Gunner";
 	backpack[] = {"CFP_Kitbag_MCam_Grn"};
-	secondaryWeapon[] = {"CUP_launch_MAAWS"};
-	secondaryAttachments[] = {"cup_optic_maaws_scope"};
+	secondaryWeapon[] = {"launch_MRAWS_green_F"};
+	secondaryAttachments[] = {"cup_acc_anpeq_15"};
 	magazines[] += {
 		LIST_2("CUP_MAAWS_HEDP_M"),
 		"CUP_MAAWS_HEAT_M"
@@ -476,7 +476,8 @@ class samag : car {
 
 class sn : r {
 	displayName = "Sniper";
-	vest[] = {"CUP_V_CPC_light_mc"};
+	uniform[] = {"U_B_FullGhillie_lsh"};
+	vest[] = {"V_Chestrig_rgr"};
 	backpack[] = {"B_Carryall_mcamo"};
 	hmd[] = {"CUP_NVG_GPNVG_black"};
 	silencer[] = {"cup_muzzle_snds_m16_coyote"};
@@ -503,6 +504,8 @@ class sn : r {
 
 class sp : r {
 	displayName = "Spotter";
+	uniform[] = {"U_B_FullGhillie_lsh"};
+	vest[] = {"V_Chestrig_rgr"};
 	backpack[] = {"CFP_Kitbag_MCam_Grn"};
 	silencer[] = {"cup_muzzle_snds_m16_coyote"};
 	items[] += {"ACE_MapTools"};
@@ -618,14 +621,17 @@ class eng : car {
 	vest[] = {"CUP_V_CPC_communicationsbelt_mc"};
 	backpack[] = {"B_Carryall_mcamo"};
 	sidearmWeapon[] = {"ACE_VMH3"};
-	items[] += {"ACE_Clacker"};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_3("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag"),
-		"SatchelCharge_Remote_Mag",
+	items[] += {
 		"ACE_DefusalKit",
 		"ACE_EntrenchingTool",
+		"ACE_Clacker",
+		"ACE_wirecutter"
+	};
+	backpackItems[] = {
+		"ToolKit",
+		LIST_2("DemoCharge_Remote_Mag"),
+		LIST_2("SLAMDirectionalMine_Wire_Mag"),
+		"SatchelCharge_Remote_Mag"
 	};
 };
 
@@ -638,14 +644,14 @@ class engm : car {
 	items[] += {
 		"ACE_DefusalKit",
 		"ACE_EntrenchingTool",
-		"ACE_Clacker"
+		"ACE_Clacker",
+		"ACE_wirecutter"
 	};
 	backpackItems[] = {
 		"ToolKit",
 		LIST_4("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag"),
 		LIST_2("ACE_FlareTripMine_Mag"),
-		LIST_2("ClaymoreDirectionalMine_Remote_Mag")
+		LIST_3("ClaymoreDirectionalMine_Remote_Mag")
 	};
 };
 
