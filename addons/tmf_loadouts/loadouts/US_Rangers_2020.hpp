@@ -155,8 +155,6 @@ class smg : r {
 		"CUP_V_CPC_lightbelt_mc"
 	};
 	primaryWeapon[] = {"CUP_arifle_mk18_black"};
-	scope[] = {};
-	attachment[] = {};
 	magazines[] = {
 		LIST_6("CUP_30Rnd_556x45_Stanag"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
@@ -536,6 +534,7 @@ class vg : smg {
 	vest[] = {"CUP_V_CPC_light_mc"};
 	hmd[] = {};
 	primaryWeapon[] = {"CUP_arifle_M4A1_standard_short_black"};
+	scope[] = {};
 	attachment[] = {};
 	backpack[] = {};
 	headgear[] = {"CUP_H_CVC"};
@@ -577,6 +576,8 @@ class hc : smg {
 	};
 	vest[] = {"FIR_pilot_vest"};
 	primaryWeapon[] = {"CUP_arifle_M4A1_standard_short_black"};
+	scope[] = {};
+	attachment[] = {};
 	backPack[] = {};
 	items[] += {"ACE_MapTools"};
 };
@@ -609,6 +610,8 @@ class jp : baseMan {
 	vest[] = {"FIR_pilot_vest"};
 	backpack[] = {"B_Parachute"};
 	primaryWeapon[] = {"CUP_arifle_mk18_black"};
+	scope[] = {};
+	attachment[] = {};
 	sidearmWeapon[] = {"CUP_hgun_M9A1"};
 	magazines[] += {
 		"SmokeShellPurple",
