@@ -112,6 +112,10 @@ class g : r {
 		"CUP_arifle_Mk16_STD_EGLM",
 		"CUP_arifle_mk18_m203_black"
 	};
+	attachment[] = {
+		"cup_acc_anpeq_15_tan_top",
+		"cup_acc_anpeq_15",
+	};
 	magazines[] = {
 		LIST_8("CUP_30Rnd_556x45_Stanag"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
