@@ -124,20 +124,25 @@ class m : cls {
 
 class smg : r {
 	displayName = "Submachinegunner";
-	primaryWeapon[] = {"CUP_smg_Mac10"};
+	primaryWeapon[] = {"CUP_smg_M3A1"};
 	magazines[] = {
-		LIST_8("CUP_30Rnd_45ACP_MAC10_M"),
+		LIST_8("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"HandGrenade",
 		"SmokeShell"
 	};
 };
 
-class ftl : g {
+class ftl : car {
 	displayName = "Fireteam Leader";
+	vest[] = {"usm_vest_LBE_gr"};
 	backPack[] = {"CUP_B_SLA_Medicbag"};
+	primaryWeapon[] = {"CUP_arifle_M16A1GL"};
 	items[] += {"ACE_MapTools"};
 	magazines[] += {
-		LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+		LIST_11("CUP_1Rnd_HE_M203"),
+		LIST_2("CUP_1Rnd_Smoke_M203"),
+		LIST_2("CUP_1Rnd_StarFlare_Red_M203"),
+		LIST_2("CUP_1Rnd_SmokeRed_M203"),
 		LIST_2("CUP_1Rnd_SmokeGreen_M203")
 	};
 	linkedItems[] += {
@@ -150,15 +155,10 @@ class sl : car {
 	displayName = "Squad Leader";
 	vest[] = {"usm_vest_LBE_rmp"};
 	backPack[] = {"CUP_B_SLA_Medicbag"};
-	primaryWeapon[] = {"CUP_arifle_M16A1GL"};
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
 	magazines[] += {
-		LIST_3("CUP_15Rnd_9x19_M9"),
-		LIST_11("CUP_1Rnd_HE_M203"),
-		LIST_2("CUP_1Rnd_Smoke_M203"),
-		LIST_2("CUP_1Rnd_StarFlare_Red_M203"),
-		LIST_2("1Rnd_SmokeRed_Grenade_shell"),
-		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
+		LIST_2("SmokeShellRed"),
+		LIST_2("SmokeShellGreen"),
 		LIST_3("CUP_7Rnd_45ACP_1911")
 	};
 	linkedItems[] += {
@@ -430,7 +430,7 @@ class vg : smg {
 	backpack[] = {};
 	headgear[] = {"usm_helmet_cvc"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_45ACP_MAC10_M"),
+		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"SmokeShellPurple"
 	};
 };
@@ -465,7 +465,7 @@ class hc : smg {
 	};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_45ACP_MAC10_M"),
+		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"SmokeShellPurple"
 	};
 };
@@ -498,7 +498,7 @@ class jp : smg {
 	headgear[] = {"FIR_hgu26p"};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_45ACP_MAC10_M"),
+		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"SmokeShellPurple"
 	};
 };
