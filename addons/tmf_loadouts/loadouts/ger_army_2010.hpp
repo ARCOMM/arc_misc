@@ -198,7 +198,7 @@ class aar : r {
 
 class rat : r {
 	displayName = "Rifleman (AT)";
-	secondaryWeapon[] = {"CUP_launch_M136"};
+	secondaryWeapon[] = {"CUP_launch_PzF3"};
 };
 
 class dm : r {
