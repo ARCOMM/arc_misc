@@ -8,6 +8,7 @@
 //		* FIR AWS(AirWeaponSystem)
 //		* NIArms Core
 //		* NIArms M249 Pack
+//		* Wearable Antennas
 
 // Weight:
 // Rifleman - 15kg
@@ -273,6 +274,7 @@ class rat : r {
 class dm : r {
 	displayName = "Designated Marksman";
 	vest[] = {"CUP_V_CPC_lightbelt_mc"};
+	backpack[] = {"B_AssaultPack_mcamo"};
 	primaryWeapon[] = {
 		"CUP_srifle_M110",
 		"CUP_srifle_m110_kac"
@@ -610,8 +612,6 @@ class jp : baseMan {
 	vest[] = {"FIR_pilot_vest"};
 	backpack[] = {"B_Parachute"};
 	primaryWeapon[] = {"CUP_arifle_mk18_black"};
-	scope[] = {};
-	attachment[] = {};
 	sidearmWeapon[] = {"CUP_hgun_M9A1"};
 	magazines[] += {
 		"SmokeShellPurple",
