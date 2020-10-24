@@ -7,6 +7,7 @@
 //		* Community Factions Project
 //		* FIR AWS(AirWeaponSystem)
 // 		* NIArms P226
+// 		* USM
 
 // Created by: AChesheireCat
 
@@ -366,11 +367,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = {
-		MTR_GEAR,
-		"ACE_RangeTable_82mm",
-		"ACE_MapTools"
-	};
+	items[] = { MTR_GEAR };
 	backPack[] = {"CFP_Carryall_DPMWoodland"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -405,7 +402,7 @@ class sn : r {
 	headgear[] = {};
 	goggles[] = {"default"};
 	primaryWeapon[] = {"CUP_srifle_AWM_wdl"};
-	scope[] = {"hlc_optic_leupoldm3a"};
+	scope[] = {"cup_optic_leupoldmk4"};
 	sidearmWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
 		LIST_7("CUP_5Rnd_86x70_L115A1"),
@@ -431,7 +428,7 @@ class sp : g {
 		"ItemCompass",
 		"ItemRadio",
 		"ItemWatch",
-		"Laserdesignator",
+		"CUP_SOFLAM",
 		"ItemGPS"
 	};
 };
