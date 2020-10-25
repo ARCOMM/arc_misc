@@ -218,7 +218,7 @@ class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_arifle_L86A2"};
 	scope[] = {"cup_optic_susat"};
-	secondaryWeapon[] = {"hlc_pistol_P226US"};
+	secondaryWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
 		LIST_7("CUP_30Rnd_556x45_Stanag_L85"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_L85_Tracer_Red"),
