@@ -5,7 +5,6 @@
 //		* CUP Uniforms
 //		* CUP Weapons
 //		* Community Factions Project
-//		* FIR AWS(AirWeaponSystem)
 //		* NIArms Core
 //		* NIArms M249 Pack
 //		* Wearable Antennas
