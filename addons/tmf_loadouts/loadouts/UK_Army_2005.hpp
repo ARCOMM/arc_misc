@@ -5,9 +5,8 @@
 //		* CUP Uniforms
 //		* CUP Weapons
 //		* Community Factions Project
-//		* FIR AWS(AirWeaponSystem)
-// 		* NIArms P226
-// 		* USM
+// 	* NIArms P226
+// 	* USM
 
 // Created by: AChesheireCat
 
