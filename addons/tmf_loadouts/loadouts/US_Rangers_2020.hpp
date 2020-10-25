@@ -567,8 +567,6 @@ class hc : smg {
 		"CFP_SOARCREW_RED",
 		"CFP_SOARCREW_SKULL",
 		"H_CrewHelmetHeli_B",
-		"FIR_HGU56P_Skull",
-		"FIR_HGU56P_Skull_Death",
 		"H_CrewHelmetHeli_O",
 		"H_PilotHelmetHeli_O"
 	};
@@ -576,7 +574,7 @@ class hc : smg {
 		"CUP_U_B_USArmy_ACU_Gloves_OEFCP",
 		"CUP_U_B_USArmy_ACU_OEFCP"
 	};
-	vest[] = {"FIR_pilot_vest"};
+	vest[] = {"CUP_V_B_USArmy_PilotVest"};
 	primaryWeapon[] = {"CUP_arifle_M4A1_standard_short_black"};
 	scope[] = {};
 	attachment[] = {};
@@ -590,7 +588,7 @@ class hp : hc {
 		"H_PilotHelmetHeli_O",
 		"H_PilotHelmetHeli_B"
 	};
-	vest[] = {"FIR_pilot_vest"};
+	vest[] = {"CUP_V_B_USArmy_PilotVest"};
 	backPack[] = {};
 	backpackItems[] = {};
 	linkedItems[] += {"ItemGPS"};
@@ -609,7 +607,7 @@ class jp : baseMan {
 	hmd[] = {};
 	headgear[] = {"H_PilotHelmetFighter_B"};
 	uniform[] = {"FIR_Fighter_Pilot_Nomex3"};
-	vest[] = {"FIR_pilot_vest"};
+	vest[] = {"Aircrew_vest_2_NH"};
 	backpack[] = {"B_Parachute"};
 	primaryWeapon[] = {"CUP_arifle_mk18_black"};
 	sidearmWeapon[] = {"CUP_hgun_M9A1"};
