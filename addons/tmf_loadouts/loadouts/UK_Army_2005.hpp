@@ -514,7 +514,8 @@ class eng : car {
 	items[] += {
 		"ACE_DefusalKit",
 		"ACE_EntrenchingTool",
-		"ACE_Clacker"
+		"ACE_Clacker",
+		"ACE_wirecutter"
 	};
 	backpackItems[] = {
 		"ToolKit",
@@ -533,7 +534,8 @@ class engm : car {
 	items[] += {
 		"ACE_DefusalKit",
 		"ACE_EntrenchingTool",
-		"ACE_Clacker"
+		"ACE_Clacker",
+		"ACE_wirecutter"
 	};
 	backpackItems[] = {
 		"ToolKit",
