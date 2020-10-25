@@ -163,7 +163,7 @@ class sl : r {
 		LIST_2("SmokeShellGreen"),
 		LIST_2("SmokeShellRed")
 	};
-	linkedItems[] = {"ACE_Yardage450"};
+	linkedItems[] += {"ACE_Yardage450"};
 };
 
 class co : sl {
@@ -176,7 +176,11 @@ class fac : ftl {
 	goggles[] = {"antenna_long_two_face"};
 	backpack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = { FAC_GEAR };
-	magazines[] += {"Laserbatteries"};
+	magazines[] += {
+		LIST_2("CUP_1Rnd_SmokeRed_M203"),
+		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
+		"Laserbatteries"
+	};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -236,8 +240,7 @@ class mmgg : ar {
 	scope[] = {"cup_optic_elcan_specterdr_black"};
 	backPack[] = {"usm_pack_762x51_bandoliers"};
 	magazines[] = {
-		"hlc_200Rnd_762x51_M_M60E4",
-		LIST_3("hlc_100Rnd_762x51_Barrier_M60E4"),
+		LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		LIST_3("CUP_21Rnd_9x19_M17_Coyote")
 	};
 };
@@ -246,7 +249,7 @@ class mmgac : aar {
 	displayName = "MMG Ammo Carrier";
 	backPack[] = {"usm_pack_762x51_bandoliers"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_Barrier_M60E4")
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
@@ -255,7 +258,7 @@ class mmgtl : aar {
 	items[] += {"ACE_MapTools"};
 	backPack[] = {"usm_pack_762x51_bandoliers"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_Barrier_M60E4")
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -404,10 +407,7 @@ class sn : r {
 	primaryWeapon[] = {"CUP_arifle_M4A1_SOMMOD_Grip_tan"};
 	silencer[] = {"cup_muzzle_snds_m16_coyote"};
 	sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
-	sidearmAttachments[] = {
-		"optic_mrd_black",
-		"hlc_acc_tlr1"
-	};
+	sidearmAttachments[] = {"optic_mrd_black"};
 	magazines[] = {
 		LIST_6("CUP_30Rnd_556x45_Stanag"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
@@ -415,6 +415,11 @@ class sn : r {
 		"SmokeShell",
 		"SmokeShellGreen",
 		LIST_3("CUP_17Rnd_9x19_glock17")
+	};
+	items[] = {
+		"ACE_ATragMX",
+		"ACE_Kestrel4500",
+		"ACE_RangeCard"
 	};
 	backpackItems[] = {
 		LIST_4("CUP_20Rnd_762x51_B_M110"),
@@ -571,6 +576,6 @@ class engm : car {
 class UAV : car {
 	displayName = "UAV Operator";
 	traits[] = {"UAVHacker"};
-	backpack[] = {};
+	backpack[] = {"B_UAV_01_backpack_F"};
 	linkedItems[] += {"B_UavTerminal"};
 };
