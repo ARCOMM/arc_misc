@@ -460,7 +460,7 @@ class vd : vg {
 
 class hc : smg {
 	displayName = "Helicopter Crew";
-	uniform[] = {"FIR_Fighter_Pilot_VF84_Nomex"};
+	uniform[] = {"CUP_U_B_BAF_DDPM_UBACSLONG_Gloves"};
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot"};
 	headgear[] = {
 		"CFP_SOARCREW_BLUE",
@@ -468,8 +468,6 @@ class hc : smg {
 		"CFP_SOARCREW_RED",
 		"CFP_SOARCREW_SKULL",
 		"H_CrewHelmetHeli_B",
-		"FIR_HGU56P_Skull",
-		"FIR_HGU56P_Skull_Death",
 		"MNP_Helmet_Dslyecxi"
 	};
 	items[] += {"ACE_MapTools"};
@@ -481,6 +479,7 @@ class hc : smg {
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
+	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	linkedItems[] += {"ItemGPS"};
 };
 
@@ -495,10 +494,10 @@ class hcc : hc {
 class jp : smg {
 	displayName = "Jet pilot";
 	traits[] = {"engineer"};
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
+	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	vest[] = {"CUP_V_B_PilotVest"};
 	backpack[] = {};
-	headgear[] = {"FIR_JHMCS_Type2"};
+	headgear[] = {"H_PilotHelmetFighter_B"};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_9x19_MP5"),
