@@ -45,6 +45,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\us_army_2010.hpp"
 	};
+	class us_army_2018 {
+		displayName = "US Army (2018, OCP)";
+		category = "USA";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\us_army_2018.hpp"
+	};
 	class us_usmc_2010_wdl {
 		displayName = "US Marine Corps (2010, MARPAT-WDL)";
 		category = "USA";
