@@ -7,6 +7,7 @@
 //		* Community Factions Project
 // 	* NIArms P226
 // 	* USM
+//		*Redd n' Tanks MILAN
 
 // Created by: AChesheireCat
 
@@ -90,7 +91,6 @@ class g : r {
 	displayName = "Grenadier";
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Grenadier"};
 	primaryWeapon[] = {"CUP_arifle_L85A2_GL"};
-	scope[] = {};
 	magazines[] = {
 		LIST_6("CUP_30Rnd_556x45_Stanag"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
@@ -218,7 +218,7 @@ class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_arifle_L86A2"};
 	scope[] = {"cup_optic_susat"};
-	secondaryWeapon[] = {"hlc_pistol_P226US"};
+	secondaryWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
 		LIST_7("CUP_30Rnd_556x45_Stanag_L85"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_L85_Tracer_Red"),
@@ -311,7 +311,7 @@ class mattl : car {
 	displayName = "MAT Team Leader";
 	backPack[] = {"Redd_Milan_Static_Barrel"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
+	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -335,7 +335,7 @@ class hattl : car {
 	backPack[] = {"CUP_B_ACRPara_dpm"};
 	backpackItems[] = {"CUP_Javelin_M"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
+	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -373,7 +373,7 @@ class mtrtl : car {
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
 
-	linkedItems[] = {
+	linkedItems[] += {
 		"ACE_Vector",
 		"ItemGPS"
 	};
@@ -387,7 +387,7 @@ class samg : car {
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
-	linkedItems[] = {
+	linkedItems[] += {
 		"Rangefinder",
 		"ItemGPS"
 	};
@@ -466,8 +466,7 @@ class hc : smg {
 		"CFP_SOARCREW_STACHE",
 		"CFP_SOARCREW_RED",
 		"CFP_SOARCREW_SKULL",
-		"H_CrewHelmetHeli_B",
-		"MNP_Helmet_Dslyecxi"
+		"H_CrewHelmetHeli_B"
 	};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
