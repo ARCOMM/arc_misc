@@ -1,12 +1,12 @@
 // If you want to base a loadout on an existing one, this repository contains them all:
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
-//Dependencies:
+// Dependencies:
 //		* CUP Uniforms
 //		* CUP Weapons
 //		* Community Factions Project
-// 	* NIArms P226
-// 	* USM
+// 		* NIArms P226
+// 		* USM
 //		*Redd n' Tanks MILAN
 
 // Created by: AChesheireCat
@@ -218,7 +218,7 @@ class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_arifle_L86A2"};
 	scope[] = {"cup_optic_susat"};
-	secondaryWeapon[] = {"hlc_pistol_P226US"};
+	sidearmWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
 		LIST_7("CUP_30Rnd_556x45_Stanag_L85"),
 		LIST_2("CUP_30Rnd_556x45_Stanag_L85_Tracer_Red"),
