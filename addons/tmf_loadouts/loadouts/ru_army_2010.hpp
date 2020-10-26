@@ -181,7 +181,12 @@ class aar : r {
 
 class rat : car {
 	displayName = "Rifleman (AT)";
-	secondaryWeapon[] = {"CUP_launch_RPG18"};
+	secondaryWeapon[] = {"CUP_launch_RPG26"};
+};
+
+class lat : car {
+	displayName = "Rifleman (RShG-2)";
+	secondaryWeapon[] = {"CUP_launch_RShG2"};
 };
 
 class dm : r {
@@ -235,16 +240,29 @@ class mmgtl : aar {
 
 class hmgg : car {
 	displayName = "HMG Gunner";
-	backPack[] = {"CUP_B_Kord_Gun_Bag"};
+	secondaryWeapon[] = {"CUP_KORD_carry"};
+	backPack[] = {"B_Carryall_green_F"};
+	backpackItems[] = {
+		LIST_6("ace_csw_50Rnd_127x108_mag")
+	};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"CUP_B_Kord_Tripod_Bag"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripod"};
+	backPack[] = {"B_Carryall_green_F"};
+	backpackItems[] = {
+		LIST_6("ace_csw_50Rnd_127x108_mag")
+	};
 };
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	backPack[] = {"CUP_B_Kord_Tripod_Bag"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripodLow"};
+	backPack[] = {"B_Carryall_green_F"};
+	backpackItems[] = {
+		LIST_6("ace_csw_50Rnd_127x108_mag"),
+		"ACE_EntrenchingTool"
+	};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -294,17 +312,17 @@ class mattl : car {
 
 class hatg : car {
 	displayName = "HAT Gunner";
-	backPack[] = {"CUP_B_Metis_Gun_Bag"};
+	backPack[] = {"CUP_B_Kornet_Gun_Bag"};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
+	backPack[] = {"CUP_B_Kornet_Tripod_Bag"};
 };
 
 class hattl : car {
 	displayName = "HAT Team Leader";
-	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
+	backPack[] = {"CUP_B_Kornet_Tripod_Bag"};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -317,7 +335,7 @@ class hattl : car {
 
 class mtrg : car {
 	displayName = "Mortar Gunner";
-	secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
+	secondaryWeapon[] = {"CUP_2b14_carry"};
 	backPack[] = {"B_Carryall_green_F"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -385,14 +403,14 @@ class sn : car {
 	backpackItems[] = {LIST_4("CUP_5Rnd_127x108_KSVK_M")};
 
 	// This adds a sniper rifle to the ACE gunbag
-	code = QUOTE(\
+	code = "															\
 		backpackContainer _this setVariable ['ace_gunbag_gunbagWeapon', \
-		[ \
-			'CUP_srifle_ksvk', \
-			['','','cup_optic_pso_3',''], \
-			[['CUP_5Rnd_127x108_KSVK_M', 5]] \
-		], true]; \
-	);
+		[ 																\
+			'CUP_srifle_ksvk', 											\
+			['','','cup_optic_pso_3',''], 								\
+			[['CUP_5Rnd_127x108_KSVK_M', 5]] 							\
+		], true]; 														\
+	";
 };
 
 class sp : car {
@@ -495,6 +513,10 @@ class eng : car {
 	sidearmWeapon[] = {"ACE_VMM3"};
 	traits[] = {"engineer", "explosiveSpecialist"};
 	backpack[] = {"B_Kitbag_rgr"};
+	items[] += {
+		"ACE_DefusalKit",
+		"ACE_Clacker"
+	};
 	backpackItems[] = {
 		"ToolKit",
 		"ACE_wirecutter",
