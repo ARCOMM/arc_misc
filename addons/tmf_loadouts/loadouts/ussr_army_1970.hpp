@@ -238,14 +238,14 @@ class hmgg : car {
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	secondaryWeapon[] = {"ace_csw_kordTripod"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripod"};
 	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	secondaryWeapon[] = {"ace_csw_kordTripodLow"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripodLow"};
 	backpack[] = {"B_Carryall_oli"};
 	backpackItems[] = {
 		LIST_6("ace_csw_50Rnd_127x108_mag"),

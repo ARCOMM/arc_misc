@@ -268,7 +268,7 @@ class CfgLoadouts {
 	class tk_locals {
 		displayName = "Takistani Locals";
 		category = "Armaverse Factions";
-		tooltip = "Author: Freddo\n\nNote: Low ammo count. Make sure resupply is available.";
+		tooltip = "Author: Freddo";
 		#include "loadouts\tk_locals.hpp"
 	};
 	class chdkz {
