@@ -441,6 +441,7 @@ force emr_main_staminaCoefficient = 3;
 force emr_main_whitelistStr = "";
 
 // dzn Vehicle On Fire
+force dzn_VOF_CheckTimeout = 30;
 force dzn_VOF_CookingList = "              \
 	Truck_02_MRL_base_F,                   \
 	UGV_01_rcws_base_F,                    \
@@ -502,6 +503,7 @@ force dzn_VOF_CookingList = "              \
 	rnt_sppz_2a2_luchs_Base,               \
 	Redd_Tank_Fuchs_1A4_Jg_Milan_Flecktarn \
 ";
+force dzn_VOF_Enabled = true;
 force dzn_VOF_NonCookingList = "      \
 	[""Car"",5],                      \
 	[""Motorcycle"",1.2],             \
@@ -528,6 +530,8 @@ force dzn_VOF_NonCookingList = "      \
 	[""CUP_Boxer_Base"",20],          \
 	[""Redd_Tank_Fuchs_1A4_Base"",12] \
 ";
+force dzn_VOF_TimeoutMax = 75;
+force dzn_VOF_TimeoutMin = 45;
 
 // GRAD CaptiveWalkingAnimation
 force grad_captiveWalking_functions_allowFreeing = true;
