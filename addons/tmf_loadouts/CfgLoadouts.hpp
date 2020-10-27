@@ -133,6 +133,19 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\ussr_army_1985.hpp"
 	};
+	class ru_mvd_2005 {
+		displayName = "Russian Interior Troops (2005, Partizan Summer)";
+		category = "Russia";
+		tooltip = "Author: Freddo";
+		#include "loadouts\ru_mvd_2005.hpp"
+	};
+	class ru_mvd_autumn_2005 {
+		displayName = "Russian Interior Troops (2005, Partizan Summer)";
+		category = "Russia";
+		tooltip = "Author: Freddo";
+		#define AUTUMN true
+		#include "loadouts\ru_mvd_2005.hpp"
+	};
 	class ru_army_2010 {
 		displayName = "Russian Army (2010, VSR-98)";
 		category = "Russia";
