@@ -5,6 +5,7 @@
 	Dependencies:
 	* CUP Units
 	* CUP Weapons
+	* Wearable Antennas
 */
 
 class baseMan {// Weaponless baseclass
