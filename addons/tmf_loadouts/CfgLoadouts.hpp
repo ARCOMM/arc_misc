@@ -134,13 +134,13 @@ class CfgLoadouts {
 		#include "loadouts\ussr_army_1985.hpp"
 	};
 	class ru_mvd_2005 {
-		displayName = "Russian Interior Troops (2005, Partizan Summer)";
+		displayName = "Russian Interior Troops (2005, Partizan Summer)\n\nSemi-fictional";
 		category = "Russia";
 		tooltip = "Author: Freddo";
 		#include "loadouts\ru_mvd_2005.hpp"
 	};
 	class ru_mvd_autumn_2005 {
-		displayName = "Russian Interior Troops (2005, Partizan Summer)";
+		displayName = "Russian Interior Troops (2005, Partizan Autumn)\n\nSemi-fictional";
 		category = "Russia";
 		tooltip = "Author: Freddo";
 		#define AUTUMN true

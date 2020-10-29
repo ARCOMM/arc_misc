@@ -298,7 +298,7 @@ class rat : r {
 class dm : r {
 	displayName = "Designated Marksman";
 	primaryWeapon[] = {"CUP_srifle_SVD"};
-	scope[] = {"cup_optic_pso_1_1_open"};
+	scope[] = {"cup_optic_pso_1_open"};
 	magazines[] = {
 		LIST_10("10Rnd_762x54_Mag"),
 		LIST_4("ACE_10Rnd_762x54_Tracer_mag"),
@@ -543,7 +543,9 @@ class sp : sn {
 		LIST_4("CUP_5Rnd_127x108_KSVK_M"),
 		"ACE_SpottingScope",
 		"ACRE_VHF30108SPIKE",
-		"Laserbatteries"
+		"Laserbatteries",
+		"ACE_ATragMX",
+		"ACE_Tripod"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -620,7 +622,7 @@ class jp : baseMan {
 	displayName = "Jet pilot";
 	hmd[] = {};
 	headgear[] = {"CUP_H_RUS_ZSH_Shield_Down"};
-	uniform[] = {"CUP_U_O_SLA_Overalls_Pilot"};
+	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
 	vest[] = {"CUP_V_RUS_6B45_1"};
 	backpack[] = {"ACE_NonSteerableParachute"};
 	sidearmWeapon[] = {"hgun_Rook40_F"};
