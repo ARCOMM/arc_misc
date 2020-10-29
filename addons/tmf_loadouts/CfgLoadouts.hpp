@@ -284,6 +284,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\tk_locals.hpp"
 	};
+	class tk_army {
+		displayName = "Takistani Army";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tk_army.hpp"
+	};
 	class chdkz {
 		displayName = "Chernarussian Movement of the Red Star";
 		category = "Armaverse Factions";
