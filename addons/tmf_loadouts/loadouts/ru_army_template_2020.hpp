@@ -80,12 +80,14 @@
 	#define RIFLE_GL "arc_misc_weapons_ak12_GL"
 	#define CARBINE "arc_misc_weapons_ak12k"
 	#define RPK "arc_misc_weapons_rpk16"
+	#define SMG "CUP_arifle_SR3M_Vikhr_VFG_top_rail"
 	#define ATTACHMENTS "cup_optic_ac11704_black", "cup_optic_1p87_ris"
 #else
 	#define RIFLE "CUP_arifle_AK74M"
 	#define RIFLE_GL "CUP_arifle_AK74M_GL"
 	#define CARBINE "CUP_arifle_AK105"
 	#define RPK "CUP_arifle_RPK74M"
+	#define SMG "CUP_arifle_SR3M_Vikhr_VFG"
 	#define ATTACHMENTS "cup_optic_ekp_8_02", "cup_optic_1p63", "cup_optic_kobra"
 #endif
 
@@ -201,10 +203,9 @@ class m : cls {
 
 class smg : r {
 	displayName = "Submachinegunner";
-	primaryWeapon[] = {"CUP_arifle_AKS74U"};
+	primaryWeapon[] = { SMG };
 	magazines[] = {
-		LIST_8("CUP_30Rnd_545x39_AK74_plum_M"),
-		LIST_2("CUP_30Rnd_TE1_Green_Tracer_545x39_AK74_plum_M"),
+		LIST_8("CUP_30Rnd_9x39_SP5_VIKHR_M"),
 		"CUP_HandGrenade_RGO",
 		"SmokeShell"
 	};
@@ -532,12 +533,19 @@ class sn : r {
 	linkedItems[] += {"ItemGPS"};
 };
 
-class sp : sn {
+class sp : g {
 	displayName = "Spotter";
 	uniform[] = {GHILLIE_CLASS};
 	vest[] = {"CUP_V_O_Ins_Carrier_Rig_Com"};
 	headgear[] = {"CUP_H_RUS_Bandana_GSSh_Headphones"};
 	backpack[] = {BACKPACK_CLASS(CUP_O_RUS_Patrol_bag)};
+	silencer[] = {
+		#ifndef USE_AK12
+			"cup_muzzle_snds_kzrzp_ak545"
+		#else
+			"muzzle_snds_b"
+		#endif
+	};
 	items[] += {"ACE_MapTools"};
 	backpackItems[] = {
 		LIST_4("CUP_5Rnd_127x108_KSVK_M"),
@@ -560,10 +568,8 @@ class vg : smg {
 	displayName = "Vehicle Gunner";
 	vest[] = {"CUP_V_RUS_6B45_1"};
 	headgear[] = {"H_Tank_black_F"};
-	attachment[] = {};
-	scope[] = {};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_545x39_AKSU_M"),
+		LIST_3("CUP_20Rnd_9x39_SP5_VSS_M"),
 		"SmokeShellPurple"
 	};
 };
@@ -594,10 +600,8 @@ class hc : smg {
 	uniform[] = {"CUP_U_O_SLA_Overalls_Pilot"};
 	vest[] = {"CUP_V_RUS_6B45_1"};
 	backPack[] = {};
-	scope[] = {};
-	attachment[] = {};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_545x39_AKSU_M"),
+		LIST_3("CUP_20Rnd_9x39_SP5_VSS_M"),
 		"SmokeShellPurple"
 	};
 	items[] += {"ACE_MapTools"};
@@ -699,4 +703,5 @@ class UAV : car {
 #undef RIFLE_GL
 #undef CARBINE
 #undef RPK
+#undef SMG
 #undef ATTACHMENTS
