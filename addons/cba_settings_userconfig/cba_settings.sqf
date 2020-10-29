@@ -456,6 +456,7 @@ force dzn_VOF_CookingList = "              \
 	CUP_B_M1128_MGS_Desert,                \
 	CUP_B_M1129_MC_MK19_Desert,            \
 	CUP_B_M1129_MC_MK19_Woodland,          \
+	CUP_LAV25_Base,                        \
 	CUP_GAZ_Vodnik_BPPU_Base,              \
 	CUP_GAZ_Vodnik_AGS_Base,               \
 	CUP_BTR80A_Base,                       \
@@ -523,7 +524,6 @@ force dzn_VOF_NonCookingList = "      \
 	[""CUP_Mastiff_Base"",12],        \
 	[""CUP_RG31_BASE"",12],           \
 	[""CUP_Ridgback_Base"",12],       \
-	[""CUP_B_LAV25M240_USMC"",20],    \
 	[""CUP_B_LAV25_HQ_USMC"",20],     \
 	[""CUP_StrykerBase"",20],         \
 	[""CUP_FV432_Bulldog_Base"",20],  \
