@@ -83,12 +83,13 @@
 	#define SMG "CUP_arifle_SR3M_Vikhr_VFG_top_rail"
 	#define ATTACHMENTS "cup_optic_ac11704_black", "cup_optic_1p87_ris"
 #else
-	#define RIFLE "CUP_arifle_AK74M"
-	#define RIFLE_GL "CUP_arifle_AK74M_GL"
-	#define CARBINE "CUP_arifle_AK105"
-	#define RPK "CUP_arifle_RPK74M"
-	#define SMG "CUP_arifle_SR3M_Vikhr_VFG"
-	#define ATTACHMENTS "cup_optic_ekp_8_02", "cup_optic_1p63", "cup_optic_kobra"
+	// Mixing RIS and non-RIS to mix in some iron sights
+	#define RIFLE "CUP_arifle_AK74M", "CUP_arifle_AK74M_top_rail"
+	#define RIFLE_GL "CUP_arifle_AK74M_GL", "CUP_arifle_AK74M_GL_top_rail"
+	#define CARBINE "CUP_arifle_AK105", "CUP_arifle_AK105_top_rail"
+	#define RPK "CUP_arifle_RPK74M", "CUP_arifle_RPK74M_top_rail"
+	#define SMG "CUP_arifle_SR3M_Vikhr_VFG", "CUP_arifle_SR3M_Vikhr_VFG_top_rail"
+	#define ATTACHMENTS "cup_optic_ekp_8_02", "cup_optic_1p63", "cup_optic_kobra", "cup_optic_ac11704_black", "cup_optic_1p87_ris"
 #endif
 
 #ifndef DOUBLES
@@ -126,7 +127,8 @@ class baseMan {
 	magazines[] = {};
 	items[] = {
 		MEDICAL_R ,
-		"ACE_Flashlight_KSF1"
+		"ACE_Flashlight_KSF1",
+		"Chemlight_red"
 	};
 	linkedItems[] = {
 		"ItemMap",
