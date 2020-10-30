@@ -180,15 +180,13 @@ class g : r {
 	magazines[] += {
 		LIST_10("CUP_1Rnd_HE_GP25_M"),
 		LIST_2("CUP_1Rnd_SMOKE_GP25_M"),
-		LIST_2("CUP_IlumFlareRed_GP25_M"),
+		LIST_2("CUP_IlumFlareRed_GP25_M")
 	};
 };
 
 class car : r {
 	displayName = "Carabinier";
-	primaryWeapon[] = {
-		CARBINE
-	};
+	primaryWeapon[] = { CARBINE };
 };
 
 class cls : car {
@@ -379,8 +377,7 @@ class hmgtl : car {
 	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
-		"ACE_Vector",
-		"ItemGPS"
+		"ACE_Vector"
 	};
 };
 
@@ -412,8 +409,7 @@ class gmgtl : car {
 	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
-		"ACE_Vector",
-		"ItemGPS"
+		"ACE_Vector"
 	};
 };
 
@@ -441,12 +437,8 @@ class mattl : car {
 	displayName = "MAT Team Leader";
 	backpack[] = {"CUP_B_RPGPack_Khaki"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemWatch",
-		"ACE_Yardage450",
-		"ItemGPS"
+	linkedItems[] += {
+		"ACE_Yardage450"
 	};
 	backpackItems[] = {
 		"CUP_PG7VL_M",
@@ -500,10 +492,7 @@ class mtrtl : car {
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
-	linkedItems[] += {
-		"ACE_Vector",
-		"ItemGPS"
-	};
+	linkedItems[] += {"ACE_Vector"};
 };
 
 class samg : car {
@@ -532,7 +521,6 @@ class sn : r {
 		"SmokeShell",
 		LIST_3("16Rnd_9x21_green_Mag")
 	};
-	linkedItems[] += {"ItemGPS"};
 };
 
 class sp : g {
@@ -561,6 +549,7 @@ class sp : g {
 		"ItemMap",
 		"ItemCompass",
 		"ItemWatch",
+		"ItemRadio",
 		"CUP_SOFLAM",
 		"O_UavTerminal"
 	};
@@ -581,8 +570,7 @@ class vc : vg {
 	displayName = "Vehicle Commander";
 	items[] += {"ACE_microDAGR"};
 	linkedItems[] += {
-		"Binocular",
-		"ItemGPS"
+		"Binocular"
 	};
 };
 
@@ -591,7 +579,6 @@ class vd : vg {
 	traits[] = {"engineer"};
 	backpack[] = {"CUP_B_SLA_Medicbag"};
 	backpackItems[] = {"ToolKit"};
-	linkedItems[] += {"ItemGPS"};
 };
 
 class hc : smg {
@@ -615,7 +602,6 @@ class hp : hc {
 	displayName = "Helicopter Pilot";
 	backPack[] = {};
 	backpackItems[] = {};
-	linkedItems[] += {"ItemGPS"};
 };
 
 class hcc : hc {
@@ -623,7 +609,6 @@ class hcc : hc {
 	backpack[] = {"CUP_B_SLA_Medicbag"};
 	traits[] = {"engineer"};
 	backpackItems[] = {"ToolKit"};
-	linkedItems[] += {"ItemGPS"};
 };
 
 class jp : baseMan {
@@ -655,7 +640,7 @@ class eng : car {
 		LIST_2("SLAMDirectionalMine_Wire_Mag"),
 		"SatchelCharge_Remote_Mag",
 		"ACE_DefusalKit",
-		"ACE_EntrenchingTool",
+		"ACE_EntrenchingTool"
 	};
 };
 
