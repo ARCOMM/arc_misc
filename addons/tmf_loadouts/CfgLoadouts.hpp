@@ -69,6 +69,7 @@ class CfgLoadouts {
 		tooltip = "Author: AChesheireCat";
 		#include "loadouts\us_rangers_2020.hpp"
 	};
+
 	// Western Factions
 	class ger_army_2010 {
 		displayName = "Bundeswehr (2010, Flecktarn)";
@@ -118,6 +119,7 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\idf_army_2010.hpp"
 	};
+
 	// Russian/Soviet Factions
 	class ussr_army_1970 {
 		displayName = "Soviet Army (1970, M88)";
@@ -131,12 +133,142 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\ussr_army_1985.hpp"
 	};
+	class ru_mvd_2005 {
+		displayName = "Russian Interior Troops (2005, Partizan Summer)\n\nSemi-fictional";
+		category = "Russia";
+		tooltip = "Author: Freddo";
+		#include "loadouts\ru_mvd_2005.hpp"
+	};
+	class ru_mvd_autumn_2005 {
+		displayName = "Russian Interior Troops (2005, Partizan Autumn)\n\nSemi-fictional";
+		category = "Russia";
+		tooltip = "Author: Freddo";
+		#define AUTUMN true
+		#include "loadouts\ru_mvd_2005.hpp"
+	};
 	class ru_army_2010 {
 		displayName = "Russian Army (2010, VSR-98)";
 		category = "Russia";
 		tooltip = "Author: Freddo";
 		#include "loadouts\ru_army_2010.hpp"
 	};
+	class ru_army_ratnik_2020 {
+		displayName = "Russian Army (2020, Ratnik Summer)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define GHILLIE_CLASS "U_B_T_FullGhillie_tna_F"
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_autumn_2020 {
+		displayName = "Russian Army (2020, Ratnik Autumn)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Autumn
+		#define HELMET_CAMO Summer
+		#define BACKPACK_CAMO Summer
+		#define GHILLIE_CLASS "U_B_FullGhillie_lsh"
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_beigedigital_2020 {
+		displayName = "Russian Army (2020, Ratnik Beige Digital)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO BeigeDigital
+		#define VEST_CAMO BeigeDigital
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_desert_2020 {
+		displayName = "Russian Army (2020, Ratnik Desert)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_pink_2020 {
+		displayName = "Russian Army (2020, Ratnik Pink)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Pink
+		#define HELMET_CAMO Desert
+		#define BACKPACK_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_winter_2020 {
+		displayName = "Russian Army (2020, Ratnik Winter)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Winter
+		#define IS_WINTER true
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_ak12_2020 {
+		displayName = "Russian Army (2020, Ratnik Summer, AK12)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define GHILLIE_CLASS "U_B_T_FullGhillie_tna_F"
+		#define USE_AK12 true
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_ak12_autumn_2020 {
+		displayName = "Russian Army (2020, Ratnik Autumn, AK12)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Autumn
+		#define HELMET_CAMO Summer
+		#define BACKPACK_CAMO Summer
+		#define GHILLIE_CLASS "U_B_FullGhillie_lsh"
+		#define USE_AK12 true
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_ak12_beigedigital_2020 {
+		displayName = "Russian Army (2020, Ratnik Beige Digital, AK12)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO BeigeDigital
+		#define VEST_CAMO BeigeDigital
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_ak12_desert_2020 {
+		displayName = "Russian Army (2020, Ratnik Desert, AK12)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_ak12_pink_2020 {
+		displayName = "Russian Army (2020, Ratnik Pink, AK12)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Pink
+		#define HELMET_CAMO Desert
+		#define BACKPACK_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+	class ru_army_ratnik_ak12_winter_2020 {
+		displayName = "Russian Army (2020, Ratnik Winter, AK12)";
+		category = "Russia";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Winter
+		#define IS_WINTER true
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\ru_army_template_2020.hpp"
+	};
+
 	// Eastern Factions
 	class pla_army_2010 {
 		displayName = "Peoples Liberation Army (2010, Type 07 Universal)";
@@ -144,12 +276,19 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo\n\nUses APEX weapons.";
 		#include "loadouts\pla_army_2010.hpp"
 	};
+
 	// Armaverse Factions
 	class tk_locals {
 		displayName = "Takistani Locals";
 		category = "Armaverse Factions";
-		tooltip = "Author: Freddo\n\nNote: Low ammo count. Make sure resupply is available.";
+		tooltip = "Author: Freddo";
 		#include "loadouts\tk_locals.hpp"
+	};
+	class tk_army {
+		displayName = "Takistani Army";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tk_army.hpp"
 	};
 	class chdkz {
 		displayName = "Chernarussian Movement of the Red Star";

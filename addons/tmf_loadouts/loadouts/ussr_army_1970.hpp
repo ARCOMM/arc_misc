@@ -231,17 +231,26 @@ class mmgtl : aar {
 
 class hmgg : car {
 	displayName = "HMG Gunner";
-	backPack[] = {"CUP_B_DShkM_Gun_Bag"};
+	secondaryWeapon[] = {"CUP_DSHKM_carry"};
+	backpack[] = {"B_Carryall_cbr"};
+	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"CUP_B_DShkM_TripodHigh_Bag"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripod"};
+	backpack[] = {"B_Carryall_cbr"};
+	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	backPack[] = {"CUP_B_DShkM_TripodLow_Bag"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripodLow"};
+	backpack[] = {"B_Carryall_oli"};
+	backpackItems[] = {
+		LIST_6("ace_csw_50Rnd_127x108_mag"),
+		"ACE_EntrenchingTool"
+	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
 };
@@ -276,17 +285,32 @@ class mattl : car {
 
 class hatg : car {
 	displayName = "HAT Gunner";
-	backPack[] = {"CUP_B_SPG9_Gun_Bag"};
+	secondaryWeapon[] = {"CUP_SPG9_carry"};
+	backpack[] = {"B_Carryall_cbr"};
+	backpackItems[] = {
+		LIST_2("CUP_compats_PG9_M"),
+		"CUP_compats_OG9_M"
+	};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	backPack[] = {"CUP_B_SPG9_Gun_Bag"};
+	backpack[] = {"B_Carryall_cbr"};
+	backpackItems[] = {
+		LIST_2("CUP_compats_PG9_M"),
+		"CUP_compats_OG9_M"
+	};
 };
 
 class hattl : car {
 	displayName = "HAT Team Leader";
-	backPack[] = {"CUP_B_SPG9_Tripod_Bag"};
+	secondaryWeapon[] = {"ace_csw_spg9CarryTripod"};
+	backpack[] = {"B_Carryall_cbr"};
+	backpackItems[] = {
+		LIST_2("CUP_compats_PG9_M"),
+		"CUP_compats_OG9_M",
+		"ACE_EntrenchingTool"
+	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"Binocular"
@@ -295,7 +319,7 @@ class hattl : car {
 
 class mtrg : car {
 	displayName = "Mortar Gunner";
-	secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
+	secondaryWeapon[] = {"CUP_2b14_carry"};
 	backPack[] = {"B_Carryall_cbr"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),

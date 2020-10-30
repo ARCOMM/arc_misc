@@ -171,7 +171,7 @@ class aar : r {
 
 class rat : r {
 	displayName = "Rifleman (AT)";
-	secondaryWeapon[] = {"CUP_launch_RPG18"};
+	secondaryWeapon[] = {"CUP_launch_RPG26"};
 };
 
 class dm : r {
@@ -217,17 +217,26 @@ class mmgtl : aar {
 
 class hmgg : car {
 	displayName = "HMG Gunner";
-	backPack[] = {"CUP_B_DShkM_Gun_Bag"};
+	secondaryWeapon[] = {"CUP_DSHKM_carry"};
+	backpack[] = {"B_Carryall_oli"};
+	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	backPack[] = {"CUP_B_DShkM_TripodHigh_Bag"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripod"};
+	backpack[] = {"B_Carryall_oli"};
+	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	backPack[] = {"CUP_B_DShkM_TripodLow_Bag"};
+	secondaryWeapon[] = {"ace_csw_kordCarryTripodLow"};
+	backpack[] = {"B_Carryall_oli"};
+	backpackItems[] = {
+		LIST_6("ace_csw_50Rnd_127x108_mag"),
+		"ACE_EntrenchingTool"
+	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
 };
@@ -263,17 +272,28 @@ class mattl : car {
 
 class hatg : car {
 	displayName = "HAT Gunner";
-	backPack[] = {"CUP_B_Metis_Gun_Bag"};
+	secondaryWeapon[] = {"CUP_launch_Metis"};
+	backPack[] = {"B_Carryall_oli"};
+	backpackItems[] = {
+		LIST_3("CUP_AT13_M")
+	};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	backPack[] = {"CUP_B_Metis_Gun_Bag"};
+	backPack[] = {"B_Carryall_oli"};
+	backpackItems[] = {
+		LIST_3("CUP_AT13_M")
+	};
 };
 
 class hattl : car {
 	displayName = "HAT Team Leader";
-	backPack[] = {"CUP_B_Metis_Tripod_Bag"};
+	backPack[] = {"B_Carryall_oli"};
+	backpackItems[] = {
+		LIST_3("CUP_AT13_M"),
+		"ACE_EntrenchingTool"
+	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"Binocular"
@@ -282,7 +302,7 @@ class hattl : car {
 
 class mtrg : car {
 	displayName = "Mortar Gunner";
-	secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
+	secondaryWeapon[] = {"CUP_2b14_carry"};
 	backPack[] = {"B_Carryall_oli"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
