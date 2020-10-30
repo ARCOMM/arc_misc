@@ -568,6 +568,7 @@ class sp : g {
 
 class vg : smg {
 	displayName = "Vehicle Gunner";
+	goggles[] = {"default"};
 	vest[] = {"CUP_V_RUS_6B45_1"};
 	headgear[] = {"H_Tank_black_F"};
 	magazines[] = {
@@ -595,6 +596,7 @@ class vd : vg {
 
 class hc : smg {
 	displayName = "Helicopter Crew";
+	goggles[] = {"default"};
 	headgear[] = {
 		"CUP_H_RUS_ZSH_Shield_Down",
 		"CUP_H_RUS_ZSH_Shield_Up"
@@ -627,6 +629,7 @@ class hcc : hc {
 class jp : baseMan {
 	displayName = "Jet pilot";
 	hmd[] = {};
+	goggles[] = {"default"};
 	headgear[] = {"CUP_H_RUS_ZSH_Shield_Down"};
 	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
 	vest[] = {"CUP_V_RUS_6B45_1"};
