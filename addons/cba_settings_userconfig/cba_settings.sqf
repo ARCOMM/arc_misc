@@ -584,7 +584,7 @@ force TMF_orbat_markerUpdateInterval = 3;
 force TMF_safestart_defaultSS = 120;
 force TMF_safestart_enableDefaultSS = false;
 force TMF_safestart_handleAI = true;
-force TMF_safestart_triggerSound = true;
+force TMF_safestart_triggerSound = false;
 force TMF_spectator_isJIPAllowed = 1;
 
 // Zeus Enhanced
