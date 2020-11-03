@@ -35,7 +35,8 @@ if (
 };
 
 // Init unit
-if ( GVAR(enabled) && {_unit getVariable [QGVAR(enabled), true]}) then {
+if (
+	GVAR(enabled) && {_unit getVariable [QGVAR(enabled), true]} && {!(_unit getVariable [QGVAR(initialized), false])}) then {
 	LOG_1("Setting AI skills on unit", _unit);
 
 	{
@@ -57,6 +58,6 @@ if ( GVAR(enabled) && {_unit getVariable [QGVAR(enabled), true]}) then {
 		["aimingShake", GVAR(aimingShake)]
 	];
 };
-_unit setVariable [QGVAR(initialized), true];
+_unit setVariable [QGVAR(initialized), true, true];
 
 nil
