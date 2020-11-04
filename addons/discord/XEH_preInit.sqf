@@ -20,7 +20,7 @@ switch (true) do {
 	case is3DENPreview;
 	case is3DEN: {
 		"ArmaDiscordRPC" callExtension ["mission", [
-			text "[ARC] Making a mission",
+			text "[ARC] Mission Editor",
 			diag_tickTime,
 			text toLower worldName,
 			text getText (configfile >> "cfgworlds" >> worldName >> "description")
