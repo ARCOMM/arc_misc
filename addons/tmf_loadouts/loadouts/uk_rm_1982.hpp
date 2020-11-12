@@ -5,13 +5,10 @@
 //		* CUP Units
 //		* CUP Weapons
 //		* Community Factions Project
-//		* FIR AWS(AirWeaponSystem)
 //		* MNP Uniforms
 //		* HLC FAL Pack
-//		* HLC MP5 Pack
 //		* USM
 //		* REDD Milan
-//		* ACE
 
 //		Note: Just swap the berets and you have a para regiment instead.
 //		Addtl. Note: Helmets are the only armor on this kit.
@@ -100,13 +97,13 @@ class r : baseMan {
 class g : r {
 	displayName = "Grenadier";
 	primaryWeapon[] = {"CUP_glaunch_M79"};
-	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
+	sidearmWeapon[] = {"CUP_hgun_Browning_HP"};
 	magazines[] = {
 		LIST_20("CUP_1Rnd_HE_M203"),
 		LIST_5("CUP_1Rnd_StarFlare_Red_M203"),
 		LIST_5("CUP_1Rnd_Smoke_M203"),
 		LIST_5("CUP_1Rnd_SmokeRed_M203"),
-		LIST_10("CUP_7Rnd_45ACP_1911")
+		LIST_10("CUP_13Rnd_9x19_Browning_HP")
 	};
 };
 
@@ -134,10 +131,10 @@ class m : cls {
 
 class smg : r {
 	displayName = "Submachinegunner";
-	primaryWeapon[] = {"hlc_smg_mp5a3"};
+	primaryWeapon[] = {"CUP_smg_M3A1"};
 	scope[] = {};
 	magazines[] = {
-		LIST_7("hlc_30Rnd_9x19_B_MP5"),
+		LIST_7("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		LIST_4("CUP_HandGrenade_L109A1_HE"),
 		"SmokeShell"
 	};
@@ -146,9 +143,9 @@ class smg : r {
 class ftl : smg {
 	displayName = "Fireteam Leader";
 	items[] += {"ACE_MapTools"};
-	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
+	sidearmWeapon[] = {"CUP_hgun_Browning_HP"};
 	magazines[] += {
-		LIST_5("CUP_7Rnd_45ACP_1911")
+		LIST_5("CUP_13Rnd_9x19_Browning_HP")
 	};
 	linkedItems[] += {
 		"Binocular",
@@ -196,9 +193,7 @@ class aar : r {
 class rat : smg {
 	displayName = "Rifleman (AT)";
 	secondaryWeapon[] = {"CUP_launch_M72A6_Loaded"};
-	backpackItems[] = {
-		LIST_2("CUP_launch_M72A6_Loaded")
-	};
+	backpackItems[] = {"CUP_launch_M72A6_Loaded"};
 };
 
 class dm : r {
@@ -209,12 +204,12 @@ class dm : r {
 class mmgg : ar {
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"CUP_lmg_FNMAG"};
-	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
+	sidearmWeapon[] = {"CUP_hgun_Browning_HP"};
 	magazines[] = {
 		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		"CUP_HandGrenade_L109A1_HE",
 		"SmokeShell",
-		LIST_4("CUP_7Rnd_45ACP_1911")
+		LIST_4("CUP_13Rnd_9x19_Browning_HP")
 	};
 };
 
@@ -368,9 +363,9 @@ class sn : r {
 	vest[] = {"usm_vest_LBE_mg"};
 	backpack[] = {"CFP_Carryall_DPMWoodland"};
 	headgear[] = {"MNP_Beret_RM"};
-	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
+	sidearmWeapon[] = {"CUP_hgun_Browning_HP"};
 	magazines[] = {
-		LIST_4("CUP_7Rnd_45ACP_1911"),
+		LIST_4("CUP_13Rnd_9x19_Browning_HP"),
 		"ACE_HandFlare_Red",
 		LIST_2("CUP_HandGrenade_L109A1_HE"),
 		"SmokeShell"
@@ -418,7 +413,7 @@ class vg : smg {
 		"CUP_H_PMC_PRR_Headset"
 	};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_9x19_MP5"),
+		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"SmokeShellPurple"
 	};
 };
@@ -444,16 +439,25 @@ class hc : smg {
 	vest[] = {"CUP_V_B_BAF_DPM_Osprey_Mk3_Pilot"};
 	backpack[] = {};
 	backpackItems[] = {};
-	headgear[] = {"CUP_H_BAF_PILOT"};
+	headgear[] = {
+		"CUP_H_SPH4_green_visor",
+		"CUP_H_SPH4_visor",
+		"CUP_H_SPH4_khaki_visor"
+	};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_9x19_MP5"),
+		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"SmokeShellPurple"
 	};
 };
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
+	headgear[] = {
+		"CUP_H_BAF_PILOT",
+		"CUP_H_SPH4_green",
+		"CUP_H_SPH4"
+	};
 	backpackItems[] = {};
 	linkedItems[] += {"ItemRadio"};
 };
@@ -467,15 +471,17 @@ class hcc : hc {
 
 class jp : smg {
 	displayName = "Jet pilot";
-	headgear[] = {"FIR_hgu26p"};
-	vest[] = {"FIR_pilot_vest"};
-	traits[] = {"engineer"};
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
+	headgear[] = {"H_PilotHelmetFighter_B"};
+	vest[] = {"Aircrew_vest_2_NH"};
+	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	backpack[] = {};
+	primaryWeapon[] = {};
+	secondaryWeapon[] = {"CUP_hgun_Browning_HP"};
+	traits[] = {"engineer"};
 	backpackItems[] = {};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_9x19_MP5"),
+		LIST_3("CUP_13Rnd_9x19_Browning_HP"),
 		"SmokeShellPurple"
 	};
 };
