@@ -4,9 +4,9 @@
 //Dependencies:
 //		* CUP Units
 //		* CUP Weapons
-//		* HLC Mk46 + Mk48
+//		* HLC M249 (Mk46+Mk48) Pack
 //		* Community Factions Project
-//		* FIR AWS(AirWeaponSystem)
+//		* Wearable Antennas
 //		* ACE
 
 //	Reference: https://www.battleorder.org/us-stryker-platoon-2019 (for general formation, not for equipment)
