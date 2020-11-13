@@ -4,7 +4,7 @@
 //Dependencies:
 //		* CUP Units
 //		* CUP Weapons
-//		* HLC M249 (Mk46+Mk48) Pack
+//		* NiArms M249 (Mk46+Mk48) Pack
 //		* Community Factions Project
 //		* Wearable Antennas
 //		* ACE
