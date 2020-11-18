@@ -508,7 +508,6 @@ force dzn_VOF_Enabled = true;
 force dzn_VOF_NonCookingList = "      \
 	[""Car"",5],                      \
 	[""Motorcycle"",1.2],             \
-	[""Air"",5],                      \
 	[""Ship"",5],                     \
 	[""CUP_BMP2_HQ_Base"",20],        \
 	[""CUP_BMP2_Ambul_Base"",20],     \
