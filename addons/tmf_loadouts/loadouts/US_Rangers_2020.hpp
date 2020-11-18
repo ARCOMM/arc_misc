@@ -623,8 +623,8 @@ class jp : baseMan {
 	displayName = "Jet pilot";
 	hmd[] = {};
 	headgear[] = {"H_PilotHelmetFighter_B"};
-	uniform[] = {"FIR_Fighter_Pilot_Nomex3"};
-	vest[] = {"Aircrew_vest_2_NH"};
+	uniform[] = {"U_B_PilotCoveralls"};
+	vest[] = {"V_Rangemaster_belt"};
 	backpack[] = {"B_Parachute"};
 	primaryWeapon[] = {"CUP_arifle_mk18_black"};
 	sidearmWeapon[] = {"CUP_hgun_M9A1"};
