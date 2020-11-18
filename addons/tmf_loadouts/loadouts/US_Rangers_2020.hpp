@@ -194,7 +194,7 @@ class sl : r {
 		LIST_3("CUP_21Rnd_9x19_M17_Coyote"),
 		LIST_2("SmokeShellRed"),
 		LIST_2("SmokeShellGreen"),
-		LIST_5("ACE_Chemlight_HiGreen")
+		LIST_5("ACE_Chemlight_IR")
 	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"ACE_Vector"};
