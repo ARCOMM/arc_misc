@@ -194,7 +194,7 @@ class sl : r {
 		LIST_3("CUP_21Rnd_9x19_M17_Coyote"),
 		LIST_2("SmokeShellRed"),
 		LIST_2("SmokeShellGreen"),
-		LIST_5("ACE_Chemlight_HiGreen")
+		LIST_5("ACE_Chemlight_IR")
 	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"ACE_Vector"};
@@ -290,6 +290,12 @@ class dm : r {
 		"hlc_acc_tlr1",
 		"optic_mrd_black"
 	};
+	items[] += {
+		"ACE_MapTools",
+		"ACE_RangeCard",
+		"ACE_Kestrel4500",
+		"ACE_ATragMX"
+	};
 	magazines[] = {
 		LIST_6("CUP_20Rnd_762x51_B_M110"),
 		LIST_3("CUP_21Rnd_9x19_M17_Coyote"),
@@ -297,9 +303,6 @@ class dm : r {
 		"SmokeShell"
 	};
 	backpackItems[] = {
-		"ACE_Kestrel4500",
-		"ACE_MapTools",
-		"ACE_ATragMX",
 		"ACE_SpottingScope",
 		"ACE_Tripod"
 	};
@@ -483,24 +486,32 @@ class sn : r {
 	vest[] = {"V_Chestrig_rgr"};
 	backpack[] = {"B_Carryall_mcamo"};
 	hmd[] = {"CUP_NVG_GPNVG_black"};
-	silencer[] = {"cup_muzzle_snds_m16_coyote"};
+	primaryWeapon[] = {"CUP_srifle_M110"};
+	attachment[] = {"cup_acc_anpeq_15"};
+	scope[] = {"cup_optic_leupoldmk4"};
+	silencer[] = {"cup_muzzle_snds_m110"};
+	bipod[] = {"cup_bipod_vltor_modpod"};
 	sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
 	sidearmAttachments[] = {
 		"optic_mrd_black",
 		"hlc_acc_tlr1"
 	};
+	items[] += {
+		"ACE_MapTools",
+		"ACE_RangeCard",
+		"ACE_Kestrel4500",
+		"ACE_ATragMX"
+	};
 	magazines[] = {
-		LIST_6("CUP_30Rnd_556x45_Stanag"),
-		LIST_2("CUP_30Rnd_556x45_Stanag_Tracer_Red"),
+		LIST_6("CUP_20Rnd_762x51_B_M110"),
 		LIST_2("HandGrenade"),
 		"SmokeShell",
 		"SmokeShellGreen",
 		LIST_3("CUP_17Rnd_9x19_glock17")
 	};
 	backpackItems[] = {
-		LIST_4("CUP_20Rnd_762x51_B_M110"),
-		"CUP_srifle_M110_ANPVS10",
-		"cup_muzzle_snds_m110"
+		"ACE_EntrenchingTool",
+		"ACE_Tripod"
 	};
 	linkedItems[] += {"ItemGPS"};
 };
@@ -511,11 +522,18 @@ class sp : r {
 	vest[] = {"V_Chestrig_rgr"};
 	backpack[] = {"CFP_Kitbag_MCam_Grn"};
 	silencer[] = {"cup_muzzle_snds_m16_coyote"};
-	items[] += {"ACE_MapTools"};
+	items[] += {
+		"ACE_MapTools",
+		"ACE_RangeCard",
+		"ACE_Kestrel4500",
+		"ACE_ATragMX"
+	};
+	magazines[] += {"Laserbatteries"};
 	backpackItems[] = {
 		LIST_4("CUP_20Rnd_762x51_B_M110"),
 		"ACE_SpottingScope",
-		"ACRE_VHF30108SPIKE"
+		"ACRE_VHF30108SPIKE",
+		"ACE_Vector"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -605,8 +623,8 @@ class jp : baseMan {
 	displayName = "Jet pilot";
 	hmd[] = {};
 	headgear[] = {"H_PilotHelmetFighter_B"};
-	uniform[] = {"FIR_Fighter_Pilot_Nomex3"};
-	vest[] = {"Aircrew_vest_2_NH"};
+	uniform[] = {"U_B_PilotCoveralls"};
+	vest[] = {"V_Rangemaster_belt"};
 	backpack[] = {"B_Parachute"};
 	primaryWeapon[] = {"CUP_arifle_mk18_black"};
 	sidearmWeapon[] = {"CUP_hgun_M9A1"};
