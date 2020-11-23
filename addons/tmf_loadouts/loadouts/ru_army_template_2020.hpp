@@ -40,7 +40,7 @@
 		See CfgLoadouts for usage examples
 */
 
-// Reference: https://www.battleorder.org/rus-btr-co
+// References: https://www.battleorder.org/rus-btr-co , https://www.youtube.com/watch?v=6E2oIZ7dayc
 
 //	Created by: Freddo, AChesheireCat
 
@@ -555,13 +555,15 @@ class sp : g {
 	};
 };
 
-class vg : smg {
+class vg : car {
 	displayName = "Vehicle Gunner";
 	goggles[] = {"default"};
-	vest[] = {"CUP_V_RUS_6B45_1"};
-	headgear[] = {"H_Tank_black_F"};
+	vest[] = {"CFP_V_O_RUMVD_SURPAT"};
+	headgear[] = {"H_HelmetCrew_I"};
+	sidearmWeapon[] = {"hgun_Rook40_F"};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_9x39_SP5_VSS_M"),
+		LIST_3("CUP_30Rnd_545x39_AK74M_M"),
+		LIST_3("16Rnd_9x21_Mag"),
 		"SmokeShellPurple"
 	};
 };
@@ -617,7 +619,7 @@ class jp : baseMan {
 	goggles[] = {"default"};
 	headgear[] = {"CUP_H_RUS_ZSH_Shield_Down"};
 	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
-	vest[] = {"CUP_V_RUS_6B45_1"};
+	vest[] = {"Aircrew_vest_2_NH"};
 	backpack[] = {"ACE_NonSteerableParachute"};
 	sidearmWeapon[] = {"hgun_Rook40_F"};
 	magazines[] += {

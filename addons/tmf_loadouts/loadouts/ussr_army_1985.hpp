@@ -384,18 +384,22 @@ class sp : g {
 	};
 };
 
-class vg : smg {
+class vg : car {
 	displayName = "Vehicle Gunner";
-	vest[] = {"CUP_V_CDF_6B3_2_Green"};
-	headgear[] = {"CUP_H_TK_TankerHelmet"};
+	uniform[] = {"SP_0000_Standard_BattleDressUniform_Black"};
+	vest[] = {"CUP_V_CDF_OfficerBelt"};
+	headgear[] = {"CUP_H_SLA_TankerHelmet"};
+	sidearmWeapon[] = {"CUP_hgun_Makarov"};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_545x39_AKSU_M"),
+		LIST_2("CUP_30Rnd_545x39_AK_M"),
+		LIST_4("CUP_8Rnd_9x18_Makarov_M"),
 		"SmokeShellPurple"
 	};
 };
 
 class vc : vg {
 	displayName = "Vehicle Commander";
+	vest[] = {"CUP_V_CDF_OfficerBelt2"};
 	linkedItems[] += {"Binocular"};
 };
 
