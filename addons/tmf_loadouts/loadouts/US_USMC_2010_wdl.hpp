@@ -7,6 +7,7 @@
 //		* Community Factions Project (CFP)
 //		* USM Uniforms
 //		* NIArms M249 Pack
+//		* Wearable Antennas
 
 class baseMan {
 	displayName = "Unarmed";
@@ -42,8 +43,7 @@ class baseMan {
 	items[] = {
 		 MEDICAL_R ,
 		"ACE_Flashlight_XL50",
-		"ACE_SpraypaintGreen",
-		"ACE_microDAGR"
+		"ACE_SpraypaintGreen"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -172,6 +172,7 @@ class sl : ftl {
 	magazines[] += {
 		LIST_3("CUP_15Rnd_9x19_M9")
 	};
+	items[] += {"ACE_microDAGR"};
 };
 
 class co : sl {
@@ -185,7 +186,7 @@ class fac : co {
 	backpack[] = {"B_Kitbag_cbr"};
 	hmd[] = {"antenna_long_two_nvg"};
 	backpackItems[] = { FAC_GEAR };
-	magazines[] = {"Laserbatteries"};
+	magazines[] += {"Laserbatteries"};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -307,7 +308,8 @@ class hmgtl : car {
 	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
-		"ACE_Vector"
+		"ACE_Vector",
+		"ItemGPS"
 	};
 };
 
