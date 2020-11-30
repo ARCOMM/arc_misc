@@ -6,6 +6,7 @@
 		* CUP Units
 		* CUP Weapons
 		* Wearable Antennas
+		* Community Factions Project
 
 	Note:
 		This loadout functions as a template for several different camos.
@@ -558,11 +559,11 @@ class sp : g {
 class vg : car {
 	displayName = "Vehicle Gunner";
 	goggles[] = {"default"};
-	vest[] = {"CFP_V_O_RUMVD_SURPAT"};
+	vest[] = {"CUP_V_B_PASGT_no_bags_OD"};
 	headgear[] = {"H_HelmetCrew_I"};
+	primaryWeapon[] = {};
 	sidearmWeapon[] = {"hgun_Rook40_F"};
 	magazines[] = {
-		LIST_3("CUP_30Rnd_545x39_AK74M_M"),
 		LIST_3("16Rnd_9x21_Mag"),
 		"SmokeShellPurple"
 	};
@@ -570,6 +571,10 @@ class vg : car {
 
 class vc : vg {
 	displayName = "Vehicle Commander";
+	primaryWeapon[] = { CARBINE };
+	magazines[] += {
+		LIST_3("CUP_30Rnd_545x39_AK74M_M")
+	};
 	items[] += {"ACE_microDAGR"};
 	linkedItems[] += {
 		"Binocular"
@@ -619,7 +624,7 @@ class jp : baseMan {
 	goggles[] = {"default"};
 	headgear[] = {"CUP_H_RUS_ZSH_Shield_Down"};
 	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
-	vest[] = {"Aircrew_vest_2_NH"};
+	vest[] = {"CUP_V_RUS_6B45_1"};
 	backpack[] = {"ACE_NonSteerableParachute"};
 	sidearmWeapon[] = {"hgun_Rook40_F"};
 	magazines[] += {

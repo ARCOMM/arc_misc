@@ -389,9 +389,9 @@ class vg : car {
 	uniform[] = {"SP_0000_Standard_BattleDressUniform_Black"};
 	vest[] = {"CUP_V_CDF_OfficerBelt"};
 	headgear[] = {"CUP_H_SLA_TankerHelmet"};
+	primaryWeapon[] = {};
 	sidearmWeapon[] = {"CUP_hgun_Makarov"};
 	magazines[] = {
-		LIST_2("CUP_30Rnd_545x39_AK_M"),
 		LIST_4("CUP_8Rnd_9x18_Makarov_M"),
 		"SmokeShellPurple"
 	};
@@ -400,6 +400,10 @@ class vg : car {
 class vc : vg {
 	displayName = "Vehicle Commander";
 	vest[] = {"CUP_V_CDF_OfficerBelt2"};
+	primaryWeapon[] = {"CUP_arifle_AKS74_Early"};
+	magazines[] += {
+		LIST_2("CUP_30Rnd_545x39_AK_M")
+	};
 	linkedItems[] += {"Binocular"};
 };
 
@@ -418,7 +422,7 @@ class hc : smg {
 	headgear[] = {"CUP_H_TK_PilotHelmet"};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_545x39_AKSU_M"),
+		LIST_3("CUP_30Rnd_545x39_AK_M"),
 		"SmokeShellPurple"
 	};
 };
