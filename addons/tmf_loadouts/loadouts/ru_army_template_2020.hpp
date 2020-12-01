@@ -486,7 +486,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR };
+	items[] += { MTR_GEAR };
 	backPack[] = {BACKPACK_CLASS(CUP_O_RUS_Patrol_bag)};
 	backpackItems[] = {
 		LIST_3("ACE_1Rnd_82mm_Mo_HE"),

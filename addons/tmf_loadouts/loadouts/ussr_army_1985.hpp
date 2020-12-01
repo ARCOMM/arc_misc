@@ -400,9 +400,12 @@ class vg : car {
 class vc : vg {
 	displayName = "Vehicle Commander";
 	vest[] = {"CUP_V_CDF_OfficerBelt2"};
-	primaryWeapon[] = {"CUP_arifle_AKS74_Early"};
+	primaryWeapon[] = {
+		"CUP_arifle_AKS74_Early",
+		"CUP_arifle_AKS74U"
+	};
 	magazines[] += {
-		LIST_2("CUP_30Rnd_545x39_AK_M")
+		LIST_3("CUP_30Rnd_545x39_AK_M")
 	};
 	linkedItems[] += {"Binocular"};
 };
