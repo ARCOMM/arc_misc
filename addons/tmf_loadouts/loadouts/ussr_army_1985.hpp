@@ -324,7 +324,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR };
+	items[] += { MTR_GEAR };
 	backPack[] = {"B_Carryall_oli"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
@@ -384,18 +384,29 @@ class sp : g {
 	};
 };
 
-class vg : smg {
+class vg : car {
 	displayName = "Vehicle Gunner";
-	vest[] = {"CUP_V_CDF_6B3_2_Green"};
-	headgear[] = {"CUP_H_TK_TankerHelmet"};
+	uniform[] = {"SP_0000_Standard_BattleDressUniform_Black"};
+	vest[] = {"CUP_V_CDF_OfficerBelt"};
+	headgear[] = {"CUP_H_SLA_TankerHelmet"};
+	primaryWeapon[] = {};
+	sidearmWeapon[] = {"CUP_hgun_Makarov"};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_545x39_AKSU_M"),
+		LIST_4("CUP_8Rnd_9x18_Makarov_M"),
 		"SmokeShellPurple"
 	};
 };
 
 class vc : vg {
 	displayName = "Vehicle Commander";
+	vest[] = {"CUP_V_CDF_OfficerBelt2"};
+	primaryWeapon[] = {
+		"CUP_arifle_AKS74_Early",
+		"CUP_arifle_AKS74U"
+	};
+	magazines[] += {
+		LIST_3("CUP_30Rnd_545x39_AK_M")
+	};
 	linkedItems[] += {"Binocular"};
 };
 
@@ -414,7 +425,7 @@ class hc : smg {
 	headgear[] = {"CUP_H_TK_PilotHelmet"};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_545x39_AKSU_M"),
+		LIST_3("CUP_30Rnd_545x39_AK_M"),
 		"SmokeShellPurple"
 	};
 };

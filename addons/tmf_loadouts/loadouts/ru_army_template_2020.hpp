@@ -6,6 +6,7 @@
 		* CUP Units
 		* CUP Weapons
 		* Wearable Antennas
+		* Community Factions Project
 
 	Note:
 		This loadout functions as a template for several different camos.
@@ -40,7 +41,7 @@
 		See CfgLoadouts for usage examples
 */
 
-// Reference: https://www.battleorder.org/rus-btr-co
+// References: https://www.battleorder.org/rus-btr-co , https://www.youtube.com/watch?v=6E2oIZ7dayc
 
 //	Created by: Freddo, AChesheireCat
 
@@ -485,7 +486,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR };
+	items[] += { MTR_GEAR };
 	backPack[] = {BACKPACK_CLASS(CUP_O_RUS_Patrol_bag)};
 	backpackItems[] = {
 		LIST_3("ACE_1Rnd_82mm_Mo_HE"),
@@ -555,19 +556,25 @@ class sp : g {
 	};
 };
 
-class vg : smg {
+class vg : car {
 	displayName = "Vehicle Gunner";
 	goggles[] = {"default"};
-	vest[] = {"CUP_V_RUS_6B45_1"};
-	headgear[] = {"H_Tank_black_F"};
+	vest[] = {"CUP_V_B_PASGT_no_bags_OD"};
+	headgear[] = {"H_HelmetCrew_I"};
+	primaryWeapon[] = {};
+	sidearmWeapon[] = {"hgun_Rook40_F"};
 	magazines[] = {
-		LIST_3("CUP_20Rnd_9x39_SP5_VSS_M"),
+		LIST_3("16Rnd_9x21_Mag"),
 		"SmokeShellPurple"
 	};
 };
 
 class vc : vg {
 	displayName = "Vehicle Commander";
+	primaryWeapon[] = { CARBINE };
+	magazines[] += {
+		LIST_3("CUP_30Rnd_545x39_AK74M_M")
+	};
 	items[] += {"ACE_microDAGR"};
 	linkedItems[] += {
 		"Binocular"
