@@ -324,4 +324,16 @@ class CfgLoadouts {
 		#define __CAMO SNW
 		#include "loadouts\cdf_army_template.hpp"
 	};
+	class racs {
+		displayName = "Royal Army Corps of Sahrani";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\racs.hpp"
+	};
+	class sla {
+		displayName = "Sahrani Liberation Army";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\sla.hpp"
+	};
 };
