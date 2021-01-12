@@ -78,7 +78,11 @@ class CfgWeapons {
 		magazines[] = AK74_MAGS;
 	};
 
-	class arifle_AK12_GL_F;
+	class arifle_AK12_base_F;
+	class arifle_AK12_GL_base_F: arifle_AK12_base_F {
+		class EGLM;
+	};
+	class arifle_AK12_GL_F: arifle_AK12_GL_base_F {};
 	class GVAR(ak12_GL): arifle_AK12_GL_F {
 		displayName = "AK-12 GL";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.45x39 mm";
@@ -89,8 +93,13 @@ class CfgWeapons {
 
 		magazineWell[] = {"CBA_545x39_AK", "CBA_545x39_RPK", "AK_545x39"};
 		magazines[] = AK74_MAGS;
+
+		class EGLM: EGLM {
+			magazines[] = {"CUP_1Rnd_HE_GP25_M","CUP_IlumFlareWhite_GP25_M","CUP_IlumFlareRed_GP25_M","CUP_IlumFlareGreen_GP25_M","CUP_FlareWhite_GP25_M","CUP_FlareGreen_GP25_M","CUP_FlareRed_GP25_M","CUP_FlareYellow_GP25_M","CUP_1Rnd_SMOKE_GP25_M","CUP_1Rnd_SMOKERED_GP25_M","CUP_1Rnd_SMOKEGREEN_GP25_M","CUP_1Rnd_SMOKEYELLOW_GP25_M"};
+			magazineWell[] = {"CBA_40mm_GP","VOG_40mm"};
+		};
 	};
-	class arifle_AK12_GL_arid_F;
+	class arifle_AK12_GL_arid_F: arifle_AK12_GL_base_F {};
 	class GVAR(ak12_GL_arid): arifle_AK12_GL_arid_F {
 		displayName = "AK-12 GL (Arid)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.45x39 mm";
@@ -101,8 +110,13 @@ class CfgWeapons {
 
 		magazineWell[] = {"CBA_545x39_AK", "CBA_545x39_RPK", "AK_545x39"};
 		magazines[] = AK74_MAGS;
+
+		class EGLM: EGLM {
+			magazines[] = {"CUP_1Rnd_HE_GP25_M","CUP_IlumFlareWhite_GP25_M","CUP_IlumFlareRed_GP25_M","CUP_IlumFlareGreen_GP25_M","CUP_FlareWhite_GP25_M","CUP_FlareGreen_GP25_M","CUP_FlareRed_GP25_M","CUP_FlareYellow_GP25_M","CUP_1Rnd_SMOKE_GP25_M","CUP_1Rnd_SMOKERED_GP25_M","CUP_1Rnd_SMOKEGREEN_GP25_M","CUP_1Rnd_SMOKEYELLOW_GP25_M"};
+			magazineWell[] = {"CBA_40mm_GP","VOG_40mm"};
+		};
 	};
-	class arifle_AK12_GL_lush_F;
+	class arifle_AK12_GL_lush_F: arifle_AK12_GL_base_F {};
 	class GVAR(ak12_GL_lush): arifle_AK12_GL_lush_F {
 		displayName = "AK-12 GL (Lush)";
 		descriptionShort = "Assault Rifle<br />Caliber: 5.45x39 mm";
@@ -113,6 +127,11 @@ class CfgWeapons {
 
 		magazineWell[] = {"CBA_545x39_AK", "CBA_545x39_RPK", "AK_545x39"};
 		magazines[] = AK74_MAGS;
+
+		class EGLM: EGLM {
+			magazines[] = {"CUP_1Rnd_HE_GP25_M","CUP_IlumFlareWhite_GP25_M","CUP_IlumFlareRed_GP25_M","CUP_IlumFlareGreen_GP25_M","CUP_FlareWhite_GP25_M","CUP_FlareGreen_GP25_M","CUP_FlareRed_GP25_M","CUP_FlareYellow_GP25_M","CUP_1Rnd_SMOKE_GP25_M","CUP_1Rnd_SMOKERED_GP25_M","CUP_1Rnd_SMOKEGREEN_GP25_M","CUP_1Rnd_SMOKEYELLOW_GP25_M"};
+			magazineWell[] = {"CBA_40mm_GP","VOG_40mm"};
+		};
 	};
 
 	class arifle_AK12U_F;
