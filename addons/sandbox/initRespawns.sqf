@@ -48,7 +48,7 @@ private _lanterns = [];
 	private _box = createVehicle ["Land_PaperBox_open_full_F", _x, [], 0, "NONE"];
 	private _lantern = createVehicle ["Land_Camping_Light_F", _x, [], 0, "NONE"];
 	_lantern attachTo [_box, [-0.422119,0.346191,0.685676]];
-	_lantern setVectorDirAndUp [vectorDir _box, vectorUp _box];
+	// _lantern setVectorDirAndUp [vectorDir _box, vectorUp _box]; // Handled by attachTo
 	PUSH(_boxes,_box);
 	PUSH(_lanterns,_lantern);
 
