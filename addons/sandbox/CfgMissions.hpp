@@ -59,6 +59,7 @@ class CfgMissions {
 			SANDBOX(Kerama Islands,kerama,39);
 			SANDBOX(Kulima,kulima,40);
 			SANDBOX(Clafghan,clafghan,41);
+			SANDBOX(Aliabad,mcn_aliabad,72);
 		};
 
 		// WW2 Mission Rotation
