@@ -6,6 +6,13 @@ class ARC_SANDBOX_##id { \
 // These do not need to be removed when terrains are removed
 class CfgMissions {
 	class MPMissions {
+
+		// Outside of rotation
+		SANDBOX(Tanoa,Tanoa,04);
+		SANDBOX(Livonia,Enoch,05);
+		SANDBOX(Rosche,WL_Rosche,26);
+
+		// Mission rotation
 		class ADDON {
 			briefingName = "ARC Sandboxes";
 
@@ -13,8 +20,6 @@ class CfgMissions {
 			SANDBOX(Altis,Altis,01);
 			SANDBOX(Stratis,Stratis,02);
 			SANDBOX(Malden 2035,Malden,03);
-			SANDBOX(Tanoa,Tanoa,04);
-			SANDBOX(Livonia,Enoch,05);
 			SANDBOX(Virtual Reality,VR,06);
 
 			// CUP
@@ -39,7 +44,6 @@ class CfgMissions {
 
 			// Other
 			SANDBOX(G.O.S Dariyah,pja307,25);
-			SANDBOX(Rosche,WL_Rosche,26);
 			SANDBOX(Podagorsk,FDF_Isle1_a,27);
 			SANDBOX(Bozcaada,Bozcaada,28);
 			SANDBOX(Tembelan Island,Tembelan,29);
@@ -52,6 +56,9 @@ class CfgMissions {
 			SANDBOX(Thirsk Winter,ThirskW,36);
 			SANDBOX(PR FATA,fata,37);
 			SANDBOX(Anizay,tem_anizay,38);
+			SANDBOX(Kerama Islands,kerama,39);
+			SANDBOX(Kulima,kulima,40);
+			SANDBOX(Clafghan,clafghan,41);
 		};
 	};
 };
