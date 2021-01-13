@@ -60,5 +60,44 @@ class CfgMissions {
 			SANDBOX(Kulima,kulima,40);
 			SANDBOX(Clafghan,clafghan,41);
 		};
+
+		// WW2 Mission Rotation
+		class DOUBLES(ADDON,WW2) {
+			briefingName = "ARC WW2 Sandboxes";
+
+			// IFA3AIO
+			SANDBOX(Merderet River,I44_Merderet,42);
+			SANDBOX(Merderet River,I44_Merderet_V3,43);
+			SANDBOX(Merderet River,I44_Merderet_Winter,44);
+			SANDBOX(Neaville,MCN_Neaville,45);
+			SANDBOX(Neaville,MCN_Neaville_Winter,46);
+			SANDBOX(Battle of the Bulge,PLR_Bulge,47);
+			SANDBOX(Staszow,Staszow,48);
+			SANDBOX(Sark,Hyde_Sark,49);
+			SANDBOX(Tobruk,iron_excelsior_Tobruk,50);
+			SANDBOX(Aachen Outskirts,SWU_Aachen_Outskirts,51);
+			SANDBOX(Montherme,SWU_Ardennes_1940,52);
+			SANDBOX(Montherme,SWU_Ardennes_1944_Winter,53);
+			SANDBOX(Bray-Dunes,SWU_Dunkirk_Bray_Dunes_1940,54);
+			SANDBOX(El Alamein,SWU_Egypt_El_Alamein,55);
+			SANDBOX(Streets of Berlin,SWU_Germany_Streets_of_Berlin,56);
+			SANDBOX(Pella Region,SWU_Greece_Pella_Region,57);
+			SANDBOX(Volkhov Forest,SWU_Russia_Volkhov_Forest,58);
+			SANDBOX(Baranow,Baranow,59);
+			SANDBOX(Baranow,BaranowWinter,60);
+			SANDBOX(Colleville,Colleville,61);
+			SANDBOX(Colleville,CollevilleWinter,62);
+			SANDBOX(Ivachev,Ivachev,63);
+			SANDBOX(Ivachev,IvachevWinter,64);
+			SANDBOX(Panovo,Panovo,65);
+			SANDBOX(Panovo,PanovoWinter,66);
+			SANDBOX(Omaha,I44_Omaha_V2,67);
+			SANDBOX(Operation Crossing Point,I44_merderet_koth,68);
+
+			// Faces of War
+			SANDBOX(Kokoda Trail,swu_kokoda_map,69);
+			SANDBOX(Tarawa Betio,fow_map_tarawa,70);
+			SANDBOX(Henderson Airfield,fow_map_henderson,71);
+		};
 	};
 };
