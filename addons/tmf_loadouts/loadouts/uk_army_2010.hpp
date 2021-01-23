@@ -204,7 +204,7 @@ class aar : r {
 
 class rat : car {
 	displayName = "Rifleman (AT)";
-	secondaryWeapon[] = {"CUP_launch_NLAW"};
+	secondaryWeapon[] = {"launch_NLAW_F"};
 };
 
 class dm : r {
