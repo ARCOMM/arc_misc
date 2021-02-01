@@ -1,12 +1,35 @@
 class CfgLoadouts {
-	// Delete TMF provided loadouts
-	delete BLU_F;
-	delete BLU_G_F;
-	delete CIV_F;
-	delete IND_F;
-	delete IND_G_F;
-	delete OPF_F;
-	delete OPF_G_F;
+	// 2035 Factions
+	class blu_f {
+		displayName = "NATO (MTP)";
+		category = "2035 Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\blu_f.hpp"
+	};
+	class blu_t_f {
+		displayName = "NATO (Tropic)";
+		category = "2035 Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\blu_t_f.hpp"
+	};
+	class blu_w_f {
+		displayName = "NATO (Woodland)";
+		category = "2035 Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\blu_w_f.hpp"
+	};
+	class ind_f {
+		displayName = "AAF (Digital)";
+		category = "2035 Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\ind_f.hpp"
+	};
+	class opf_f {
+		displayName = "CSAT (Hex)";
+		category = "2035 Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\opf_f.hpp"
+	};
 
 	// US Factions
 	class us_army_1970 {

@@ -12,7 +12,8 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
 			"arc_misc_main",
-			"tmf_assigngear"
+			"tmf_assigngear",
+			QGVAR(disableNative)
 		};
         VERSION_CONFIG;
     };
