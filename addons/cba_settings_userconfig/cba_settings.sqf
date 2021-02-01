@@ -43,7 +43,7 @@ force ace_captives_requireSurrenderAi = false;
 force ace_common_allowFadeMusic = true;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
-force ace_common_checkPBOsWhitelist = "['ares','mars_server']";
+force ace_common_checkPBOsWhitelist = "['ares','mars_server','aar_main']";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
 
