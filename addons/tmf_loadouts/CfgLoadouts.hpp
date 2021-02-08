@@ -299,6 +299,12 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo\n\nUses APEX weapons.";
 		#include "loadouts\pla_army_2010.hpp"
 	};
+	class vietcong {
+		displayName = "Vietcong";
+		category = "Eastern Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\vietcong.hpp"
+	};
 
 	// Armaverse Factions
 	class tk_locals {
