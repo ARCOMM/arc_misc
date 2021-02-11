@@ -143,6 +143,7 @@ force ace_map_gestures_onlyShowFriendlys = false;
 
 // ACE Map Tools
 force ace_maptools_drawStraightLines = false;
+
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
 force ace_medical_AIDamageThreshold = 1;
@@ -150,7 +151,7 @@ force ace_medical_bleedingCoefficient = 1;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
-force ace_medical_fatalDamageSource = 2;
+force ace_medical_fatalDamageSource = 0;
 force ace_medical_fractureChance = 0.8;
 force ace_medical_fractures = 1;
 force ace_medical_gui_maxDistance = 3;
@@ -161,12 +162,14 @@ force ace_medical_playerDamageThreshold = 1;
 force ace_medical_spontaneousWakeUpChance = 0.25;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 2;
 force ace_medical_statemachine_AIUnconsciousness = false;
+force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 30;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 0;
 force ace_medical_treatment_advancedBandages = 0;
 force ace_medical_treatment_advancedDiagnose = true;
 force ace_medical_treatment_advancedMedication = true;
+force ace_medical_treatment_allowBodyBagUnconscious = false;
 force ace_medical_treatment_allowLitterCreation = true;
 force ace_medical_treatment_allowSelfIV = 1;
 force ace_medical_treatment_allowSelfPAK = 0;
@@ -189,7 +192,14 @@ force ace_medical_treatment_medicIV = 1;
 force ace_medical_treatment_medicPAK = 1;
 force ace_medical_treatment_medicSurgicalKit = 1;
 force ace_medical_treatment_timeCoefficientPAK = 1;
+force ace_medical_treatment_treatmentTimeAutoinjector = 5;
+force ace_medical_treatment_treatmentTimeBodyBag = 15;
+force ace_medical_treatment_treatmentTimeCPR = 15;
+force ace_medical_treatment_treatmentTimeIV = 12;
+force ace_medical_treatment_treatmentTimeSplint = 7;
+force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force ace_medical_treatment_woundReopenChance = 1;
+force ace_medical_treatment_woundStitchTime = 5;
 
 // ACE Name Tags
 force ace_nametags_playerNamesMaxAlpha = 0.8;
