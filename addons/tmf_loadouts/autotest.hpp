@@ -48,4 +48,7 @@ class TMF_autotest {
 			};                                                                                  \
 		);
 	};
+	class GVAR(testGroupNames) {
+		code = QUOTE([] call FUNC(testGroupNames));
+	};
 };
