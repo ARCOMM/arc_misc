@@ -218,7 +218,6 @@ class fac : ftl {
 	backpack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
 		FAC_GEAR ,
-		"ACRE_VHF30108",
 		"Laserbatteries"
 	};
 	magazines[] += {
