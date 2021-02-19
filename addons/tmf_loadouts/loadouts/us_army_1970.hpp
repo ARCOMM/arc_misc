@@ -358,7 +358,7 @@ class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	vest[] = {"usm_vest_LBE_mg_m"};
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR };
+	items[] += { MTR_GEAR };
 	backPack[] = {"usm_pack_alice"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),

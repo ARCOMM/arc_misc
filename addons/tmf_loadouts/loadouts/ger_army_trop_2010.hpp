@@ -345,7 +345,7 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	backpack[] = {"Redd_Tank_M120_Tampella_Tripod"};
-	items[] = { MTR_GEAR };
+	items[] += { MTR_GEAR };
 
 	linkedItems[] = {
 		"ItemMap",
