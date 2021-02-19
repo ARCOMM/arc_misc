@@ -23,3 +23,6 @@ class CfgPatches
 
 #include "macros.inc"
 #include "Cfgloadouts.hpp"
+#include "CfgEventhandlers.hpp"
+#include "Cfg3DEN.hpp"
+#include "autotest.hpp"
