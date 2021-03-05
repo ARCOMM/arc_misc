@@ -13,7 +13,7 @@ Author:
 private _output = [];
 
 if !("Scenario" get3DENMissionAttribute "arc_misc_isTemplate") then {
-	_output pushBack [0,"ARCOMM Mission template has not been used for this mission or is outdated"];
+	_output pushBack [1,"ARCOMM Mission template has not been used for this mission or is outdated"];
 };
 
 _output
