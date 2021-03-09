@@ -11,7 +11,7 @@ force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 force ace_advanced_fatigue_loadFactor = 0.9;
 force ace_advanced_fatigue_performanceFactor = 1;
-force ace_advanced_fatigue_recoveryFactor = 1.2;
+force ace_advanced_fatigue_recoveryFactor = 2.2;
 force ace_advanced_fatigue_swayFactor = 1;
 force ace_advanced_fatigue_terrainGradientFactor = 1;
 
