@@ -1,10 +1,10 @@
-#include "../script_component.hpp"
+#include "..\script_component.hpp"
 
 class CfgPatches
 {
     class GVAR(disableNative)
     {
-        addonRootClass = ADDON;
+        addonRootClass = QUOTE(ADDON);
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

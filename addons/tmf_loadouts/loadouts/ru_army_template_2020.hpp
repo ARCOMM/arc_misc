@@ -50,26 +50,26 @@
 #endif
 
 #ifdef VEST_CAMO
-	#define VEST_CLASS(var1) DOUBLES(var1,VEST_CAMO)
+	#define VEST_CLASS(var1) QUOTE(DOUBLES(var1,VEST_CAMO))
 #else
-	#define VEST_CLASS(var1) var1
+	#define VEST_CLASS(var1) QUOTE(var1)
 #endif
 
 #ifndef HELMET_CAMO
 	#define HELMET_CAMO UNI_CAMO
 #endif
-#define HELMET_CLASS(var1) DOUBLES(var1,HELMET_CAMO)
+#define HELMET_CLASS(var1) QUOTE(DOUBLES(var1,HELMET_CAMO))
 
 #ifndef BACKPACK_CAMO
 	#define BACKPACK_CAMO UNI_CAMO
 #endif
-#define BACKPACK_CLASS(var1) DOUBLES(var1,BACKPACK_CAMO)
+#define BACKPACK_CLASS(var1) QUOTE(DOUBLES(var1,BACKPACK_CAMO))
 #ifdef IS_WINTER
 	#define BACKPACK_SHOVEL_CLASS(var1) BACKPACK_CLASS(var1)
-	#define BALACLAVAS CUP_G_RUS_Balaclava_Ratnik_winter, CUP_G_RUS_Balaclava_Ratnik_winter_v2
+	#define BALACLAVAS "CUP_G_RUS_Balaclava_Ratnik_winter", "CUP_G_RUS_Balaclava_Ratnik_winter_v2"
 #else
-	#define BACKPACK_SHOVEL_CLASS(var1) TRIPLES(var1,BACKPACK_CAMO,Shovel)
-	#define BALACLAVAS CUP_G_RUS_Balaclava_Ratnik, CUP_G_RUS_Balaclava_Ratnik_v2
+	#define BACKPACK_SHOVEL_CLASS(var1) QUOTE(TRIPLES(var1,BACKPACK_CAMO,Shovel))
+	#define BALACLAVAS "CUP_G_RUS_Balaclava_Ratnik", "CUP_G_RUS_Balaclava_Ratnik_v2"
 #endif
 
 #ifndef GHILLIE_CLASS
@@ -99,10 +99,13 @@
 #ifndef TRIPLES
 	#define TRIPLES(var1,var2,var3) var1##_##var2##_##var3
 #endif
+#ifndef QUOTE
+	#define QUOTE(x) #x
+#endif
 
 class baseMan {
 	displayName = "Unarmed";
-	uniform[] = {DOUBLES(CUP_U_O_RUS_Ratnik,UNI_CAMO)};
+	uniform[] = {QUOTE(DOUBLES(CUP_U_O_RUS_Ratnik,UNI_CAMO))};
 	vest[] = {VEST_CLASS(CUP_Vest_RUS_6B45_Sh117)};
 	backpack[] = {};
 	headgear[] = {};

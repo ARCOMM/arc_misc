@@ -340,12 +340,12 @@ class sn : car {
 			_this linkItem 'CUP_NVG_PVS7'; \
 			_this addPrimaryWeaponItem 'cup_acc_anpeq_2_grey'; \
 		}; \
-		backpackContainer _this setVariable ['ace_gunbag_gunbagWeapon', \
-		[ \
+		backpackContainer _this setVariable [ARR_3('ace_gunbag_gunbagWeapon', \
+		[ARR_3( \
 			'CUP_srifle_M107_Base', \
-			['','','cup_optic_leupoldm3lr_pip',''], \
-			[['CUP_10Rnd_127x99_M107', 10]] \
-		], true]; \
+			[ARR_4('','','cup_optic_leupoldm3lr_pip','')], \
+			[[ARR_2('CUP_10Rnd_127x99_M107', 10)]] \
+		)], true)]; \
 	);
 };
 

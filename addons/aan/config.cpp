@@ -1,5 +1,4 @@
 #include "script_component.hpp"
-#include "\a3\ui_f\hpp\defineCommon.inc"
 
 class CfgPatches
 {
@@ -22,7 +21,10 @@ class CfgPatches
 
 #include "CfgEventHandlers.hpp"
 #include "CfgScriptPaths.hpp"
+#include "/x/arc_misc/addons/tmf_loadouts/macros.inc"
+#include "CfgLoadouts.hpp"
 
+#include "/a3/ui_f/hpp/defineCommon.inc"
 class RscStandardDisplay;
 class RscControlsGroupNoScrollbars;
 class RscMessageBox: RscControlsGroupNoScrollbars {
@@ -42,6 +44,3 @@ class RscEdit;
 class RscEditMulti;
 class RscButtonMenuBIKI;
 #include "RscAANPrompt.hpp"
-
-#include "..\tmf_loadouts\macros.inc"
-#include "Cfgloadouts.hpp"

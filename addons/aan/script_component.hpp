@@ -1,5 +1,5 @@
 #define COMPONENT aan
-#include "\x\arc_misc\addons\main\script_macros.hpp"
+#include "/x/arc_misc/addons/main/script_macros.hpp"
 
 #define IDD_AAN						2345001
 #define IDC_AAN_HEADLINE_EDIT		2345002

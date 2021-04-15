@@ -19,7 +19,7 @@ class CfgPatches
 
 #include "CfgDifficultyPresets.hpp"
 #include "CfgAILevelPresets.hpp"
-#include "CFgAISkill.hpp"
+#include "CfgAISkill.hpp"
 #include "CfgBrains.hpp"
 #include "CfgEventhandlers.hpp"
 #include "Cfg3DEN.hpp"
