@@ -21,10 +21,10 @@ class CfgPatches
 
 #include "CfgEventHandlers.hpp"
 #include "CfgScriptPaths.hpp"
-#include "/x/arc_misc/addons/tmf_loadouts/macros.inc"
+//#include "\x\arc_misc\addons\tmf_loadouts\macros.inc"
 #include "CfgLoadouts.hpp"
 
-#include "/a3/ui_f/hpp/defineCommon.inc"
+#include "\a3\ui_f\hpp\defineCommon.inc"
 class RscStandardDisplay;
 class RscControlsGroupNoScrollbars;
 class RscMessageBox: RscControlsGroupNoScrollbars {

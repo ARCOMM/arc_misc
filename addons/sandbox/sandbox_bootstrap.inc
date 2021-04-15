@@ -22,8 +22,8 @@ joinUnassigned = 1;
 saving = 0;
 
 class Params {
-	#include "/a3/functions_f/Params/paramDaytimePeriod.inc"
-	#include "/a3/functions_f/Params/paramGuerFriendly.inc"
-	#include "/a3/functions_f/Params/paramWeather.inc"
-	#include "/a3/functions_f_mp_mark/Params/paramTimeAcceleration.inc"
+	#include "\a3\functions_f\Params\paramDaytimePeriod.inc"
+	#include "\a3\functions_f\Params\paramGuerFriendly.inc"
+	#include "\a3\functions_f\Params\paramWeather.inc"
+	#include "\a3\functions_f_mp_mark\Params\paramTimeAcceleration.inc"
 };
