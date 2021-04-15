@@ -62,6 +62,12 @@ class CfgMissions {
 			SANDBOX(Aliabad,mcn_aliabad,72);
 		};
 
+		class DOUBLES(ADDON,GM) {
+			briefingName = "ARC GM Sandboxes";
+			SANDBOX(Weferlingen,gm_weferlingen_summer,73);
+			SANDBOX(Weferlingen,gm_weferlingen_winter,74);
+		};
+
 		// WW2 Mission Rotation
 		class DOUBLES(ADDON,WW2) {
 			briefingName = "ARC WW2 Sandboxes";
