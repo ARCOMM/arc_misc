@@ -22,16 +22,19 @@
 #ifndef TRIPLES
 	#define TRIPLES(x,y,z) x##_##y##_##z
 #endif
+#ifndef QUOTE
+	#define QUOTE(x) #x
+#endif
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
 	// All randomized.
 	uniform[] =
 	{
-		TRIPLES(CUP_U_B_CDF,__CAMO,1),
-		TRIPLES(CUP_U_B_CDF,__CAMO,2)
+		QUOTE(TRIPLES(CUP_U_B_CDF,__CAMO,1)),
+		QUOTE(TRIPLES(CUP_U_B_CDF,__CAMO,2))
 	};
-	vest[] = {DOUBLES(CUP_V_CDF_6B3_1,__CAMO)};
+	vest[] = {QUOTE(DOUBLES(CUP_V_CDF_6B3_1,__CAMO))};
 	backpack[] = {};
 	headgear[] = {};
 	goggles[] = {"default"};
@@ -84,7 +87,7 @@ class baseMan {// Weaponless baseclass
 
 class r : baseMan {
 	displayName = "Rifleman";
-	headgear[] = {DOUBLES(CUP_H_CDF_H_PASGT,__CAMO)};
+	headgear[] = {QUOTE(DOUBLES(CUP_H_CDF_H_PASGT,__CAMO))};
 	primaryWeapon[] = {"CUP_arifle_AK74"};
 	attachment[] = {"cup_acc_flashlight"};
 	magazines[] = {
@@ -97,7 +100,7 @@ class r : baseMan {
 
 class g : r {
 	displayName = "Grenadier";
-	vest[] = {DOUBLES(CUP_V_CDF_6B3_4,__CAMO)};
+	vest[] = {QUOTE(DOUBLES(CUP_V_CDF_6B3_4,__CAMO))};
 	primaryWeapon[] = {"CUP_arifle_AK74_GL"};
 	magazines[] += {
 		LIST_4("CUP_1Rnd_HE_GP25_M"),
@@ -145,7 +148,7 @@ class ftl : g {
 
 class sl : r {
 	displayName = "Squad Leader";
-	vest[] = {DOUBLES(CUP_V_CDF_6B3_5,__CAMO)};
+	vest[] = {QUOTE(DOUBLES(CUP_V_CDF_6B3_5,__CAMO))};
 	items[] += {"ACE_MapTools"};
 	sidearmWeapon[] = {"CUP_hgun_PMM"};
 	magazines[] += {
@@ -157,7 +160,7 @@ class sl : r {
 
 class co : sl {
 	displayName = "Platoon Leader";
-	headgear[] = {DOUBLES(CUP_H_CDF_OfficerCap,__CAMO)};
+	headgear[] = {QUOTE(DOUBLES(CUP_H_CDF_OfficerCap,__CAMO))};
 };
 
 class fac : g {
@@ -213,7 +216,7 @@ class dm : r {
 
 class mmgg : ar {
 	displayName = "MMG Gunner";
-	vest[] = {DOUBLES(CUP_V_CDF_6B3_3,__CAMO)};
+	vest[] = {QUOTE(DOUBLES(CUP_V_CDF_6B3_3,__CAMO))};
 	backpack[] = {"CUP_B_USMC_AssaultPack"};
 	primaryWeapon[] = {"CUP_lmg_PKMN"};
 	scope[] = {"cup_optic_pechenegscope"};
@@ -395,7 +398,7 @@ class samag : car {
 class sn : r {
 	displayName = "Sniper";
 	vest[] = {"CUP_V_RUS_Smersh_2"};
-	headgear[] = {DOUBLES(CUP_H_CDF_OfficerCap,__CAMO)};
+	headgear[] = {QUOTE(DOUBLES(CUP_H_CDF_OfficerCap,__CAMO))};
 	primaryWeapon[] = {"CUP_srifle_SVD"};
 	scope[] = {"cup_optic_pso_1_1"};
 	sidearmWeapon[] = {"CUP_hgun_PB6P9"};
@@ -411,7 +414,7 @@ class sp : g {
 	displayName = "Spotter";
 	vest[] = {"CUP_V_RUS_Smersh_2"};
 	backpack[] = {"CUP_B_Kombat_Radio_Olive"};
-	headgear[] = {DOUBLES(CUP_H_CDF_OfficerCap,__CAMO)};
+	headgear[] = {QUOTE(DOUBLES(CUP_H_CDF_OfficerCap,__CAMO))};
 	silencer[] = {"cup_muzzle_pbs4"};
 	items[] += {
 		"ACE_MapTools",

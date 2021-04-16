@@ -16,16 +16,14 @@ respawnVehicleDelay = 30;
 respawnTemplates[] = {"MenuPosition","Spectator","Tickets", "Counter"};
 respawnTemplatesVirtual[] = {};
 
-disabledAI = true;
-joinUnassigned = true;
+disabledAI = 1;
+joinUnassigned = 1;
 
-saving = false;
+saving = 0;
 
 class Params {
-	#define DAYTIMEPERIOD_DEFAULT __EVAL(selectRandom [0,6,12,18])
-	#include "\a3\functions_f\Params\paramDaytimePeriod.hpp"
-	#include "\a3\functions_f\Params\paramGuerFriendly.hpp"
-	#define WEATHER_DEFAULT __EVAL(selectRandom [0,25,50,75,100])
-	#include "\a3\functions_f\Params\paramWeather.hpp"
-	#include "\a3\Functions_F_MP_Mark\Params\paramTimeAcceleration.hpp"
+	#include "\a3\functions_f\Params\paramDaytimePeriod.inc"
+	#include "\a3\functions_f\Params\paramGuerFriendly.inc"
+	#include "\a3\functions_f\Params\paramWeather.inc"
+	#include "\a3\functions_f_mp_mark\Params\paramTimeAcceleration.inc"
 };

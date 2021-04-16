@@ -22,7 +22,7 @@ class CfgPatches
 #include "tmf_adminMenu_authorized_players.hpp"
 
 #include "macros.inc"
-#include "Cfgloadouts.hpp"
+#include "CfgLoadouts.hpp"
 #include "CfgEventhandlers.hpp"
 #include "Cfg3DEN.hpp"
 #include "autotest.hpp"

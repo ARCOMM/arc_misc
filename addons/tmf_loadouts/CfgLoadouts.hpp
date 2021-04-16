@@ -45,7 +45,7 @@ class CfgLoadouts {
 		#include "loadouts\us_army_1985.hpp"
 	};
 	class us_army_2003 {
-		displayName = "US Army (2003, DCU/M81)";
+		displayName = "US Army (2003, DCU\M81)";
 		category = "USA";
 		tooltip = "Author: Chesheire";
 		#include "loadouts\us_army_2003.hpp"
@@ -57,7 +57,7 @@ class CfgLoadouts {
 		#include "loadouts\us_usmc_1985.hpp"
 	};
 	class us_usmc_2003 {
-		displayName = "US Marine Corps (2003, DCU/M81)";
+		displayName = "US Marine Corps (2003, DCU\M81)";
 		category = "USA";
 		tooltip = "Author: Chesheire";
 		#include "loadouts\us_usmc_2003.hpp"
@@ -125,7 +125,7 @@ class CfgLoadouts {
 		#include "loadouts\uk_rm_1982.hpp"
 	};
 	class au_army_2018 {
-		displayName = "Australian Army (2018, AMCU/AUSCAM)";
+		displayName = "Australian Army (2018, AMCU\AUSCAM)";
 		category = "Western Factions";
 		tooltip = "Author: Chesheire";
 		#include "loadouts\au_army_2018.hpp"
@@ -143,7 +143,7 @@ class CfgLoadouts {
 		#include "loadouts\idf_army_2010.hpp"
 	};
 
-	// Russian/Soviet Factions
+	// Russian\Soviet Factions
 	class ussr_army_1970 {
 		displayName = "Soviet Army (1970, M88)";
 		category = "Russia";
