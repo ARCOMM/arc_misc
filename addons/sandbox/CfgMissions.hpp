@@ -66,6 +66,7 @@ class CfgMissions {
 			briefingName = "ARC GM Sandboxes";
 			SANDBOX(Weferlingen,gm_weferlingen_summer,73);
 			SANDBOX(Weferlingen,gm_weferlingen_winter,74);
+			SANDBOX(Cham,tem_cham,75);
 		};
 
 		// WW2 Mission Rotation
