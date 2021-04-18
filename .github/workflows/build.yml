@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+  
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@master
+      - name: Build using HEMTT
+        uses: arma-actions/hemtt@master
+        with:
+          command: build --release --ci
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: ARC_MISC-${{ github.sha }}-nobin
+          path: releases/ARC_MISC_*.zip
