@@ -44,8 +44,7 @@ class TMF_autotest {
 				getArray(_x >> 'contents')																	\
 			)]);																							\
 																											\
-			_macrosArr call FUNC(testMacros);																\
-		);
+			_macrosArr call FUNC(testMacros));
 	};
 	class GVAR(testTemplate) {
 		code = QUOTE([] call FUNC(testTemplate));
@@ -56,8 +55,7 @@ class TMF_autotest {
 				[]                                                                              \
 			} else {                                                                            \
 				[[ARR_3(0, 'AI slots are enabled, disable them under multiplayer attributes')]] \
-			};                                                                                  \
-		);
+			});
 	};
 	class GVAR(testGroupNames) {
 		code = QUOTE([] call FUNC(testGroupNames));

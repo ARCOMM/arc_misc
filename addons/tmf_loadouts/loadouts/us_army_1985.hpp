@@ -65,8 +65,7 @@ class baseMan {// Weaponless baseclass
 		{ \
 			_this linkItem 'CUP_NVG_PVS7'; \
 			_this addPrimaryWeaponItem 'cup_acc_anpeq_2_grey'; \
-		}; \
-	);
+		});
 };
 
 class r : baseMan {
@@ -345,8 +344,7 @@ class sn : car {
 			'CUP_srifle_M107_Base', \
 			[ARR_4('','','cup_optic_leupoldm3lr_pip','')], \
 			[[ARR_2('CUP_10Rnd_127x99_M107', 10)]] \
-		)], true)]; \
-	);
+		)], true)]);
 };
 
 class sp : car {

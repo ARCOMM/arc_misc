@@ -69,8 +69,7 @@ class baseMan {// Weaponless baseclass
 		{ \
 			_this linkItem 'CUP_NVG_HMNVS'; \
 			_this addItem 'ACE_IR_Strobe_Item'; \
-		}; \
-	);
+		});
 	// Add NVGs if it is night
 };
 
