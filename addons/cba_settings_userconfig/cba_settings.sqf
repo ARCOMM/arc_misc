@@ -43,7 +43,14 @@ force ace_captives_requireSurrenderAi = false;
 force ace_common_allowFadeMusic = true;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
-force ace_common_checkPBOsWhitelist = "['ares','mars_server','aar_main']";
+force ace_common_checkPBOsWhitelist = "[ \
+	'aar_main',                          \
+	'darkmap_ace_main',                  \
+	'DIS_Enhanced_Gps',                  \
+	'DIS_enhanced_map_ace',              \
+	'JD_ArmaMapsAceCompat',              \
+	'JD_ArmaMaps'                        \
+]";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
 
@@ -294,6 +301,7 @@ force ace_vehiclelock_vehicleStartingLockState = -1;
 
 // ACE Vehicles
 force ace_vehicles_keepEngineRunning = false;
+
 // ACE View Distance Limiter
 force ace_viewdistance_limitViewDistance = 12000;
 
@@ -301,9 +309,9 @@ force ace_viewdistance_limitViewDistance = 12000;
 force ace_laserpointer_enabled = true;
 
 // ACE Weather
-force ace_weather_enabled = true;
+force ace_weather_enabled = false;
 force ace_weather_updateInterval = 60;
-force ace_weather_windSimulation = true;
+force ace_weather_windSimulation = false;
 
 // ACE Wind Deflection
 force ace_winddeflection_enabled = true;
@@ -328,6 +336,7 @@ force acex_field_rations_thirstQuenched = 1;
 force acex_field_rations_timeWithoutFood = 2;
 force acex_field_rations_timeWithoutWater = 2;
 force acex_field_rations_waterSourceActions = 2;
+
 // ACEX Headless
 force acex_headless_delay = 15;
 force acex_headless_enabled = true;
@@ -452,67 +461,20 @@ force emr_main_whitelistStr = "";
 
 // dzn Vehicle On Fire
 force dzn_VOF_CheckTimeout = 30;
-force dzn_VOF_CookingList = "              \
-	Truck_02_MRL_base_F,                   \
-	UGV_01_rcws_base_F,                    \
-	MRAP_01_gmg_base_F,                    \
-	MRAP_02_gmg_base_F,                    \
-	MRAP_03_gmg_base_F,                    \
-	CUP_BM21_Base,                         \
-	CUP_Ural_ZU23_Base,                    \
-	CUP_BRDM2_ATGM_Base,                   \
-	CUP_M163_Base,                         \
-	CUP_B_M1135_ATGMV_Desert,              \
-	CUP_B_M1128_MGS_Desert,                \
-	CUP_B_M1129_MC_MK19_Desert,            \
-	CUP_B_M1129_MC_MK19_Woodland,          \
-	CUP_LAV25_Base,                        \
-	CUP_GAZ_Vodnik_BPPU_Base,              \
-	CUP_GAZ_Vodnik_AGS_Base,               \
-	CUP_BTR80A_Base,                       \
-	CUP_BTR90_Base,                        \
-	CUP_Hilux_AGS30_Base,                  \
-	CUP_Hilux_metis_Base,                  \
-	CUP_Hilux_SPG9_Base,                   \
-	CUP_Hilux_podnos_Base,                 \
-	CUP_Hilux_BMP1_base,                   \
-	CUP_Hilux_MLRS_Base,                   \
-	CUP_Hilux_UB32_Base,                   \
-	CUP_Hilux_igla_Base,                   \
-	CUP_Hilux_armored_AGS30_Base,          \
-	CUP_Hilux_armored_SPG9_Base,           \
-	CUP_Hilux_armored_metis_Base,          \
-	CUP_Hilux_armored_podnos_Base,         \
-	CUP_Hilux_armored_UB32_Base,           \
-	CUP_Hilux_armored_zu23_Base,           \
-	CUP_Hilux_armored_BMP1_Base,           \
-	CUP_Hilux_armored_igla_Base,           \
-	CUP_Hilux_armored_MLRS_Base,           \
-	CUP_UAZ_AGS30_Base,                    \
-	CUP_UAZ_SPG9_Base,                     \
-	CUP_UAZ_METIS_Base,                    \
-	CUP_UAZ_AA_Base,                       \
-	CUP_Datsun_AA_Base,                    \
-	CUP_LR_SPG9_Base,                      \
-	CUP_LR_AA_Base,                        \
-	CUP_B_LR_Special_GMG_GB_W,             \
-	CUP_Boxer_Base_GMG,                    \
-	CUP_HMMWV_crows_MK19_Base,             \
-	CUP_HMMWV_MK19_Base,                   \
-	CUP_HMMWV_TOW_Base,                    \
-	CUP_HMMWV_SOV_Base,                    \
-	CUP_HMMWV_Avenger_Base,                \
-	CUP_M1151_Mk19_BASE,                   \
-	CUP_BAF_Jackal2_GMG_D,                 \
-	CUP_B_BAF_Coyote_GMG_D,                \
-	CUP_B_Mastiff_GMG_GB_D,                \
-	CUP_B_Mastiff_GMG_GB_W,                \
-	CUP_B_Ridgback_GMG_GB_D,               \
-	CUP_B_Ridgback_GMG_GB_W,               \
-	CUP_B_Wolfhound_GMG_GB_D,              \
-	CUP_B_Wolfhound_GMG_GB_W,              \
-	rnt_sppz_2a2_luchs_Base,               \
-	Redd_Tank_Fuchs_1A4_Jg_Milan_Flecktarn \
+// Does not check if X iskindof Y, so I need to add all possible entries.
+force dzn_VOF_CookingList = " \
+	CUP_BRDM2_ATGM_Base,CUP_B_BRDM2_ATGM_CDF,CUP_O_BRDM2_ATGM_CHDKZ,CUP_I_BRDM2_ATGM_NAPA,CUP_O_BRDM2_ATGM_SLA,CUP_O_BRDM2_ATGM_CSAT,CUP_O_BRDM2_ATGM_CSAT_T,CUP_O_BRDM2_ATGM_RUS,CUP_O_BRDM2_ATGM_TKA,CUP_I_BRDM2_ATGM_TK_Gue,CUP_B_BRDM2_ATGM_CDF_OCimport_01,CUP_B_BRDM2_ATGM_CDF_OCimport_02,CFP_B_CDF_BRDM_2ATGM_SNW_01,CUP_O_BRDM2_ATGM_CSAT_OCimport_01,CUP_O_BRDM2_ATGM_CSAT_OCimport_02,CFP_O_CHDKZ_BRDM_2ATGM_SNW_01,CUP_O_BRDM2_ATGM_RUS_OCimport_01,CUP_O_BRDM2_ATGM_RUS_OCimport_02,CFP_O_RUARMY_BRDM_2ATGM_DES_01,CFP_O_RUMVD_BRDM_2ATGM_01, \
+	CUP_M163_Base,CUP_B_M163_USA,CUP_I_M163_AAF,CUP_I_M163_RACS,CUP_B_M163_USA_OCimport_01,CUP_B_M163_USA_OCimport_02,CFP_B_USARMY_1991_M163A1_VADS_Des_01,CFP_B_USARMY_1991_M163A1_VADS_WDL_01,CFP_B_USARMY_M163_DES_01, \
+	CUP_B_M1135_ATGMV_Desert,CUP_B_M1135_ATGMV_Woodland,CUP_B_M1135_ATGMV_Desert_Slat,CUP_B_M1135_ATGMV_Woodland_Slat,CUP_B_M1135_ATGMV_Desert_OCimport_01,CUP_B_M1135_ATGMV_Desert_OCimport_02,CUP_B_M1135_ATGMV_Woodland_Slat_OCimport_01,CUP_B_M1135_ATGMV_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1135_ATGMV_WDL_01,CFP_B_USRANGERS_M1135_ATGMV_Slat_WDL_01, \
+	CUP_B_M1128_MGS_Desert,CUP_B_M1128_MGS_Woodland,CUP_B_M1128_MGS_Desert_Slat,CUP_B_M1128_MGS_Woodland_Slat,CUP_B_M1128_MGS_Woodland_OCimport_01,CUP_B_M1128_MGS_Woodland_OCimport_02,CFP_B_KEARMY_M1128_01,CUP_B_M1128_MGS_Woodland_Slat_OCimport_01,CUP_B_M1128_MGS_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1128_MGS_WDL_01,CFP_B_USRANGERS_M1128_MGS_Slat_WDL_01,CUP_B_M1128_MGS_Desert_OCimport_01,CUP_B_M1128_MGS_Desert_OCimport_02, \
+	CUP_B_M1129_MC_MK19_Desert,CUP_B_M1129_MC_MK19_Woodland,CUP_B_M1129_MC_MK19_Desert_Slat,CUP_B_M1129_MC_MK19_Woodland_Slat,CUP_B_M1129_MC_MK19_Woodland_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_OCimport_02,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_WDL_01,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01,CUP_B_M1129_MC_MK19_Desert_OCimport_01,CUP_B_M1129_MC_MK19_Desert_OCimport_02,CUP_B_M1129_MC_MK19_Woodland,CUP_B_M1129_MC_MK19_Woodland_Slat,CUP_B_M1129_MC_MK19_Woodland_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_OCimport_02,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_WDL_01,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01, \
+	CUP_LAV25_Base,CUP_B_LAV25_USMC,CUP_B_LAV25_desert_USMC,CUP_B_LAV25_green,CUP_B_LAV25M240_USMC,CUP_B_LAV25M240_desert_USMC,CUP_B_LAV25M240_green,CUP_I_LAV25_RACS,CUP_I_LAV25M240_RACS,CUP_B_LAV25M240_USMC_OCimport_01,CUP_B_LAV25M240_USMC_OCimport_02,CUP_B_LAV25_USMC_OCimport_01,CUP_B_LAV25_USMC_OCimport_02, \
+	CUP_GAZ_Vodnik_BPPU_Base,CUP_O_GAZ_Vodnik_BPPU_RU,CUP_O_GAZ_Vodnik_BPPU_RU_OCimport_01,CUP_O_GAZ_Vodnik_BPPU_RU_OCimport_02,CFP_O_RUARMY_GAZ_Vodnik_BPPU_DES_01,CFP_O_RUMVD_GAZ_Vodnik_BPPU_01, \
+	CUP_BTR80A_Base,CUP_B_BTR80A_CDF,CUP_B_BTR80A_FIA,CUP_O_BTR80A_GREEN_RU,CUP_O_BTR80A_CAMO_RU,CUP_O_BTR80A_WINTER_RU,CUP_O_BTR80A_DESERT_RU,CUP_O_BTR80A_CHDKZ,CUP_O_BTR80A_CSAT,CUP_O_BTR80A_CSAT_T,CUP_O_BTR80A_SLA,CUP_O_BTR80A_TK,CUP_I_BTR80A_ION,CUP_I_BTR80A_UN,CUP_O_BTR80A_DESERT_RU_OCimport_01,CUP_O_BTR80A_DESERT_RU_OCimport_02,CFP_B_CAF_BTR_80A_01,CUP_B_BTR80A_CDF_OCimport_01,CUP_B_BTR80A_CDF_OCimport_02,CFP_B_CDF_BTR_80A_SNW_01,CUP_O_BTR80A_SLA_OCimport_01,CUP_O_BTR80A_SLA_OCimport_02,CFP_B_UGARMY_BTR_80A_01,CUP_O_BTR80A_CHDKZ_OCimport_01,CUP_O_BTR80A_CHDKZ_OCimport_02,CFP_O_CHDKZ_BTR_80A_SNW_01,CFP_O_IRARMY_BTR_80A_01,CFP_O_NKARMY_BTR_80A_01,CFP_O_SDARMY_BTR_80A_01,CFP_O_RUARMY_BTR_80A_DES_01, \
+	CUP_BTR90_Base,CUP_O_BTR90_RU,CUP_O_BTR90_RU_OCimport_01,CUP_O_BTR90_RU_OCimport_02,CFP_B_UGARMY_BTR_90_01,CFP_O_IRARMY_BTR_90_01,CFP_O_SDARMY_BTR_90_01,CFP_O_RUARMY_BTR_90_DES_01,CFP_O_RUMVD_BTR_90_01, \
+	CUP_Hilux_BMP1_base,CUP_Hilux_armored_BMP1_Base,CUP_I_Hilux_BMP1_TK,CUP_I_Hilux_armored_BMP1_TK,CUP_O_Hilux_BMP1_TK_INS,CUP_O_Hilux_armored_BMP1_TK_INS,CUP_O_Hilux_BMP1_OPF_G_F,CUP_O_Hilux_armored_BMP1_OPF_G_F,CUP_I_Hilux_BMP1_IND_G_F,CUP_I_Hilux_armored_BMP1_IND_G_F,CUP_B_Hilux_BMP1_BLU_G_F,CUP_B_Hilux_armored_BMP1_BLU_G_F,CUP_I_Hilux_BMP1_NAPA,CUP_I_Hilux_armored_BMP1_NAPA,CFP_I_IS_Hilux_BMP1_Armored_01,CFP_O_IS_Hilux_BMP1_Armored_01,CUP_Hilux_armored_BMP1_Base,CUP_I_Hilux_armored_BMP1_TK,CUP_O_Hilux_armored_BMP1_TK_INS,CUP_O_Hilux_armored_BMP1_OPF_G_F,CUP_I_Hilux_armored_BMP1_IND_G_F,CUP_B_Hilux_armored_BMP1_BLU_G_F,CUP_I_Hilux_armored_BMP1_NAPA,CFP_I_IS_Hilux_BMP1_Armored_01,CFP_O_IS_Hilux_BMP1_Armored_01, \
+	rnt_sppz_2a2_luchs_Base,rnt_sppz_2a2_luchs_flecktarn,rnt_sppz_2a2_luchs_tropentarn,rnt_sppz_2a2_luchs_wintertarn, \
+	CUP_ZUBR_Base,CUP_B_ZUBR_CDF,CUP_O_ZUBR_RU,CUP_O_ZUBR_CSAT_T,CUP_O_ZUBR_SLA,CUP_I_ZUBR_AAF,CUP_I_ZUBR_UN \
 ";
 force dzn_VOF_Enabled = true;
 force dzn_VOF_NonCookingList = "      \
@@ -539,8 +501,8 @@ force dzn_VOF_NonCookingList = "      \
 	[""CUP_Boxer_Base"",20],          \
 	[""Redd_Tank_Fuchs_1A4_Base"",12] \
 ";
-force dzn_VOF_TimeoutMax = 75;
-force dzn_VOF_TimeoutMin = 45;
+force dzn_VOF_TimeoutMax = 45;
+force dzn_VOF_TimeoutMin = 20;
 
 // GRAD CaptiveWalkingAnimation
 force grad_captiveWalking_functions_allowFreeing = true;
