@@ -353,6 +353,12 @@ class CfgLoadouts {
 		#define __CAMO SNW
 		#include "loadouts\cdf_army_template.hpp"
 	};
+	class hil {
+		displayName = "Horizon Islands Legion";
+		category = "Armaverse Factions";
+		tooltip = "Author: Freddo";
+		#include "loadouts\hil.hpp"
+	};
 	class racs {
 		displayName = "Royal Army Corps of Sahrani";
 		category = "Armaverse Factions";
