@@ -21,3 +21,4 @@ class CfgPatches {
 
 #include "disableStockMissions.hpp"
 #include "CfgUnitInsignia.hpp"
+#include "CfgMainMenuSpotlight.hpp"
