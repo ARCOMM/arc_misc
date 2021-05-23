@@ -21,7 +21,8 @@ class CfgMainMenuSpotlight {
 	class GVARMAIN(joinOperationsServer) {
 		text = "ARCOMM Operations Server";
 		textIsQuote = 0;
-		picture = QPATHTOF(logo_arc_ca.paa);
+		picture = QPATHTOF(spotlight_ca.paa);
+		video = QPATHTOF(spotlight.ogv);
 		action = "connectToServer ['108.61.34.58', 2302, 'arcomm'];";
 		actionText = "Connect to server";
 		condition = "true";
