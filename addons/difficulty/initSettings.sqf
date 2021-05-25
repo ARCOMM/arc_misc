@@ -212,6 +212,10 @@
 	["ARC Misc", "AI Settings"],
 	false,
 	true,
-	{disableRemoteSensors _this},
+	{
+		if !hasInterface then {
+			disableRemoteSensors _this;
+		};
+	},
 	false
 ] call CBA_fnc_addSetting;
