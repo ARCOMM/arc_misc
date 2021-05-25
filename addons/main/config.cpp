@@ -20,5 +20,7 @@ class CfgPatches {
 };
 
 #include "disableStockMissions.hpp"
+#include "CfgEventhandlers.hpp"
 #include "CfgUnitInsignia.hpp"
 #include "CfgMainMenuSpotlight.hpp"
+#include "CfgWorlds.hpp"
