@@ -214,7 +214,7 @@
 	true,
 	{
 		if !hasInterface then {
-			disableRemoteSensors _this
+			disableRemoteSensors _this;
 		};
 	},
 	false
