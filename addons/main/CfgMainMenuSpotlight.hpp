@@ -18,6 +18,8 @@ class CfgMainMenuSpotlight {
 	delete Tanks_Campaign_01;
 
 	// Add server join button
+	#define COND(x) QUOTE('x' == profileNamespace getVariable [ARR_2(QQGVAR(spotlight), 'Clips')])
+	// Spinning logo
 	class GVARMAIN(joinOperationsServer) {
 		text = "ARCOMM Operations Server";
 		textIsQuote = 0;
@@ -25,6 +27,12 @@ class CfgMainMenuSpotlight {
 		video = QPATHTOF(spotlight.ogv);
 		action = "connectToServer ['108.61.34.58', 2302, 'arcomm'];";
 		actionText = "Connect to server";
-		condition = "true";
+		condition = COND(Logo);
+	};
+	// Clips
+	class GVARMAIN(joinOperationsServer2): GVARMAIN(joinOperationsServer) {
+		picture = QPATHTOF(spotlight2_ca.paa);
+		video = QPATHTOF(spotlight2.ogv);
+		condition = COND(Clips);
 	};
 };
