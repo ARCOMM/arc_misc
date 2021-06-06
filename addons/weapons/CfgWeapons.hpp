@@ -242,78 +242,78 @@ class CfgWeapons {
 
 	HIDE(launch_RPG7_F,Launcher_Base_F);
 
-	//Remove NIArms ampersand to avoid breaking text displays
+	// Remove NIArms ampersand to avoid breaking text displays
 	// HK G3
 	class hlc_g3_base;
 	class hlc_rifle_g3sg1: hlc_g3_base {
-		displayName = "HK G3/SG1"
+		displayName = "HK G3/SG1";
 	};
 
 	class hlc_rifle_g3sg1ris: hlc_rifle_g3sg1 {
-		displayName = "HK G3/SG1 (RIS)"
+		displayName = "HK G3/SG1 (RIS)";
 	};
 
 	class hlc_rifle_g3a3: hlc_rifle_g3sg1 {
-		displayName = "HK G3A3"
+		displayName = "HK G3A3";
 	};
 
 	class hlc_rifle_g3a3ris: hlc_rifle_g3a3 {
-		displayName = "HK G3A3 (RIS)"
+		displayName = "HK G3A3 (RIS)";
 	};
 
 	class hlc_rifle_g3a3v: hlc_rifle_g3a3 {
-		displayName = "HK G3A3 (Widegrip)"
+		displayName = "HK G3A3 (Widegrip)";
 	};
 
 	class hlc_rifle_g3a3vris: hlc_rifle_g3a3 {
-		displayName = "HK G3A3 (Widegrip/RIS)"
+		displayName = "HK G3A3 (Widegrip/RIS)";
 	};
 
 	class hlc_rifle_g3ka4: hlc_rifle_g3a3 {
-		displayName = "HK G3KA4 RAS"
+		displayName = "HK G3KA4 RAS";
 	};
 
 	class HLC_Rifle_g3ka4_GL: hlc_rifle_g3ka4 {
-		displayName = "HK G3KA4 RAS (GL)"
+		displayName = "HK G3KA4 RAS (GL)";
 	};
 
 	class hlc_rifle_hk33a2: hlc_g3_base {
-		displayName = "HK HK33A2"
+		displayName = "HK HK33A2";
 	};
 
 	class hlc_rifle_hk33a2RIS: hlc_rifle_hk33a2 {
-		displayName = "HK HK33A2 (RIS)"
+		displayName = "HK HK33A2 (RIS)";
 	};
 
 	class hlc_rifle_hk33a2RIS_GL: hlc_rifle_hk33a2RIS {
-		displayName = "HK HK33A2 (RIS/GL)"
+		displayName = "HK HK33A2 (RIS/GL)";
 	};
 
-	class hlc_rifle_hk33ka3: hlc_rifle_hk33ka2 {
-		displayName = "HK HK33KA3"
+	class hlc_rifle_hk33ka3: hlc_rifle_hk33a2 {
+		displayName = "HK HK33KA3";
 	};
 
 	class hlc_rifle_hk53 : hlc_g3_base {
-		displayName = "HK HK53"
+		displayName = "HK HK53";
 	};
 
 	class hlc_rifle_hk53RAS : hlc_rifle_hk53 {
-		displayName = "HK HK53 (RAS)"
+		displayName = "HK HK53 (RAS)";
 	};
 
 	class hlc_rifle_psg1 : hlc_g3_base {
-		displayName = "HK PSG1"
+		displayName = "HK PSG1";
 	};
 
 	class hlc_rifle_psg1A1 : hlc_rifle_psg1 {
-		displayName = "HK PSG1A1"
+		displayName = "HK PSG1A1";
 	};
 
 	class hlc_rifle_PSG1A1_RIS : hlc_rifle_psg1A1 {
-		displayName = "HK PSG1A1 (RIS)"
+		displayName = "HK PSG1A1 (RIS)";
 	};
 
-	//HK G36
+	// HK G36
 	class hlc_G36_base;
 	class hlc_rifle_G36A1 : hlc_G36_base {
 		displayName = "HK G36A1";
@@ -399,172 +399,175 @@ class CfgWeapons {
 		displayName = "HK G36E 'Romi' (GL)";
 	};
 
-	//HK HK416
+	// HK HK416
 	class hlc_HK416_base;
 	class hlc_rifle_416D145 : hlc_HK416_base {
-		displayName = "HK HK416 D14.5"
+		displayName = "HK HK416 D14.5";
 	};
 
 	class hlc_rifle_416D145_tan : hlc_rifle_416D145 {
-		displayName = "HK HK416 D14.5 (Tan)"
+		displayName = "HK HK416 D14.5 (Tan)";
 	};
 
 	class hlc_rifle_416D145_wdl : hlc_rifle_416D145 {
-		displayName = "HK HK416 D14.5 (Woodland)"
+		displayName = "HK HK416 D14.5 (Woodland)";
 	};
 
 	class hlc_rifle_416D145_CAG : hlc_rifle_416D145 {
-		displayName = "HK HK416 D14.5 (CAG)"
+		displayName = "HK HK416 D14.5 (CAG)";
 	};
 
 	class hlc_rifle_416D145C : hlc_rifle_416D145 {
-		displayName = "HK HK416 D14.5C"
+		displayName = "HK HK416 D14.5C";
 	};
 
 	class hlc_rifle_416D145_gl : hlc_rifle_416D145 {
-		displayName = "HK HK416 D14.5 (GL)"
+		displayName = "HK HK416 D14.5 (GL)";
 	};
 
 	class hlc_rifle_416D10 : hlc_rifle_416D145 {
-		displayName = "HK HK416 D10"
+		displayName = "HK HK416 D10";
 	};
 
 	class hlc_rifle_416D10_tan : hlc_rifle_416D10 {
-		displayName = "HK HK416 D10 (Tan)"
+		displayName = "HK HK416 D10 (Tan)";
 	};
 
 	class hlc_rifle_416D10_wdl : hlc_rifle_416D10 {
-		displayName = "HK HK416 D10 (Woodland)"
+		displayName = "HK HK416 D10 (Woodland)";
 	};
 
 	class hlc_rifle_416D10_gl : hlc_rifle_416D10 {
-		displayName = "HK HK416 D10 (GL)"
+		displayName = "HK HK416 D10 (GL)";
 	};
 
 	class hlc_rifle_416D10C : hlc_rifle_416D10 {
-		displayName = "HK HK416 D10C"
+		displayName = "HK HK416 D10C";
 	};
 
 	class hlc_rifle_416D10C_PTC : hlc_rifle_416D10 {
-		displayName = "HK HK416 D10C (PTC)"
+		displayName = "HK HK416 D10C (PTC)";
 	};
 
 	class hlc_rifle_416D10_RAHG : hlc_rifle_416D10 {
-		displayName = "HK HK416 D10 (RAHG)"
+		displayName = "HK HK416 D10 (RAHG)";
 	};
 
 	class hlc_rifle_416D10_geissele : hlc_rifle_416D10_RAHG {
-		displayName = "HK HK416 D10 (SMR)"
+		displayName = "HK HK416 D10 (SMR)";
 	};
 
 	class hlc_rifle_416D10_ptato : hlc_rifle_416D10_geissele {
-		displayName = "HK HK416 D10 (Potato)"
+		displayName = "HK HK416 D10 (Potato)";
 	};
 
 	class hlc_rifle_416D10_st6 : hlc_rifle_416D10_RAHG {
-		displayName = "HK HK416 (DEVGRU)"
+		displayName = "HK HK416 (DEVGRU)";
 	};
 
 	class hlc_rifle_416C : hlc_rifle_416D10 {
-		displayName = "HK HK416C"
+		displayName = "HK HK416C";
 	};
 
 	class hlc_rifle_BAB : hlc_rifle_416C {
-		displayName = "HK HK416C (Team Bab)"
+		displayName = "HK HK416C (Team Bab)";
 	};
 
 	class hlc_rifle_416D165 : hlc_rifle_416D145 {
-		displayName = "HK HK416 D16.5"
+		displayName = "HK HK416 D16.5";
 	};
 
 	class hlc_rifle_416D165_tan : hlc_rifle_416D165 {
-		displayName = "HK HK416 D16.5 (Tan)"
+		displayName = "HK HK416 D16.5 (Tan)";
 	};
 
 	class hlc_rifle_416D165_wdl : hlc_rifle_416D165 {
-		displayName = "HK HK416 D16.5 (Woodland)"
+		displayName = "HK HK416 D16.5 (Woodland)";
 	};
 
 	class hlc_rifle_416D165_gl : hlc_rifle_416D165 {
-		displayName = "HK HK416 D16.5 (GL)"
+		displayName = "HK HK416 D16.5 (GL)";
 	};
 
 	class hlc_rifle_416N : hlc_rifle_416D165 {
-		displayName = "HK HK416N"
+		displayName = "HK HK416N";
 	};
 
 	class hlc_rifle_416N_gl : hlc_rifle_416N {
-		displayName = "HK HK416N (GL)"
+		displayName = "HK HK416N (GL)";
 	};
 
 	class hlc_rifle_416D20 : hlc_rifle_416D145 {
-		displayName = "HK HK416 D20"
+		displayName = "HK HK416 D20";
 	};
 
 	class hlc_rifle_416D20_tan : hlc_rifle_416D20 {
-		displayName = "HK HK416 D20 (Tan)"
+		displayName = "HK HK416 D20 (Tan)";
 	};
 
 	class hlc_rifle_416D20_wdl : hlc_rifle_416D20 {
-		displayName = "HK HK416 D20 (Woodland)"
+		displayName = "HK HK416 D20 (Woodland)";
 	};
 
-	//HK MP5
+	// HK MP5
 	class hlc_MP5_base;
 	class hlc_smg_mp5k_PDW : hlc_Mp5_base {
-		displayName = "HK MP5K-PDW"
+		displayName = "HK MP5K-PDW";
+	};
+
+	class hlc_smg_mp5k : hlc_smg_mp5k_PDW {
+		displayName = "HK MP5K";
 	};
 
 	class hlc_smg_mp5a2 : hlc_Mp5_base {
-		displayName = "HK MP5A2"
+		displayName = "HK MP5A2";
 	};
 
 	class hlc_smg_mp5a2_tac : hlc_smg_mp5a2 {
-		displayName = "HK MP5A2 (TAC)"
+		displayName = "HK MP5A2 (TAC)";
 	};
 
 	class hlc_smg_MP5N : hlc_Mp5_base {
-		displayName = "HK MP5A5"
+		displayName = "HK MP5A5";
 	};
 
 	class hlc_smg_mp5N_tac :hlc_smg_MP5N {
-		displayName = "HK MP5A5 (TAC)"
+		displayName = "HK MP5A5 (TAC)";
 	};
 
 	class hlc_smg_9mmar : hlc_smg_MP5N {
-		displayName = "HK MP5N '9mmAR'"
+		displayName = "HK MP5N '9mmAR'";
 	};
 
 	class hlc_smg_mp5a4 : hlc_Mp5_base {
-		displayName = "HK MP5A4"
+		displayName = "HK MP5A4";
 	};
 
 	class hlc_smg_mp5a4_tac :hlc_smg_mp5a4 {
-		displayName = "HK MP5A4 (TAC)"
+		displayName = "HK MP5A4 (TAC)";
 	};
 
 	class hlc_smg_mp510 : hlc_smg_MP5N {
-		displayName = "HK MP5/10A4"
+		displayName = "HK MP5/10A4";
 	};
 
 	class hlc_mp510_tac : hlc_smg_mp510 {
-		displayName = "HK MP5/10A4 (TAC)"
+		displayName = "HK MP5/10A4 (TAC)";
 	};
 
 	class hlc_smg_mp5sd5 : hlc_Mp5_base {
-		displayName = "HK MP5SD5"
+		displayName = "HK MP5SD5";
 	};
 
 	class hlc_smg_mp5a3: hlc_smg_mp5a2 {
-		displayName = "HK MP5A3"
+		displayName = "HK MP5A3";
 	};
 
 	class hlc_smg_mp5a3_tac :hlc_smg_mp5a2 {
-		displayName = "HK MP5A3 (TAC)"
+		displayName = "HK MP5A3 (TAC)";
 	};
 
 	class hlc_smg_mp5sd6 : hlc_smg_mp5sd5 {
-		displayName = "HK MP5SD6"
+		displayName = "HK MP5SD6";
 	};
-
 };
