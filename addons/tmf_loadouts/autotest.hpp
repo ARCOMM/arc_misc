@@ -61,6 +61,6 @@ class TMF_autotest {
 		code = QUOTE([] call FUNC(testGroupNames));
 	};
 	class GVAR(testDeprecatedMods) {
-		code = QUOTE(['@Community Factions Project (CFP)'] call FUNC(testDeprecatedMods));
+		code = QUOTE(['@community_factions_project_(cfp)'] call FUNC(testDeprecatedMods));
 	};
 };
