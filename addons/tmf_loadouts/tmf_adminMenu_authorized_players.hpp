@@ -1,7 +1,4 @@
 class TMF_adminMenu_authorized_players {
-	class HazardousChurch {
-		uid = "76561198070330109";
-	};
 	class ToastSmack {
 		uid = "76561198008417884";
 	};
