@@ -277,7 +277,7 @@ class mattl : car {
 	displayName = "MAT Team Leader";
 	backpack[] = {"CUP_B_RPGPack_Khaki"};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {"Binocular"};
+	linkedItems[] += {"Binocular"};
 	backpackItems[] = {
 		LIST_3("CUP_PG7VM_M")
 	};
@@ -312,7 +312,7 @@ class hattl : car {
 		"ACE_EntrenchingTool"
 	};
 	items[] += {"ACE_MapTools"};
-	linkedItems[] = {
+	linkedItems[] += {
 		"Binocular"
 	};
 };
@@ -349,7 +349,7 @@ class mtrtl : car {
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
 
-	linkedItems[] = {
+	linkedItems[] += {
 		"Binocular"
 	};
 };
