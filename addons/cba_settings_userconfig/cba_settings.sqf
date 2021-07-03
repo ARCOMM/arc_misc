@@ -49,7 +49,8 @@ force ace_common_checkPBOsWhitelist = "[ \
 	'DIS_Enhanced_Gps',                  \
 	'DIS_enhanced_map_ace',              \
 	'JD_ArmaMapsAceCompat',              \
-	'JD_ArmaMaps'                        \
+	'JD_ArmaMaps',                       \
+	'fare_AWL'                           \
 ]";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
