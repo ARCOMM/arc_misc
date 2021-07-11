@@ -16,10 +16,7 @@ class CfgPatches
 			"arc_misc_main",
 			"cup_weapons_loadorder",
 			"ace_ballistics",
-			"hlcweapons_g3",
-			"hlcweapons_G36",
-			"hlcweapons_mp5",
-			"niarms_416"
+			"hlcweapons_G36"
 		};
         VERSION_CONFIG;
 	};
