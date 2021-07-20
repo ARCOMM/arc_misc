@@ -503,43 +503,25 @@ class jp : smg {
 	};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	traits[] = {"engineer", "explosiveSpecialist"};
-	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	backpack[] = {"CUP_B_ACRPara_dpm"};
-	sidearmWeapon[] = {"ACE_VMH3"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool",
-		"ACE_Clacker",
 		"ACE_wirecutter"
 	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag"),
-		"SatchelCharge_Remote_Mag"
-	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
-	traits[] = {"engineer", "explosiveSpecialist"};
+class eng : logi {
+	displayName = "Combat Engineer";
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Engineer"};
-	backpack[] = {"CUP_B_ACRPara_dpm"};
+	traits[] += {"explosiveSpecialist"};
 	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool",
 		"ACE_Clacker",
-		"ACE_wirecutter"
-	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_4("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag"),
-		LIST_2("ClaymoreDirectionalMine_Remote_Mag")
+		"ACE_DefusalKit"
 	};
 };
 

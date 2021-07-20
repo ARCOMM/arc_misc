@@ -434,31 +434,24 @@ class jp : baseMan {
 	};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	sidearmWeapon[] = {"ACE_VMH3"};
-	traits[] = {"engineer", "explosiveSpecialist"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	backpack[] = {"usm_pack_alice"};
-	backpackItems[] = {
-		"ToolKit",
-		"ACE_wirecutter",
-		"ACE_DefusalKit",
-		LIST_2("SatchelCharge_Remote_Mag"),
-		LIST_5("DemoCharge_Remote_Mag")
+	items[] += {
+		"ACE_wirecutter"
 	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
-	sidearmWeapon[] = {"ACE_VMH3"};
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"usm_pack_alice"};
-	backpackItems[] = {
-		"ToolKit",
-		"ACE_wirecutter",
-		"ACE_DefusalKit",
-		LIST_3("CUP_Mine_M"),
-		LIST_10("APERSMine_Range_Mag")
+class eng : logi {
+	displayName = "Combat Engineer";
+	traits[] += {"explosiveSpecialist"};
+	sidearmWeapon[] = {"ACE_VMM3"};
+	items[] += {
+		"ACE_Clacker",
+		"ACE_DefusalKit"
 	};
 };
 

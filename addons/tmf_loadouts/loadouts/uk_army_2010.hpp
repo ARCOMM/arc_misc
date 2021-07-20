@@ -512,36 +512,25 @@ class jp : smg {
 	};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	traits[] = {"engineer", "explosiveSpecialist"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	backpack[] = {"B_Kitbag_mcamo"};
-	vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer"};
-	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_Clacker"
+		"ACE_wirecutter"
 	};
-	backpackItems[] = {
-		"ToolKit",
-		"SatchelCharge_Remote_Mag",
-		LIST_5("DemoCharge_Remote_Mag")
-	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"B_Kitbag_mcamo"};
+class eng : logi {
+	displayName = "Combat Engineer";
 	vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Engineer"};
+	traits[] += {"explosiveSpecialist"};
 	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_Clacker"
-	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_2("CUP_Mine_M")
+		"ACE_Clacker",
+		"ACE_DefusalKit"
 	};
 };
 

@@ -511,56 +511,30 @@ class jp : vg {
 	headgear[] = {"CUP_H_TK_PilotHelmet"};
 };
 
-class eng : r {
-	displayName = "Combat Engineer (Explosives)";
-	sidearmWeapon[] = {"ACE_VMM3"};
-	traits[] = {"engineer", "explosiveSpecialist"};
-	vest[] = {"CUP_V_O_SLA_Flak_Vest03"};
-
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	primaryWeapon[] = {"CUP_sgun_CZ584"};
 	magazines[] = {
 		LIST_20("CUP_1Rnd_12Gauge_Pellets_No00_Buck"),
 		LIST_20("CUP_1Rnd_762x51_CZ584"),
 		LIST_2("ACE_M14")
 	};
-
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_wirecutter",
-		"ACE_DeadManSwitch",
-		"ACE_Cellphone"
+		"ACE_wirecutter"
 	};
-
-	backpackItems[] = {
-		"ToolKit",
-		LIST_4("CUP_PipeBomb_M")
-	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : r {
-	displayName = "Combat Engineer (Mines)";
-	sidearmWeapon[] = {"ACE_VMM3"};
-	traits[] = {"engineer", "explosiveSpecialist"};
+class eng : logi {
+	displayName = "Combat Engineer";
 	vest[] = {"CUP_V_O_SLA_Flak_Vest03"};
-
-	primaryWeapon[] = {"CUP_sgun_CZ584"};
-	magazines[] = {
-		LIST_20("CUP_1Rnd_12Gauge_Pellets_No00_Buck"),
-		LIST_20("CUP_1Rnd_762x51_CZ584"),
-		LIST_2("ACE_M14")
-	};
-
+	traits[] += {"explosiveSpecialist"};
+	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_wirecutter",
-		"ACE_DeadManSwitch",
-		"ACE_Cellphone"
-	};
-
-	backpackItems[] = {
-		"ToolKit",
-		"CUP_IED_V2_M",
-		"CUP_IED_V4_M"
+		"ACE_Clacker",
+		"ACE_DefusalKit"
 	};
 };
 
