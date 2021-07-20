@@ -115,6 +115,7 @@ class m : cls {
 	vest[] = {"CUP_V_B_GER_PVest_Trop_Med_LT"};
 	backpack[] = {"CUP_B_GER_Pack_Tropentarn"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {

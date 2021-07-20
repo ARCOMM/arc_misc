@@ -121,6 +121,7 @@ class m : cls {
 	primaryWeapon[] = {"CUP_srifle_Mosin_Nagant"};
 	backpack[] = {"CUP_B_AlicePack_Bedroll"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 	magazines[] = {
 		LIST_20("CUP_5Rnd_762x54_Mosin_M"),
 		"CUP_HandGrenade_RGD5",

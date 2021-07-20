@@ -125,6 +125,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {

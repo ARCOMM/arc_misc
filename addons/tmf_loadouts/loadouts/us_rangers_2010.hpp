@@ -137,6 +137,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"CFP_B_USPack_Green"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : car {

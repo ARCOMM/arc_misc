@@ -103,6 +103,7 @@ class m : cls {
 	vest[] = {"CUP_V_O_SLA_Flak_Vest03"};
 	backpack[] = {"CUP_B_AlicePack_Bedroll"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {

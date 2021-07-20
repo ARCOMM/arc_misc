@@ -104,6 +104,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"MNP_B_Carryall_PLA_Basic"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {

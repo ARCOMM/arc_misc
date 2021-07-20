@@ -125,6 +125,7 @@ class m : cls {
 	vest[] = {"CUP_V_O_TK_Vest_2"};
 	backpack[] = {"CUP_B_AlicePack_Bedroll"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : car {

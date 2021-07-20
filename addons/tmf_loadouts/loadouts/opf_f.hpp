@@ -103,6 +103,7 @@ class m : cls {
 	vest[] = {"V_TacVest_brn"};
 	backpack[] = {"B_Carryall_ocamo"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {

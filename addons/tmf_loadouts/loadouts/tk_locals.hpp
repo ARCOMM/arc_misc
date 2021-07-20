@@ -188,6 +188,7 @@ class m : cls {
 	};
 	backpack[] = {"CUP_B_AlicePack_Bedroll"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 class smg : r {
 	displayName = "Submachinegunner";

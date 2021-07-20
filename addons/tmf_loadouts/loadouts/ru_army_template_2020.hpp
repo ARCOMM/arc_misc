@@ -203,6 +203,7 @@ class cls : car {
 class m : cls {
 	displayName = "Medic";
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {

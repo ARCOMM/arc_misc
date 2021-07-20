@@ -117,6 +117,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"CUP_B_ACRPara_dpm"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {
