@@ -2,21 +2,21 @@
 // https://github.com/ARCOMM/arc_misc/tree/master/addons/tmf_loadouts
 
 /* Dependencies:
-		NIArms M60 Pack
-		NIArms M1903 Pack
-		USM Uniforms
 		CUP
-		Community Factions Project
-		FIR AWS
+		CWR3
 */
 
-//		Created by: AChesheireCat
+//		Created by: AChesheireCat, edited by Freddo
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
 	// All randomized.
-	uniform[] = {"usm_bdu_odg"};
-	vest[] = {"usm_vest_LBE_rm"};
+	uniform[] = {
+		"cwr3_b_uniform_og107",
+		"cwr3_b_uniform_og107_rolled",
+		"cwr3_b_uniform_og107_rolled_gloves"
+	};
+	vest[] = {"cwr3_b_vest_alice"};
 	backpack[] = {};
 	headgear[] = {};
 	goggles[] = {};
@@ -45,7 +45,7 @@ class baseMan {// Weaponless baseclass
 	// These are added to the uniform or vest
 	magazines[] = {};
 	items[] = {
-		 MEDICAL_R ,
+		MEDICAL_R,
 		"ACE_Flashlight_MX991",
 		"ACE_EntrenchingTool"
 	};
@@ -68,13 +68,7 @@ class baseMan {// Weaponless baseclass
 
 class r : baseMan {
 	displayName = "Rifleman";
-	headgear[] = {
-		"CUP_H_USArmy_Helmet_M1_Vine",
-		"CUP_H_USArmy_Helmet_M1_Olive",
-		"CUP_H_USArmy_Helmet_M1_plain_Olive",
-		"CUP_H_USArmy_Helmet_M1_plain_Vine",
-		"CUP_H_USArmy_Helmet_M1_btp"
-	};
+	headgear[] = {"cwr3_b_headgear_m1_olive"};
 	primaryWeapon[] = {"CUP_srifle_M14"};
 	magazines[] = {
 		LIST_6("CUP_20Rnd_762x51_DMR"),
@@ -86,7 +80,7 @@ class r : baseMan {
 
 class g : r {
 	displayName = "Grenadier";
-	vest[] = {"usm_vest_LBE_gr"};
+	vest[] = {"cwr3_b_vest_alice_gl"};
 	primaryWeapon[] = {"CUP_glaunch_M79"};
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
 	magazines[] = {
@@ -112,13 +106,13 @@ class car : r {
 class cls : car {
 	displayName = "Combat Life Saver";
 	traits[] = {"medic"};
-	backpack[] = {"usm_pack_m5_medic"};
+	backpack[] = {"cwr3_b_backpack_alice_medic_empty"};
 	backpackItems[] = { MEDICAL_CLS };
 };
 
 class m : cls {
 	displayName = "Medic";
-	backpack[] = {"usm_pack_alice_medic"};
+	vest[] = {"cwr3_b_vest_alice_medic"};
 	backpackItems[] = { MEDICAL_M };
 	linkedItems[] += {"Binocular"};
 };
@@ -135,7 +129,7 @@ class smg : r {
 
 class ftl : car {
 	displayName = "Fireteam Leader";
-	vest[] = {"usm_vest_LBE_gr"};
+	vest[] = {"cwr3_b_vest_alice_gl"};
 	backPack[] = {"CUP_B_SLA_Medicbag"};
 	primaryWeapon[] = {"CUP_arifle_M16A1GL"};
 	items[] += {"ACE_MapTools"};
@@ -154,7 +148,7 @@ class ftl : car {
 
 class sl : car {
 	displayName = "Squad Leader";
-	vest[] = {"usm_vest_LBE_rmp"};
+	vest[] = {"cwr3_b_vest_alice_officer"};
 	backPack[] = {"CUP_B_SLA_Medicbag"};
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
 	magazines[] += {
@@ -168,25 +162,35 @@ class sl : car {
 	};
 };
 
+class slr : sl {
+	displayName = "Squad Leader (Radio)";
+	backpack[] = {"cwr3_b_backpack_radio"};
+}
+
 class co : sl {
 	displayName = "Platoon Leader";
-	headgear[] = {"usm_bdu_8point_odg"};
+	headgear[] = {"cwr3_i_headgear_cap_og107"};
 };
+
+class cor : co {
+	displayName = "Platoon Leader (Radio)";
+	backpack[] = {"cwr3_b_backpack_radio"};
+}
 
 class fac : co {
 	displayName = "Forward Air Controller";
-	backpack[] = {"usm_pack_st138_prc77"};
+	backpack[] = {"cwr3_b_backpack_radio"};
 	backpackItems[] = { FAC_GEAR };
 };
 
 class ar : r {
 	displayName = "Automatic Rifleman";
-	vest[] = {"usm_vest_LBE_mg"};
-	backPack[] = {"usm_pack_762x51_ammobelts"};
+	vest[] = {"cwr3_b_vest_alice_mg"};
+	backPack[] = {"cwr3_b_backpack_alice"};
 	primaryWeapon[] = {"CUP_lmg_M60"};
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
 	magazines[] = {
-		LIST_4("hlc_100Rnd_762x51_M_M60E4"),
+		LIST_7("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		"HandGrenade",
 		"SmokeShell",
 		LIST_3("CUP_7Rnd_45ACP_1911")
@@ -195,24 +199,25 @@ class ar : r {
 
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"cwr3_b_backpack_alice"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_M_M60E4")
+		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 	linkedItems[] += {"Binocular"};
 };
 
 class rat : car {
 	displayName = "Rifleman (AT)";
-	backPack[] = {"CUP_B_AlicePack_Khaki"};
-	secondaryWeapon[] = {"CUP_launch_M72A6_Special"};
-	backpackItems[] = {"CUP_launch_M72A6"};
+	backPack[] = {"cwr3_b_backpack_alice"};
+	secondaryWeapon[] = {"cwr3_launch_m72a3"};
+	backpackItems[] = {"cwr3_launch_m72a3"};
 };
 
 class dm : r {
 	displayName = "Designated Marksman";
-	primaryWeapon[] = {"CUP_srifle_M14"};
-	scope[] = {"hlc_optic_zf95base"};
+	headgear[] = {"cwr3_i_headgear_boonie_rolled_og107"};
+	primaryWeapon[] = {"CUP_srifle_M21"};
+	scope[] = {"cup_optic_artel_m14"};
 	bipod[] = {"cup_bipod_harris_1a2_l_blk"};
 	magazines[] = {
 		LIST_9("ACE_10Rnd_762x51_M118LR_Mag"),
@@ -223,49 +228,34 @@ class dm : r {
 
 class mmgg : ar {
 	displayName = "MMG Gunner";
-	vest[] = {"usm_vest_LBE_mg_m"};
-	primaryWeapon[] = {"CUP_lmg_M60"};
-	backPack[] = {"usm_pack_762x51_bandoliers"};
-	backpackItems[] = {
-		LIST_3("hlc_100Rnd_762x51_M_M60E4")
-	};
 };
 
 class mmgac : r {
 	displayName = "MMG Ammo Carrier";
-	vest[] = {"usm_vest_LBE_rm"};
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"cwr3_b_backpack_alice"};
 	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_M_M60E4")
+		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
-	vest[] = {"usm_vest_LBE_mg_m"};
-	backPack[] = {"usm_pack_alice"};
-	backpackItems[] = {
-		LIST_4("hlc_100Rnd_762x51_M_M60E4")
-	};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"ItemRadio"};
 };
 
 class hmgg : car {
 	displayName = "HMG Gunner";
-	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_M2_Gun_Bag"};
 };
 
 class hmgac : r {
 	displayName = "HMG Ammo Carrier";
-	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_M2_MiniTripod_Bag"};
 };
 
 class hmgtl : car {
 	displayName = "HMG Team Leader";
-	vest[] = {"usm_vest_LBE_mg_m"};
 	backPack[] = {"CUP_B_M2_Tripod_Bag"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
@@ -276,54 +266,46 @@ class hmgtl : car {
 
 class matg : car {
 	displayName = "MAT Gunner";
-	vest[] = {"usm_vest_LBE_rm"};
-	backpack[] = {"usm_pack_alice"};
-	secondaryWeapon[] = {"CUP_launch_MAAWS"};
+	backpack[] = {"cwr3_b_backpack_alice"};
+	secondaryWeapon[] = {"cwr3_launch_m67_rcl"};
 	magazines[] += {
-		LIST_2("CUP_MAAWS_HEAT_M")
+		LIST_4("cwr3_m67_rcl_heat_m")
 	};
 };
 
 class matac : r {
 	displayName = "MAT Ammo Carrier";
-	vest[] = {"usm_vest_LBE_rm"};
-	backpack[] = {"usm_pack_alice"};
+	backpack[] = {"cwr3_b_backpack_alice"};
 	backpackItems[] = {
-		"CUP_MAAWS_HEAT_M",
-		"CUP_MAAWS_HEDP_M"
+		LIST_4("cwr3_m67_rcl_heat_m")
 	};
 };
 
 class mattl : car {
 	displayName = "MAT Team Leader";
-	vest[] = {"usm_vest_LBE_mg_m"};
-	backpack[] = {"usm_pack_alice"};
+	backpack[] = {"cwr3_b_backpack_alice"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
 		"ItemRadio",
 		"Binocular"
 	};
 	backpackItems[] = {
-		"CUP_MAAWS_HEAT_M",
-		"CUP_MAAWS_HEDP_M"
+		LIST_4("cwr3_m67_rcl_heat_m")
 	};
 };
 
 class hatg : car {
 	displayName = "HAT Gunner";
-	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_Tow_Gun_Bag"};
 };
 
 class hatac : r {
 	displayName = "HAT Ammo Carrier";
-	vest[] = {"usm_vest_LBE_rm"};
 	backPack[] = {"CUP_B_TOW_Tripod_Bag"};
 };
 
 class hattl : car {
 	displayName = "HAT Team Leader";
-	vest[] = {"usm_vest_LBE_mg_m"};
 	backPack[] = {"CUP_B_TOW_Tripod_Bag"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {
@@ -334,11 +316,10 @@ class hattl : car {
 
 class mtrg : car {
 	displayName = "Mortar Gunner";
-	vest[] = {"usm_vest_LBE_rm"};
 	secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
-	backPack[] = {"usm_pack_alice"};
+	backPack[] = {"cwr3_b_backpack_alice"};
 	backpackItems[] = {
-		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
+		LIST_3("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
@@ -346,10 +327,9 @@ class mtrg : car {
 
 class mtrac : r {
 	displayName = "Mortar Ammo Carrier";
-	vest[] = {"usm_vest_LBE_rm"};
-	backPack[] = {"usm_pack_alice"};
+	backPack[] = {"cwr3_b_backpack_alice"};
 	backpackItems[] = {
-		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
+		LIST_3("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
@@ -357,12 +337,11 @@ class mtrac : r {
 
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
-	vest[] = {"usm_vest_LBE_mg_m"};
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
 	items[] += { MTR_GEAR };
-	backPack[] = {"usm_pack_alice"};
+	backPack[] = {"cwr3_b_backpack_alice"};
 	backpackItems[] = {
-		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
+		LIST_3("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
@@ -374,45 +353,45 @@ class mtrtl : car {
 
 class samg : car {
 	displayName = "AA Missile Specialist";
-	vest[] = {"usm_vest_LBE_rm"};
-	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
+	secondaryWeapon[] = {"cwr3_launch_redeye"};
 };
 
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
-	vest[] = {"usm_vest_LBE_mg_m"};
-	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
+	secondaryWeapon[] = {"cwr3_launch_redeye"};
 	linkedItems[] += {
 		"ItemRadio",
 		"Binocular"
 	};
 };
 
-class sn : r {
+class sn : dm {
 	displayName = "Sniper";
-	headgear[] = {"usm_bdu_boonie_erdl"};
-	uniform[] = {"CUP_U_B_BDUv2_roll_dirty_ERDL_lowland"};
-	vest[] = {"CFP_Alice_Vest2"};
-	goggles[] = {"default"};
-	primaryWeapon[] = {"hlc_rifle_M1903A1_unertl"};
+	headgear[] = {"cwr3_b_headgear_headband_od"};
+	uniform[] = {
+		"cwr3_b_uniform_ERDL",
+		"cwr3_b_uniform_ERDL_rolled"
+	};
+	vest[] = {"cwr3_b_vest_alice_crew"};
 	sidearmWeapon[] = {"CUP_hgun_Colt1911"};
-	magazines[] = {
-		LIST_7("hlc_5rnd_3006_1903"),
-		LIST_2("HandGrenade"),
+	magazines[] += {
 		LIST_5("CUP_7Rnd_45ACP_1911")
 	};
 };
 
-class sp : r {
+class sp : car {
 	displayName = "Spotter";
-	headgear[] = {"usm_bdu_boonie_erdl"};
-	uniform[] = {"CUP_U_B_BDUv2_roll_dirty_ERDL_lowland"};
-	vest[] = {"CFP_Alice_Vest2"};
-	backPack[] = {"CUP_B_AlicePack_Khaki"};
+	headgear[] = {"cwr3_b_headgear_headband_od"};
+	uniform[] = {
+		"cwr3_b_uniform_ERDL",
+		"cwr3_b_uniform_ERDL_rolled"
+	};
+	vest[] = {"cwr3_b_vest_alice_crew"};
+	backPack[] = {"cwr3_b_backpack_radio"};
 	backpackItems[] = {
-			LIST_10("hlc_5rnd_3006_1903"),
-			LIST_4("APERSTripMine_Wire_Mag"),
-			LIST_2("ACE_FlareTripMine_Mag")
+		LIST_4("ACE_10Rnd_762x51_M118LR_Mag"),
+		LIST_4("APERSTripMine_Wire_Mag"),
+		LIST_2("ACE_FlareTripMine_Mag")
 	};
 	items[] += {
 		"ACE_MapTools",
@@ -428,8 +407,11 @@ class sp : r {
 
 class vg : smg {
 	displayName = "Vehicle Gunner";
-	backpack[] = {};
-	headgear[] = {"usm_helmet_cvc"};
+	uniform[] = {"cwr3_b_uniform_tanksuit"};
+	headgear[] = {
+		"cwr3_b_headgear_cvc_goggles",
+		"cwr3_b_headgear_cvc"
+	};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
 		"SmokeShellPurple"
@@ -447,22 +429,18 @@ class vc : vg {
 class vd : vg {
 	displayName = "Vehicle Driver";
 	traits[] = {"engineer"};
-	backpack[] = {"CUP_B_AlicePack_Khaki"};
-	linkedItems[] += {
-		"ItemRadio",
-		"Binocular"
-	};
+	backpack[] = {"CUP_B_SLA_Medicbag"};
 	backpackItems[] = {"ToolKit"};
 };
 
 class hc : smg {
 	displayName = "Helicopter Crew";
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
-	vest[] = {"FIR_pilot_vest"};
+	uniform[] = {"cwr3_b_uniform_pilot"};
+	vest[] = {"cwr3_b_vest_pilot"};
 	backpack[] = {};
 	headgear[] = {
-		"SP_SPH4Helmet_Green",
-		"SP_SPH4Helmet_Black"
+		"CUP_H_SPH4",
+		"CUP_H_SPH4_visor"
 	};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
@@ -490,13 +468,10 @@ class hcc : hc {
 	backpackItems[] = {"ToolKit"};
 };
 
-class jp : smg {
+class jp : hc {
 	displayName = "Jet pilot";
 	traits[] = {"engineer"};
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
-	vest[] = {"CUP_V_B_PilotVest"};
-	backpack[] = {};
-	headgear[] = {"FIR_hgu26p"};
+	backpack[] = {"CUP_T10_Parachute_backpack"};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_45ACP_M3A1_BLK_M"),
@@ -507,7 +482,7 @@ class jp : smg {
 class logi : car {
 	displayName = "Logistics";
 	traits[] = {"engineer"};
-	backpack[] = {"usm_pack_alice"};
+	backpack[] = {"cwr3_b_backpack_alice"};
 	items[] += {
 		"ACE_wirecutter"
 	};
