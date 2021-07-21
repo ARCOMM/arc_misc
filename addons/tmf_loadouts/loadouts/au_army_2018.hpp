@@ -6,9 +6,7 @@
 		* CUP Units
 		* CUP Weapons
 		* NIArms AUG Pack
-		* Community Factions Project
 		* MNP Uniforms
-		* FIR AWS(AirWeaponSystem)
 */
 
 // Created by: AChesheireCat
@@ -120,13 +118,13 @@ class car : r {
 class cls : car {
 	displayName = "Combat Life Saver";
 	traits[] = {"medic"};
-	backpack[] = {"B_TacticalPack_mcamo"};
+	backpack[] = {"CUP_B_Bergen_BAF"};
 	backpackItems[] = { MEDICAL_CLS };
 };
 
 class m : cls {
 	displayName = "Medic";
-	backpack[] = {"B_Carryall_mcamo"};
+	backpack[] = {"cwr3_i_bergen_backpack_khaki"};
 	backpackItems[] = { MEDICAL_M };
 	linkedItems[] += {"Binocular"};
 };
@@ -149,7 +147,7 @@ class ftl : g {
 		LIST_2("CUP_1Rnd_StarFlare_Red_M203"),
 		LIST_2("CUP_1Rnd_SmokeRed_M203")
 	};
-	backPack[] = {"CFP_Camelbak_Mule_Khki"};
+	backPack[] = {"B_AssaultPack_khk"};
 	linkedItems[] += {
 		"Binocular",
 		"ItemGPS"
@@ -356,7 +354,7 @@ class hattl : car {
 class mtrg : car {
 	displayName = "Mortar Gunner";
 	secondaryWeapon[] = {"ace_csw_staticMortarCarry"};
-	backPack[] = {"B_Carryall_mcamo"};
+	backPack[] = {"B_Carryall_khk"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
@@ -366,7 +364,7 @@ class mtrg : car {
 
 class mtrac : r {
 	displayName = "Mortar Ammo Carrier";
-	backPack[] = {"B_Carryall_mcamo"};
+	backPack[] = {"B_Carryall_khk"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
@@ -377,8 +375,8 @@ class mtrac : r {
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
 	secondaryWeapon[] = {"ace_csw_carryMortarBaseplate"};
-	items[] = { MTR_GEAR ,"ACE_RangeTable_82mm","ACE_MapTools"};
-	backPack[] = {"B_Carryall_mcamo"};
+	items[] += { MTR_GEAR ,"ACE_RangeTable_82mm","ACE_MapTools"};
+	backPack[] = {"B_Carryall_khk"};
 	backpackItems[] = {
 		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
@@ -403,11 +401,7 @@ class samg : car {
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ItemRadio",
-		"ItemWatch",
+	linkedItems[] += {
 		"Rangefinder",
 		"ItemGPS"
 	};
@@ -439,7 +433,8 @@ class sp : r {
 		"ACE_MapTools",
 		"ACE_RangeCard",
 		"ACE_Kestrel4500",
-		"ACE_ATragMX"
+		"ACE_ATragMX",
+		"LaserBatteries"
 	};
 	backpack[] = {"B_AssaultPack_cbr"};
 	backpackItems[] = {
@@ -477,7 +472,7 @@ class vc : vg {
 class vd : vg {
 	displayName = "Vehicle Driver";
 	traits[] = {"engineer"};
-	backpack[] = {"B_AssaultPack_mcamo"};
+	backpack[] = {"B_Carryall_khk"};
 	linkedItems[] += {"ItemGPS"};
 	backpackItems[] = {"ToolKit"};
 };
@@ -485,16 +480,10 @@ class vd : vg {
 class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"MNP_CombatUniform_Australia"};
-	vest[] = {"FIR_pilot_vest"};
+	vest[] = {"Aircrew_vest_2_NH"};
 	backpack[] = {};
 	headgear[] = {
-		"CFP_SOARCREW_BLUE",
-		"CFP_SOARCREW_STACHE",
-		"CFP_SOARCREW_RED",
-		"CFP_SOARCREW_SKULL",
 		"H_CrewHelmetHeli_B",
-		"FIR_HGU56P_Skull",
-		"FIR_HGU56P_Skull_Death",
 		"MNP_Helmet_Dslyecxi"
 	};
 	items[] += {"ACE_MapTools"};
@@ -506,7 +495,7 @@ class hc : smg {
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
+	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	linkedItems[] += {"ItemGPS"};
 };
 
@@ -520,11 +509,11 @@ class hcc : hc {
 
 class jp : smg {
 	displayName = "Jet pilot";
-	headgear[] = {"FIR_JHMCS"};
+	headgear[] = {"H_PilotHelmetFighter_O"};
 	hmd[] = {};
-	vest[] = {"FIR_pilot_vest"};
+	vest[] = {"Aircrew_vest_2_NH"};
 	traits[] = {"engineer"};
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
+	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	backpack[] = {};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
@@ -536,7 +525,7 @@ class jp : smg {
 class logi : car {
 	displayName = "Logistics";
 	traits[] = {"engineer"};
-	backpack[] = {"B_Carryall_mcamo"};
+	backpack[] = {"B_Carryall_khk"};
 	items[] += {
 		"ACE_wirecutter"
 	};
