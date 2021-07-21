@@ -402,7 +402,7 @@ class samag : car {
 class sn : r {
 	displayName = "Sniper";
 	uniform[] = {"U_B_FullGhillie_sard"};
-	vest[] = {"CFP_FLC_M81"};
+	vest[] = {"cwr3_b_vest_LBV"};
 	backpack[] = {"B_Carryall_mcamo"};
 	hmd[] = {"CUP_NVG_GPNVG_black"};
 	primaryWeapon[] = {"CUP_arifle_M4A1_SOMMOD_Grip_tan"};
@@ -432,6 +432,7 @@ class sn : r {
 class sp : r {
 	displayName = "Spotter";
 	uniform[] = {"U_B_FullGhillie_sard"};
+	vest[] = {"cwr3_b_vest_LBV"};
 	backpack[] = {"CUP_B_US_IIID_OCP"};
 	hmd[] = {"CUP_NVG_GPNVG_black"};
 	primaryWeapon[] = {"CUP_arifle_M4A1_SOMMOD_Grip_tan"};
@@ -485,10 +486,6 @@ class hc : smg {
 	vest[] = {"CUP_V_B_USArmy_PilotVest"};
 	backpack[] = {};
 	headgear[] = {
-		"CFP_SOARCREW_BLUE",
-		"CFP_SOARCREW_STACHE",
-		"CFP_SOARCREW_RED",
-		"CFP_SOARCREW_SKULL",
 		"H_CrewHelmetHeli_B",
 	};
 	attachment[] = {};
