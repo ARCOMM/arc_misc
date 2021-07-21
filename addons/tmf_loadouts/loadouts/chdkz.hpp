@@ -386,7 +386,7 @@ class sp : g {
 	vest[] = {"CUP_V_O_Ins_Carrier_Rig_Com"};
 	uniform[] = {"CUP_U_O_RUS_Ghillie"};
 	headgear[] = {};
-	silencer[] = {"hlc_muzzle_545sup_ak"};
+	silencer[] = {"cup_muzzle_pbs4"};
 	items[] += {
 		"ACE_MapTools",
 		"ACE_RangeCard",
