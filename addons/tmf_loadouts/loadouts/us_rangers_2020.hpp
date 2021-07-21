@@ -270,8 +270,7 @@ class dm : r {
 	bipod[] = {"cup_bipod_vltor_modpod"};
 	sidearmWeapon[] = {"CUP_hgun_M17_Coyote"};
 	sidearmAttachments[] = {
-		"hlc_acc_tlr1",
-		"optic_mrd_black"
+		"optic_mrd"
 	};
 	items[] += {
 		"ACE_MapTools",
@@ -475,8 +474,7 @@ class sn : r {
 	bipod[] = {"cup_bipod_vltor_modpod"};
 	sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
 	sidearmAttachments[] = {
-		"optic_mrd_black",
-		"hlc_acc_tlr1"
+		"optic_mrd"
 	};
 	items[] += {
 		"ACE_MapTools",
