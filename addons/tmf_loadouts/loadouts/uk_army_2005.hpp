@@ -4,10 +4,8 @@
 // Dependencies:
 //		* CUP Uniforms
 //		* CUP Weapons
-//		* Community Factions Project
 // 		* NIArms P226
-// 		* USM
-//		*Redd n' Tanks MILAN
+//		* Redd n' Tanks MILAN
 
 // Created by: AChesheireCat
 
@@ -190,7 +188,7 @@ class fac : co {
 class ar : r {
 	displayName = "Automatic Rifleman";
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_AutomaticRifleman"};
-	backPack[] = {"CUP_B_AlicePack_Khaki"};
+	backPack[] = {"CUP_B_Bergen_BAF"};
 	primaryWeapon[] = {"CUP_lmg_minimipara"};
 	sidearmWeapon[] = {"hlc_pistol_P226US"};
 	magazines[] = {
@@ -203,7 +201,7 @@ class ar : r {
 
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
-	backPack[] = {"usm_pack_200rnd_556_bandoliers"};
+	backPack[] = {"CUP_B_Bergen_BAF"};
 	backpackItems[] = {
 		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1"),
 	};
@@ -232,7 +230,7 @@ class dm : r {
 class mmgg : ar {
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"CUP_lmg_L7A2_Flat"};
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"CUP_B_Bergen_BAF"};
 	magazines[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		"CUP_HandGrenade_L109A1_HE",
@@ -251,7 +249,7 @@ class mmgac : r {
 
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"CUP_B_Bergen_BAF"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] = {
 		"ItemMap",
@@ -397,7 +395,7 @@ class samag : car {
 class sn : r {
 	displayName = "Sniper";
 	uniform[] = {"U_B_FullGhillie_sard"};
-	vest[] = {"usm_vest_lbv_rm"};
+	vest[] = {"cwr3_b_vest_LBV"};
 	headgear[] = {};
 	goggles[] = {"default"};
 	primaryWeapon[] = {"CUP_srifle_AWM_wdl"};
@@ -413,7 +411,7 @@ class sn : r {
 class sp : g {
 	displayName = "Spotter";
 	uniform[] = {"U_B_FullGhillie_sard"};
-	vest[] = {"usm_vest_lbv_rm"};
+	vest[] = {"cwr3_b_vest_LBV"};
 	headgear[] = {};
 	silencer[] = {"cup_muzzle_snds_m16"};
 	items[] += {
