@@ -2,7 +2,7 @@
 	Dependencies:
 	* CUP Units
 	* CUP Weapons
-	* US Military Mod
+	* CWR3
 	* ACE
 	* Vz99 60mm Mortar
 */
@@ -209,7 +209,7 @@ class ftl : r {
 
 class sl : ftl {
 	displayName = "Squad Leader";
-	backpack[] = {"usm_pack_st138_prc77"};
+	backpack[] = {"cwr3_o_backpack_rd54_r148"};
 	sidearmWeapon[] = {"CUP_hgun_TT"};
 	magazines[] += {
 		LIST_2("CUP_8Rnd_762x25_TT")
@@ -232,7 +232,7 @@ class co : sl {
 
 class fac : car {
 	displayName = "Forward Air Controller";
-	backpack[] = {"usm_pack_st138_prc77"};
+	backpack[] = {"cwr3_o_backpack_rd54_r148"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
 	backpackItems[] = { FAC_GEAR };
