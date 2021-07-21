@@ -2,7 +2,6 @@
 	Dependencies:
 	* CUP Units
 	* CUP Weapons
-	* Community Factions Project
 */
 
 class baseMan {// Weaponless baseclass
@@ -468,7 +467,7 @@ class hc : baseMan {
 	uniform[] = {"CUP_U_O_SLA_Overalls_Pilot"};
 	vest[] = {};
 	backpack[] = {"CUP_B_SLA_Medicbag"};
-	headgear[] = {"SP_ZSH1Helmet_Black1", "SP_ZSH1Helmet_Black2"};
+	headgear[] = {"CUP_H_RUS_Altyn_Goggles_black", "CUP_H_RUS_Altyn_black"};
 	goggles[] = {"default"};
 
 	primaryWeapon[] = {"CUP_smg_vityaz"};
