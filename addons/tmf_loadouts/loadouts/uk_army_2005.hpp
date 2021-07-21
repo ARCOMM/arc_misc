@@ -463,10 +463,6 @@ class hc : smg {
 	uniform[] = {"CUP_U_B_BAF_DDPM_UBACSLONG_Gloves"};
 	vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Pilot"};
 	headgear[] = {
-		"CFP_SOARCREW_BLUE",
-		"CFP_SOARCREW_STACHE",
-		"CFP_SOARCREW_RED",
-		"CFP_SOARCREW_SKULL",
 		"H_CrewHelmetHeli_B"
 	};
 	items[] += {"ACE_MapTools"};
