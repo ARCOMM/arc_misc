@@ -5,9 +5,8 @@
 	Dependencies:
 	CUP Weapons
 	CUP Units
-	CFP
+	CWR3
 	ARC Misc Weapons
-	FIR AWS
 */
 
 class baseMan {// Weaponless baseclass
@@ -479,7 +478,7 @@ class sp : g {
 
 class vg : smg {
 	displayName = "Vehicle Gunner";
-	uniform[] = {"FIR_USMC_Mechanic_Coverall"};
+	uniform[] = {"cwr3_b_uniform_tanksuit"};
 	vest[] = {"V_TacVest_oli"};
 	backpack[] = {};
 	headgear[] = {"H_HelmetCrew_I"};
