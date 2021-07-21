@@ -4,9 +4,8 @@
 //Dependencies:
 //		* CUP Units
 //		* CUP Weapons
-//		* FIR AWS(AirWeaponSystem)
+//		* CWR3
 //		* USM Uniforms
-//		* NIArms M14 Pack
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
@@ -193,8 +192,8 @@ class rat : r {
 
 class dm : r {
 	displayName = "Designated Marksman";
-	primaryWeapon[] = {"hlc_rifle_M21"};
-	scope[] = {"hlc_optic_artel_m14"};
+	primaryWeapon[] = {"CUP_srifle_M21"};
+	scope[] = {"cup_optic_artel_m14"};
 	magazines[] = {
 		LIST_9("ACE_10Rnd_762x51_M118LR_Mag"),
 		LIST_2("HandGrenade"),
@@ -409,13 +408,11 @@ class vd : vg {
 
 class hc : smg {
 	displayName = "Helicopter Crew";
-	uniform[] = {"FIR_Fighter_Pilot_USN_Nomex4"};
-	vest[] = {"FIR_pilot_vest"};
+	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
+	vest[] = {"Aircrew_vest_2_NH"};
 	backpack[] = {};
 	headgear[] = {
-		"H_CrewHelmetHeli_B",
-		"FIR_HGU56P_Skull",
-		"FIR_HGU56P_Skull_Death"
+		"H_CrewHelmetHeli_B"
 	};
 	items[] += {"ACE_MapTools"};
 	magazines[] = {
@@ -426,7 +423,6 @@ class hc : smg {
 
 class hp : hc {
 	displayName = "Helicopter Pilot";
-	uniform[] = {"FIR_Fighter_Pilot_USN_Nomex4"};
 	linkedItems[] += {"ItemGPS"};
 };
 
@@ -440,11 +436,11 @@ class hcc : hc {
 
 class jp : smg {
 	displayName = "Jet pilot";
-	headgear[] = {"FIR_JHMCS"};
+	headgear[] = {"H_PilotHelmetFighter_B"};
 	hmd[] = {};
-	vest[] = {"FIR_pilot_vest"};
+	vest[] = {"Aircrew_vest_2_NH"};
 	traits[] = {"engineer"};
-	uniform[] = {"FIR_Fighter_Pilot_Uniform_Flight"};
+	uniform[] = {"cwr3_b_uniform_pilot_jet"};
 	backpack[] = {};
 	linkedItems[] += {"ItemGPS"};
 	magazines[] = {
