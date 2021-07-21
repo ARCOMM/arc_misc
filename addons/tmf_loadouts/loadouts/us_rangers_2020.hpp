@@ -240,7 +240,7 @@ class ar : r {
 
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
-	backpack[] = {"CFP_Kitbag_MCam_Grn"};
+	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] = {
 		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
@@ -458,7 +458,6 @@ class samg : car {
 
 class samag : car {
 	displayName = "AA Assistant Missile Specialist";
-	backPack[] = {"CFP_Camelbak_Mule_Drab"};
 	secondaryWeapon[] = {"CUP_launch_FIM92Stinger"};
 	linkedItems[] += {"Rangefinder"};
 };
