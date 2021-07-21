@@ -4,13 +4,12 @@
 /*	Dependencies:
 
 		* CUP
-		* Community Factions Project
-		* USM
+		* CWR3
 		* Wearable Antennas
 
 */
 
-//		Created by: AChesheireCat
+//		Created by: AChesheireCat, edited by Freddo
 
 class baseMan {
 	displayName = "Unarmed";
@@ -210,7 +209,7 @@ class ar : r {
 
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
-	backPack[] = {"usm_pack_200rnd_556_bandoliers"};
+	backPack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = {
 		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
 	};
@@ -239,7 +238,7 @@ class mmgg : ar {
 	displayName = "MMG Gunner";
 	primaryWeapon[] = {"CUP_lmg_M240"};
 	scope[] = {"cup_optic_elcan_specterdr_black"};
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"CUP_B_US_IIID_OCP"};
 	magazines[] = {
 		LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
 		LIST_3("CUP_21Rnd_9x19_M17_Coyote")
@@ -248,7 +247,7 @@ class mmgg : ar {
 
 class mmgac : aar {
 	displayName = "MMG Ammo Carrier";
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
@@ -257,7 +256,7 @@ class mmgac : aar {
 class mmgtl : aar {
 	displayName = "MMG Team Leader";
 	items[] += {"ACE_MapTools"};
-	backPack[] = {"usm_pack_762x51_bandoliers"};
+	backPack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = {
 		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
@@ -417,7 +416,7 @@ class sn : r {
 		"SmokeShellGreen",
 		LIST_3("CUP_17Rnd_9x19_glock17")
 	};
-	items[] = {
+	items[] += {
 		"ACE_ATragMX",
 		"ACE_Kestrel4500",
 		"ACE_RangeCard"
@@ -475,7 +474,7 @@ class vc : vg {
 class vd : vg {
 	displayName = "Vehicle Driver";
 	traits[] = {"engineer"};
-	backpack[] = {"CUP_B_SLA_Medicbag"};
+	backpack[] = {"cwr3_o_backpack_gasmask"};
 	linkedItems[] += {"ItemGPS"};
 	backpackItems[] = {"ToolKit"};
 };
@@ -509,7 +508,7 @@ class hp : hc {
 class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
-	backpack[] = {"CUP_B_SLA_Medicbag"};
+	backpack[] = {"cwr3_o_backpack_gasmask"};
 	linkedItems[] += {"ItemGPS"};
 	backpackItems[] = {"ToolKit"};
 };
@@ -535,7 +534,7 @@ class jp : baseMan {
 class logi : car {
 	displayName = "Logistics";
 	traits[] = {"engineer"};
-	backpack[] = {"usm_pack_alice"};
+	backpack[] = {"B_Carryall_mcamo"};
 	items[] += {
 		"ACE_wirecutter"
 	};
