@@ -60,6 +60,8 @@ class CfgMissions {
 			SANDBOX(Kulima,kulima,40);
 			SANDBOX(Clafghan,clafghan,41);
 			SANDBOX(Aliabad,mcn_aliabad,72);
+			SANDBOX(Fapovo,fapovo,76);
+			SANDBOX(Summa Winter,tem_summawcup,77);
 		};
 
 		class DOUBLES(ADDON,GM) {
