@@ -535,7 +535,6 @@ class logi : car {
 	displayName = "Logistics";
 	backpack[] = {"B_Kitbag_cbr"};
 	traits[] = {"engineer"};
-	backpack[] = {"B_Kitbag_rgr"};
 	items[] += {
 		"ACE_wirecutter"
 	};

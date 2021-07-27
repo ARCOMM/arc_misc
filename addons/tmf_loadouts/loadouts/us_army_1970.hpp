@@ -165,7 +165,7 @@ class sl : car {
 class slr : sl {
 	displayName = "Squad Leader (Radio)";
 	backpack[] = {"cwr3_b_backpack_radio"};
-}
+};
 
 class co : sl {
 	displayName = "Platoon Leader";
@@ -175,7 +175,7 @@ class co : sl {
 class cor : co {
 	displayName = "Platoon Leader (Radio)";
 	backpack[] = {"cwr3_b_backpack_radio"};
-}
+};
 
 class fac : co {
 	displayName = "Forward Air Controller";
