@@ -109,5 +109,25 @@ class CfgMissions {
 			SANDBOX(Tarawa Betio,fow_map_tarawa,70);
 			SANDBOX(Henderson Airfield,fow_map_henderson,71);
 		};
+
+		// OPTRE Mission Rotation
+		class DOUBLES(ADDON,OPTRE) {
+			briefingName = "ARC OPTRE Sandboxes";
+
+			// Operation Trebuchet
+			SANDBOX(Blood Gulch,blood_optre,78);
+			SANDBOX(Archipelago,optre_archipelago,80);
+			SANDBOX(Gridlock,optre_gridlock,81);
+			SANDBOX(Iberius,optre_iberius,82);
+			SANDBOX(Highlands,optre_installation04,83);
+			SANDBOX(Kholo,optre_kholo,84);
+			SANDBOX(Madrigal,optre_madrigal,85);
+			SANDBOX(Phobos,optre_phobos,86);
+			SANDBOX(Sandstorm,optre_sandstorm,87);
+			SANDBOX(Wetlands,optre_wetlands,88);
+
+			// Other
+			SANDBOX(Gao,oga_gao_terrain,79);
+		};
 	};
 };
