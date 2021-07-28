@@ -1,2 +1,8 @@
 [submodule ".hemtt/template"]
-	url = https://github.com/hemtt/cba
+	url = https://github.com/hemtt/cba.git
+[submodule "include/x/cba"]
+	path = include/x/cba
+	url = https://github.com/CBATeam/CBA_A3.git
+[submodule "include/x/tmf"]
+	path = include/x/tmf
+	url = https://github.com/TMF3/TMF.git
