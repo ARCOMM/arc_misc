@@ -5,15 +5,17 @@ on:
     branches:
     - master
   pull_request:
-  
+
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the source code
-        uses: actions/checkout@master
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
       - name: Build using HEMTT
         uses: arma-actions/hemtt@master
         with:
