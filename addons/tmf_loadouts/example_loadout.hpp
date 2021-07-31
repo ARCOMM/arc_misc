@@ -8,13 +8,13 @@ class baseMan {// Weaponless baseclass
 	vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	backpack[] = {"B_AssaultPack_mcamo"};
 	headgear[] = {};
-	goggles[] = {"default"};
 	hmd[] = {};
 	// Leave empty to remove all. "Default" > leave original item.
-	faces[] = {"faceset:african", "faceset:caucasian"};
+	goggles[] = {"default"};
 	// Leave empty to not change faces.
-	insignias[] = {"111thID"};
+	faces[] = {"faceset:african", "faceset:caucasian"};
 	// Leave empty to not change insignias
+	insignias[] = {"111thID"};
 
 	// All randomized
 	primaryWeapon[] = {};
@@ -33,7 +33,11 @@ class baseMan {// Weaponless baseclass
 
 	// These are added to the uniform or vest
 	magazines[] = {};
-	items[] = { MEDICAL_R };
+	items[] = {
+		MEDICAL_R,
+		"ACE_EntrenchingTool",
+		LIST_3("ACE_CableTie")
+	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
 		"ItemMap",
@@ -91,6 +95,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {
@@ -101,6 +106,7 @@ class smg : r {
 		LIST_2("HandGrenade"),
 		LIST_2("SmokeShell")
 	};
+	items[] = { MEDICAL_R };
 };
 
 class ftl : g {
@@ -164,8 +170,7 @@ class ar : r {
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpackItems[] = {
-		LIST_4("100Rnd_65x39_caseless_mag"),
-		"ACE_EntrenchingTool"
+		LIST_4("100Rnd_65x39_caseless_mag")
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -481,41 +486,24 @@ class jp : smg {
 	};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	traits[] = {"engineer", "explosiveSpecialist"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	backpack[] = {"B_Kitbag_rgr"};
-	vest[] = {"V_PlateCarrier3_rgr"};
-	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_wirecutter",
-		"ACE_Clacker",
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool"
+		"ACE_wirecutter"
 	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
-		"SatchelCharge_Remote_Mag"
-	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"B_Kitbag_rgr"};
-	vest[] = {"V_PlateCarrier3_rgr"};
+class eng : logi {
+	displayName = "Combat Engineer";
+	traits[] += {"explosiveSpecialist"};
 	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_wirecutter",
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool"
-	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_8("APERSMine_Range_Mag"),
-		"ATMine_Range_Mag"
+		"ACE_Clacker",
+		"ACE_DefusalKit"
 	};
 };
 

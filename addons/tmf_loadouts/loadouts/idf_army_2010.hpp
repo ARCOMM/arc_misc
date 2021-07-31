@@ -5,19 +5,17 @@
 	Dependencies:
 	CUP Weapons
 	CUP Units
-	CFP
+	CWR3
+	CWR3 British Forces
+	DZN Mitznefet
+	MNP
 	ARC Misc Weapons
-	FIR AWS
 */
 
 class baseMan {// Weaponless baseclass
 	displayName = "Unarmed";
 	// All randomized.
-	uniform[] =
-	{
-		"MNP_CombatUniform_OD_Rg",
-		"MNP_CombatUniform_OD_Sh"
-	};
+	uniform[] = {"MNP_CombatUniform_ISR"};
 	vest[] = {"CUP_V_IDF_Vest"};
 	backpack[] = {};
 	headgear[] = {};
@@ -76,23 +74,14 @@ class r : baseMan {
 		"CUP_NVG_PVS7" //TODO: Switch out with CUP_NVG_PVS7_Hide
 	};
 	headgear[] = {
-		LIST_4("CFP_IDF_M76"),
-		"CFP_IDF_M76_BD",
-		"CFP_IDF_M76_BD_CB_GG",
-		"CFP_IDF_M76_BD_CF_GG",
-		"CFP_IDF_M76_BD_GG",
-		"CFP_IDF_M76_CB_GG",
-		"CFP_IDF_M76_CF_GG",
-		"CFP_IDF_M76_GG",
-		"CFP_Mitznefet_Tropical",
-		"CFP_MitzHelm1_Wdl",
-		"CFP_MitzHelm1_Wdl2",
-		"CFP_MitzHelm2_Wdl",
-		"CFP_MitzHelm2_Wdl2",
-		"CFP_MitzHelm3_Wdl",
-		"CFP_MitzHelm3_Wdl2",
-		"CFP_MitzHelm4_Wdl",
-		"CFP_MitzHelm4_Wdl2"
+		"cwr3_b_uk_headgear_m76_olive_net",
+		"cwr3_b_uk_headgear_m76_olive"
+	};
+	goggles[] = {
+		"dzn_G_IDF_Mitznefet_Cover",
+		"dzn_G_IDF_Mitznefet_Cover2",
+		"dzn_G_IDF_Mitznefet_Cover3",
+		"dzn_G_IDF_Mitznefet_Cover4"
 	};
 	primaryWeapon[] = {"arifle_TRG21_F"};
 	scope[] = {
@@ -133,14 +122,14 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"B_Carryall_green_F"};
 	backpackItems[] = {MEDICAL_M};
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {
 	displayName = "Submachinegunner";
-	primaryWeapon[] = {"CUP_smg_Mac10"};
+	primaryWeapon[] = {"cwr3_smg_uzi"};
 	magazines[] = {
-		LIST_6("CUP_30Rnd_45ACP_MAC10_M"),
-		LIST_2("CUP_30Rnd_45ACP_Green_Tracer_MAC10_M"),
+		LIST_8("CUP_30Rnd_9x19_UZI"),
 		LIST_2("MiniGrenade"),
 		LIST_2("SmokeShell")
 	};
@@ -478,12 +467,13 @@ class sp : g {
 
 class vg : smg {
 	displayName = "Vehicle Gunner";
-	uniform[] = {"FIR_USMC_Mechanic_Coverall"};
+	uniform[] = {"cwr3_b_uniform_tanksuit"};
 	vest[] = {"V_TacVest_oli"};
 	backpack[] = {};
 	headgear[] = {"H_HelmetCrew_I"};
+	goggles[] = {"default"};
 	magazines[] = {
-		LIST_6("CUP_30Rnd_45ACP_MAC10_M"),
+		LIST_3("CUP_30Rnd_9x19_UZI"),
 		"SmokeShellPurple"
 	};
 };
@@ -501,15 +491,15 @@ class vd : vg {
 	backpackItems[] = {"ToolKit"};
 };
 
-class hc : baseMan {
+class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"CUP_U_B_USMC_PilotOverall"};
 	vest[] = {"CUP_V_B_PilotVest"};
 	headgear[] = {"H_CrewHelmetHeli_B"};
+	goggles[] = {"default"};
 	items[] += {"ACE_MapTools"};
-	sidearmWeapon[] = {"CUP_hgun_MicroUzi"};
 	magazines[] = {
-		LIST_6("CUP_30Rnd_9x19_UZI"),
+		LIST_3("CUP_30Rnd_9x19_UZI"),
 		"SmokeShellPurple"
 	};
 };
@@ -529,53 +519,33 @@ class hcc : hc {
 	backpackItems[] = {"ToolKit"};
 };
 
-class jp : baseMan {
+class jp : hc {
 	displayName = "Jet pilot";
 	traits[] = {"engineer"};
 	uniform[] = {"U_I_pilotCoveralls"};
 	vest[] = {};
 	headgear[] = {"H_PilotHelmetFighter_O"};
 	linkedItems[] += {"ItemGPS"};
-	sidearmWeapon[] = {"CUP_hgun_MicroUzi"};
-	magazines[] = {
-		LIST_3("CUP_30Rnd_9x19_UZI"),
-		"SmokeShellPurple"
-	};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	traits[] = {"engineer", "explosiveSpecialist"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	backpack[] = {"B_Kitbag_rgr"};
-	sidearmWeapon[] = {"ACE_VMH3"};
 	items[] += {
-		"ACE_wirecutter",
+		"ACE_wirecutter"
+	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
+};
+
+class eng : logi {
+	displayName = "Combat Engineer";
+	traits[] += {"explosiveSpecialist"};
+	sidearmWeapon[] = {"ACE_VMM3"};
+	items[] += {
 		"ACE_Clacker",
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool"
-	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_2("DemoCharge_Remote_Mag"),
-		LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
-		"SatchelCharge_Remote_Mag"
-	};
-};
-
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"B_Kitbag_rgr"};
-	sidearmWeapon[] = {"ACE_VMH3"};
-	items[] += {
-		"ACE_wirecutter",
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool"
-	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_8("APERSMine_Range_Mag"),
-		"ATMine_Range_Mag"
+		"ACE_DefusalKit"
 	};
 };
 

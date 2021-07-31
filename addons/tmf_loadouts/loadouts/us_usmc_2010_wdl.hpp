@@ -4,9 +4,7 @@
 //Dependencies:
 //		* CUP Units
 //		* CUP Weapons
-//		* Community Factions Project (CFP)
-//		* USM Uniforms
-//		* NIArms M249 Pack
+//		* CWR3
 //		* Wearable Antennas
 
 class baseMan {
@@ -125,6 +123,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"B_Carryall_cbr"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {
@@ -204,13 +203,13 @@ class ar : r {
 		"CUP_V_B_MTV_MG"
 	};
 	backpack[] = {"CUP_B_AssaultPack_Coyote"};
-	primaryWeapon[] = {"hlc_m249_pip4"};
+	primaryWeapon[] = {"CUP_lmg_m249_pip1"};
 	scope[] = {"cup_optic_eotech553_black"};
 	bipod[] = {"cup_bipod_vltor_modpod_black"};
 	attachment[] = {"cup_acc_anpeq_2_grey"};
 	sidearmWeapon[] = {"CUP_hgun_M9"};
 	magazines[] = {
-		LIST_3("hlc_200rnd_556x45_M_SAW"),
+		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
 		"HandGrenade",
 		"SmokeShell",
 		LIST_3("CUP_15Rnd_9x19_M9")
@@ -221,7 +220,7 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpack[] = {"B_Kitbag_cbr"};
 	backpackItems[] = {
-		LIST_3("hlc_200rnd_556x45_M_SAW"),
+		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
 		"ACE_EntrenchingTool"
 	};
 	linkedItems[] += {"ACE_Yardage450"};
@@ -460,7 +459,10 @@ class vg : car {
 	uniform[] = {"CUP_U_B_USArmy_PilotOverall"};
 	vest[] = {"CUP_V_B_Eagle_SPC_Crew"};
 	backpack[] = {};
-	headgear[] = {"usm_helmet_cvc"};
+	headgear[] = {
+		"cwr3_b_headgear_cvc",
+		"cwr3_b_headgear_cvc_goggles"
+	};
 	magazines[] = {
 		LIST_3("CUP_30Rnd_556x45_Stanag"),
 		"SmokeShellPurple"
@@ -489,10 +491,6 @@ class hc : car {
 	vest[] = {"CUP_V_PMC_CIRAS_Coyote_Veh"};
 	backpack[] = {};
 	headgear[] = {
-		"CFP_SOARCREW_BLUE",
-		"CFP_SOARCREW_STACHE",
-		"CFP_SOARCREW_RED",
-		"CFP_SOARCREW_SKULL",
 		"H_CrewHelmetHeli_B",
 		"H_CrewHelmetHeli_O",
 		"H_PilotHelmetHeli_O"
@@ -532,42 +530,24 @@ class jp : smg {
 	traits[] = {"engineer"};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"usm_pack_alice"};
-	sidearmWeapon[] = {"ACE_VMM3"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
+	backpack[] = {"CUP_B_USMC_MOLLE"};
 	items[] += {
-		"ACE_wirecutter",
-		"ACE_Clacker"
+		"ACE_wirecutter"
 	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_3("DemoCharge_Remote_Mag"),
-		LIST_2("SLAMDirectionalMine_Wire_Mag"),
-		"SatchelCharge_Remote_Mag",
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool"
-	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"usm_pack_alice"};
+class eng : logi {
+	displayName = "Combat Engineer";
+	traits[] += {"explosiveSpecialist"};
 	sidearmWeapon[] = {"ACE_VMM3"};
 	items[] += {
-		"ACE_wirecutter",
-		"ACE_DefusalKit",
-		"ACE_EntrenchingTool",
-		"ACE_Clacker"
-	};
-	backpackItems[] = {
-		"ToolKit",
-		LIST_4("APERSBoundingMine_Range_Mag"),
-		LIST_2("APERSTripMine_Wire_Mag"),
-		LIST_2("ACE_FlareTripMine_Mag"),
-		LIST_2("ClaymoreDirectionalMine_Remote_Mag")
+		"ACE_Clacker",
+		"ACE_DefusalKit"
 	};
 };
 

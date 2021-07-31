@@ -132,6 +132,7 @@ class m : cls {
 	displayName = "Medic";
 	backpack[] = {"B_Carryall_oucamo"};
 	backpackItems[] = { MEDICAL_M };
+	linkedItems[] += {"Binocular"};
 };
 
 class smg : r {
@@ -536,35 +537,24 @@ class jp : smg {
 	};
 };
 
-class eng : car {
-	displayName = "Combat Engineer (Explosives)";
-	sidearmWeapon[] = {"ACE_VMM3"};
-	traits[] = {"engineer", "explosiveSpecialist"};
+class logi : car {
+	displayName = "Logistics";
+	traits[] = {"engineer"};
 	backpack[] = {"CUP_B_US_IIID_UCP"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_Clacker"
+		"ACE_wirecutter"
 	};
-	backpackItems[] = {
-		"ToolKit",
-		"ACE_wirecutter",
-		"SatchelCharge_Remote_Mag",
-		LIST_3("SLAMDirectionalMine_Wire_Mag")
-	};
+	linkedItems[] += {"ItemGPS"};
+	backpackItems[] = {"ToolKit"};
 };
 
-class engm : car {
-	displayName = "Combat Engineer (Mines)";
+class eng : logi {
+	displayName = "Combat Engineer";
+	traits[] += {"explosiveSpecialist"};
 	sidearmWeapon[] = {"ACE_VMM3"};
-	traits[] = {"engineer", "explosiveSpecialist"};
-	backpack[] = {"CUP_B_US_IIID_UCP"};
 	items[] += {
-		"ACE_DefusalKit",
-		"ACE_Clacker"
-	};
-	backpackItems[] = {
-		LIST_2("CUP_Mine_M"),
-		LIST_8("APERSMine_Range_Mag")
+		"ACE_Clacker",
+		"ACE_DefusalKit"
 	};
 };
 
