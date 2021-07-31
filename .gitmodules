@@ -1,4 +1,5 @@
 [submodule ".hemtt/template"]
+	path = .hemtt/template
 	url = https://github.com/hemtt/cba.git
 [submodule "include/x/cba"]
 	path = include/x/cba
