@@ -1,1 +1,2 @@
 PREP(handleVehicleDeath);
+PREP(handleUnitSpawned);

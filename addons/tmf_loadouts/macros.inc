@@ -1,30 +1,23 @@
 /* assignGear specific macros */
 #include "\x\tmf\addons\assigngear\loadouts\macros.inc"
 
-#define MEDICAL_R \
-LIST_5("ACE_fieldDressing"), \
-LIST_1("ACE_morphine"), \
-LIST_2("ACE_tourniquet")
+#define MEDICAL_R "FirstAidKit"
 
 #define MEDICAL_CLS \
+"Medikit", \
 LIST_2("ACE_bodyBag"), \
-LIST_20("ACE_fieldDressing"), \
-LIST_10("ACE_morphine"), \
-LIST_5("ACE_salineIV_250"), \
-LIST_1("ACE_salineIV_500"), \
-LIST_5("ACE_epinephrine"), \
-LIST_5("ACE_tourniquet"), \
-LIST_10("ACE_splint")
+LIST_2("ACE_tourniquet)
+
 
 #define MEDICAL_M \
-LIST_40("ACE_fieldDressing"), \
-LIST_20("ACE_morphine"), \
-LIST_15("ACE_epinephrine"), \
-LIST_8("ACE_salineIV_500"), \
-LIST_10("ACE_salineIV_250"), \
-LIST_3("ACE_tourniquet"), \
+"Medikit", \
+LIST_20("ACE_fieldDressing"), \
+LIST_10("ACE_morphine"), \
+LIST_10("ACE_epinephrine"), \
+LIST_7("ACE_salineIV_500"), \
+LIST_5("ACE_salineIV_250"), \
 LIST_2("ACE_bodyBag"), \
-LIST_20("ACE_splint"), \
+LIST_10("ACE_splint"), \
 LIST_5("ACE_salineIV")
 
 #define MTR_GEAR \
