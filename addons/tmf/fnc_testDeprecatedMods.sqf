@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: arc_misc_tmf_loadouts_fnc_testDeprecatedMods
+Internal Function: arc_misc_tmf_fnc_testDeprecatedMods
 
 Description:
 	Checks for deprecated mods, and warns if they are used.

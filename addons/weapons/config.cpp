@@ -13,7 +13,7 @@ class CfgPatches
 		};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-			"arc_misc_main",
+			QGVARMAIN(main),
 			"cup_weapons_loadorder",
 			"ace_ballistics",
 			"hlcweapons_G36"

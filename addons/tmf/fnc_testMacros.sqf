@@ -1,13 +1,13 @@
 #include "script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: arc_misc_tmf_loadouts_fnc_testMacros
+Internal Function: arc_misc_tmf_fnc_testMacros
 
 Description:
 	Checks if a mission has correctly assigned macro equipment.
 	Used for TMF autotest.
 
 Parameters:
-	_this - Macros to check in format below [Array of arrays]
+	_this - Macros to check in format below (Optional)[Array of arrays]
 		0: Role to check [String]
 		1: Inventory to check [String]
 		2: Macro name [String]
@@ -21,6 +21,14 @@ private _output = [];
 private _loadoutClasses = "getNumber (_x >> 'overrideMacros') == 0" configClasses (missionConfigFile >> "CfgLoadouts");
 
 if (_loadoutClasses isEqualTo []) exitWith {_output};
+
+private _macrosArr = 'true' configClasses (configFile >> 'TMF_autotest' >> QGVAR(testMacros));
+MAP(_macrosArr,[ARR_4(			\
+	getText (_x >> 'role'),		\
+	getText(_x >> 'container'),	\
+	getText(_x >> 'name'),		\
+	getArray(_x >> 'contents')	\
+)]);
 
 if (getMissionConfigValue ["ARCMT", 0] < 1) exitWith {
 	_output pushBack [0, "Loadout macros are not correctly included"];
@@ -79,7 +87,7 @@ private _fnc_checkInventory = {
 				_output pushBack [0, format ["Loadout '%1' > '%2' lacks contents from '%3' in '%4'", configName _faction, configName _class, _macro, _inventory]];
 			};
 		};
-	} forEach _this;
+	} forEach _macrosArr;
 } forEach _loadoutClasses;
 
 _output

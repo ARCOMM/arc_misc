@@ -16,6 +16,7 @@ class CfgPatches {
         authors[] = {};
         url = "https://github.com/ARCOMM/arc_misc";
         VERSION_CONFIG;
+		is3DENmod = 1;
     };
 };
 
@@ -24,3 +25,4 @@ class CfgPatches {
 #include "CfgUnitInsignia.hpp"
 #include "CfgMainMenuSpotlight.hpp"
 #include "CfgWorlds.hpp"
+#include "Cfg3DEN.hpp"

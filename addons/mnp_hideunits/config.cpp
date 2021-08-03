@@ -11,7 +11,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-			"arc_misc_main",
+			QGVARMAIN(main),
 			"MNP_OPFOR_CONFIG",
 			"STOP_BLUFOR_Config",
 			"MNP_MIXR_Config"

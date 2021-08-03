@@ -11,7 +11,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-			"arc_misc_main",
+			QGVARMAIN(main),
 			"tmf_assigngear",
 			QGVAR(disableNative)
 		};
@@ -19,10 +19,5 @@ class CfgPatches
     };
 };
 
-#include "tmf_adminMenu_authorized_players.hpp"
-
 #include "macros.inc"
 #include "CfgLoadouts.hpp"
-#include "CfgEventhandlers.hpp"
-#include "Cfg3DEN.hpp"
-#include "autotest.hpp"

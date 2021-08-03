@@ -11,8 +11,8 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-			"arc_misc_main",
-			"arc_misc_tmf_loadouts",
+			QGVARMAIN(main),
+			QGVARMAIN(tmf_loadouts),
 			"Xnooz_Press"
 		};
         VERSION_CONFIG;
