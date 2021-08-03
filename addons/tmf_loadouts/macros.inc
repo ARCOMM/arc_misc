@@ -6,7 +6,7 @@
 #define MEDICAL_CLS \
 "Medikit", \
 LIST_2("ACE_bodyBag"), \
-LIST_2("ACE_tourniquet)
+LIST_2("ACE_tourniquet")
 
 
 #define MEDICAL_M \
