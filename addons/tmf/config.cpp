@@ -4,7 +4,7 @@ class CfgPatches
 {
     class ADDON
     {
-        name = "ARC Misc: USM Tweaks";
+        name = "ARC Misc: TMF Tweaks";
         author = "ARCOMM";
         url = "https://github.com/ARCOMM/arc_misc";
         units[] = {};
@@ -12,12 +12,16 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
 			QGVARMAIN(main),
-			"us_military_units"
+			"tmf_autotest",
+			"tmf_adminmenu",
+			QGVARMAIN(tmf_loadouts)
 		};
         VERSION_CONFIG;
     };
 };
 
-#include "CfgVehicles.hpp"
-#include "CfgGroups.hpp"
-#include "CfgWeapons.hpp"
+#include "tmf_adminMenu_authorized_players.hpp"
+
+#include "\x\arc_misc\addons\tmf_loadouts\macros.inc"
+#include "CfgEventhandlers.hpp"
+#include "autotest.hpp"

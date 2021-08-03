@@ -11,7 +11,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-			"arc_misc_main",
+			QGVARMAIN(main),
 			"ace_minedetector",
 			"ace_medical",
 			"ace_medical_statemachine",

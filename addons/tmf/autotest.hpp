@@ -34,28 +34,13 @@ class TMF_autotest {
 			contents[] = {FAC_GEAR};
 		};
 
-		code = QUOTE(																						\
-			private _macrosArr = 'true' configClasses (configFile >> 'TMF_autotest' >> QQGVAR(testMacros));	\
-																											\
-			MAP(_macrosArr,[ARR_4(																			\
-				getText (_x >> 'role'),																		\
-				getText(_x >> 'container'),																	\
-				getText(_x >> 'name'),																		\
-				getArray(_x >> 'contents')																	\
-			)]);																							\
-																											\
-			_macrosArr call FUNC(testMacros));
+		code = QUOTE([] call FUNC(testMacros));
 	};
 	class GVAR(testTemplate) {
 		code = QUOTE([] call FUNC(testTemplate));
 	};
 	class GVAR(testPlayers) {
-		code = QUOTE(                                                                           \
-			if ('Scenario' get3DENMissionAttribute 'disabledAI') then {                         \
-				[]                                                                              \
-			} else {                                                                            \
-				[[ARR_3(0, 'AI slots are enabled, disable them under multiplayer attributes')]] \
-			});
+		code = QUOTE([] call FUNC(testPlayers));
 	};
 	class GVAR(testGroupNames) {
 		code = QUOTE([] call FUNC(testGroupNames));

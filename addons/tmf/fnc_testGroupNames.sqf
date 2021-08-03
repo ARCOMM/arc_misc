@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: arc_misc_tmf_loadouts_fnc_testGroupNames
+Internal Function: arc_misc_tmf_fnc_testGroupNames
 
 Description:
 	Tests if group names are set correctly (not default)
