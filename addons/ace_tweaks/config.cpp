@@ -46,3 +46,4 @@ class ace_medical_replacementItems {
 #include "ACE_detector.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
+#include "Cfg3DEN.hpp"
