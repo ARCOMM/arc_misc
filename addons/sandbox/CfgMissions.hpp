@@ -62,6 +62,9 @@ class CfgMissions {
 			SANDBOX(Aliabad,mcn_aliabad,72);
 			SANDBOX(Fapovo,fapovo,76);
 			SANDBOX(Summa Winter,tem_summawcup,77);
+			SANDBOX(Namalsk,namalsk,89);
+			SANDBOX(G.O.S. N'ziwasogo,pja305,90);
+			SANDBOX(Colombia,UMB_Colombia,91);
 		};
 
 		class DOUBLES(ADDON,GM) {
