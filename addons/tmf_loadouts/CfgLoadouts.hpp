@@ -371,4 +371,54 @@ class CfgLoadouts {
 		tooltip = "Author: Freddo";
 		#include "loadouts\sla.hpp"
 	};
+
+	// TVT Loadouts
+	class tvt_ger_army_2010 {
+		displayName = "[BLU] Bundeswehr (2010, Flecktarn)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_ger_army_2010.hpp"
+	};
+	class tvt_ger_army_trop_2010 {
+		displayName = "[BLU] Bundeswehr (2010, Tropentarn)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_ger_army_trop_2010.hpp"
+	};
+	class tvt_uk_army_2010 {
+		displayName = "[BLU] UK Army (2010, MTP)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_uk_army_2010.hpp"
+	};
+	class tvt_us_army_1970 {
+		displayName = "[BLU] US Army (1970, OG-107)";
+		category = "TVT Ready";
+		tooltip = "Author: Chesheire";
+		#include "loadouts\tvt_us_army_1970.hpp"
+	};
+	class tvt_us_army_1985 {
+		displayName = "[BLU] US Army (1985, M81)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_us_army_1985.hpp"
+	};
+	class tvt_us_army_2018 {
+		displayName = "[BLU] US Army (2018, OCP)";
+		category = "TVT Ready";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\tvt_us_army_2018.hpp"
+	};
+	class tvt_ru_army_2010 {
+		displayName = "[OPF] Russian Army (2010, VSR-98)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_ru_army_2010.hpp"
+	};
+	class tvt_vietcong {
+		displayName = "[IND] Vietcong";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_vietcong.hpp"
+	};
 };
