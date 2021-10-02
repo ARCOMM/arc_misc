@@ -7,6 +7,7 @@
 [submodule "include/x/tmf"]
 	path = include/x/tmf
 	url = https://github.com/TMF3/TMF.git
+	branch = dev
 [submodule "include/z/ace"]
 	path = include/z/ace
 	url = https://github.com/acemod/ACE3.git
