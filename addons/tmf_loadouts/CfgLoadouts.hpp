@@ -373,6 +373,8 @@ class CfgLoadouts {
 	};
 
 	// TVT Loadouts
+
+	//BLUFOR
 	class tvt_ger_army_2010 {
 		displayName = "[BLU] Bundeswehr (2010, Flecktarn)";
 		category = "TVT Ready";
@@ -409,11 +411,161 @@ class CfgLoadouts {
 		tooltip = "Author: AChesheireCat";
 		#include "loadouts\tvt_us_army_2018.hpp"
 	};
+	class tvt_us_usmc_2010_wdl {
+		displayName = "[BLU] US Marine Corps (2010, MARPAT-WDL)";
+		category = "TVT Ready";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\tvt_us_usmc_2010_wdl.hpp"
+	};
+	class tvt_us_rangers_2010 {
+		displayName = "[BLU] US 75th Rangers (2010, Crye MC)";
+		category = "TVT Ready";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\tvt_us_rangers_2010.hpp"
+	};
+	class tvt_us_rangers_2020 {
+		displayName = "[BLU] US 75th Rangers (2020, Crye MC)";
+		category = "TVT Ready";
+		tooltip = "Author: AChesheireCat";
+		#include "loadouts\tvt_us_rangers_2020.hpp"
+	};
+
+	//OPFOR
 	class tvt_ru_army_2010 {
 		displayName = "[OPF] Russian Army (2010, VSR-98)";
 		category = "TVT Ready";
 		tooltip = "Author: Freddo";
 		#include "loadouts\tvt_ru_army_2010.hpp"
+	};
+	class tvt_ru_army_ratnik_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Summer)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define GHILLIE_CLASS "U_B_T_FullGhillie_tna_F"
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_autumn_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Autumn)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Autumn
+		#define HELMET_CAMO Summer
+		#define BACKPACK_CAMO Summer
+		#define GHILLIE_CLASS "U_B_FullGhillie_lsh"
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_beigedigital_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Beige Digital)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO BeigeDigital
+		#define VEST_CAMO BeigeDigital
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_desert_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Desert)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_pink_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Pink)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Pink
+		#define HELMET_CAMO Desert
+		#define BACKPACK_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_winter_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Winter)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat";
+		#define UNI_CAMO Winter
+		#define IS_WINTER true
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_ak12_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Summer, AK12)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define GHILLIE_CLASS "U_B_T_FullGhillie_tna_F"
+		#define USE_AK12 true
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_ak12_autumn_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Autumn, AK12)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Autumn
+		#define HELMET_CAMO Summer
+		#define BACKPACK_CAMO Summer
+		#define GHILLIE_CLASS "U_B_FullGhillie_lsh"
+		#define USE_AK12 true
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_ak12_beigedigital_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Beige Digital, AK12)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO BeigeDigital
+		#define VEST_CAMO BeigeDigital
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_ak12_desert_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Desert, AK12)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_ak12_pink_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Pink, AK12)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Pink
+		#define HELMET_CAMO Desert
+		#define BACKPACK_CAMO Desert
+		#define VEST_CAMO Desert
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_ru_army_ratnik_ak12_winter_2020 {
+		displayName = "[OPF] Russian Army (2020, Ratnik Winter, AK12)";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo, AChesheireCat\n\nNote: Requires Contact DLC for most roles.";
+		#define UNI_CAMO Winter
+		#define IS_WINTER true
+		#define GHILLIE_CLASS "U_B_FullGhillie_ard"
+		#define USE_AK12 true
+		#include "loadouts\tvt_ru_army_template_2020.hpp"
+	};
+	class tvt_tk_army {
+		displayName = "[OPF] Takistani Army";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tvt_tk_army.hpp"
+	};
+
+	//INDFOR
+	class tvt_tk_locals {
+		displayName = "[IND] Takistani Locals";
+		category = "TVT Ready";
+		tooltip = "Author: Freddo";
+		#include "loadouts\tk_locals.hpp"
 	};
 	class tvt_vietcong {
 		displayName = "[IND] Vietcong";

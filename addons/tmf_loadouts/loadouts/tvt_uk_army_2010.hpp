@@ -47,7 +47,8 @@ class baseMan {// Weaponless baseclass
 	items[] = {
 		MEDICAL_R,
 		"ACE_Flashlight_XL50",
-		"ACE_CableTie"
+		"ACE_CableTie",
+		"ACE_EntrenchingTool"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {

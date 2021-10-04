@@ -49,7 +49,8 @@ class baseMan {// Weaponless baseclass
 		MEDICAL_R,
 		"ACE_Flashlight_XL50",
 		"Chemlight_green",
-		"ACE_CableTie"
+		"ACE_CableTie",
+		"ACE_EntrenchingTool"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -82,7 +83,7 @@ class r : baseMan {
 	magazines[] = {
 		LIST_6("CUP_30Rnd_556x45_G36"),
 		LIST_2("CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36"),
-		LIST_2("HandGrenade"),
+		"HandGrenade",
 		LIST_2("SmokeShell")
 	};
 };

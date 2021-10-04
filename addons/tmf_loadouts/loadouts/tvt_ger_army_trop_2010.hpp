@@ -49,7 +49,8 @@ class baseMan {// Weaponless baseclass
 		MEDICAL_R,
 		"ACE_Flashlight_XL50",
 		"Chemlight_green",
-		"ACE_CableTie"
+		"ACE_CableTie",
+		"ACE_EntrenchingTool"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
