@@ -43,14 +43,17 @@ force ace_captives_requireSurrenderAi = false;
 force ace_common_allowFadeMusic = true;
 force ace_common_checkPBOsAction = 2;
 force ace_common_checkPBOsCheckAll = true;
-force ace_common_checkPBOsWhitelist = "[ \
-	'aar_main',                          \
-	'darkmap_ace_main',                  \
-	'DIS_Enhanced_Gps',                  \
-	'DIS_enhanced_map_ace',              \
-	'JD_ArmaMapsAceCompat',              \
-	'JD_ArmaMaps',                       \
-	'fare_AWL'                           \
+force ace_common_checkPBOsWhitelist = "[\
+	'aar_main',							\
+	'darkmap_ace_main',					\
+	'DIS_Enhanced_Gps',					\
+	'DIS_enhanced_map_ace',				\
+	'JD_ArmaMapsAceCompat',				\
+	'JD_ArmaMaps',						\
+	'fare_AWL',							\
+	'PLP_something',					\
+	'PLP_commonModData',				\
+	'HeadRangePlus'						\
 ]";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
