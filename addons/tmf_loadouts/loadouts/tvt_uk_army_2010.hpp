@@ -66,7 +66,7 @@ class baseMan {// Weaponless baseclass
 	traits[] = {};
 
 	// This is executed after unit init is complete. argument: _this = _unit.
-	code = ""
+	code = "";
 	// Add NVGs if it is night
 };
 
