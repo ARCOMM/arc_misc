@@ -23,16 +23,16 @@ class CfgMainMenuSpotlight {
 	class GVARMAIN(joinOperationsServer) {
 		text = "ARCOMM Operations Server";
 		textIsQuote = 0;
-		picture = QPATHTOF(spotlight_ca.paa);
-		video = QPATHTOF(spotlight.ogv);
+		picture = QPATHTOF(data\spotlight_ca.paa);
+		video = QPATHTOF(data\spotlight.ogv);
 		action = "connectToServer ['108.61.34.58', 2302, 'arcomm'];";
 		actionText = "Connect to server";
 		condition = COND(Logo);
 	};
 	// Clips
 	class GVARMAIN(joinOperationsServer2): GVARMAIN(joinOperationsServer) {
-		picture = QPATHTOF(spotlight2_ca.paa);
-		video = QPATHTOF(spotlight2.ogv);
+		picture = QPATHTOF(data\spotlight2_ca.paa);
+		video = QPATHTOF(data\spotlight2.ogv);
 		condition = COND(Clips);
 	};
 };
