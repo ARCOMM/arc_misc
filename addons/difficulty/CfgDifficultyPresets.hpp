@@ -1,9 +1,9 @@
 #define DIFFICULTYPRESET(x) \
 class x { \
-	displayName = "ARCOMM";								/*Name of the difficulty preset.*/					\
-	optionDescription = "";								/*Description*/										\
-	optionPicture = QPATHTOEF(main,logo_arc_ca.paa); 	/*Picture*/ 										\
-	levelAI = "AILevelMedium";							/*Level of AI skill (See CfgAILevelPresets.hpp)*/	\
+	displayName = "ARCOMM";									/*Name of the difficulty preset.*/					\
+	optionDescription = "";									/*Description*/										\
+	optionPicture = QPATHTOEF(main,data\logo_arc_ca.paa); 	/*Picture*/ 										\
+	levelAI = "AILevelMedium";								/*Level of AI skill (See CfgAILevelPresets.hpp)*/	\
 	class Options { 																						\
 		/* Simulation */ 																					\
 		reducedDamage = 0;		/* Reduced damage		(0 = disabled, 1 = enabled)*/						\
