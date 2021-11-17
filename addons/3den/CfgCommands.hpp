@@ -1,6 +1,6 @@
 class CfgCommands {
 	allowedHTMLLoadURIs[] += {
-		"*",
-		"https://raw.githubusercontent.com/ARCOMM/Mission-Testing-Checklist/master/checklist.html"
+		"*.github.com/arcomm/*",
+		"*.githubusercontent.com/arcomm/*"
 	};
 };

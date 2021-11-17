@@ -7,7 +7,6 @@
 
 	if (
 		_messageID == 6 &&
-		"Scenario" get3DENMissionAttribute QGVARMAIN(isTemplate) &&
 		!('ADDON' get3DENMissionAttribute QGVAR(checklistCheck))
 	) then {
 		[

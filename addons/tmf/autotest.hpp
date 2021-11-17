@@ -36,9 +36,6 @@ class TMF_autotest {
 
 		code = QUOTE([] call FUNC(testMacros));
 	};
-	class GVAR(testTemplate) {
-		code = QUOTE([] call FUNC(testTemplate));
-	};
 	class GVAR(testPlayers) {
 		code = QUOTE([] call FUNC(testPlayers));
 	};

@@ -1,1 +1,2 @@
 PREP(testChecklist);
+PREP(testTemplate);

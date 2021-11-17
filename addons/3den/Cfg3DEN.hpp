@@ -6,6 +6,7 @@
 
 class ctrlHTML;
 class ctrlControlsGroupNoHScrollbars;
+class ctrlStatic;
 class Cfg3DEN {
 	class EventHandlers {
 		class ADDON {
@@ -20,14 +21,6 @@ class Cfg3DEN {
 			class AttributeCategories {
 				class Overview {
 					class Attributes {
-						class GVARMAIN(isTemplate) {
-							displayName = "ARCMT";
-							tooltip = "Whether mission is based on ARCMT";
-							property = QGVARMAIN(isTemplate);
-							value = 0;
-							defaultValue = "false";
-							control = QGVARMAIN(checkbox_disabled);
-						};
 						delete AppId;
 						delete AssetType;
 					};
@@ -48,6 +41,13 @@ class Cfg3DEN {
 							property = QGVAR(htmlChecklist);
 							control = QGVAR(checklist);
 							defaultValue = "nil";
+						};
+						class GVAR(arcmtCheck) {
+							displayName = "ARCMT Version:";
+
+							property = QGVAR(arcmtVersion);
+							control = QGVAR(arcmtCheck);
+							defaultValue = "'NOT ARCMT'";
 						};
 						class GVAR(checklistCheck) {
 							displayName = "My mission conforms to the checklist";
