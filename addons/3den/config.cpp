@@ -12,13 +12,15 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
 			QGVARMAIN(main),
-			"tmf_common"
+			"tmf_common",
+			"tmf_autotest"
 		};
         VERSION_CONFIG;
 		is3DENmod = 1;
 	};
 };
 
+#include "tmf_autotest.hpp"
 #include "CfgEventhandlers.hpp"
 #include "CfgCommands.hpp"
 #include "display3DEN.hpp"
