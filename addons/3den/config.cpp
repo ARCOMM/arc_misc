@@ -11,12 +11,16 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-			QGVARMAIN(main)
+			QGVARMAIN(main),
+			"tmf_common"
 		};
         VERSION_CONFIG;
 		is3DENmod = 1;
 	};
 };
 
+#include "CfgEventhandlers.hpp"
+#include "CfgCommands.hpp"
+#include "display3DEN.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgWorlds.hpp"
