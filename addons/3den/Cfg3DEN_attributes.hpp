@@ -41,7 +41,7 @@ class GVAR(arcmtCheck): Title {
 			h = ATTRIBUTE_CONTENT_H * GRID_H;
 			w = round(ATTRIBUTE_CONTENT_W / 3) * 2 * GRID_W;
 			x = ATTRIBUTE_TITLE_W * GRID_W + round(ATTRIBUTE_CONTENT_W / 3) * GRID_W;
-			filename = "https://raw.githubusercontent.com/ARCOMM/ARCMT/master/.version.html";
+			filename = "https://arcomm.github.io/Mission-Testing-Checklist/checklist.html";
 			colorBackground[] = {0,0,0,0};
 		};
 	};
