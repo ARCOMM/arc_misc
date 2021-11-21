@@ -53,7 +53,8 @@ force ace_common_checkPBOsWhitelist = "[\
 	'fare_AWL',							\
 	'PLP_something',					\
 	'PLP_commonModData',				\
-	'HeadRangePlus'						\
+	'HeadRangePlus',					\
+	'Rev_marker_system'					\
 ]";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
