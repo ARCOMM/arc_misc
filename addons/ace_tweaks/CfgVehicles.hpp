@@ -15,8 +15,8 @@ class CfgVehicles {
     class ACE_painkillersItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = Painkillers;
-        author = "Wilhelm Haas";
+        displayName = CSTRING(Painkillers);
+        author = "Drofseh";
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(ACE_painkillers,1);
