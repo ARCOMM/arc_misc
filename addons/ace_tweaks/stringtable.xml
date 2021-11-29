@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ARC">
+    <Package name="Medical">
+        <Key ID="STR_ARC_Medical_Give_Painkilllers">
+            <English>Give painkillers</English>
+            <French>Donnez des analgésiques</French>
+            <German>Schmerztabletten geben</German>
+            <Portuguese>Dar analgésicos</Portuguese>
+            <Polish>Podajcie środki przeciwbólowe</Polish>
+            <Russian>Дайте обезболивающее</Russian>
+        </Key>
+        <Key ID="STR_ARC_Medical_Giving_Painkilllers">
+            <English>Giving painkillers</English>
+            <French>Donner des analgésiques</French>
+            <German>Schmerzmittel verabreichen</German>
+            <Portuguese>Dando analgésicos</Portuguese>
+            <Polish>Podawanie leków przeciwbólowych</Polish>
+            <Russian>Давая обезболивающие</Russian>
+        </Key>
+        <Key ID="STR_ARC_Medical_Treatment_Painkillers_Desc_Short">
+            <English>Taken orally to treat mild pain. Safer than morphine, but much less effective.</English>
+            <French>Pris par voie orale pour traiter les douleurs légères. Plus sûr que la morphine, mais beaucoup moins efficace.</French>
+            <German>Wird oral eingenommen, um leichte Schmerzen zu behandeln. Sicherer als Morphium, aber viel weniger wirksam.</German>
+            <Polish>Zabierany doustnie w celu leczenia łagodnego bólu. Bezpieczniejsze niż morfina, ale znacznie mniej skuteczne.</Polish>
+            <Portuguese>Tomada oralmente para tratar dores leves. Mais seguro que a morfina, mas muito menos eficaz.</Portuguese>
+            <Russian>Взято перорально, чтобы лечить легкую боль. Безопаснее морфина, но гораздо менее эффективно.</Russian>
+        </Key>
+        <Key ID="STR_ARC_Medical_Treatment_Painkillers_Desc_Use">
+            <English>Taken orally to treat mild pain. Safer than morphine, but much less effective.</English>
+            <French>Pris par voie orale pour traiter les douleurs légères. Plus sûr que la morphine, mais beaucoup moins efficace.</French>
+            <German>Wird oral eingenommen, um leichte Schmerzen zu behandeln. Sicherer als Morphium, aber viel weniger wirksam.</German>
+            <Polish>Zabierany doustnie w celu leczenia łagodnego bólu. Bezpieczniejsze niż morfina, ale znacznie mniej skuteczne.</Polish>
+            <Portuguese>Tomada oralmente para tratar dores leves. Mais seguro que a morfina, mas muito menos eficaz.</Portuguese>
+            <Russian>Взято перорально, чтобы лечить легкую боль. Безопаснее морфина, но гораздо менее эффективно.</Russian>
+        </Key>
+    </Package>
+</Project>

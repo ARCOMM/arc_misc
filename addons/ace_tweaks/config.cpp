@@ -8,7 +8,7 @@ class CfgPatches
 		author = "ARCOMM";
         url = "https://github.com/ARCOMM/arc_misc";
         units[] = {};
-        weapons[] = {};
+        weapons[] = {"ACE_painkillers"};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
 			QGVARMAIN(main),
@@ -29,6 +29,7 @@ class ACE_Medical_StateMachine {
 class ace_medical_replacementItems {
 	ItemType_401[] = {
 		{"ACE_fieldDressing", 5},
+        {"ACE_painkillers", 1},
 		{"ACE_morphine", 1},
 		{"ACE_tourniquet", 2}
 	};
@@ -44,6 +45,9 @@ class ace_medical_replacementItems {
 };
 
 #include "ACE_detector.hpp"
+#include "ACE_Medical_Treatment.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "Cfg3DEN.hpp"
