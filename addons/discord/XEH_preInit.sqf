@@ -1,7 +1,9 @@
 #include "script_component.hpp"
 #include "XEH_PREP.sqf"
 
-diag_log ["is3DEN", is3DEN];
+if !hasInterface exitWith {
+	INFO("Headless environment detected, skipped loading RPC.");
+};
 
 switch (true) do {
 	// Main menu
@@ -13,18 +15,22 @@ switch (true) do {
 				text toLower worldName,
 				text getText (configfile >> "cfgworlds" >> worldName >> "description")
 			]];
+			LOG("Updated RPC");
 		}, 1] call CBA_fnc_addPerFrameHandler;
+		INFO("RPC Loaded (main menu)");
 	};
 
 	// Editor
 	case is3DENPreview;
+	case is3DENMultiplayer;
 	case is3DEN: {
 		"ArmaDiscordRPC" callExtension ["mission", [
 			text "[ARC] Mission Editor",
-			diag_tickTime,
+			text str diag_tickTime,
 			text toLower worldName,
 			text getText (configfile >> "cfgworlds" >> worldName >> "description")
 		]];
+		INFO("RPC Loaded (Editor)");
 	};
 
 	// Multiplayer
@@ -36,7 +42,9 @@ switch (true) do {
 				text toLower worldName,
 				text getText (configfile >> "cfgworlds" >> worldName >> "description")
 			]];
+			LOG("Updated RPC");
 		}, 1] call CBA_fnc_addPerFrameHandler;
+		INFO("RPC Loaded (Multiplayer)");
 	};
 
 	// Assumed single player mission
@@ -48,11 +56,14 @@ switch (true) do {
 				text toLower worldName,
 				text getText (configfile >> "cfgworlds" >> worldName >> "description")
 			]];
+			LOG("Updated RPC");
 		}, 1] call CBA_fnc_addPerFrameHandler;
+		INFO("RPC Loaded (Singleplayer)");
 	};
 };
 
 
 addMissionEventHandler ["Ended", {
 	"ArmaDiscordRPC" callExtension "ended";
+	INFO("RPC Ended");
 }];
