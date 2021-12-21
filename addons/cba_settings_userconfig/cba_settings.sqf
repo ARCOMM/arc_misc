@@ -54,14 +54,15 @@ force ace_common_checkPBOsWhitelist = "[\
 	'PLP_something',					\
 	'PLP_commonModData',				\
 	'HeadRangePlus',					\
-	'Rev_marker_system'					\
+	'Rev_marker_system',				\
+	'OCAP'								\
 ]";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
 
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 1;
-force ace_cookoff_enable = 0;
+force ace_cookoff_enable = 2;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_probabilityCoef = 1;
