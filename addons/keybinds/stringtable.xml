@@ -2,7 +2,7 @@
 <Project name="arc_misc">
     <Package name="keybinds">
         <Key ID="STR_arc_misc_keybinds_Collision_Lights_Toggle">
-            <English>Toggle Collision Lights On</English>
+            <English>Toggle Collision Lights</English>
         </Key>
     </Package>
 </Project>
