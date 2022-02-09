@@ -372,6 +372,13 @@ class CfgLoadouts {
 		#include "loadouts\sla.hpp"
 	};
 
+	// Other
+	class afr_militia {
+		displayName = "African Militia";
+		tooltip = "Author: Freddo\n\nUses DLC uniforms, meant to be assigned to opfor AI.";
+		#include "loadouts\afr_militia.hpp"
+	};
+
 	// TVT Loadouts
 
 	//BLUFOR
