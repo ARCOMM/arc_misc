@@ -369,7 +369,7 @@ force acre_sys_core_revealToAI = 0.5;
 force acre_sys_core_terrainLoss = 0.8;
 force acre_sys_core_ts3ChannelName = "ACRE";
 force acre_sys_core_ts3ChannelPassword = "";
-force acre_sys_signal_signalModel = 2;
+force acre_sys_signal_signalModel = 3;
 
 // AI
 force cfp_autoEquipNVG = false;
@@ -569,3 +569,15 @@ force zen_common_ascensionMessages = false;
 force zen_common_autoAddObjects = false;
 force zen_common_cameraBird = false;
 force zen_editor_parachuteSounds = true;
+
+#if __has_include("\DKoK_Weapons\model\TIOW_antioc_lasgun_wood.p3d")
+// ACE Cook off
+force ace_cookoff_enable = 0;
+force ace_cookoff_enableAmmobox = false;
+force ace_cookoff_enableAmmoCookoff = false;
+force ace_cookoff_enableFire = false;
+
+// ACE Overheating
+force ace_overheating_cookoffCoef = 0;
+force ace_overheating_enabled = false;
+#endif
