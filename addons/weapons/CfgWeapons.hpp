@@ -329,4 +329,15 @@ class CfgWeapons {
 	class hlc_rifle_G36E1AG36_Romi : hlc_rifle_G36E1AG36 {
 		displayName = "HK G36E 'Romi' (GL)";
 	};
+
+    // Add proper closed or open bolt to NI Arms weapons.
+    class hlc_M60e4_base : Rifle_Base_F {
+        ace_overheating_closedBolt = 0;
+    };
+    class hlc_MG42_base : Rifle_Base_F {
+        ace_overheating_closedBolt = 0;
+    };
+    class hlc_saw_base : Rifle_Base_F {
+        ace_overheating_closedBolt = 0;
+    };
 };
