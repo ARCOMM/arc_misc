@@ -16,7 +16,10 @@ class CfgPatches
 			QGVARMAIN(main),
 			"cup_weapons_loadorder",
 			"ace_ballistics",
-			"hlcweapons_G36"
+			"hlcweapons_G36",
+			"hlcweapons_m60e4",
+			"hlcweapons_MG3s",
+			"hlcweapons_SAW"
 		};
         VERSION_CONFIG;
 	};
