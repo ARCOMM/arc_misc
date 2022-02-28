@@ -1,4 +1,5 @@
 class CfgWeapons {
+	class Rifle_Base_F;
 	class Launcher_Base_F;
 
 	class LMG_Zafir_F;
