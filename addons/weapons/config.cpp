@@ -16,7 +16,8 @@ class CfgPatches
 			QGVARMAIN(main),
 			"cup_weapons_loadorder",
 			"ace_ballistics",
-			"hlcweapons_G36"
+			"hlcweapons_G36",
+			"sp_fwa_machinegun_core"
 		};
         VERSION_CONFIG;
 	};
@@ -24,3 +25,13 @@ class CfgPatches
 
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
+
+// Fix FWA
+class RscInGameUI
+{
+	class RscWeaponZeroing;
+	class sp_fwa_machinegun_animation: RscWeaponZeroing
+	{
+		onLoad = ""; //onLoad = "_this call Spearpoint_fnc_machinegunrested;";
+	};
+};
