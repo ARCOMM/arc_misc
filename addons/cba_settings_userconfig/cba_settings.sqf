@@ -1,3 +1,14 @@
+// A3TI
+force A3TI_ACE_JAVELIN = true;
+force A3TI_ALLOW_TANK_DRIVER = false;
+force A3TI_ALLOW_VANILLA_TI = true;
+force A3TI_ENABLE_ZEUS = true;
+force A3TI_HD_VISION_FIGHTER = true;
+force A3TI_HD_VISION_LANDVEH = false;
+force A3TI_HD_VISION_SHIP = true;
+force A3TI_HD_VISION_UAV = true;
+force A3TI_REMOVE_FILMGRAIN_RHS = true;
+
 // ACE Advanced Ballistics
 force ace_advanced_ballistics_ammoTemperatureEnabled = false;
 force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
@@ -400,6 +411,11 @@ force cba_disposable_replaceDisposableLauncher = true;
 
 // CUP
 force CUP_Vehicles_PreventBarrelClip = true;
+
+// Dro Clear Cut
+force dro_clear_cut_bush_cut_time = 30;
+force dro_clear_cut_smallTree_cut_time = 60;
+force dro_clear_cut_largeTree_cut_time = 120;
 
 // DUI - Squad Radar - Indicators
 force diwako_dui_indicators_crew_range_enabled = false;
