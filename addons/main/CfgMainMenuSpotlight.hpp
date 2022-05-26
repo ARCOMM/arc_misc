@@ -25,7 +25,7 @@ class CfgMainMenuSpotlight {
 		textIsQuote = 0;
 		picture = QPATHTOF(data\spotlight_ca.paa);
 		video = QPATHTOF(data\spotlight.ogv);
-		action = "connectToServer ['arma.arcomm.co.uk', 2302, 'arcomm'];";
+		action = "connectToServer ['66.70.180.131', 2302, 'arcomm'];";
 		actionText = "Connect to server";
 		condition = COND(Logo);
 	};
