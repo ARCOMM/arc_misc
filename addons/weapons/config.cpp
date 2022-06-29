@@ -17,7 +17,9 @@ class CfgPatches
 			"cup_weapons_loadorder",
 			"ace_ballistics",
 			"hlcweapons_G36",
-			"sp_fwa_machinegun_core"
+			"sp_fwa_machinegun_core",
+			"JMSFALL_wep_mags",
+			"JMSFALL_weapons"
 		};
         VERSION_CONFIG;
 	};

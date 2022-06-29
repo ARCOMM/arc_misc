@@ -1,5 +1,16 @@
 class CfgWeapons {
-	class Launcher_Base_F;
+	class Pistol;
+	class Pistol_Base_F : Pistol {
+		class WeaponSlotsInfo;
+	};
+
+	class Rifle_Base_F;
+	class Rifle_Long_Base_F;
+
+	class Launcher;
+	class Launcher_Base_F : Launcher {
+		class WeaponSlotsInfo;
+	};
 
 	class LMG_Zafir_F;
 	class GVAR(Negev_NG5): LMG_Zafir_F {
@@ -218,7 +229,6 @@ class CfgWeapons {
 	class arifle_SPAR_03_base_F;
 	class DMR_06_hunter_base_F;
 	class DMR_06_base_F;
-	class Pistol_Base_F;
 	HIDE(arifle_AKM_F,arifle_AKM_base_F);
 	HIDE(arifle_AKS_F,arifle_AKS_base_F);
 	HIDE(LMG_03_F,LMG_03_base_F);
@@ -243,7 +253,7 @@ class CfgWeapons {
 	HIDE(launch_RPG7_F,Launcher_Base_F);
 
 	// Remove NIArms ampersand to avoid breaking text displays
-	
+
 	// HK G36
 	class hlc_G36_base;
 	class hlc_rifle_G36A1 : hlc_G36_base {
@@ -329,4 +339,80 @@ class CfgWeapons {
 	class hlc_rifle_G36E1AG36_Romi : hlc_rifle_G36E1AG36 {
 		displayName = "HK G36E 'Romi' (GL)";
 	};
+
+	//JM's Fall of the Titans
+	class JMSFALL_P2015_Pistol : Pistol_Base_F {
+		displayname = "Hammond P2016";
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 25;
+		};
+	};
+
+	class JMSFALL_RE45_Pistol : Pistol_Base_F {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 35;
+		};
+	};
+
+	class JMSFALL_Rifle_Base : Rifle_Base_F {
+		class WeaponSlotsInfo;
+	};
+
+	class JMSFALL_car101Rifle : JMSFALL_Rifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 60;
+		};
+	};
+
+	class JMSFALL_m1a3Rifle : JMSFALL_Rifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 75;
+		};
+	};
+
+	class JMSFALL_r97Rifle : JMSFALL_Rifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 50;
+		};
+	};
+
+	class JMSFALL_r101Rifle : JMSFALL_Rifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 80;
+		};
+	};
+
+	class JMSFALL_V47flatlineRifle : JMSFALL_Rifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 85;
+		};
+	};
+
+	class JMSFALL_spitfireRifle: Rifle_Long_Base_F {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 200;
+		};
+	};
+
+	class JMSFALL_SniperRifle_Base : Rifle_Long_Base_F {
+		class WeaponSlotsInfo;
+	};
+
+	class JMSFALL_d101Rifle: JMSFALL_SniperRifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 120;
+		};
+	};
+
+	class JMSFALL_KraberAPRifle: JMSFALL_SniperRifle_Base {
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 300;
+		};
+	};
+
+	class JMSFALL_Archer_launcher : Launcher_Base_F {
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			mass = 250;
+		};
+	}
 };

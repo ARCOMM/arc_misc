@@ -23,4 +23,55 @@ class CfgMagazines {
 
 	class RPG32_F;
 	HIDE(RPG7_F,RPG32_F);
+
+	//JM's Fall of the Titans
+	class JMSFALL_12Rnd_45acp_Mag : CA_Magazine {
+		displayName = "9.21mm 12Rnd P2016 Mag";
+		mass = 5;
+	};
+
+	class JMSFALL_20Rnd_45acp_Mag : CA_Magazine {
+		displayName = "9.21mm 20Rnd RE45 Mag";
+		mass = 8;
+	};
+
+	class JMSFALL_30Rnd_car101_mag : CA_Magazine {
+		mass = 10;
+	};
+
+	class JMSFALL_8Rnd_d101_mag : CA_Magazine {
+		mass = 2.5;
+	};
+
+	class JMSFALL_5Rnd_KraberAP_mag : CA_Magazine {
+		mass = 30;
+	};
+
+	class JMSFALL_30Rnd_m1a3_mag : CA_Magazine {
+		mass = 12.5;
+	};
+
+	class JMSFALL_40Rnd_r97_mag : CA_Magazine {
+		mass = 12.5;
+	};
+
+	class JMSFALL_24Rnd_r101_mag : CA_Magazine {
+		mass = 8;
+	};
+
+	class JMSFALL_80Rnd_spitfire_mag : CA_Magazine {
+		mass = 58;
+	};
+
+	class JMSFALL_30Rnd_v47_mag : CA_Magazine {
+		mass = 18;
+	};
+
+	class JMSFALL_Archer_AT_Rocket : CA_LauncherMagazine {
+		mass = 150;
+	};
+
+	class JMSFALL_Archer_AA_Rocket : CA_LauncherMagazine {
+		mass = 150;
+	};
 };
