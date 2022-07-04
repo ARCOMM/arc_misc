@@ -118,6 +118,7 @@ force ace_hearing_unconsciousnessVolume = 0.4;
 // ACE Interaction
 force ace_interaction_disableNegativeRating = false;
 force ace_interaction_enableTeamManagement = true;
+force ace_interaction_enableGroupRenaming = false;
 
 // ACE Logistics
 force ace_cargo_enable = true;
@@ -247,6 +248,7 @@ force ace_overheating_unJamOnreload = true;
 force ace_finger_enabled = true;
 force ace_finger_indicatorForSelf = true;
 force ace_finger_maxRange = 8;
+force ace_finger_proximityScaling = true;
 
 // ACE Pylons
 force ace_pylons_enabledForZeus = true;
@@ -405,6 +407,9 @@ force arc_misc_difficulty_reloadSpeed = 1;
 force arc_misc_difficulty_spotDistance = 1;
 force arc_misc_difficulty_spotTime = 0.18;
 force arc_misc_difficulty_useAISteeringComponent = true;
+
+// Community Base Addons
+force cba_network_loadoutValidation = 2;
 
 // CBA Weapons
 force cba_disposable_replaceDisposableLauncher = true;
