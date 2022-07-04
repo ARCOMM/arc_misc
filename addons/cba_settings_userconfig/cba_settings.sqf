@@ -47,7 +47,7 @@ force ace_mk6mortar_useAmmoHandling = true;
 // ACE Captives
 force ace_captives_allowHandcuffOwnSide = true;
 force ace_captives_allowSurrender = true;
-force ace_captives_requireSurrender = 0;
+force ace_captives_requireSurrender = 2;
 force ace_captives_requireSurrenderAi = false;
 
 // ACE Common
