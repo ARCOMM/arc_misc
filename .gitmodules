@@ -1,13 +1,17 @@
 [submodule ".hemtt/template"]
 	path = .hemtt/template
 	url = https://github.com/hemtt/cba.git
+	update = merge
 [submodule "include/x/cba"]
 	path = include/x/cba
 	url = https://github.com/CBATeam/CBA_A3.git
+	update = merge
 [submodule "include/x/tmf"]
 	path = include/x/tmf
 	url = https://github.com/TMF3/TMF.git
 	branch = dev
+	update = merge
 [submodule "include/z/ace"]
 	path = include/z/ace
 	url = https://github.com/acemod/ACE3.git
+	update = merge

@@ -11,7 +11,7 @@ files = [
     "logo_arc_ca.paa"
 ]
 
-version = "2.0.0"
+version = "2.1.0"
 
 modname = "{{name}}"
 key_name = "{{prefix}}_{{version}}"

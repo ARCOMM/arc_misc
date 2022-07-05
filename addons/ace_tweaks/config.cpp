@@ -15,7 +15,8 @@ class CfgPatches
 			"ace_minedetector",
 			"ace_medical",
 			"ace_medical_statemachine",
-			"ace_medical_engine"
+			"ace_medical_engine",
+			"ace_medical_treatment"
 		};
         VERSION_CONFIG;
 	};
@@ -44,6 +45,7 @@ class ace_medical_replacementItems {
 };
 
 #include "ACE_detector.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
 #include "Cfg3DEN.hpp"

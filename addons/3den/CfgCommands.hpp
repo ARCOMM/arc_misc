@@ -1,6 +1,6 @@
 class CfgCommands {
 	allowedHTMLLoadURIs[] += {
-		"*arcomm.github.io/*"
+		"*arcomm.github.io/*",
 		"*.github.com/arcomm/*",
 		"*.githubusercontent.com/arcomm/*"
 	};

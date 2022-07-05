@@ -1,4 +1,4 @@
-name: Build
+name: Pack
 
 on:
   push:
@@ -7,14 +7,19 @@ on:
   pull_request:
 
 jobs:
-  build:
+  pack:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build using HEMTT
+      - name: Pack using HEMTT
         uses: arma-actions/hemtt@master
         with:
-          command: build --release --ci
+          command: pack --release --ci
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: ARC_MISC-${{ github.sha }}-nobin
+          path: releases/ARC_MISC_*.zip

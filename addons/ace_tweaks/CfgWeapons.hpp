@@ -4,7 +4,7 @@ class CfgWeapons {
 	class InventoryFirstAidKitItem_Base_F;
 	class Medikit: ItemCore {
 		class ItemInfo: MedikitItem {
-			mass = 75.5;
+			mass = 90.5;
 		};
 	};
 	class FirstAidKit: ItemCore {

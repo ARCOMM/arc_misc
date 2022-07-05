@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 [{!isNil "BIS_fnc_init" && time > 0.1},{
-	call COMPILE_FILE(initRespawns);
+	call COMPILE_SCRIPT(initRespawns);
 
 	// Add boxes and respawn logics to Curator
 	[
