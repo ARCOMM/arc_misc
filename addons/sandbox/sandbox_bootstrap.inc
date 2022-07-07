@@ -2,8 +2,8 @@
 cba_settings_hasSettingsFile = 1;
 class Extended_PostInit_EventHandlers {
     class GVAR(postInit) {
-		serverInit = QUOTE(call COMPILE_FILE(XEH_serverPostInit));
-        clientInit = QUOTE(call COMPILE_FILE(XEH_clientPostInit));
+		serverInit = QUOTE(call COMPILE_SCRIPT(XEH_serverPostInit));
+        clientInit = QUOTE(call COMPILE_SCRIPT(XEH_clientPostInit));
     };
 };
 
