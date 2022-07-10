@@ -1,0 +1,25 @@
+name: Pack
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Generate missions using HEMTT
+        uses: arma-actions/hemtt@master
+        with:
+          command: mission_generate --ci arc_sandbox.template
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2-preview
+        with:
+          name: ARC_SANDBOXES-${{ github.sha }}-nobin
+          path: missions/*

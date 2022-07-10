@@ -7,6 +7,7 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+onLoadName = "Sandbox";
 author = "ARCOMM";
 onLoadMission = "Welcome to the sandbox, may Zeus decide your fate.";
 
