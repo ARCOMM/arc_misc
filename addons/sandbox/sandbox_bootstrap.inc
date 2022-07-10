@@ -23,8 +23,10 @@ joinUnassigned = 1;
 saving = 0;
 
 class Params {
+	#define DAYTIMEPERIOD_DEFAULT __EVAL(selectRandom [0,6,12,18])
 	#include "\a3\functions_f\Params\paramDaytimePeriod.inc"
 	#include "\a3\functions_f\Params\paramGuerFriendly.inc"
+	#define WEATHER_DEFAULT __EVAL(selectRandom [0,25,50,75,100])
 	#include "\a3\functions_f\Params\paramWeather.inc"
 	#include "\a3\functions_f_mp_mark\Params\paramTimeAcceleration.inc"
 };
