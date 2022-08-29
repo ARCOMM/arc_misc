@@ -243,7 +243,7 @@ class CfgWeapons {
 	HIDE(launch_RPG7_F,Launcher_Base_F);
 
 	// Remove NIArms ampersand to avoid breaking text displays
-	
+
 	// HK G36
 	class hlc_G36_base;
 	class hlc_rifle_G36A1 : hlc_G36_base {
@@ -329,4 +329,35 @@ class CfgWeapons {
 	class hlc_rifle_G36E1AG36_Romi : hlc_rifle_G36E1AG36 {
 		displayName = "HK G36E 'Romi' (GL)";
 	};
+
+	// POOK Weapons
+	/*
+		pook_GL_GM94
+		pook_GL_GM94_Pistol
+		pook_3Rnd_FAE_GM94
+		pook_3Rnd_smoke_GM94
+		pook_3Rnd_HE_GM94
+		pook_3Rnd_flare_GM94
+		pook_GL_shotgun
+		pook_GL_2Rnd_00_Pellets
+	*/
+	class CUP_glaunch_Mk13;
+	class pook_GL_RGM40_Pistol;
+	class pook_GL_Flare_Pistol;
+	HIDE(pook_GL_GM94,CUP_glaunch_Mk13);
+	HIDE(pook_GL_GM94_Pistol,pook_GL_RGM40_Pistol);
+	HIDE(pook_GL_shotgun,pook_GL_Flare_Pistol);
+
+	// FWA
+	class sp_fwa_machinegun_base : LMG_Zafir_F {
+		class LinkedItems
+		{
+			class LinkedItemsMuzzle
+			{
+				slot = "PointerSlot";
+				item = "sp_fwa_acc_machinegun_linkhide";
+			};
+		};
+	};
+
 };
