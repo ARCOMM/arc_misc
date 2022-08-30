@@ -17,7 +17,8 @@ class CfgPatches
 			"cup_weapons_loadorder",
 			"ace_ballistics",
 			"hlcweapons_G36",
-			"sp_fwa_machinegun_core"
+			"sp_fwa_machinegun_core",
+			"pook_GL_c"
 		};
         VERSION_CONFIG;
 	};

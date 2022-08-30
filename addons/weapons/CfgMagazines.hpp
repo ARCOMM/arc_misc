@@ -23,4 +23,26 @@ class CfgMagazines {
 
 	class RPG32_F;
 	HIDE(RPG7_F,RPG32_F);
+
+	// POOK Weapons
+	/*
+		pook_3Rnd_FAE_GM94
+		pook_3Rnd_smoke_GM94
+		pook_3Rnd_HE_GM94
+		pook_3Rnd_flare_GM94
+		pook_GL_2Rnd_00_Pellets
+	*/
+	class CUP_6Rnd_HE_GP25_M;
+	class CUP_6Rnd_Smoke_GP25_M;
+	class CUP_6Rnd_FlareWhite_GP25_M;
+	HIDE(pook_3Rnd_FAE_GM94,CUP_6Rnd_HE_GP25_M);
+	HIDE(pook_3Rnd_smoke_GM94,CUP_6Rnd_Smoke_GP25_M);
+	HIDE(pook_3Rnd_HE_GM94,CUP_6Rnd_HE_GP25_M);
+	HIDE(pook_3Rnd_flare_GM94,CUP_6Rnd_FlareWhite_GP25_M);
+	HIDE(pook_GL_2Rnd_00_Pellets,RPG32_F);
+
+	class sp_fwa_50Rnd_762_mag: 150Rnd_762x51_Box {
+		scope = 2;
+		scopeArsenal = 2;
+	};
 };
