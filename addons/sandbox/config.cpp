@@ -16,5 +16,3 @@ class CfgPatches
         VERSION_CONFIG;
 	};
 };
-
-#include "CfgMissions.hpp"
