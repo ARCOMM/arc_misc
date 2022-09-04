@@ -585,6 +585,104 @@ force TMF_safestart_handleAI = true;
 force TMF_safestart_triggerSound = false;
 force TMF_spectator_isJIPAllowed = 1;
 
+// TSP Animate
+force tsp_cba_animate_door = true;
+force tsp_cba_animate_dynamicReadyBush = true;
+force tsp_cba_animate_dynamicReadyFriend = 2;
+force tsp_cba_animate_dynamicReadyFriendAngle = 35;
+force tsp_cba_animate_dynamicReadyObject = 1;
+force tsp_cba_animate_friendsAreObjects = false;
+force tsp_cba_animate_map = true;
+force tsp_cba_animate_nvg = true;
+force tsp_cba_animate_walk = false;
+
+// TSP Breach
+force tsp_cba_breach = true;
+force tsp_cba_breach_ace = true;
+force tsp_cba_breach_ace_locking = true;
+force tsp_cba_breach_ammo = "[""CUP_12Rnd_B_Saiga12_Slug"", ""CUP_1Rnd_12Gauge_Slug"", ""CUP_20Rnd_B_AA12_Sluge_Sug"", ""2Rnd_12Galug"", ""CUP_2Rnd_12Gauge_Slug"", ""CUP_5Rnd_B_Saiga12_Slug"", ""CUP_6Rnd_12Gauge_Slug"", ""6Rnd_12Gauge_Slug"", ""sfp_12Gauge_8rd_Slug"", ""CUP_8Rnd_12Gauge_Slug"", ""10Rnd_50BW_Mag_F"", ""CUP_10Rnd_50BW_Mag_M4_M""]";
+force tsp_cba_breach_ammoMultiplier = 1;
+force tsp_cba_breach_autoTime = 3;
+force tsp_cba_breach_lockBlacklist = "[]";
+force tsp_cba_breach_lockDoor = 0;
+force tsp_cba_breach_lockHouse = 0;
+force tsp_cba_breach_military = "[
+""Land_Budova4_in"",
+""Land_Budova4"",
+""Barrack2"",
+""Land_Barrack2"",
+""Land_MilOffices_V1_F"",
+""Land_Mil_Barracks_L_EP1"",
+""Land_Barrack2_EP1"",
+""Land_Mil_Barracks_EP1"",
+""Land_Mil_Barracks_no_interior_EP1_CUP"",
+""Land_Mil_Barracks_i_EP1"",
+""Land_Mil_Barracks_L"",
+""Land_Mil_Barracks_no_interior_CUP"",
+""Land_Mil_Barracks_i"",
+""Land_Mil_Barracks"",
+""Land_GuardHouse_02_F"",
+""Land_Mil_Guardhouse_EP1"",
+""Land_Mil_Guardhouse"",
+""Land_Mil_Guardhouse_no_interior_CUP"",
+""Land_GuardHouse_02_grey_F"",
+""Land_Barracks_03_F"",
+""Land_Barracks_05_F"",
+""Land_Barracks_02_F"",
+""Land_Barracks_04_F"",
+""Land_ControlTower_02_F"",
+""Land_Mil_Guardhouse_no_interior_EP1_CUP"",
+""Land_Radar_01_HQ_F"",
+""Land_i_Barracks_V2_F"",
+""Land_i_Barracks_V1_F"",
+""Land_u_Barracks_V2_F"",
+""Land_Barracks_06_F"",
+""Land_Mil_House_dam_EP1"",
+""Land_Barracks_01_grey_F"",
+""Land_Barracks_01_dilapidated_F"",
+""Land_Mil_House_EP1"",
+""Land_Army_hut2_int"",
+""Land_Barracks_01_camo_F"",
+""Land_Army_hut_int"",
+""Land_Army_hut3_long"",
+""Land_Army_hut2"",
+""Land_Army_hut3_long_int""
+]";
+force tsp_cba_breach_reinforced = "[
+""Land_Ammostore2"",
+""Land_Garaz_s_tankem"",
+""Land_Garaz_bez_tanku"",
+""Land_Cargo_House_V4_F"",
+""Land_Cargo_Tower_V1_F"",
+""Land_Cargo_HQ_V4_F"",
+""Land_Cargo_Tower_V1_No4_F"",
+""Land_Cargo_Tower_V1_No5_F"",
+""Land_Cargo_Tower_V1_No7_F"",
+""Land_Cargo_Tower_V4_F"",
+""Land_Cargo_Tower_V1_No2_F"",
+""Land_Cargo_Tower_V2_F"",
+""Land_Cargo_Tower_V3_F"",
+""Land_Cargo_Tower_V1_No1_F"",
+""Land_Cargo_Tower_V1_No3_F"",
+""Land_Cargo_HQ_V2_F"",
+""Land_Medevac_HQ_V1_F"",
+""Land_Cargo_HQ_V1_F"",
+""Land_Cargo_House_V2_F"",
+""Land_Medevac_house_V1_F"",
+""Land_Cargo_Tower_V1_No6_F"",
+""Land_Cargo_House_V1_F"",
+""Land_Cargo_HQ_V3_F"",
+""Land_Cargo_House_V3_F""
+]";
+force tsp_cba_breach_vanilla = false;
+force tsp_cba_breach_wall_physics = false;
+force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
+
+// TSP Melee
+force tsp_cba_melee = true;
+force tsp_cba_melee_damageModifier = 1;
+force tsp_cba_melee_moveset = true;
+
 // Zeus Enhanced
 force zen_common_ascensionMessages = false;
 force zen_common_autoAddObjects = false;
