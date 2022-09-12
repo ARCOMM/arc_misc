@@ -486,51 +486,6 @@ force emr_main_maxWeightJump = 100;
 force emr_main_staminaCoefficient = 3;
 force emr_main_whitelistStr = "";
 
-// dzn Vehicle On Fire
-force dzn_VOF_CheckTimeout = 30;
-// Does not check if X iskindof Y, so I need to add all possible entries.
-force dzn_VOF_CookingList = " \
-	CUP_BRDM2_ATGM_Base,CUP_B_BRDM2_ATGM_CDF,CUP_O_BRDM2_ATGM_CHDKZ,CUP_I_BRDM2_ATGM_NAPA,CUP_O_BRDM2_ATGM_SLA,CUP_O_BRDM2_ATGM_CSAT,CUP_O_BRDM2_ATGM_CSAT_T,CUP_O_BRDM2_ATGM_RUS,CUP_O_BRDM2_ATGM_TKA,CUP_I_BRDM2_ATGM_TK_Gue,CUP_B_BRDM2_ATGM_CDF_OCimport_01,CUP_B_BRDM2_ATGM_CDF_OCimport_02,CFP_B_CDF_BRDM_2ATGM_SNW_01,CUP_O_BRDM2_ATGM_CSAT_OCimport_01,CUP_O_BRDM2_ATGM_CSAT_OCimport_02,CFP_O_CHDKZ_BRDM_2ATGM_SNW_01,CUP_O_BRDM2_ATGM_RUS_OCimport_01,CUP_O_BRDM2_ATGM_RUS_OCimport_02,CFP_O_RUARMY_BRDM_2ATGM_DES_01,CFP_O_RUMVD_BRDM_2ATGM_01, \
-	CUP_M163_Base,CUP_B_M163_USA,CUP_I_M163_AAF,CUP_I_M163_RACS,CUP_B_M163_USA_OCimport_01,CUP_B_M163_USA_OCimport_02,CFP_B_USARMY_1991_M163A1_VADS_Des_01,CFP_B_USARMY_1991_M163A1_VADS_WDL_01,CFP_B_USARMY_M163_DES_01, \
-	CUP_B_M1135_ATGMV_Desert,CUP_B_M1135_ATGMV_Woodland,CUP_B_M1135_ATGMV_Desert_Slat,CUP_B_M1135_ATGMV_Woodland_Slat,CUP_B_M1135_ATGMV_Desert_OCimport_01,CUP_B_M1135_ATGMV_Desert_OCimport_02,CUP_B_M1135_ATGMV_Woodland_Slat_OCimport_01,CUP_B_M1135_ATGMV_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1135_ATGMV_WDL_01,CFP_B_USRANGERS_M1135_ATGMV_Slat_WDL_01, \
-	CUP_B_M1128_MGS_Desert,CUP_B_M1128_MGS_Woodland,CUP_B_M1128_MGS_Desert_Slat,CUP_B_M1128_MGS_Woodland_Slat,CUP_B_M1128_MGS_Woodland_OCimport_01,CUP_B_M1128_MGS_Woodland_OCimport_02,CFP_B_KEARMY_M1128_01,CUP_B_M1128_MGS_Woodland_Slat_OCimport_01,CUP_B_M1128_MGS_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1128_MGS_WDL_01,CFP_B_USRANGERS_M1128_MGS_Slat_WDL_01,CUP_B_M1128_MGS_Desert_OCimport_01,CUP_B_M1128_MGS_Desert_OCimport_02, \
-	CUP_B_M1129_MC_MK19_Desert,CUP_B_M1129_MC_MK19_Woodland,CUP_B_M1129_MC_MK19_Desert_Slat,CUP_B_M1129_MC_MK19_Woodland_Slat,CUP_B_M1129_MC_MK19_Woodland_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_OCimport_02,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_WDL_01,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01,CUP_B_M1129_MC_MK19_Desert_OCimport_01,CUP_B_M1129_MC_MK19_Desert_OCimport_02,CUP_B_M1129_MC_MK19_Woodland,CUP_B_M1129_MC_MK19_Woodland_Slat,CUP_B_M1129_MC_MK19_Woodland_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_OCimport_02,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_01,CUP_B_M1129_MC_MK19_Woodland_Slat_OCimport_02,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_WDL_01,CFP_B_USRANGERS_M1129_MC_MK19_CROWS_Slat_WDL_01, \
-	CUP_LAV25_Base,CUP_B_LAV25_USMC,CUP_B_LAV25_desert_USMC,CUP_B_LAV25_green,CUP_B_LAV25M240_USMC,CUP_B_LAV25M240_desert_USMC,CUP_B_LAV25M240_green,CUP_I_LAV25_RACS,CUP_I_LAV25M240_RACS,CUP_B_LAV25M240_USMC_OCimport_01,CUP_B_LAV25M240_USMC_OCimport_02,CUP_B_LAV25_USMC_OCimport_01,CUP_B_LAV25_USMC_OCimport_02, \
-	CUP_GAZ_Vodnik_BPPU_Base,CUP_O_GAZ_Vodnik_BPPU_RU,CUP_O_GAZ_Vodnik_BPPU_RU_OCimport_01,CUP_O_GAZ_Vodnik_BPPU_RU_OCimport_02,CFP_O_RUARMY_GAZ_Vodnik_BPPU_DES_01,CFP_O_RUMVD_GAZ_Vodnik_BPPU_01, \
-	CUP_BTR80A_Base,CUP_B_BTR80A_CDF,CUP_B_BTR80A_FIA,CUP_O_BTR80A_GREEN_RU,CUP_O_BTR80A_CAMO_RU,CUP_O_BTR80A_WINTER_RU,CUP_O_BTR80A_DESERT_RU,CUP_O_BTR80A_CHDKZ,CUP_O_BTR80A_CSAT,CUP_O_BTR80A_CSAT_T,CUP_O_BTR80A_SLA,CUP_O_BTR80A_TK,CUP_I_BTR80A_ION,CUP_I_BTR80A_UN,CUP_O_BTR80A_DESERT_RU_OCimport_01,CUP_O_BTR80A_DESERT_RU_OCimport_02,CFP_B_CAF_BTR_80A_01,CUP_B_BTR80A_CDF_OCimport_01,CUP_B_BTR80A_CDF_OCimport_02,CFP_B_CDF_BTR_80A_SNW_01,CUP_O_BTR80A_SLA_OCimport_01,CUP_O_BTR80A_SLA_OCimport_02,CFP_B_UGARMY_BTR_80A_01,CUP_O_BTR80A_CHDKZ_OCimport_01,CUP_O_BTR80A_CHDKZ_OCimport_02,CFP_O_CHDKZ_BTR_80A_SNW_01,CFP_O_IRARMY_BTR_80A_01,CFP_O_NKARMY_BTR_80A_01,CFP_O_SDARMY_BTR_80A_01,CFP_O_RUARMY_BTR_80A_DES_01, \
-	CUP_BTR90_Base,CUP_O_BTR90_RU,CUP_O_BTR90_RU_OCimport_01,CUP_O_BTR90_RU_OCimport_02,CFP_B_UGARMY_BTR_90_01,CFP_O_IRARMY_BTR_90_01,CFP_O_SDARMY_BTR_90_01,CFP_O_RUARMY_BTR_90_DES_01,CFP_O_RUMVD_BTR_90_01, \
-	CUP_Hilux_BMP1_base,CUP_Hilux_armored_BMP1_Base,CUP_I_Hilux_BMP1_TK,CUP_I_Hilux_armored_BMP1_TK,CUP_O_Hilux_BMP1_TK_INS,CUP_O_Hilux_armored_BMP1_TK_INS,CUP_O_Hilux_BMP1_OPF_G_F,CUP_O_Hilux_armored_BMP1_OPF_G_F,CUP_I_Hilux_BMP1_IND_G_F,CUP_I_Hilux_armored_BMP1_IND_G_F,CUP_B_Hilux_BMP1_BLU_G_F,CUP_B_Hilux_armored_BMP1_BLU_G_F,CUP_I_Hilux_BMP1_NAPA,CUP_I_Hilux_armored_BMP1_NAPA,CFP_I_IS_Hilux_BMP1_Armored_01,CFP_O_IS_Hilux_BMP1_Armored_01,CUP_Hilux_armored_BMP1_Base,CUP_I_Hilux_armored_BMP1_TK,CUP_O_Hilux_armored_BMP1_TK_INS,CUP_O_Hilux_armored_BMP1_OPF_G_F,CUP_I_Hilux_armored_BMP1_IND_G_F,CUP_B_Hilux_armored_BMP1_BLU_G_F,CUP_I_Hilux_armored_BMP1_NAPA,CFP_I_IS_Hilux_BMP1_Armored_01,CFP_O_IS_Hilux_BMP1_Armored_01, \
-	rnt_sppz_2a2_luchs_Base,rnt_sppz_2a2_luchs_flecktarn,rnt_sppz_2a2_luchs_tropentarn,rnt_sppz_2a2_luchs_wintertarn, \
-	CUP_ZUBR_Base,CUP_B_ZUBR_CDF,CUP_O_ZUBR_RU,CUP_O_ZUBR_CSAT_T,CUP_O_ZUBR_SLA,CUP_I_ZUBR_AAF,CUP_I_ZUBR_UN \
-";
-force dzn_VOF_Enabled = true;
-force dzn_VOF_NonCookingList = "      \
-	[""Car"",5],                      \
-	[""Motorcycle"",1.2],             \
-	[""Ship"",5],                     \
-	[""CUP_BMP2_HQ_Base"",20],        \
-	[""CUP_BMP2_Ambul_Base"",20],     \
-	[""CUP_BRDM2_Base"",10],          \
-	[""CUP_BTR40_MG_Base"",10],       \
-	[""CUP_BTR60_Base"",10],          \
-	[""CUP_BTR80_Common_Base"",10],   \
-	[""CUP_BTR90_HQ_Base"",10],       \
-	[""CUP_GAZ_Vodnik_Base"",12],     \
-	[""CUP_M113_Base"",12],           \
-	[""CUP_AAV_Base"",15],            \
-	[""CUP_BAF_Jackal2_BASE_D"",10],  \
-	[""CUP_Mastiff_Base"",12],        \
-	[""CUP_RG31_BASE"",12],           \
-	[""CUP_Ridgback_Base"",12],       \
-	[""CUP_B_LAV25_HQ_USMC"",20],     \
-	[""CUP_StrykerBase"",20],         \
-	[""CUP_FV432_Bulldog_Base"",20],  \
-	[""CUP_Boxer_Base"",20],          \
-	[""Redd_Tank_Fuchs_1A4_Base"",12] \
-";
-force dzn_VOF_TimeoutMax = 45;
-force dzn_VOF_TimeoutMin = 20;
-
 // GRAD CaptiveWalkingAnimation
 force grad_captiveWalking_functions_allowFreeing = true;
 force grad_captiveWalking_functions_allowRunning = false;
@@ -600,79 +555,92 @@ force tsp_cba_animate_walk = false;
 force tsp_cba_breach = true;
 force tsp_cba_breach_ace = true;
 force tsp_cba_breach_ace_locking = true;
-force tsp_cba_breach_ammo = "[""CUP_12Rnd_B_Saiga12_Slug"", ""CUP_1Rnd_12Gauge_Slug"", ""CUP_20Rnd_B_AA12_Sluge_Sug"", ""2Rnd_12Galug"", ""CUP_2Rnd_12Gauge_Slug"", ""CUP_5Rnd_B_Saiga12_Slug"", ""CUP_6Rnd_12Gauge_Slug"", ""6Rnd_12Gauge_Slug"", ""sfp_12Gauge_8rd_Slug"", ""CUP_8Rnd_12Gauge_Slug"", ""10Rnd_50BW_Mag_F"", ""CUP_10Rnd_50BW_Mag_M4_M""]";
+force tsp_cba_breach_ammo = "[		\
+	""CUP_12Rnd_B_Saiga12_Slug"", 	\
+	""CUP_1Rnd_12Gauge_Slug"", 		\
+	""CUP_20Rnd_B_AA12_Sluge_Sug"", \
+	""2Rnd_12Galug"",				\
+	""CUP_2Rnd_12Gauge_Slug"", 		\
+	""CUP_5Rnd_B_Saiga12_Slug"", 	\
+	""CUP_6Rnd_12Gauge_Slug"", 		\
+	""6Rnd_12Gauge_Slug"", 			\
+	""sfp_12Gauge_8rd_Slug"", 		\
+	""CUP_8Rnd_12Gauge_Slug"", 		\
+	""10Rnd_50BW_Mag_F"", 			\
+	""CUP_10Rnd_50BW_Mag_M4_M""		\
+]";
 force tsp_cba_breach_ammoMultiplier = 1;
 force tsp_cba_breach_autoTime = 3;
 force tsp_cba_breach_lockBlacklist = "[]";
 force tsp_cba_breach_lockDoor = 0;
 force tsp_cba_breach_lockHouse = 0;
-force tsp_cba_breach_military = "[
-""Land_Budova4_in"",
-""Land_Budova4"",
-""Barrack2"",
-""Land_Barrack2"",
-""Land_MilOffices_V1_F"",
-""Land_Mil_Barracks_L_EP1"",
-""Land_Barrack2_EP1"",
-""Land_Mil_Barracks_EP1"",
-""Land_Mil_Barracks_no_interior_EP1_CUP"",
-""Land_Mil_Barracks_i_EP1"",
-""Land_Mil_Barracks_L"",
-""Land_Mil_Barracks_no_interior_CUP"",
-""Land_Mil_Barracks_i"",
-""Land_Mil_Barracks"",
-""Land_GuardHouse_02_F"",
-""Land_Mil_Guardhouse_EP1"",
-""Land_Mil_Guardhouse"",
-""Land_Mil_Guardhouse_no_interior_CUP"",
-""Land_GuardHouse_02_grey_F"",
-""Land_Barracks_03_F"",
-""Land_Barracks_05_F"",
-""Land_Barracks_02_F"",
-""Land_Barracks_04_F"",
-""Land_ControlTower_02_F"",
-""Land_Mil_Guardhouse_no_interior_EP1_CUP"",
-""Land_Radar_01_HQ_F"",
-""Land_i_Barracks_V2_F"",
-""Land_i_Barracks_V1_F"",
-""Land_u_Barracks_V2_F"",
-""Land_Barracks_06_F"",
-""Land_Mil_House_dam_EP1"",
-""Land_Barracks_01_grey_F"",
-""Land_Barracks_01_dilapidated_F"",
-""Land_Mil_House_EP1"",
-""Land_Army_hut2_int"",
-""Land_Barracks_01_camo_F"",
-""Land_Army_hut_int"",
-""Land_Army_hut3_long"",
-""Land_Army_hut2"",
-""Land_Army_hut3_long_int""
+force tsp_cba_breach_military = "[ 				\
+	""Land_Budova4_in"",						\
+	""Land_Budova4"",							\
+	""Barrack2"",								\
+	""Land_Barrack2"",							\
+	""Land_MilOffices_V1_F"",					\
+	""Land_Mil_Barracks_L_EP1"",				\
+	""Land_Barrack2_EP1"",						\
+	""Land_Mil_Barracks_EP1"",					\
+	""Land_Mil_Barracks_no_interior_EP1_CUP"",	\
+	""Land_Mil_Barracks_i_EP1"",				\
+	""Land_Mil_Barracks_L"",					\
+	""Land_Mil_Barracks_no_interior_CUP"",		\
+	""Land_Mil_Barracks_i"",					\
+	""Land_Mil_Barracks"",						\
+	""Land_GuardHouse_02_F"",					\
+	""Land_Mil_Guardhouse_EP1"",				\
+	""Land_Mil_Guardhouse"",					\
+	""Land_Mil_Guardhouse_no_interior_CUP"",	\
+	""Land_GuardHouse_02_grey_F"",				\
+	""Land_Barracks_03_F"",						\
+	""Land_Barracks_05_F"",						\
+	""Land_Barracks_02_F"",						\
+	""Land_Barracks_04_F"",						\
+	""Land_ControlTower_02_F"",					\
+	""Land_Mil_Guardhouse_no_interior_EP1_CUP"",\
+	""Land_Radar_01_HQ_F"",						\
+	""Land_i_Barracks_V2_F"",					\
+	""Land_i_Barracks_V1_F"",					\
+	""Land_u_Barracks_V2_F"",					\
+	""Land_Barracks_06_F"",						\
+	""Land_Mil_House_dam_EP1"",					\
+	""Land_Barracks_01_grey_F"",				\
+	""Land_Barracks_01_dilapidated_F"",			\
+	""Land_Mil_House_EP1"",						\
+	""Land_Army_hut2_int"",						\
+	""Land_Barracks_01_camo_F"",				\
+	""Land_Army_hut_int"",						\
+	""Land_Army_hut3_long"",					\
+	""Land_Army_hut2"",							\
+	""Land_Army_hut3_long_int""					\
 ]";
-force tsp_cba_breach_reinforced = "[
-""Land_Ammostore2"",
-""Land_Garaz_s_tankem"",
-""Land_Garaz_bez_tanku"",
-""Land_Cargo_House_V4_F"",
-""Land_Cargo_Tower_V1_F"",
-""Land_Cargo_HQ_V4_F"",
-""Land_Cargo_Tower_V1_No4_F"",
-""Land_Cargo_Tower_V1_No5_F"",
-""Land_Cargo_Tower_V1_No7_F"",
-""Land_Cargo_Tower_V4_F"",
-""Land_Cargo_Tower_V1_No2_F"",
-""Land_Cargo_Tower_V2_F"",
-""Land_Cargo_Tower_V3_F"",
-""Land_Cargo_Tower_V1_No1_F"",
-""Land_Cargo_Tower_V1_No3_F"",
-""Land_Cargo_HQ_V2_F"",
-""Land_Medevac_HQ_V1_F"",
-""Land_Cargo_HQ_V1_F"",
-""Land_Cargo_House_V2_F"",
-""Land_Medevac_house_V1_F"",
-""Land_Cargo_Tower_V1_No6_F"",
-""Land_Cargo_House_V1_F"",
-""Land_Cargo_HQ_V3_F"",
-""Land_Cargo_House_V3_F""
+force tsp_cba_breach_reinforced = "[	\
+	""Land_Ammostore2"",				\
+	""Land_Garaz_s_tankem"",			\
+	""Land_Garaz_bez_tanku"",			\
+	""Land_Cargo_House_V4_F"",			\
+	""Land_Cargo_Tower_V1_F"",			\
+	""Land_Cargo_HQ_V4_F"",				\
+	""Land_Cargo_Tower_V1_No4_F"",		\
+	""Land_Cargo_Tower_V1_No5_F"",		\
+	""Land_Cargo_Tower_V1_No7_F"",		\
+	""Land_Cargo_Tower_V4_F"",			\
+	""Land_Cargo_Tower_V1_No2_F"",		\
+	""Land_Cargo_Tower_V2_F"",			\
+	""Land_Cargo_Tower_V3_F"",			\
+	""Land_Cargo_Tower_V1_No1_F"",		\
+	""Land_Cargo_Tower_V1_No3_F"",		\
+	""Land_Cargo_HQ_V2_F"",				\
+	""Land_Medevac_HQ_V1_F"",			\
+	""Land_Cargo_HQ_V1_F"",				\
+	""Land_Cargo_House_V2_F"",			\
+	""Land_Medevac_house_V1_F"",		\
+	""Land_Cargo_Tower_V1_No6_F"",		\
+	""Land_Cargo_House_V1_F"",			\
+	""Land_Cargo_HQ_V3_F"",				\
+	""Land_Cargo_House_V3_F""			\
 ]";
 force tsp_cba_breach_vanilla = false;
 force tsp_cba_breach_wall_physics = false;
