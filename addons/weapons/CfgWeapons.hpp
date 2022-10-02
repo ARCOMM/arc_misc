@@ -360,4 +360,17 @@ class CfgWeapons {
 		};
 	};
 
+    class sp_fwa_rifle_base;
+
+    class sp_fwa_smg_9mm_base : sp_fwa_rifle_base {
+        ace_overheating_closedBolt = 0;
+    };
+
+    class sp_fwa_smg_sterling;
+
+    class sp_fwa_smg_mk6sterling : sp_fwa_smg_sterling { //The Sterling Mk6 Police Carbine fires from a closed bolt, unlike ever other version
+        ace_overheating_closedBolt = 1;
+    };
+
+
 };
