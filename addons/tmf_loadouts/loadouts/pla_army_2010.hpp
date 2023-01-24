@@ -44,7 +44,10 @@ class baseMan {// Weaponless baseclass
 	items[] = {
 		MEDICAL_R,
 		"Chemlight_red",
-		"ACE_Flashlight_KSF1"
+		"ACE_Flashlight_KSF1",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -177,7 +180,7 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpackItems[] = {
 		LIST_4("100Rnd_580x42_Mag_F"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -229,7 +232,7 @@ class mmgtl : aar {
 	};
 	backpackItems[] = {
 		LIST_2("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 };
 

@@ -43,7 +43,10 @@ class baseMan {
 		 MEDICAL_R ,
 		"ACE_Flashlight_XL50",
 		"ACE_IR_Strobe_Item",
-		"ACE_microDAGR"
+		"ACE_microDAGR",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -177,8 +180,8 @@ class fac : ftl {
 	backpack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = { FAC_GEAR };
 	magazines[] += {
-		LIST_2("CUP_1Rnd_SmokeRed_M203"),
-		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
+		"CUP_1Rnd_SmokeRed_M203",
+		"CUP_1Rnd_SmokeGreen_M203",
 		"Laserbatteries"
 	};
 	linkedItems[] = {
@@ -211,7 +214,8 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backPack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = {
-		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249")
+		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -258,7 +262,8 @@ class mmgtl : aar {
 	items[] += {"ACE_MapTools"};
 	backPack[] = {"CUP_B_US_IIID_OCP"};
 	backpackItems[] = {
-		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] = {
 		"ItemMap",

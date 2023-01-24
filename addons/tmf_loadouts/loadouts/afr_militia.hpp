@@ -40,7 +40,7 @@ class baseMan {// Weaponless baseclass
 		"cwr3_i_vest_lbv_olive",
 		"cwr3_i_vest_lbv"
 	};
-	backpack[] = {};
+	backpack[] = {"CUP_B_AlicePack_Khaki"};
 	headgear[] = {};
 	hmd[] = {};
 	// Leave empty to remove all. "Default" > leave original item.
@@ -82,7 +82,9 @@ class baseMan {// Weaponless baseclass
 	magazines[] = {};
 	items[] = {
 		MEDICAL_R,
-		"ACE_WaterBottle"
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -309,7 +311,7 @@ class hmgg : car {
 		"B_Carryall_khk",
 		"B_Carryall_oli"
 	};
-	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
+	backpackItems[] = {LIST_3("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgac : r {
@@ -320,7 +322,7 @@ class hmgac : r {
 		"B_Carryall_khk",
 		"B_Carryall_oli"
 	};
-	backpackItems[] = {LIST_6("ace_csw_50Rnd_127x108_mag")};
+	backpackItems[] = {LIST_4("ace_csw_50Rnd_127x108_mag")};
 };
 
 class hmgtl : car {
@@ -332,7 +334,7 @@ class hmgtl : car {
 		"B_Carryall_oli"
 	};
 	backpackItems[] = {
-		LIST_6("ace_csw_50Rnd_127x108_mag"),
+		LIST_4("ace_csw_50Rnd_127x108_mag"),
 		"ACE_EntrenchingTool"
 	};
 	items[] += {"ACE_MapTools"};
@@ -370,13 +372,13 @@ class mattl : car {
 class hatg : car {
 	displayName = "HAT Gunner";
 	secondaryWeapon[] = {"CUP_SPG9_carry"};
+	magazines[] += {"CUP_compats_PG9_M"};
 	backpack[] = {
 		"B_Carryall_cbr",
 		"B_Carryall_khk",
 		"B_Carryall_oli"
 	};
 	backpackItems[] = {
-		LIST_2("CUP_compats_PG9_M"),
 		"CUP_compats_OG9_M"
 	};
 };
@@ -422,7 +424,7 @@ class mtrg : car {
 		"B_Carryall_oli"
 	};
 	backpackItems[] = {
-		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
+		LIST_3("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};
@@ -586,4 +588,9 @@ class UAV : car {
 	traits[] = {"UAVHacker"};
 	backpack[] = {"O_UAV_01_backpack_F"};
 	linkedItems[] += {"O_UavTerminal"};
+	items[] = {
+		MEDICAL_R,
+		LIST_3("ACE_CableTie"),
+        "ACE_Canteen"
+	};
 };

@@ -47,7 +47,9 @@ class baseMan {// Weaponless baseclass
 	items[] = {
 		MEDICAL_R,
 		"ACE_Flashlight_XL50",
-		"ACE_CableTie"
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -64,13 +66,7 @@ class baseMan {// Weaponless baseclass
 	traits[] = {};
 
 	// This is executed after unit init is complete. argument: _this = _unit.
-	code = QUOTE( \
-		if (sunOrMoon != 1) then \
-		{ \
-			_this linkItem 'CUP_NVG_HMNVS'; \
-			_this addItem 'ACE_IR_Strobe_Item'; \
-		});
-	// Add NVGs if it is night
+	code = ""
 };
 
 class r : baseMan {
@@ -197,7 +193,8 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpack[] = {"B_AssaultPack_khk"};
 	backpackItems[] = {
-		LIST_2("CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1")
+		LIST_2("CUP_200Rnd_TE4_Red_Tracer_556x45_L110A1"),
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -253,7 +250,8 @@ class mmgtl : aar {
 		"ItemGPS"
 	};
 	backpackItems[] = {
-		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 
@@ -322,7 +320,6 @@ class hatg : car {
 	displayName = "HAT Gunner";
 
 	secondaryWeapon[] = {"CUP_launch_Javelin"};
-	secondaryAttachments[] = {"CUP_Javelin_M"};
 
 	backpack[] = {"B_TacticalPack_mcamo"};
 	backpackItems[] = {"CUP_Javelin_M"};
@@ -481,6 +478,7 @@ class hc : smg {
 	displayName = "Helicopter Crew";
 	uniform[] = {"U_BG_Guerrilla_6_1"};
 	vest[] = {"CUP_V_B_BAF_DPM_Osprey_Mk3_Pilot"};
+	backpack[] = {"B_AssaultPack_rgr"};
 	headgear[] = {"H_CrewHelmetHeli_O"};
 	magazines[] = {
 		LIST_6("CUP_30Rnd_9x19_MP5"),
@@ -497,7 +495,6 @@ class hp : hc {
 class hcc : hc {
 	displayName = "Helicopter Crew Chief";
 	traits[] = {"engineer"};
-	backpack[] = {"B_AssaultPack_rgr"};
 	backpackItems[] = {"ToolKit"};
 };
 
