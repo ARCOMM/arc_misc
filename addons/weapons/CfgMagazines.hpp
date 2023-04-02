@@ -16,11 +16,6 @@ class CfgMagazines {
 	HIDE(ACE_200Rnd_556x45_Box_green,200Rnd_556x45_Box_F);
 	HIDE(ACE_200Rnd_556x45_Box_tracer_green,200Rnd_556x45_Box_Tracer_F);
 
-	class CA_LauncherMagazine;
-	HIDE(MRAWS_HEAT_F,CA_LauncherMagazine);
-	HIDE(MRAWS_HEAT55_F,MRAWS_HEAT_F);
-	HIDE(MRAWS_HE_F,MRAWS_HEAT_F);
-
 	class RPG32_F;
 	HIDE(RPG7_F,RPG32_F);
 
