@@ -51,10 +51,10 @@ force ace_captives_requireSurrender = 2;
 force ace_captives_requireSurrenderAi = false;
 
 // ACE Common
-force ace_common_allowFadeMusic = true;
-force ace_common_checkPBOsAction = 2;
-force ace_common_checkPBOsCheckAll = true;
-force ace_common_checkPBOsWhitelist = "['aar_main','darkmap_ace_main','DIS_Enhanced_Gps','DIS_enhanced_map_ace','JD_ArmaMapsAceCompat','JD_ArmaMaps','fare_AWL','PLP_something','PLP_commonModData','HeadRangePlus','Rev_marker_system','OCAP','ocap','CHVD','bettinv_main','bettinv_main_ace','jsrs_soundmod_complete_edition','jsrs_soundmod_complete_edition_soundfiles','jsrs_soundmod_boats','jsrs_soundmod_sonic_cracks','jsrs_soundmod_weapons','jsrs_soundmod_environment','jsrs_soundmod_explosions','jsrs_soundmod_framework','jsrs_soundmod_landvehicles','jsrs_soundmod_movement','jsrs_soundmod_bullethits','jsrs_soundmod_helicopters','sfp_jsrs_vehicles_weapons','sfp_jsrs_weapons_kpistm45','sfp_jsrs_weapons_ksp58','sfp_jsrs_weapons_ksp90','sfp_jsrs_weapons_mp5','sfp_jsrs_weapons_p226','sfp_jsrs_weapons_p88','sfp_jsrs_weapons_psg90','sfp_jsrs_weapons_ag90','sfp_jsrs_weapons_ak4','sfp_jsrs_weapons_ak5','jsrs_soundmod_cup_weapons','jsrs_soundmod_cfg_cup_weapons','jsrs_soundmod_cup_vehicles','sfp_jsrs_weapons_g36c','DynaSound_DS_main','DynaSound_DS_sys','DynaSound_DS_w_4Five','DynaSound_DS_w_AA','DynaSound_DS_w_acpc2','DynaSound_DS_w_Gau8','DynaSound_DS_w_GMG','DynaSound_DS_w_Kir','DynaSound_DS_w_P07','DynaSound_DS_w_rook','DynaSound_DS_w_Shared','DynaSound_DS_w_Tails','DynaSound_DS_w_Tavor','DynaSound_DS_w_Titan','DynaSound_DS_w_Type115_1','DynaSound_DS_w_Type115_2','DynaSound_DS_w_UGL','DynaSound_DS_w_Vermin','DynaSound_DS_w_Zafir','DynaSound_DS_w_Zubr','L_ES_ES_main','L_ES_ES_sounds','L_ES_ES_sys','DynaSound_DS_a_Blackhawk','DynaSound_DS_a_Chinook','DynaSound_DS_a_Comanche','DynaSound_DS_a_Kajman','DynaSound_DS_a_Kasatka','DynaSound_DS_a_Littlebird','DynaSound_DS_a_Lynx','DynaSound_DS_a_Merlin','DynaSound_DS_a_Taru','DynaSound_DS_a_Xiang','DynaSound_DS_lv_HatchBackSport','DynaSound_DS_m_Bullets','DynaSound_DS_m_Explosions','DynaSound_DS_w_120mm','DynaSound_DS_w_155mm','DynaSound_DS_w_20mmgatling','DynaSound_DS_w_30mmgatling','DynaSound_DS_w_AK12','DynaSound_DS_w_AKM','DynaSound_DS_w_AKS','DynaSound_DS_w_Autocannon','DynaSound_DS_w_CAR95','DynaSound_DS_w_CMR76','DynaSound_DS_w_CoaxMG','DynaSound_DS_w_Cyrus','DynaSound_DS_w_EBR','DynaSound_DS_w_EMR','DynaSound_DS_w_F2000','DynaSound_DS_w_HMG','DynaSound_DS_w_Katiba','DynaSound_DS_w_Launcher_Big','DynaSound_DS_w_Launcher_Small','DynaSound_DS_w_lim','DynaSound_DS_w_LRR','DynaSound_DS_w_Lynx','DynaSound_DS_w_M14','DynaSound_DS_w_MAR10','DynaSound_DS_w_MINIGUN65','DynaSound_DS_w_MINIGUN762','DynaSound_DS_w_MK200','DynaSound_DS_w_MLRS','DynaSound_DS_w_MX','DynaSound_DS_w_Navid','DynaSound_DS_w_PCML','DynaSound_DS_w_PDW2000','DynaSound_DS_w_PlaneLaunchers','DynaSound_DS_w_Protector','DynaSound_DS_w_Rahim','DynaSound_DS_w_RPG7','DynaSound_DS_w_Scalpel','DynaSound_DS_w_SDAR','DynaSound_DS_w_SkyFire','DynaSound_DS_w_SPAR762','DynaSound_DS_w_SPAR','DynaSound_DS_w_SPMG','DynaSound_DS_w_Sting','DynaSound_DS_w_Alamut','DynaSound_DS_w_ASRAAM','DynaSound_DS_w_DAGR']";
+force force ace_common_allowFadeMusic = true;
+force force ace_common_checkPBOsAction = 2;
+force force ace_common_checkPBOsCheckAll = true;
+force force ace_common_checkPBOsWhitelist = "['aar_main','darkmap_ace_main','DIS_Enhanced_Gps','DIS_enhanced_map_ace','JD_ArmaMapsAceCompat','JD_ArmaMaps','fare_AWL','PLP_something','PLP_commonModData','HeadRangePlus','Rev_marker_system','OCAP','ocap','CHVD','bettinv_main','bettinv_main_ace','jsrs_soundmod_complete_edition','jsrs_soundmod_complete_edition_soundfiles','jsrs_soundmod_boats','jsrs_soundmod_sonic_cracks','jsrs_soundmod_weapons','jsrs_soundmod_environment','jsrs_soundmod_explosions','jsrs_soundmod_framework','jsrs_soundmod_landvehicles','jsrs_soundmod_movement','jsrs_soundmod_bullethits','jsrs_soundmod_helicopters','sfp_jsrs_vehicles_weapons','sfp_jsrs_weapons_kpistm45','sfp_jsrs_weapons_ksp58','sfp_jsrs_weapons_ksp90','sfp_jsrs_weapons_mp5','sfp_jsrs_weapons_p226','sfp_jsrs_weapons_p88','sfp_jsrs_weapons_psg90','sfp_jsrs_weapons_ag90','sfp_jsrs_weapons_ak4','sfp_jsrs_weapons_ak5','jsrs_soundmod_cup_weapons','jsrs_soundmod_cfg_cup_weapons','jsrs_soundmod_cup_vehicles','sfp_jsrs_weapons_g36c','DynaSound_DS_main','DynaSound_DS_sys','DynaSound_DS_w_4Five','DynaSound_DS_w_AA','DynaSound_DS_w_acpc2','DynaSound_DS_w_Gau8','DynaSound_DS_w_GMG','DynaSound_DS_w_Kir','DynaSound_DS_w_P07','DynaSound_DS_w_rook','DynaSound_DS_w_Shared','DynaSound_DS_w_Tails','DynaSound_DS_w_Tavor','DynaSound_DS_w_Titan','DynaSound_DS_w_Type115_1','DynaSound_DS_w_Type115_2','DynaSound_DS_w_UGL','DynaSound_DS_w_Vermin','DynaSound_DS_w_Zafir','DynaSound_DS_w_Zubr','L_ES_ES_main','L_ES_ES_sounds','L_ES_ES_sys','DynaSound_DS_a_Blackhawk','DynaSound_DS_a_Chinook','DynaSound_DS_a_Comanche','DynaSound_DS_a_Kajman','DynaSound_DS_a_Kasatka','DynaSound_DS_a_Littlebird','DynaSound_DS_a_Lynx','DynaSound_DS_a_Merlin','DynaSound_DS_a_Taru','DynaSound_DS_a_Xiang','DynaSound_DS_lv_HatchBackSport','DynaSound_DS_m_Bullets','DynaSound_DS_m_Explosions','DynaSound_DS_w_120mm','DynaSound_DS_w_155mm','DynaSound_DS_w_20mmgatling','DynaSound_DS_w_30mmgatling','DynaSound_DS_w_AK12','DynaSound_DS_w_AKM','DynaSound_DS_w_AKS','DynaSound_DS_w_Autocannon','DynaSound_DS_w_CAR95','DynaSound_DS_w_CMR76','DynaSound_DS_w_CoaxMG','DynaSound_DS_w_Cyrus','DynaSound_DS_w_EBR','DynaSound_DS_w_EMR','DynaSound_DS_w_F2000','DynaSound_DS_w_HMG','DynaSound_DS_w_Katiba','DynaSound_DS_w_Launcher_Big','DynaSound_DS_w_Launcher_Small','DynaSound_DS_w_lim','DynaSound_DS_w_LRR','DynaSound_DS_w_Lynx','DynaSound_DS_w_M14','DynaSound_DS_w_MAR10','DynaSound_DS_w_MINIGUN65','DynaSound_DS_w_MINIGUN762','DynaSound_DS_w_MK200','DynaSound_DS_w_MLRS','DynaSound_DS_w_MX','DynaSound_DS_w_Navid','DynaSound_DS_w_PCML','DynaSound_DS_w_PDW2000','DynaSound_DS_w_PlaneLaunchers','DynaSound_DS_w_Protector','DynaSound_DS_w_Rahim','DynaSound_DS_w_RPG7','DynaSound_DS_w_Scalpel','DynaSound_DS_w_SDAR','DynaSound_DS_w_SkyFire','DynaSound_DS_w_SPAR762','DynaSound_DS_w_SPAR','DynaSound_DS_w_SPMG','DynaSound_DS_w_Sting','DynaSound_DS_w_Alamut','DynaSound_DS_w_ASRAAM','DynaSound_DS_w_DAGR']";
 force ace_noradio_enabled = true;
 force ace_parachute_hideAltimeter = false;
 
@@ -157,7 +157,7 @@ force ace_map_gestures_onlyShowFriendlys = false;
 force ace_maptools_drawStraightLines = false;
 
 // ACE Medical
-force ace_medical_ai_enabledFor = 0;
+force ace_medical_ai_enabledFor = 1;
 force ace_medical_AIDamageThreshold = 1;
 force ace_medical_bleedingCoefficient = 1;
 force ace_medical_blood_bloodLifetime = 900;
@@ -173,7 +173,7 @@ force ace_medical_painCoefficient = 1;
 force ace_medical_playerDamageThreshold = 1;
 force ace_medical_spontaneousWakeUpChance = 0.5;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 2;
-force ace_medical_statemachine_AIUnconsciousness = false;
+force ace_medical_statemachine_AIUnconsciousness = true;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 30;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
@@ -371,9 +371,6 @@ force acre_sys_core_ts3ChannelName = "ACRE";
 force acre_sys_core_ts3ChannelPassword = "";
 force acre_sys_signal_signalModel = 3;
 
-// AI
-force cfp_autoEquipNVG = false;
-
 // ARC Misc
 force arc_misc_difficulty_aimingAccuracy = 0.11;
 force arc_misc_difficulty_aimingShake = 0.11;
@@ -394,6 +391,15 @@ force arc_misc_difficulty_reloadSpeed = 1;
 force arc_misc_difficulty_spotDistance = 1;
 force arc_misc_difficulty_spotTime = 0.18;
 force arc_misc_difficulty_useAISteeringComponent = true;
+
+// Death And Hit reactions
+force WBK_deathAnimMod_Hit_PLR = false;
+
+// VET Unflipping
+force vet_unflipping_unit_mass_limit = 1000;
+force vet_unflipping_unit_man_limit = 20;
+force vet_unflipping_time = 30;
+force vet_unflipping_vehicle_mass_limit = 100000;
 
 // Community Base Addons
 force cba_network_loadoutValidation = 2;
@@ -498,6 +504,10 @@ force grad_trenches_functions_shortEnvelopeDigTime = 20;
 force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force grad_trenches_functions_stopBuildingAtFatigueMax = false;
 force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+force grad_trenches_functions_allowTrenchDecay = true;
+force grad_trenches_functions_timeoutToDecay = 1800;
+force grad_trenches_functions_decayTime = 600;
+force grad_trenches_functions_playersinAreaRadius = 500;
 
 // LAxemann's Suppress
 force L_Suppress_buildup = 1.3;
