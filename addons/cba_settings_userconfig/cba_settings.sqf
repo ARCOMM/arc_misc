@@ -157,7 +157,7 @@ force ace_map_gestures_onlyShowFriendlys = false;
 force ace_maptools_drawStraightLines = false;
 
 // ACE Medical
-force ace_medical_ai_enabledFor = 1;
+force ace_medical_ai_enabledFor = 2;
 force ace_medical_AIDamageThreshold = 1;
 force ace_medical_bleedingCoefficient = 1;
 force ace_medical_blood_bloodLifetime = 900;

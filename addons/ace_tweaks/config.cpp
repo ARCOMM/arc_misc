@@ -22,11 +22,6 @@ class CfgPatches
 	};
 };
 
-// Remove AI from statemachine
-class ACE_Medical_StateMachine {
-	list = QUOTE((call ace_common_fnc_getLocalUnits) select {isPlayer _x});
-};
-
 class ace_medical_replacementItems {
 	ItemType_401[] = {
 		{"ACE_fieldDressing", 5},
