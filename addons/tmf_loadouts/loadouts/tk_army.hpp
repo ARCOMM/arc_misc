@@ -50,7 +50,10 @@ class baseMan {// Weaponless baseclass
 	items[] = {
 		MEDICAL_R,
 		"ACE_Flashlight_KSF1",
-		"ACE_HandFlare_Red"
+		"ACE_HandFlare_Red",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -246,7 +249,8 @@ class mmgac : r {
 	displayName = "MMG Ammo Carrier";
 	backpack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
-		LIST_6("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M")
+		LIST_5("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 

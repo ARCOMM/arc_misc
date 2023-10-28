@@ -61,7 +61,10 @@ class baseMan {// Weaponless baseclass
 		"ItemMap",
 		"ItemCompass",
 		"ItemRadio",
-		"ItemWatch"
+		"ItemWatch",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 
 	// These are put into the backpack
@@ -207,7 +210,7 @@ class aar : r {
 	backpack[] = {"B_Kitbag_rgr"};
 	backpackItems[] = {
 		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -262,7 +265,8 @@ class mmgtl : aar {
 		"ItemGPS"
 	};
 	backpackItems[] = {
-		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 

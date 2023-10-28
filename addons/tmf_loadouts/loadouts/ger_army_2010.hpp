@@ -49,7 +49,10 @@ class baseMan {// Weaponless baseclass
 		MEDICAL_R,
 		"ACE_Flashlight_XL50",
 		"Chemlight_green",
-		"ACE_CableTie"
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
+
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -77,11 +80,11 @@ class r : baseMan {
 		"CUP_H_Ger_M92_Cover_GG_CF",
 		"CUP_H_Ger_M92_Cover_GG"
 	};
-	primaryWeapon[] = {"CUP_arifle_G36A"};
-	scope[] = {"cup_optic_g36optics15x_3d"};
+	primaryWeapon[] = {"hlc_rifle_G36V"};
+	scope[] = {"cup_optic_eotech553_black"};
 	magazines[] = {
-		LIST_6("CUP_30Rnd_556x45_G36"),
-		LIST_2("CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36"),
+		LIST_6("hlc_30rnd_556x45_EPR_G36"),
+		LIST_2("hlc_30rnd_556x45_M_G36"),
 		LIST_2("HandGrenade"),
 		LIST_2("SmokeShell")
 	};
@@ -90,7 +93,7 @@ class r : baseMan {
 class g : r {
 	displayName = "Grenadier";
 	vest[] = {"CUP_V_B_GER_PVest_Fleck_Gren"};
-	primaryWeapon[] = {"CUP_arifle_AG36"};
+	primaryWeapon[] = {"hlc_rifle_G36VAG36"};
 	magazines[] += {
 		LIST_8("CUP_1Rnd_HEDP_M203"),
 		LIST_4("CUP_1Rnd_Smoke_M203")
@@ -99,7 +102,7 @@ class g : r {
 
 class car : r {
 	displayName = "Carabinier";
-	primaryWeapon[] = {"CUP_arifle_G36C_VFG_Carry"};
+	primaryWeapon[] = {"hlc_rifle_G36C"};
 };
 
 class cls : car {
@@ -192,7 +195,8 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpack[] = {"B_FieldPack_green_F"};
 	backpackItems[] = {
-		LIST_3("CUP_120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M")
+		LIST_2("CUP_120Rnd_TE4_LRT4_Yellow_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"Binocular"};
 };

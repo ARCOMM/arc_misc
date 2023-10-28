@@ -48,7 +48,10 @@ class baseMan {// Weaponless baseclass
 	items[] = {
 		MEDICAL_R ,
 		"ACE_IR_Strobe_Item",
-		"ACE_Flashlight_XL50"
+		"ACE_Flashlight_XL50",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -206,10 +209,6 @@ class fac : ftl {
 		FAC_GEAR,
 		"ACRE_VHF30108"
 	};
-	magazines[] += {
-		LIST_2("CUP_1Rnd_SmokeGreen_M203"),
-		LIST_2("CUP_1Rnd_SmokeRed_M203"),
-	};
 	linkedItems[] = {
 		"ItemMap",
 		"ItemCompass",
@@ -239,9 +238,9 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpack[] = {"CUP_B_ACRPara_m95"};
 	backpackItems[] = {
-		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch")
+		LIST_4("CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch"),
+		"ACE_SpareBarrel_Item"
 	};
-	items[] += {"ACE_EntrenchingTool"};
 	linkedItems[] += {"ACE_Yardage450"};
 };
 
@@ -289,7 +288,8 @@ class mmgtl : aar {
 	displayName = "MMG Team Leader";
 	items[] += {"ACE_MapTools"};
 	backpackItems[] = {
-		LIST_7("CUP_50Rnd_UK59_762x54R_Tracer")
+		LIST_6("CUP_50Rnd_UK59_762x54R_Tracer"),
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] = {
 		"ItemMap",

@@ -218,7 +218,9 @@ class mmgac : r {
 	vest[] = {"CUP_V_O_SLA_Flak_Vest03"};
 	backpack[] = {"CUP_B_AlicePack_Bedroll"};
 	backpackItems[] = {
-		LIST_5("130Rnd_338_Mag")
+		LIST_4("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"),
+		"ACE_SpareBarrel_Item"
+
 	};
 };
 

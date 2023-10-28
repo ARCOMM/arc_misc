@@ -41,7 +41,10 @@ class baseMan {
 	items[] = {
 		 MEDICAL_R ,
 		"ACE_Flashlight_XL50",
-		"ACE_SpraypaintGreen"
+		"ACE_SpraypaintGreen",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -221,7 +224,7 @@ class aar : r {
 	backpack[] = {"B_Kitbag_cbr"};
 	backpackItems[] = {
 		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"ACE_Yardage450"};
 };
@@ -276,7 +279,8 @@ class mmgtl : aar {
 		"ItemGPS"
 	};
 	backpackItems[] = {
-		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 
