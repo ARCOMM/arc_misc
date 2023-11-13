@@ -19,7 +19,8 @@ LIST_5("ACE_salineIV_250"), \
 LIST_2("ACE_bodyBag"), \
 LIST_10("ACE_splint"), \
 LIST_5("ACE_salineIV"), \
-"ACE_surgicalKit"
+"ACE_surgicalKit", \
+LIST_20("ACE_suture")
 
 #define MTR_GEAR \
 "ACE_RangeTable_82mm", \
