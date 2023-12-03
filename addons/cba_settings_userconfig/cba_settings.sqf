@@ -178,18 +178,18 @@ force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 30;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 0;
-force ace_medical_treatment_advancedBandages = 0;
+force ace_medical_treatment_advancedBandages = 2;
 force ace_medical_treatment_advancedDiagnose = true;
 force ace_medical_treatment_advancedMedication = true;
 force ace_medical_treatment_allowBodyBagUnconscious = false;
 force ace_medical_treatment_allowLitterCreation = true;
 force ace_medical_treatment_allowSelfIV = 1;
 force ace_medical_treatment_allowSelfPAK = 0;
-force ace_medical_treatment_allowSelfStitch = 0;
+force ace_medical_treatment_allowSelfStitch = 1;
 force ace_medical_treatment_allowSharedEquipment = 0;
-force ace_medical_treatment_clearTraumaAfterBandage = false;
+force ace_medical_treatment_clearTrauma = 1;
 force ace_medical_treatment_consumePAK = 1;
-force ace_medical_treatment_consumeSurgicalKit = 0;
+force ace_medical_treatment_consumeSurgicalKit = 2;
 force ace_medical_treatment_convertItems = 0;
 force ace_medical_treatment_cprSuccessChance = 0.4;
 force ace_medical_treatment_holsterRequired = 0;
@@ -210,7 +210,7 @@ force ace_medical_treatment_treatmentTimeCPR = 15;
 force ace_medical_treatment_treatmentTimeIV = 12;
 force ace_medical_treatment_treatmentTimeSplint = 7;
 force ace_medical_treatment_treatmentTimeTourniquet = 7;
-force ace_medical_treatment_woundReopenChance = 1;
+force ace_medical_treatment_woundReopenChance = 0;
 force ace_medical_treatment_woundStitchTime = 5;
 
 // ACE Name Tags
@@ -664,4 +664,8 @@ force ace_cookoff_enableFire = false;
 // ACE Overheating
 force ace_overheating_cookoffCoef = 0;
 force ace_overheating_enabled = false;
+#endif
+
+#if __has_include("\z\arc_userconfig\cba_settings.sqf")
+#include "\z\arc_userconfig\cba_settings.sqf"
 #endif
