@@ -665,3 +665,7 @@ force ace_cookoff_enableFire = false;
 force ace_overheating_cookoffCoef = 0;
 force ace_overheating_enabled = false;
 #endif
+
+#if __has_include("\z\arc_userconfig\cba_settings.sqf")
+#include "\z\arc_userconfig\cba_settings.sqf"
+#endif
