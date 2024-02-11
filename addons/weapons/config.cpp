@@ -18,6 +18,7 @@ class CfgPatches
             "CBA_JAM",
             "cup_weapons_loadorder",
             "hlcweapons_G36",
+            "OFrP_A3_AANF1",
             "OFrP_A3_Weapons",
             "pook_GL_c",
             "sp_fwa_machinegun_core"

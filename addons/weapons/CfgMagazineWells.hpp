@@ -46,6 +46,7 @@ class CfgMagazineWells {
 
     class CBA_762x51_LINKS {
         OFrP_Magazines[] = {
+            "OFrP_AANF1_50Rnd_762x51",
             "OFrP_Minimi_100Rnd_762x51"
         };
     };

@@ -1,5 +1,9 @@
 class CfgWeapons {
     class Launcher_Base_F;
+    class Rifle_Base_F;
+    class Rifle_Long_Base_F;
+
+    class GM6_base_F;
 
     class LMG_Zafir_F;
     class GVAR(Negev_NG5): LMG_Zafir_F {
@@ -417,6 +421,10 @@ class CfgWeapons {
         magazineWell[] = {"CBA_762x51_LINKS"};
     };
 
+    class OFrP_AANF1_FM_base: Rifle_Long_Base_F {
+        magazineWell[] = {"CBA_762x51_LINKS"};
+    };
+
     class OFrP_FRF2_base: Rifle_Long_Base_F {
         magazineWell[] = {"CBA_762x51_FRF2"};
     };
@@ -425,7 +433,6 @@ class CfgWeapons {
         magazineWell[] = {"CBA_762x51_HK417"};
     };
 
-    class GM6_base_F;
     class OFrP_PGM_Hecate2_Base: GM6_base_F {
         magazineWell[] = {"CBA_762x51_HK417"};
     };
