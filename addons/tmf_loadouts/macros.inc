@@ -1,12 +1,15 @@
 /* assignGear specific macros */
 #include "\x\tmf\addons\assigngear\loadouts\macros.inc"
 
-#define MEDICAL_R "FirstAidKit"
+#define MEDICAL_R \
+"FirstAidKit", \
+"ACE_painkillers"
 
 #define MEDICAL_CLS \
 "Medikit", \
 LIST_2("ACE_bodyBag"), \
-LIST_2("ACE_tourniquet")
+LIST_2("ACE_tourniquet"), \
+LIST_5("ACE_painkillers")
 
 
 #define MEDICAL_M \
@@ -20,7 +23,8 @@ LIST_2("ACE_bodyBag"), \
 LIST_10("ACE_splint"), \
 LIST_5("ACE_salineIV"), \
 "ACE_surgicalKit", \
-LIST_20("ACE_suture")
+LIST_20("ACE_suture"), \
+LIST_10("ACE_painkillers")
 
 #define MTR_GEAR \
 "ACE_RangeTable_82mm", \
