@@ -104,7 +104,10 @@ class baseMan {// Weaponless baseclass
 	magazines[] = {};
 	items[] = {
 		MEDICAL_R,
-		"ACE_Flashlight_KSF1"
+		"ACE_Flashlight_KSF1",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -182,7 +185,7 @@ class m : cls {
 	displayName = "Medic";
 	primaryWeapon[] = {"CUP_srifle_LeeEnfield"};
 	magazines[] = {
-		LIST_12("CUP_10x_303_M"),
+		LIST_10("CUP_10x_303_M"),
 		"CUP_HandGrenade_RGD5",
 		"SmokeShell"
 	};
@@ -232,7 +235,8 @@ class co : sl {
 
 class fac : car {
 	displayName = "Forward Air Controller";
-	backpack[] = {"cwr3_o_backpack_rd54_r148"};
+	backpack[] = {"CUP_B_AlicePack_Khaki"};
+	hmd[] = {"antenna_long_one_nvg"};
 	items[] += {"ACE_MapTools"};
 	linkedItems[] += {"Binocular"};
 	backpackItems[] = { FAC_GEAR };
@@ -414,7 +418,7 @@ class mtrac : r {
 
 class mtrtl : car {
 	displayName = "Mortar Team Leader";
-	items[] += {"ACE_MapTools"};
+	items[] += {MTR_GEAR};
 	backPack[] = {"CUP_B_AlicePack_Khaki"};
 	backpackItems[] = {
 		LIST_6("potato_vz99_HE"),

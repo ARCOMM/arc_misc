@@ -50,7 +50,10 @@ class baseMan {// Weaponless baseclass
 		MEDICAL_R,
 		"ACE_IR_Strobe_Item",
 		"ACE_Flashlight_XL50",
-		"ACE_microDAGR"
+		"ACE_microDAGR",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -225,7 +228,7 @@ class aar : r {
 	backpack[] = {"B_Kitbag_rgr"};
 	backpackItems[] = {
 		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249_Pouch"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"ACE_Yardage450"};
 };
@@ -279,7 +282,8 @@ class mmgtl : aar {
 		"ACE_Vector"
 	};
 	backpackItems[] = {
-		LIST_2("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_2("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 };
 

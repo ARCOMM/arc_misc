@@ -38,7 +38,10 @@ class baseMan {
 		MEDICAL_R ,
 		"ACE_IR_Strobe_Item",
 		"ACE_Flashlight_XL50",
-		"ACE_microDAGR"
+		"ACE_microDAGR",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -126,6 +129,12 @@ class car : r {
 		"CUP_arifle_Mk17_CQC_AFG",
 		"CUP_arifle_Mk17_CQC_FG",
 		"CUP_arifle_Mk17_CQC_SFG"
+	};
+	magazines[] = {
+		LIST_6("CUP_20Rnd_762x51_B_SCAR"),
+		LIST_2("CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR"),
+		"HandGrenade",
+		LIST_2("SmokeShell")
 	};
 };
 
@@ -242,9 +251,9 @@ class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpack[] = {"B_Kitbag_mcamo"};
 	backpackItems[] = {
-		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
+		LIST_3("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
-	items[] += {"ACE_EntrenchingTool"};
 	linkedItems[] += {"ACE_Yardage450"};
 };
 
@@ -305,7 +314,7 @@ class mmgac : r {
 	displayName = "MMG Ammo Carrier";
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
-		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M")
 	};
 };
 
@@ -314,7 +323,8 @@ class mmgtl : aar {
 	items[] += {"ACE_MapTools"};
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
-		LIST_6("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		LIST_4("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] = {
 		"ItemMap",
@@ -428,7 +438,7 @@ class mtrac : r {
 	displayName = "Mortar Ammo Carrier";
 	backPack[] = {"B_Carryall_mcamo"};
 	backpackItems[] = {
-		LIST_4("ACE_1Rnd_82mm_Mo_HE"),
+		LIST_3("ACE_1Rnd_82mm_Mo_HE"),
 		"ACE_1Rnd_82mm_Mo_Illum",
 		"ACE_1Rnd_82mm_Mo_Smoke"
 	};

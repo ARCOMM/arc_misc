@@ -41,7 +41,10 @@ class baseMan {// Weaponless baseclass
 	magazines[] = {};
 	items[] = {
 		MEDICAL_R,
-		"ACE_Flashlight_KSF1"
+		"ACE_Flashlight_KSF1",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -159,12 +162,11 @@ class co : sl {
 
 class cor : co {
 	displayName = "Platoon Leader (Radio)";
-	radio[] = {"CUP_B_Kombat_Radio_Olive"};
 };
 
 class fac : sl {
 	displayName = "Forward Air Controller";
-	backpack[] = {"cwr3_o_backpack_rd54_r148"};
+	backPack[] = {"cwr3_o_backpack_veshmeshok"};
 	backpackItems[] = { FAC_GEAR };
 	linkedItems[] += {"CUP_SOFLAM"};
 };
@@ -181,8 +183,7 @@ class ar : r {
 class aar : r {
 	displayName = "Assistant Automatic Rifleman";
 	backpackItems[] = {
-		LIST_6("CUP_40Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M"),
-		"ACE_EntrenchingTool"
+		LIST_6("CUP_40Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M")
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -229,8 +230,7 @@ class mmgtl : aar {
 	backpack[] = {"cwr3_o_backpack_veshmeshok"};
 	items[] += {"ACE_MapTools"};
 	backpackItems[] = {
-		LIST_6("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M"),
-		"ACE_EntrenchingTool"
+		LIST_6("CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Yellow_M")
 	};
 };
 

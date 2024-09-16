@@ -47,8 +47,10 @@ class baseMan {// Weaponless baseclass
 	items[] = {
 		MEDICAL_R,
 		"ACE_Flashlight_XL50",
-		"ACE_CableTie",
-		"Chemlight_green"
+		"Chemlight_green",
+		LIST_3("ACE_CableTie"),
+        "ACE_EntrenchingTool",
+        "ACE_Canteen"
 	};
 	// These are added directly into their respective slots
 	linkedItems[] = {
@@ -195,7 +197,7 @@ class aar : r {
 	backpack[] = {"CUP_B_IDF_Backpack"};
 	backpackItems[] = {
 		LIST_4("CUP_100Rnd_TE4_Green_Tracer_556x45_M249"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 	linkedItems[] += {"Binocular"};
 };
@@ -252,9 +254,8 @@ class mmgtl : aar {
 		"ItemGPS"
 	};
 	backpackItems[] = {
-		LIST_2("150Rnd_762x54_Box"),
 		LIST_2("150Rnd_762x54_Box_Tracer"),
-		"ACE_EntrenchingTool"
+		"ACE_SpareBarrel_Item"
 	};
 };
 
@@ -523,7 +524,7 @@ class jp : hc {
 	displayName = "Jet pilot";
 	traits[] = {"engineer"};
 	uniform[] = {"U_I_pilotCoveralls"};
-	vest[] = {};
+	vest[] = {"CUP_V_B_PilotVest"};
 	headgear[] = {"H_PilotHelmetFighter_O"};
 	linkedItems[] += {"ItemGPS"};
 };
