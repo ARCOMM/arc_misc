@@ -1,0 +1,57 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "hemtt build",
+            "type": "shell",
+            "command": "hemtt build",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "hemtt build verbose",
+            "type": "shell",
+            "command": "hemtt build -vv",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "hemtt check",
+            "type": "shell",
+            "command": "hemtt check",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "hemtt release",
+            "type": "shell",
+            "command": "hemtt release"
+        },
+        {
+            "label": "hemtt dev",
+            "type": "shell",
+            "command": "hemtt dev"
+        },
+        {
+            "label": "hemtt install",
+            "type": "shell",
+            "command": "winget install hemtt"
+        },
+        {
+            "label": "hemtt upgrade",
+            "type": "shell",
+            "command": "winget upgrade hemtt"
+        }
+    ]
+}
